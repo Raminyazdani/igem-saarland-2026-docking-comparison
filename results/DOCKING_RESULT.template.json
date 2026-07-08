@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "tool_name": "",
+  "branch": "tool/<your-tool>",
+  "team_members": [""],
+  "software_version": "",
+  "date_completed": "YYYY-MM-DD",
+  "input_commit_hash": "<git rev-parse --short HEAD of input-v1>",
+  "score_direction": "lower_is_better",
+  "receptor_prep_method": "",
+  "ligand_prep_method": "",
+  "docking_parameters": {},
+  "hardware": "",
+  "runtime_total_sec": null,
+  "results": [
+    {"target_id": "PahP", "ligand_id": "", "pubchem_cid": "", "docking_score": null, "score_unit": "", "rank_within_tool": null, "pose_file": "tools/<your-tool>/results/poses/PahP__<ligand>__<tool>__v1.<ext>", "runtime_sec": null, "status": "ok", "failure_reason": null, "notes": ""}
+  ],
+  "failed_cases": [],
+  "warnings": [],
+  "notes": ""
+}

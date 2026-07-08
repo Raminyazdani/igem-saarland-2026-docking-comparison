@@ -1,0 +1,8 @@
+ligand_id,pubchem_cid,formula,mol_weight,clogP,inchikey,canonical_smiles,provenance,role
+pyrene,31423,C16H10,202.26,4.58,BBEAQIROQSPTKN-UHFFFAOYSA-N,c1cc2ccc3cccc4ccc(c1)c2c34,"PRIMARY - team named it ('pyrene, should be common', 2.April)",target
+phenanthrene,995,C14H10,178.23,3.99,YNPNZTXNASCQKK-UHFFFAOYSA-N,c1ccc2c(c1)ccc1ccccc12,named (degradation intermediate; slides 8/19),target
+benzo_a_pyrene,2336,C20H12,252.32,5.74,FMMWHPNWAFZXNH-UHFFFAOYSA-N,c1ccc2c(c1)cc1ccc3cccc4ccc2c1c34,"named (TonB transport hypothesis, slide 5); carcinogenic marker",target
+naphthalene,931,C10H8,128.17,2.84,UFWIBTONFRDIAS-UHFFFAOYSA-N,c1ccc2ccccc2c1,reference smallest PAH (PAH class),target
+anthracene,8418,C14H10,178.23,3.99,MWPLVEDNUUSJAV-UHFFFAOYSA-N,c1ccc2cc3ccccc3cc2c1,specificity probe (phenanthrene isomer),target
+fluoranthene,9154,C16H10,202.26,4.49,GVEPBJHOBDJJJI-UHFFFAOYSA-N,c1ccc2c(c1)-c1cccc3cccc-2c13,EQS Saar PAH,target
+glucose_NEGCTRL,5793,C6H12O6,180.16,-3.22,WQZGKKKJIJFFOK-GASJEMHNSA-N,OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O,"PROPOSED negative control (polar, non-aromatic) - not from files",negative_control

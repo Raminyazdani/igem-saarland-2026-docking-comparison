@@ -1,0 +1,14 @@
+# Root Python requirements — the ANALYSIS toolchain for this repo.
+# Installs everything scripts/compare_results/ and scripts/compare_preprocessing/ need
+# (validate results, build the comparison tables, figures, preprocessing comparison, status dashboard).
+#
+# MANAGED BY Ramin & Elnaz (coordinators). Teams: don't edit this file.
+# Per-tool DOCKING dependencies live separately in each  tools/<tool>/requirements.txt.
+#
+# Install:  pip install -r requirements.txt
+
+pandas>=1.5
+matplotlib>=3.5
+jsonschema>=4.0
+pyyaml>=6.0
+openpyxl>=3.0

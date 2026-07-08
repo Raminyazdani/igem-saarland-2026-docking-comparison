@@ -1,0 +1,14 @@
+# We COMMIT everything each team produces, so all of it can be reviewed on GitHub:
+# preprocessing/, docking/, configurations/, inputs/, outputs/, results/ (incl. poses/), status/.
+# Only DERIVED artifacts and junk are ignored below.
+# --- Python / editor / OS noise ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# --- scratch temp files (real outputs like *.dlg, *.log, *.pdbqt ARE committed) ---
+*.tmp
+
+# JetBrains / PyCharm IDE config
+.idea/

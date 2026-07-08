@@ -1,0 +1,20 @@
+# Enforces the rule: a Pull Request into `main` may ONLY come from `develop`.
+# Make this a REQUIRED status check on main (SETUP_GITHUB.md, step 7) so it actually blocks merges.
+name: Enforce develop -> main
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-source-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Source branch must be develop
+        run: |
+          echo "PR base: ${{ github.base_ref }} | head: ${{ github.head_ref }}"
+          if [ "${{ github.head_ref }}" != "develop" ]; then
+            echo "::error::PRs into 'main' must come from 'develop' (got '${{ github.head_ref }}'). Merge your work into develop first."
+            exit 1
+          fi
+          echo "OK: PR into main comes from develop."

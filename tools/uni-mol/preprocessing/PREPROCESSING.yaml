@@ -1,0 +1,54 @@
+# PREPROCESSING manifest for Uni-Mol Docking  (branch tool/uni-mol)
+#
+# Fill EVERY key. Keep the keys and structure identical to the other tools - this file is read
+# side-by-side across all tools by scripts/compare_preprocessing/ so we can compare recipes and, if
+# possible, converge on ONE shared preprocessing that works for every tool.
+#
+# Use null only where a step genuinely does not apply to your tool (and say why in notes).
+# Record exact tools + versions so the recipe is reproducible.
+
+tool: Uni-Mol Docking
+branch: tool/uni-mol
+owners: [Elnaz, Sadaf]
+input_version_used: v0-draft        # set to "input-v1" once the canonical structure+box are frozen
+
+# ---------- RECEPTOR preprocessing (what you did to the shared structure.pdb) ----------
+receptor:
+  source: input/canonical/targets/PahP/structure.pdb   # the shared receptor (PahP primary)
+  signal_peptide_removed: null      # true|false ; if true, which residues (e.g. "1-24")
+  residue_range_used: null          # e.g. "25-317" (mature domain) or "full"
+  protonation_pH: 7.4               # match canonical unless you justify otherwise
+  hydrogens_added: null             # true|false + method
+  charges_method: null              # e.g. Gasteiger | AM1-BCC | Kollman | none
+  waters_removed: null              # true|false
+  cofactors_or_ions_kept: null      # list or none
+  flexible_residues: null           # list or none (rigid)
+  output_format: null               # e.g. PDBQT | mol2 | Maestro(.maegz) | PDB
+  prep_software: null               # e.g. Meeko 0.5 | ADFR | Maestro 2024 | MOE
+  output_file: inputs/receptor.<ext>
+
+# ---------- LIGAND preprocessing (what you did to the shared ligands.sdf) ----------
+ligand:
+  source: input/canonical/ligands/ligands.sdf          # shared 3D conformers (with Hs)
+  used_canonical_3d: null           # true = docked the shared conformers as-is (preferred for fairness)
+  regenerated_conformers: null      # true|false + method if you re-embedded
+  protonation_pH: 7.4
+  tautomers_enumerated: null        # true|false + tool
+  charges_method: null              # e.g. Gasteiger | AM1-BCC | none
+  output_format: null               # e.g. PDBQT | mol2 | SDF
+  prep_software: null
+  output_file: inputs/ligands.<ext>
+
+# ---------- BINDING SITE / BOX ----------
+binding_site:
+  source: input/canonical/targets/PahP/binding_site.yaml
+  mode: null                        # defined | blind
+  center_xyz: null                  # [x, y, z] in angstrom, or null if blind
+  size_xyz: null                    # [x, y, z] in angstrom, or null if blind
+  pocket_detection: null            # e.g. server-auto | fpocket | P2Rank | manual
+
+# ---------- provenance ----------
+software_versions: {}               # {receptor_prep: "...", ligand_prep: "...", docking: "..."}
+random_seed: null
+assumptions_and_deviations: []      # anything you changed vs canonical, and WHY (list of strings)
+notes: ""

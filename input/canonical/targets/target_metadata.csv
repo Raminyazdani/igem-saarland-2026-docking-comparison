@@ -1,0 +1,3 @@
+target_id,protein_name,source_constructs,length_aa,membrane,role,structure_status,dock_priority,notes
+PahP,PahP (periplasmic PAH-binding protein),piGEM002/piGEM003/GF2/GF3,317,no,PRIMARY docking target (directly binds PAH),BLOCKED_no_experimental_structure_needs_AlphaFold,1,Remove N-terminal signal peptide -> dock mature domain
+PahS,PahS (outer-membrane PAH sensor),piGEM001/GF1,686,yes,SECONDARY (blind docking only),BLOCKED_no_experimental_structure_needs_AlphaFold,2,Membrane protein; interpret cautiously

@@ -1,0 +1,18 @@
+# PLACEHOLDER - binding site / docking box for PahP
+# TODO: define pocket AFTER structure.pdb is a real AlphaFold model - do not fabricate coordinates.
+# status: BLOCKED (depends on structure.pdb)
+#
+# Fill with fpocket / P2Rank output on the cleaned PahP structure, then re-freeze as input-v1.
+# All six box numbers must be present (in angstrom) and units must be "angstrom" for validation to pass.
+
+target_id: PahP
+status: PLACEHOLDER          # change to DEFINED once the six numbers below are real
+mode: blind                  # blind | defined  (defined once a real pocket is chosen)
+source: TODO                 # e.g. P2Rank pocket 1 / fpocket
+units: angstrom
+center_x: null               # TODO
+center_y: null               # TODO
+center_z: null               # TODO
+size_x: null                 # TODO
+size_y: null                 # TODO
+size_z: null                 # TODO

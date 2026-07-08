@@ -1,0 +1,12 @@
+# Per-tool .gitignore for Uni-Mol Docking (tool/uni-mol) — MANAGED BY Ramin & Elnaz (coordinators).
+#
+# Policy for this project: we COMMIT everything so coordinators can review all files.
+# Keep this list MINIMAL. Only genuinely disposable, tool-specific scratch belongs here.
+# Do NOT ignore prepared inputs, native outputs, logs, poses, or results — reviewers need those.
+# Ask a coordinator before adding anything here.
+
+# examples (uncomment only if this tool produces them AND they are truly disposable):
+# *.tmp
+# *.bak
+# scratch/
+# .cache/

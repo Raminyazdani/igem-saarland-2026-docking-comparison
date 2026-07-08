@@ -1,0 +1,9 @@
+# Code owners = the repo admins (Ramin & Elnaz). With "Require review from Code Owners" enabled on
+# main/develop, every PR needs an approval from Ramin or Elnaz before it can merge.
+#
+# TODO: replace these placeholders with the real GitHub usernames (keep the leading @).
+* @RAMIN-GITHUB-USERNAME @ELNAZ-GITHUB-USERNAME
+
+# The shared, frozen inputs and the analysis scripts are especially protected.
+/input/canonical/   @RAMIN-GITHUB-USERNAME @ELNAZ-GITHUB-USERNAME
+/scripts/           @RAMIN-GITHUB-USERNAME @ELNAZ-GITHUB-USERNAME

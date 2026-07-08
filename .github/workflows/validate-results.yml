@@ -1,0 +1,28 @@
+# Auto-validates any DOCKING_RESULT.json in a PR into develop, so broken result files never merge.
+# Make this a REQUIRED status check on develop (SETUP_GITHUB.md, step 8) to enforce it.
+name: Validate docking results
+
+on:
+  pull_request:
+    branches: [develop]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Install deps
+        run: pip install -r scripts/compare_results/requirements.txt
+      - name: Validate result files (if any)
+        shell: bash
+        run: |
+          shopt -s nullglob
+          files=(tools/*/results/DOCKING_RESULT.json)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No tools/*/results/DOCKING_RESULT.json yet - nothing to validate."
+            exit 0
+          fi
+          python scripts/compare_results/validate_results.py "${files[@]}"

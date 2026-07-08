@@ -1,0 +1,15 @@
+# Progress tracker for Discovery Studio 2019 (tool/discovery-studio). Update as you go.
+# Read by scripts/compare_preprocessing/status_overview.py for a team-wide dashboard.
+tool: Discovery Studio 2019
+branch: tool/discovery-studio
+owners: [UNASSIGNED]
+
+preprocessing_status: not_started   # not_started | in_progress | done
+docking_status: not_started         # not_started | in_progress | done
+result_committed: false             # true once results/DOCKING_RESULT.json is filled + validated
+poses_committed: false
+
+last_updated: 2026-07-08
+blockers:
+  - "Waiting on input-v1: canonical PahP structure.pdb + binding_site.yaml are still TODO placeholders"
+notes: ""

@@ -1,0 +1,22 @@
+# Glide (Schrodinger) docking parameters (tool/glide).
+# These feed run_docking.sh and get copied into DOCKING_RESULT.json -> docking_parameters.
+tool: Glide (Schrodinger)
+branch: tool/glide
+
+# How Glide (Schrodinger)'s native score should be read for ranking.
+# Vina/Glide: lower_is_better ; GOLD: higher_is_better ; CONFIRM for your tool.
+score_direction: lower_is_better   # CONFIRM
+score_unit: null                        # e.g. kcal/mol | ChemPLP | GlideScore | confidence
+
+# Search box (fill from input/canonical/targets/PahP/binding_site.yaml once it is real).
+box:
+  mode: null            # defined | blind
+  center_xyz: null      # [x, y, z] angstrom
+  size_xyz: null        # [x, y, z] angstrom
+
+# Sampling / scoring settings (tool-specific).
+exhaustiveness: null    # e.g. 16 (Vina); null if N/A
+num_poses: null         # poses to keep per ligand
+scoring_function: null  # e.g. vina | ChemPLP | SP/XP | CDOCKER
+random_seed: 42         # fix where the tool allows, for reproducibility
+extra: {}               # any other tool-specific flags

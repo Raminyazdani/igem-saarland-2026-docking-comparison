@@ -1,0 +1,11 @@
+TODO: choose a license.
+
+No license has been selected for this repository yet. Until one is added here, default
+copyright applies and reuse terms are undefined.
+
+Suggested options (Ramin/Elnaz to decide):
+  - MIT           — permissive, good for the code in scripts/
+  - CC-BY 4.0     — good for data/figures/wiki content
+  - A split: MIT for scripts/, CC-BY 4.0 for input/ and reports/
+
+Replace this file with the full text of the chosen license before making the repository public.

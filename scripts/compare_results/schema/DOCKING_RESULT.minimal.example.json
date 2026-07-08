@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "tool_name": "CB-Dock3",
+  "branch": "tool/cb-dock",
+  "team_members": ["Samruddhi"],
+  "software_version": "web-2026-06",
+  "date_completed": "2026-07-20",
+  "input_commit_hash": "a1b2c3d",
+  "score_direction": "lower_is_better",
+  "receptor_prep_method": "server default",
+  "ligand_prep_method": "canonical ligands.sdf",
+  "docking_parameters": {"mode": "blind auto-cavity"},
+  "results": [
+    {"target_id": "PahP", "ligand_id": "pyrene", "docking_score": -8.2, "score_unit": "vina", "rank_within_tool": 1, "pose_file": "tools/cb-dock/results/poses/PahP__pyrene__cb-dock__v1.pdb", "status": "ok"}
+  ]
+}

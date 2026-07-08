@@ -1,0 +1,41 @@
+# Canonical docking config - the SINGLE SOURCE OF TRUTH for the shared comparison.
+# EDIT ONLY on main, then re-freeze (tag a new input-vN). Teams must NOT edit this on tool branches.
+project: iGEM Saarland 2026 - PAH biosensor docking comparison
+input_version: v0-draft          # becomes "v1" ONLY after both targets have a real structure.pdb + binding_site.yaml, then tag input-v1
+primary_question: Does PahP bind our PAH panel, where, how strongly, and which tool ranks them most reliably?
+
+# --- shared receptors everyone docks into ---
+targets:
+  - id: PahP
+    priority: 1                                       # PRIMARY docking target
+    structure: targets/PahP/structure.pdb             # PLACEHOLDER (BLOCKED - AlphaFold model TODO)
+    structure_status: PLACEHOLDER                     # PLACEHOLDER | READY
+    binding_site: targets/PahP/binding_site.yaml      # PLACEHOLDER (TODO after structure)
+  - id: PahS
+    priority: 2                                       # SECONDARY (blind docking only, membrane protein)
+    structure: targets/PahS/structure.pdb             # PLACEHOLDER (BLOCKED - AlphaFold model TODO)
+    structure_status: PLACEHOLDER
+    binding_site: targets/PahS/binding_site.yaml      # PLACEHOLDER (TODO after structure)
+
+# --- shared ligands (identical for every tool) ---
+ligands_file: ligands/ligands.sdf                     # standardized 3D conformers (with Hs)
+ligands_smiles: ligands/ligands.smi
+ligand_metadata: ligands/ligand_metadata.csv
+protonation_pH: 7.4
+
+# --- fairness rule enforced by the comparison package ---
+# Raw scores from different tools are NOT on the same scale. Compare RANKS, never raw scores across tools.
+# Each team records score_direction in its own DOCKING_RESULT.json (Vina/Glide lower-is-better; GOLD higher-is-better).
+scores_not_directly_comparable: true
+
+# --- one branch + one workspace folder (tools/<slug>/) per tool; owners are the assigned members ---
+# Each team works only in its own tools/<slug>/ folder, in two steps: preprocessing/ then docking/.
+tools:
+  - {branch: tool/autodock-vina,    workspace: tools/autodock-vina,    tool: AutoDock Vina,          licence: free,       licence_status: available,        owners: [Ana, Divyashree]}
+  - {branch: tool/gold,             workspace: tools/gold,             tool: GOLD (CCDC),            licence: commercial, licence_status: TODO_unconfirmed, owners: [Moulya]}
+  - {branch: tool/glide,            workspace: tools/glide,            tool: Glide (Schrodinger),    licence: commercial, licence_status: TODO_unconfirmed, owners: [Ramin]}
+  - {branch: tool/cb-dock,          workspace: tools/cb-dock,          tool: CB-Dock3,               licence: free_web,   licence_status: available,        owners: [Samruddhi, Marwan]}
+  - {branch: tool/uni-mol,          workspace: tools/uni-mol,          tool: Uni-Mol Docking,        licence: free,       licence_status: available,        owners: [Elnaz, Sadaf]}
+  - {branch: tool/discovery-studio, workspace: tools/discovery-studio, tool: Discovery Studio 2019,  licence: commercial, licence_status: TODO_unconfirmed, owners: [UNASSIGNED]}
+  # Optional free fallback if a commercial licence is unavailable (copy tools/_TEMPLATE -> tools/smina):
+  # - {branch: tool/smina,          workspace: tools/smina,            tool: smina,                  licence: free,       licence_status: available,        owners: [TODO]}

@@ -1,0 +1,13 @@
+REMARK  PLACEHOLDER - NOT A REAL STRUCTURE
+REMARK  TODO: AlphaFold/ColabFold model of PahS - do not fabricate
+REMARK  target_id: PahS
+REMARK  status: BLOCKED - no experimental structure exists yet
+REMARK
+REMARK  How to fill this file (Ramin/Elnaz):
+REMARK    1. Fold input/canonical/targets/PahS/sequence.fasta with ColabFold/AlphaFold.
+REMARK    2. PahS is an outer-membrane protein - interpret any docking cautiously (blind docking only).
+REMARK    3. Clean the model (single chain), save real ATOM records here.
+REMARK    4. Then define input/canonical/targets/PahS/binding_site.yaml and re-freeze as input-v1.
+REMARK
+REMARK  This file intentionally contains NO ATOM records so validators flag PahS as BLOCKED.
+END
