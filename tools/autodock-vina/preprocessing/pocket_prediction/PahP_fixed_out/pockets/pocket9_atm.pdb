@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     9:
+HEADER 0  - Pocket Score                      : 0.0824
+HEADER 1  - Drug Score                        : 0.0036
+HEADER 2  - Number of alpha spheres           :    28
+HEADER 3  - Mean alpha-sphere radius          : 3.8728
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4634
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 24.3750
+HEADER 7  - Polarity Score                    :     5
+HEADER 8  - Amino Acid based volume Score     : 3.5000
+HEADER 9  - Pocket volume (Monte Carlo)       : 228.2050
+HEADER 10 - Pocket volume (convex hull)       : 5.0494
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 9.0000
+HEADER 13 - Number of apolar alpha sphere     :    10
+HEADER 14 - Proportion of apolar alpha sphere : 0.3571
+ATOM    437  OD1 ASP A  27      51.674  59.897  68.523  0.40  9.64           O 0
+ATOM    927   OG SER A  58      46.529  62.667  68.645  0.48  7.50           O 0
+ATOM     11   CZ PHE A   1      45.315  63.251  72.142  0.00  0.00           C 0
+ATOM      9  CE1 PHE A   1      46.199  64.271  71.774  0.00  0.00           C 0
+ATOM      7  CD1 PHE A   1      47.040  64.845  72.735  0.00  0.00           C 0
+ATOM    447   CB ASN A  28      53.544  63.489  70.794  0.00  0.00           C 0
+ATOM     10  CE2 PHE A   1      45.279  62.805  73.469  0.00  0.00           C 0
+ATOM      8  CD2 PHE A   1      46.124  63.384  74.426  0.00  0.00           C 0
+ATOM    933    N SER A  59      47.917  61.583  66.115  0.65  1.09           N 0
+ATOM    923   CA SER A  58      47.292  63.849  66.611  0.00  0.00           C 0
+ATOM      6   CG PHE A   1      47.002  64.426  74.069  0.00  0.00           C 0
+ATOM    450  ND2 ASN A  28      53.694  64.695  72.925  0.76  9.84           N 0
+ATOM     61  CG2 VAL A   4      48.752  66.393  70.053  0.00  0.00           C 0
+ATOM    938   OG SER A  59      48.908  59.300  67.449  0.76  6.43           O 0
+ATOM      5   CB PHE A   1      47.918  65.082  75.083  0.00  0.00           C 0
+ATOM    443    N ASN A  28      53.470  62.374  68.619  0.00  0.00           N 0
+ATOM    432   CA ASP A  27      52.583  61.543  66.512  0.00  0.00           C 0
+ATOM    911    O THR A  57      48.606  66.226  66.585  0.84  1.07           O 0
+ATOM    407  CG2 ILE A  25      52.320  65.671  65.973  0.00  0.00           C 0
+TER
+END

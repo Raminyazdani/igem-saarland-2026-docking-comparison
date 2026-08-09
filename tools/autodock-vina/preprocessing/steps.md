@@ -1,32 +1,43 @@
-# Preprocessing — AutoDock Vina
+# Preprocessing steps — AutoDock Vina (PahP + pyrene)
 
-**Goal of this step:** state *exactly* what preparation AutoDock Vina needs to turn the shared canonical
-inputs into something it can dock, and then do it reproducibly. This is deliberately separated from the
-docking step so all six tools' recipes can be compared and, ideally, merged into one shared preprocessing.
+## Receptor
+Used the canonical `PahP/structure.pdb` as-is (already protonated, hydrogens present,
+chain A assigned, no waters/hetero groups present). Converted to PDBQT with Open Babel
+3.1.0 (`obabel structure.pdb -O receptor.pdbqt -xr`), which assigns Gasteiger charges
+and sets up the rigid receptor.
 
-## What to produce here
-1. A filled [`PREPROCESSING.yaml`](PREPROCESSING.yaml) — the structured manifest (keep the keys identical
-   across tools; it is read side-by-side by `scripts/compare_preprocessing/`).
-2. This `steps.md` — a short human narrative: what was necessary, what you did, and any judgement calls.
-3. [`preprocess.sh`](preprocess.sh) — a script that reproduces the preparation from `input/canonical/`
-   into `../inputs/`. If your tool is GUI/web-only, list the exact clicks/settings here instead.
+## Ligand
+Extracted pyrene from the canonical `ligands.sdf` (matched by name in
+`ligand_metadata.csv`), used the shared 3D conformer as-is, converted to PDBQT with
+Open Babel 3.1.0.
 
-## Narrative (fill this in)
-### Receptor
-- Source: `input/canonical/targets/PahP/structure.pdb` (primary target PahP).
-- Necessary steps for AutoDock Vina: _TODO_ (signal peptide? protonation? charges? format?).
-- What I did: _TODO_.
+## Binding site
+The canonical `binding_site.yaml` was still an unfilled placeholder at the time of this
+work (structure had just been added; box definition was marked BLOCKED/TODO). Ran
+fpocket 4.2.2 on the receptor to identify candidate pockets.
 
-### Ligands
-- Source: `input/canonical/ligands/ligands.sdf` (shared 3D conformers).
-- Necessary steps for AutoDock Vina: _TODO_.
-- Did you keep the canonical 3D conformers as-is? _TODO_ (preferred for fairness).
+fpocket's default ranking (its general "Score") favored a pocket that was mildly polar
+and low in druggability. Since druggability is calibrated for oral-drug-likeness and
+this project is a PAH water-pollution biosensor, not a drug-discovery target, re-ranked
+all 17 candidate pockets using a composite of hydrophobicity score, apolar SASA, and
+count of aromatic lining residues (PHE/TYR/TRP — relevant for pi-stacking with a flat
+PAH ring system like pyrene), filtering out pockets too small to fit pyrene (<250 A^3).
 
-### Binding site / box
-- Source: `input/canonical/targets/PahP/binding_site.yaml`.
-- Mode (defined/blind) and any box handling: _TODO_.
+Pocket 4 was the clear winner on this composite (0.896, next-best 0.674), lined by
+4 aromatic residues (PHE123, TYR271, TYR274, PHE306) — the only candidate pocket with
+more than one aromatic residue.
 
-## Fairness reminder
-Change as little as possible from the canonical inputs. Where a tool *forces* a change, record it under
-`assumptions_and_deviations` in `PREPROCESSING.yaml` with the reason — those deviations are exactly what we
-need to reconcile when designing the shared preprocessing.
+## Independent validation
+Cross-checked by blind-docking pyrene against the whole receptor (no pocket bias, Vina
+searching the entire protein, exhaustiveness 32). The 10 best-affinity poses (-7.98 to
+-6.65 kcal/mol) all landed within 1.3-2.4 A of the Pocket 4 center — Vina's own energy
+scoring independently converged on the same site.
+
+## Resulting box
+center: [70.83, 71.96, 59.18], size: [21.3, 19.6, 27.3] (angstrom)
+
+Proposing this as the shared `binding_site.yaml` value for team review (Ana/Elnaz),
+since the fairness rule requires an identical box across all tools.
+
+## Scope of this commit
+PahP + pyrene only. PahS/naphthalene is Ana's assignment and is not included here.
