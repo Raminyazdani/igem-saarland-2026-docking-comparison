@@ -1,0 +1,40 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    50:
+HEADER 0  - Pocket Score                      : -0.1146
+HEADER 1  - Drug Score                        : 0.0235
+HEADER 2  - Number of alpha spheres           :    25
+HEADER 3  - Mean alpha-sphere radius          : 3.9603
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5369
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 32.7500
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 4.1250
+HEADER 9  - Pocket volume (Monte Carlo)       : 294.5460
+HEADER 10 - Pocket volume (convex hull)       : 16.3451
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 17.0000
+HEADER 13 - Number of apolar alpha sphere     :    18
+HEADER 14 - Proportion of apolar alpha sphere : 0.7200
+ATOM   7052    O VAL A 453      67.949  71.573 104.460  0.47  1.07           O 0
+ATOM   7090  OD1 ASN A 455      70.623  72.780 105.628  0.77  2.14           O 0
+ATOM   8201  CG1 VAL A 528      71.596  77.712 101.813  0.00  0.00           C 0
+ATOM   7088   CB ASN A 455      68.822  74.312 106.017  0.00  0.00           C 0
+ATOM   7120   CG PRO A 457      66.126  77.358 102.083  0.00  0.00           C 0
+ATOM   8202  CG2 VAL A 528      69.493  78.152 100.487  0.00  0.00           C 0
+ATOM   7053   CB VAL A 453      68.330  70.186 102.117  0.00  0.00           C 0
+ATOM   8182   NZ LYS A 527      73.665  74.316 104.854  0.68  3.28           N 0
+ATOM   7054  CG1 VAL A 453      69.293  69.325 102.971  0.00  0.00           C 0
+ATOM   7036  CD1 LEU A 452      66.238  72.670  97.552  0.00  0.00           C 0
+ATOM   7055  CG2 VAL A 453      68.229  69.567 100.702  0.00  0.00           C 0
+ATOM   7035   CG LEU A 452      65.633  73.519  98.688  0.00  0.00           C 0
+ATOM   8180   CD LYS A 527      71.959  76.031 105.389  0.00  0.00           C 0
+ATOM   7033    O LEU A 452      65.800  72.746 101.734  0.60  2.14           O 0
+ATOM   7037  CD2 LEU A 452      65.310  74.945  98.199  0.00  0.00           C 0
+ATOM   7847  CG2 THR A 503      70.582  79.809  96.585  0.00  0.00           C 0
+ATOM   7154  CD1 LEU A 459      66.709  79.034  97.118  0.00  0.00           C 0
+ATOM   7121   CD PRO A 457      65.928  76.969 103.539  0.00  0.00           C 0
+TER
+END

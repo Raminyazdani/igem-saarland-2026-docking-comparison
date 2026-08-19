@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "tool_name": "AutoDock Vina",
+  "branch": "tool/autodock-vina",
+  "team_members": ["Ana", "Divyashree"],
+  "software_version": "1.2.7",
+  "date_completed": "2026-08-19",
+  "input_commit_hash": "6564a76",
+  "score_direction": "lower_is_better",
+  "receptor_prep_method": "canonical PahP structure.pdb; PDBQT via Meeko",
+  "ligand_prep_method": "canonical ligands.sdf; Gasteiger charges; PDBQT via Meeko",
+  "docking_parameters": {"exhaustiveness": 32, "num_modes": 9, "box_center": [59.48, 74.74, 91.71], "box_size": [21, 23, 22], "seed": 42},
+  "hardware": "14-core CPU",
+  "runtime_total_sec": null,
+  "results": [
+    {"target_id": "PahS", "ligand_id": "benzo_a_pyrene", "pubchem_cid": "2336", "docking_score": -8.595, "score_unit": "kcal/mol", "rank_within_tool": 1, "pose_file": "tools/autodock-vina/PahS/results/poses/PahS__benzo-a-pyrene__autodock-vina__v1.pdbqt", "runtime_sec": null, "status": "ok", "failure_reason": null, "notes": "buried in hydrophobic pocket"},
+    {"target_id": "PahS", "ligand_id": "pyrene", "pubchem_cid": "31423", "docking_score": -7.863, "score_unit": "kcal/mol", "rank_within_tool": 2, "pose_file": "tools/autodock-vina/PahS/results/poses/PahS__pyrene__autodock-vina__v1.pdbqt", "runtime_sec": null, "status": "ok", "failure_reason": null, "notes": "primary target ligand"},
+    {"target_id": "PahS", "ligand_id": "anthracene", "pubchem_cid": "8418", "docking_score": -7.909, "score_unit": "kcal/mol", "rank_within_tool": 3, "pose_file": "tools/autodock-vina/PahS/results/poses/PahS__anthracene__autodock-vina__v1.pdbqt", "runtime_sec": null, "status": "ok", "failure_reason": null, "notes": ""},
+    {"target_id": "PahS", "ligand_id": "phenanthrene", "pubchem_cid": "995", "docking_score": -8.258, "score_unit": "kcal/mol", "rank_within_tool": 4, "pose_file": "tools/autodock-vina/PahS/results/poses/PahS__phenanthrene__autodock-vina__v1.pdbqt", "runtime_sec": null, "status": "ok", "failure_reason": null, "notes": ""},
+    {"target_id": "PahS", "ligand_id": "naphthalene", "pubchem_cid": "931", "docking_score": -5.223, "score_unit": "kcal/mol", "rank_within_tool": 5, "pose_file": "tools/autodock-vina/PahS/results/poses/PahS__naphthalene__autodock-vina__v1.pdbqt", "runtime_sec": null, "status": "ok", "failure_reason": null, "notes": "smallest PAH, weaker as expected"},
+    {"target_id": "PahS", "ligand_id": "glucose_NEGCTRL", "pubchem_cid": "5793", "docking_score": -5.682, "score_unit": "kcal/mol", "rank_within_tool": 6, "pose_file": "tools/autodock-vina/PahS/results/poses/PahS__glucose_NEGCTRL__autodock-vina__v1.pdbqt", "runtime_sec": null, "status": "ok", "failure_reason": null, "notes": "negative control - weak, as expected"},
+    {"target_id": "PahS", "ligand_id": "fluoranthene", "pubchem_cid": "9154", "docking_score": -8.004, "score_unit": "kcal/mol", "rank_within_tool": 7, "pose_file": "tools/autodock-vina/PahS/results/poses/PahS__fluoranthene__autodock-vina__v1.pdbqt", "runtime_sec": null, "status": "ok", "failure_reason": null, "notes": ""}
+  ],
+  "failed_cases": [],
+  "warnings": [],
+  "notes": "Different binding pocket for naphthalene; some poses file contain only 3-4 filtered out poses, others all 9."
+}

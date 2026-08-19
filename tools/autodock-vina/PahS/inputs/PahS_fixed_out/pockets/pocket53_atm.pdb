@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    53:
+HEADER 0  - Pocket Score                      : -0.1338
+HEADER 1  - Drug Score                        : 0.0000
+HEADER 2  - Number of alpha spheres           :    22
+HEADER 3  - Mean alpha-sphere radius          : 4.1864
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5621
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 11.0000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 3.8000
+HEADER 9  - Pocket volume (Monte Carlo)       : 368.7824
+HEADER 10 - Pocket volume (convex hull)       : 15.0751
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 1.0000
+HEADER 13 - Number of apolar alpha sphere     :     2
+HEADER 14 - Proportion of apolar alpha sphere : 0.0909
+ATOM   2968  OD1 ASP A 192      55.942  75.333  41.383  0.00  0.00           O 0
+ATOM   2969  OD2 ASP A 192      54.110  76.543  41.053  0.00  0.00           O 0
+ATOM   3519  ND1 HIS A 229      59.626  82.545  38.664  0.00  0.00           N 0
+ATOM   3521  CE1 HIS A 229      58.825  82.734  37.588  0.00  0.00           C 0
+ATOM   3513    N HIS A 229      58.776  83.594  42.070  0.00  0.00           N 0
+ATOM   3500   CA THR A 228      56.627  83.561  43.207  0.00  0.00           C 0
+ATOM   3522  NE2 HIS A 229      58.470  84.000  37.481  0.74  6.56           N 0
+ATOM   2967   CG ASP A 192      54.843  75.812  41.771  0.00  0.00           C 0
+ATOM   3466    O GLN A 226      55.299  79.376  44.664  0.60  5.36           O 0
+ATOM   3502    O THR A 228      58.474  82.151  43.761  0.70  3.21           O 0
+ATOM   3483    O ILE A 227      54.023  82.632  43.890  0.32  9.64           O 0
+ATOM   3505  CG2 THR A 228      56.302  85.761  42.021  0.00  0.00           C 0
+ATOM   3467   CB GLN A 226      57.665  77.935  45.121  0.00  0.00           C 0
+ATOM   3514   CA HIS A 229      60.117  83.172  41.722  0.00  0.00           C 0
+ATOM   3516    O HIS A 229      61.950  82.369  43.016  0.00  9.64           O 0
+ATOM   3470  OE1 GLN A 226      60.587  77.871  46.228  0.54  6.43           O 0
+ATOM   3501    C THR A 228      58.039  83.049  43.041  0.00  0.00           C 0
+TER
+END
