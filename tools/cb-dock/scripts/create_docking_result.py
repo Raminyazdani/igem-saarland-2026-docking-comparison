@@ -154,10 +154,7 @@ def main() -> None:
         "runtime_total_sec": config["runtime_total_sec"],
         "results": results,
         "failed_cases": [],
-        "warnings": [
-            "Receptor model provenance and exact preparation command must "
-            "be confirmed before final submission."
-        ],
+        "warnings": config.get("warnings", []),
         "notes": (
             "Primary results use CB-Dock3 structure-based blind docking. "
             "For each target-ligand pair, the CurPocket cavity with the "

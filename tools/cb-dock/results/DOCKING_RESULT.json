@@ -216,7 +216,8 @@
   ],
   "failed_cases": [],
   "warnings": [
-    "Receptor model provenance and exact preparation command must be confirmed before final submission."
+    "Input commit 6564a76 is the v0-draft scaffold commit, not a frozen input-v1 tag.",
+    "Receptor model provenance and the exact OpenMM/PDBFixer preparation command still need confirmation."
   ],
   "notes": "Primary results use CB-Dock3 structure-based blind docking. For each target-ligand pair, the CurPocket cavity with the lowest AutoDock Vina score was selected. Template-based docking results, where available, were not used for ranking."
 }

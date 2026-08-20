@@ -6,13 +6,13 @@ owners: [Samruddhi, Marwan]
 
 preprocessing_status: done   # not_started | in_progress | done
 docking_status: done                # not_started | in_progress | done
-result_committed: false             # true once results/DOCKING_RESULT.json is filled + validated
-poses_committed: false
+result_committed: true              # results/DOCKING_RESULT.json is tracked and validated
+poses_committed: true
 
-last_updated: 2026-08-20
+last_updated: 2026-08-21
 blockers:
   - "No frozen input-v1 tag exists, so input_commit_hash cannot yet be filled correctly."
   - "The original receptor models and exact preparation command are not recorded."
   - "The prepared receptors omit residues 1-9 but do not demonstrably remove the annotated signal peptide."
-  - "requirements.txt is coordinator-managed and does not yet list PyYAML and Playwright."
-notes: "All 14 web jobs and downloaded outputs are present; final submission remains blocked by input provenance and validation."
+  - "requirements.txt is coordinator-managed and does not yet list PyYAML 6.0.1 and Playwright 1.62.0."
+notes: "All 14 web jobs, outputs, selected poses, and the validated result are committed. Scientific provenance remains blocked as listed above."
