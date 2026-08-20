@@ -15,3 +15,16 @@ python ../../../scripts/compare_results/validate_results.py ./DOCKING_RESULT.jso
 ```
 Commit `DOCKING_RESULT.json` and everything in `poses/`. Bulky native output stays in `../outputs/`
 (committed too, so it can be reviewed).
+
+## CB-Dock3 helper commands
+
+Run from the repository root:
+
+```bash
+python tools/cb-dock/scripts/summarize_cb_dock_results.py
+python tools/cb-dock/scripts/collect_best_poses.py
+python tools/cb-dock/scripts/create_docking_result.py --input-commit-hash <input-v1-hash>
+python scripts/compare_results/validate_results.py tools/cb-dock/results/DOCKING_RESULT.json
+```
+
+The input hash cannot be filled correctly until the coordinators freeze and tag `input-v1`.

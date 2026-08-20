@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 # Reproducible preprocessing for CB-Dock3 (tool/cb-dock).
 # Reads ONLY the shared canonical inputs and writes prepared files into ../inputs/.
-# Replace the TODO commands with your tool's real preparation. Keep it reproducible.
+# Recreates the ligand split and checks the existing prepared receptor files.
 #
-# If CB-Dock3 is GUI/web-only and cannot be scripted, leave this as documentation and
-# record the exact settings/clicks in steps.md instead.
+# Receptor regeneration remains blocked until its source and preparation command are recorded.
 set -euo pipefail
 
 HERE="$(cd "$(dirname "$0")" && pwd)"
@@ -22,12 +21,32 @@ echo "[cb-dock] receptor : $RECEPTOR"
 echo "[cb-dock] ligands  : $LIGANDS"
 echo "[cb-dock] box      : $BOX"
 
-# --- RECEPTOR prep (TODO: e.g. strip signal peptide, protonate pH 7.4, convert to your format) ---
-# example (AutoDock/Meeko):  mk_prepare_receptor.py -i "$RECEPTOR" -o "$INPUTS/receptor.pdbqt"
-echo "TODO: prepare receptor -> $INPUTS/receptor.<ext>"
+# The prepared receptor models already used for the web runs live here. Their
+# original model source and exact OpenMM preparation command still need to be
+# supplied before this step is fully reproducible.
+for prepared_receptor in "$INPUTS/protein/PahP_fixed.pdb" "$INPUTS/protein/PahS_fixed.pdb"; do
+  test -s "$prepared_receptor" || {
+    echo "Missing prepared receptor: $prepared_receptor" >&2
+    exit 1
+  }
+done
+echo "[cb-dock] prepared receptor files found (provenance still pending)"
 
-# --- LIGAND prep (TODO: keep canonical 3D conformers; add charges/format as your tool needs) ---
-# example:  mk_prepare_ligand.py -i "$LIGANDS" --multimol_outdir "$INPUTS/ligands_pdbqt"
-echo "TODO: prepare ligands -> $INPUTS/ligands.<ext>"
+# Split the canonical multi-record SDF without changing any molecular record.
+python - "$LIGANDS" "$INPUTS/ligands" <<'PY'
+from pathlib import Path
+import sys
 
-echo "[cb-dock] preprocessing done. Now fill PREPROCESSING.yaml and run ../docking/run_docking.sh"
+source = Path(sys.argv[1])
+output_dir = Path(sys.argv[2])
+output_dir.mkdir(parents=True, exist_ok=True)
+
+records = [record.strip() for record in source.read_text().split("$$$$") if record.strip()]
+for record in records:
+    ligand_id = record.splitlines()[0].strip()
+    (output_dir / f"{ligand_id}.sdf").write_text(record + "\n$$$$\n")
+
+print(f"[cb-dock] wrote {len(records)} unchanged ligand records to {output_dir}")
+PY
+
+echo "[cb-dock] ligand preprocessing done; receptor provenance remains a blocker"

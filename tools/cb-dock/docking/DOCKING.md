@@ -22,3 +22,15 @@ scripted). Write native output to [`../outputs/`](../outputs/).
 1. Native results + logs → `../outputs/`
 2. Final chosen poses → `../results/poses/` named `PahP__<ligand>__cb-dock__v1.<ext>`
 3. The standardized `../results/DOCKING_RESULT.json` (the single comparison file) — fill, validate, commit.
+
+## Settings used for the completed web runs
+
+- Mode: structure-based blind docking; template-based results were not used.
+- Pocket detection: CurPocket, five cavities per target–ligand pair.
+- Scoring: AutoDock Vina 1.2.0 in kcal/mol; lower is better.
+- Box: calculated automatically for each cavity.
+- Exhaustiveness and random seed: not exposed/set in the CB-Dock3 web interface.
+- Selection: the cavity pose with the lowest Vina score was retained for each pair.
+
+`../configurations/config.yaml` records these values for the local scripts; it is not uploaded to the
+CB-Dock3 website.
