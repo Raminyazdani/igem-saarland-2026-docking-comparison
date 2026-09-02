@@ -30,3 +30,13 @@ docking step so all six tools' recipes can be compared and, ideally, merged into
 Change as little as possible from the canonical inputs. Where a tool *forces* a change, record it under
 `assumptions_and_deviations` in `PREPROCESSING.yaml` with the reason — those deviations are exactly what we
 need to reconcile when designing the shared preprocessing.
+
+## What was done for these runs
+
+- `PahP_fixed.pdb` and `PahS_fixed.pdb` were uploaded as the receptor files. Their headers report OpenMM
+  8.5.2 and they contain hydrogens, but the original model source and exact preparation command are missing.
+- PahP contains 308 residues corresponding to canonical residues 10–317; PahS contains 677 residues
+  corresponding to residues 10–686. This does not confirm removal of the annotated signal peptide.
+- The canonical ligand SDF was split into seven individual SDF files without changing the molecular records.
+- CB-Dock3 detected the binding cavities automatically; no user-defined box was supplied.
+- These provenance/trimming points must be resolved before preprocessing can be marked `done`.

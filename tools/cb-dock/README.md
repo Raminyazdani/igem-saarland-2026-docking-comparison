@@ -38,3 +38,15 @@ Copy the repo-root template, fill it, validate it, commit it, and commit your fi
 - Read inputs only from `input/canonical/`. Never edit canonical inputs.
 - Touch only this folder (`tools/cb-dock/`) — not another tool's workspace.
 - Compare **ranks**, never raw scores across tools.
+
+## Current CB-Dock3 run notes
+
+- All seven ligands were run against PahP and PahS (14 web jobs total).
+- Each output folder contains five cavity poses, five complexes, and `CurPockets_info.txt`.
+- The individual ligand SDF files exactly match the records in the canonical SDF.
+- The run used structure-based blind docking, CurPocket (five cavities), and AutoDock Vina 1.2.0.
+- Final submission is still blocked because `input-v1` has not been frozen and the source/preparation command
+  for the two receptor models is not recorded.
+- Do not commit the duplicate `*_fixed.pdb` files under `input/canonical/`; keep tool-specific prepared files
+  under `tools/cb-dock/inputs/` and ask a coordinator to update canonical input.
+- See [`commands.md`](commands.md) for the local post-processing commands.

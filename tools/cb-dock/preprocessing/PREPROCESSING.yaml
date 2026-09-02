@@ -14,41 +14,45 @@ input_version_used: v0-draft        # set to "input-v1" once the canonical struc
 
 # ---------- RECEPTOR preprocessing (what you did to the shared structure.pdb) ----------
 receptor:
-  source: input/canonical/targets/PahP/structure.pdb   # the shared receptor (PahP primary)
-  signal_peptide_removed: null      # true|false ; if true, which residues (e.g. "1-24")
-  residue_range_used: null          # e.g. "25-317" (mature domain) or "full"
-  protonation_pH: 7.4               # match canonical unless you justify otherwise
-  hydrogens_added: null             # true|false + method
-  charges_method: null              # e.g. Gasteiger | AM1-BCC | Kollman | none
-  waters_removed: null              # true|false
-  cofactors_or_ions_kept: null      # list or none
-  flexible_residues: null           # list or none (rigid)
-  output_format: null               # e.g. PDBQT | mol2 | Maestro(.maegz) | PDB
-  prep_software: null               # e.g. Meeko 0.5 | ADFR | Maestro 2024 | MOE
-  output_file: inputs/receptor.<ext>
+  source: external predicted models; original provenance not yet recorded
+  signal_peptide_removed: false     # prepared files omit residues 1-9 only
+  residue_range_used: "PahP 10-317; PahS 10-686 (both renumbered from 1)"
+  protonation_pH: null              # exact preparation pH was not recorded
+  hydrogens_added: "true; OpenMM 8.5.2 according to PDB header"
+  charges_method: none
+  waters_removed: true
+  cofactors_or_ions_kept: none
+  flexible_residues: none
+  output_format: PDB
+  prep_software: "OpenMM 8.5.2; exact command not yet recorded"
+  output_file: "inputs/protein/{PahP_fixed,PahS_fixed}.pdb"
 
 # ---------- LIGAND preprocessing (what you did to the shared ligands.sdf) ----------
 ligand:
   source: input/canonical/ligands/ligands.sdf          # shared 3D conformers (with Hs)
-  used_canonical_3d: null           # true = docked the shared conformers as-is (preferred for fairness)
-  regenerated_conformers: null      # true|false + method if you re-embedded
-  protonation_pH: 7.4
-  tautomers_enumerated: null        # true|false + tool
-  charges_method: null              # e.g. Gasteiger | AM1-BCC | none
-  output_format: null               # e.g. PDBQT | mol2 | SDF
-  prep_software: null
-  output_file: inputs/ligands.<ext>
+  used_canonical_3d: true
+  regenerated_conformers: false
+  protonation_pH: null              # canonical records used without protonation changes
+  tautomers_enumerated: false
+  charges_method: none
+  output_format: SDF
+  prep_software: record splitting only; molecular records unchanged
+  output_file: inputs/ligands/<ligand_id>.sdf
 
 # ---------- BINDING SITE / BOX ----------
 binding_site:
-  source: input/canonical/targets/PahP/binding_site.yaml
-  mode: null                        # defined | blind
+  source: CB-Dock3 automatic cavity detection; canonical binding_site.yaml is a placeholder
+  mode: blind
   center_xyz: null                  # [x, y, z] in angstrom, or null if blind
   size_xyz: null                    # [x, y, z] in angstrom, or null if blind
-  pocket_detection: null            # e.g. server-auto | fpocket | P2Rank | manual
+  pocket_detection: CurPocket server-auto
 
 # ---------- provenance ----------
-software_versions: {}               # {receptor_prep: "...", ligand_prep: "...", docking: "..."}
+software_versions: {receptor_prep: "OpenMM 8.5.2", ligand_prep: "none", docking: "CB-Dock3 / AutoDock Vina 1.2.0"}
 random_seed: null
-assumptions_and_deviations: []      # anything you changed vs canonical, and WHY (list of strings)
-notes: ""
+assumptions_and_deviations:
+  - "Docking was performed before input-v1 was frozen; canonical receptor and binding-site files are placeholders."
+  - "Original receptor model provenance and the exact OpenMM/PDBFixer preparation command are missing."
+  - "Prepared receptors omit residues 1-9 but do not demonstrably remove the annotated signal peptide."
+  - "CB-Dock3 generated five cavity boxes automatically instead of using a shared defined box."
+notes: "All seven ligand files are exact, unchanged records from the canonical multi-record SDF."

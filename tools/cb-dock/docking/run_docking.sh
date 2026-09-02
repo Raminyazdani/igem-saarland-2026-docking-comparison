@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Docking run for CB-Dock3 (tool/cb-dock).
 # Consumes prepared inputs from ../inputs/ and writes native output to ../outputs/.
-# Replace the TODO commands with your tool's real docking call.
+# CB-Dock3 submission is manual since it's a web server; this script records the settings and paths.
 set -euo pipefail
 
 HERE="$(cd "$(dirname "$0")" && pwd)"
@@ -12,9 +12,10 @@ CONFIG="$TOOL_DIR/configurations/config.yaml"
 mkdir -p "$OUTPUTS"
 
 echo "[cb-dock] docking with config: $CONFIG"
-# example (AutoDock Vina):
-#   vina --receptor "$INPUTS/receptor.pdbqt" --ligand "$INPUTS/lig.pdbqt" \
-#        --config "$CONFIG" --out "$OUTPUTS/lig_out.pdbqt" --log "$OUTPUTS/lig.log"
-echo "TODO: run CB-Dock3 for each ligand -> $OUTPUTS/"
+echo "CB-Dock3 is a web server, so submission is manual."
+echo "Upload one prepared receptor PDB and one ligand SDF per job."
+echo "Use structure-based blind docking with five CurPocket cavities."
+echo "After each job, use scripts/download_cb_dock_results.py with its result URL."
+echo "Recorded local output directory: $OUTPUTS"
 
-echo "[cb-dock] docking done. Next: pick poses -> ../results/poses/, fill ../results/DOCKING_RESULT.json, validate."
+echo "[cb-dock] see DOCKING.md and ../commands.md for the full manual/local workflow"

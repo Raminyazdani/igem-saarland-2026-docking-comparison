@@ -10,3 +10,6 @@
 # TODO (Ramin/Elnaz): add + pin this tool's docking dependencies below.
 # CB-Dock3 is a web server. Usually no local deps.
 # requests   # only if you script uploads/downloads
+
+# Used by scripts/download_cb_dock_results.py for browser automation and downloads.
+playwright==1.62.0
