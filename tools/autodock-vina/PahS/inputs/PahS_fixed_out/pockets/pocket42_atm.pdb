@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    42:
+HEADER 0  - Pocket Score                      : -0.0597
+HEADER 1  - Drug Score                        : 0.0010
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 4.0492
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5562
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 13.9000
+HEADER 7  - Polarity Score                    :     8
+HEADER 8  - Amino Acid based volume Score     : 4.3000
+HEADER 9  - Pocket volume (Monte Carlo)       : 423.4614
+HEADER 10 - Pocket volume (convex hull)       : 21.9777
+HEADER 11 - Charge Score                      :     2
+HEADER 12 - Local hydrophobic density Score   : 2.0000
+HEADER 13 - Number of apolar alpha sphere     :     3
+HEADER 14 - Proportion of apolar alpha sphere : 0.1875
+ATOM   8220  NE2 GLN A 529      74.312  86.040 100.442  0.62  5.47           N 0
+ATOM   8291  CD1 LEU A 534      76.976  89.171  96.180  0.00  0.00           C 0
+ATOM   8896  NE2 HIS A 572      78.809  88.635 102.666  0.81  3.28           N 0
+ATOM   8878  OG1 THR A 571      79.513  88.639  99.182  0.81  9.64           O 0
+ATOM   8266  OD2 ASP A 532      73.375  90.356  95.188  0.40  7.50           O 0
+ATOM   8263   CB ASP A 532      73.171  88.025  94.698  0.00  0.00           C 0
+ATOM   8219  OE1 GLN A 529      72.287  86.847 101.098  0.46  7.50           O 0
+ATOM   7212   CE LYS A 462      69.809  92.309  93.698  0.00  0.00           C 0
+ATOM   7211   CD LYS A 462      69.172  90.913  93.783  0.00  0.00           C 0
+ATOM   7213   NZ LYS A 462      71.288  92.233  93.770  0.00  0.00           N 0
+ATOM   8879  CG2 THR A 571      78.425  86.635  98.352  0.00  0.00           C 0
+ATOM   8232    O THR A 530      70.106  86.157  95.859  0.60  3.21           O 0
+ATOM   7210   CG LYS A 462      67.636  90.919  93.660  0.00  0.00           C 0
+ATOM   8234  OG1 THR A 530      68.015  86.672  97.892  0.67  7.50           O 0
+ATOM   7999  CD1 LEU A 514      67.363  89.793 102.315  0.00  0.00           C 0
+ATOM   7194    O THR A 461      64.433  88.104  95.690  0.70  6.43           O 0
+ATOM   8000  CD2 LEU A 514      65.861  87.884 101.639  0.00  0.00           C 0
+ATOM   7209   CB LYS A 462      67.051  89.500  93.570  0.00  0.00           C 0
+ATOM   7173   CD ARG A 460      62.368  87.751 100.137  0.00  0.00           C 0
+ATOM   7998   CG LEU A 514      66.075  89.018 102.657  0.00  0.00           C 0
+TER
+END

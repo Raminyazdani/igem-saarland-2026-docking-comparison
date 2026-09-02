@@ -1,0 +1,37 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    13:
+HEADER 0  - Pocket Score                      : 0.0264
+HEADER 1  - Drug Score                        : 0.0000
+HEADER 2  - Number of alpha spheres           :    20
+HEADER 3  - Mean alpha-sphere radius          : 3.9154
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5683
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 27.7143
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 4.5714
+HEADER 9  - Pocket volume (Monte Carlo)       : 162.4493
+HEADER 10 - Pocket volume (convex hull)       : 3.1763
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     1
+HEADER 14 - Proportion of apolar alpha sphere : 0.0500
+ATOM   4870  OE2 GLU A 305      72.346  66.161  75.708  0.82  3.21           O 0
+ATOM   3740    O ARG A 233      68.886  61.106  77.977  0.33  7.50           O 0
+ATOM   3742   CG ARG A 233      67.954  64.015  76.645  0.00  0.00           C 0
+ATOM   3738   CA ARG A 233      69.331  61.989  75.816  0.00  0.00           C 0
+ATOM   4869  OE1 GLU A 305      70.431  67.121  76.315  0.67  5.36           O 0
+ATOM   4821    O ILE A 302      75.252  66.905  79.175  0.42  8.57           O 0
+ATOM   4471  ND2 ASN A 280      72.954  59.013  77.935  0.53  4.37           N 0
+ATOM   4470  OD1 ASN A 280      74.801  59.963  78.869  0.55  2.14           O 0
+ATOM   4509  ND2 ASN A 282      73.904  60.930  82.415  0.62  9.84           N 0
+ATOM   3721    O ILE A 232      71.216  59.892  75.638  0.00  0.00           O 0
+ATOM   4805  CD1 LEU A 301      74.547  62.799  74.895  0.00  0.00           C 0
+ATOM   4469   CG ASN A 280      74.256  59.420  77.904  0.00  0.00           C 0
+ATOM   4819   CA ILE A 302      75.666  65.227  77.520  0.00  0.00           C 0
+ATOM   4824  CG2 ILE A 302      76.753  63.093  78.197  0.00  0.00           C 0
+ATOM   4822   CB ILE A 302      76.741  64.607  78.419  0.00  0.00           C 0
+TER
+END

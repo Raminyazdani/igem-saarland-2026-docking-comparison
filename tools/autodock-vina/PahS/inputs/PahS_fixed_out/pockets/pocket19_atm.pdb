@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    19:
+HEADER 0  - Pocket Score                      : 0.0172
+HEADER 1  - Drug Score                        : 0.0092
+HEADER 2  - Number of alpha spheres           :    17
+HEADER 3  - Mean alpha-sphere radius          : 4.2619
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6821
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 15.8000
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 5.4000
+HEADER 9  - Pocket volume (Monte Carlo)       : 230.7004
+HEADER 10 - Pocket volume (convex hull)       : 2.0345
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 15.0000
+HEADER 13 - Number of apolar alpha sphere     :    16
+HEADER 14 - Proportion of apolar alpha sphere : 0.9412
+ATOM   5581   CG PRO A 358      49.416  75.469  88.215  0.00  0.00           C 0
+ATOM   5545  CD2 TYR A 356      49.697  81.010  83.815  0.00  0.00           C 0
+ATOM   5005  CE1 TYR A 324      50.030  74.566  83.891  0.00  0.00           C 0
+ATOM   5668  OG1 THR A 364      47.621  79.584  89.237  0.00  0.00           O 0
+ATOM   5542   CB TYR A 356      51.154  79.085  84.582  0.00  0.00           C 0
+ATOM   4485  NH2 ARG A 291      49.048  78.317  76.927  0.44  9.84           N 0
+ATOM   5546  CE1 TYR A 356      50.724  80.877  81.214  0.00  0.00           C 0
+ATOM   5006  CE2 TYR A 324      49.726  74.438  81.491  0.00  0.00           C 0
+ATOM   5004  CD2 TYR A 324      50.900  75.177  81.306  0.00  0.00           C 0
+ATOM   5669  CG2 THR A 364      49.157  80.664  87.728  0.00  0.00           C 0
+ATOM   5548   CZ TYR A 356      49.726  81.810  81.524  0.00  0.00           C 0
+ATOM   4483   CZ ARG A 291      49.120  77.013  76.592  0.00  0.00           C 0
+ATOM   4484  NH1 ARG A 291      47.983  76.313  76.408  0.56  4.37           N 0
+ATOM   5544  CD1 TYR A 356      51.186  79.998  82.201  0.00  0.00           C 0
+ATOM   5547  CE2 TYR A 356      49.206  81.867  82.823  0.00  0.00           C 0
+ATOM   5543   CG TYR A 356      50.693  80.063  83.521  0.00  0.00           C 0
+ATOM   5007   CZ TYR A 324      49.294  74.123  82.785  0.00  0.00           C 0
+TER
+END

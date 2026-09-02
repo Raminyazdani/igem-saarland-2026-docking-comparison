@@ -1,20 +1,13 @@
-#!/usr/bin/env bash
-# Docking run for AutoDock Vina (tool/autodock-vina).
-# Consumes prepared inputs from ../inputs/ and writes native output to ../outputs/.
-# Replace the TODO commands with your tool's real docking call.
-set -euo pipefail
+#!/bin/bash
+set -e
+cd "$(dirname "$0")/.."
 
-HERE="$(cd "$(dirname "$0")" && pwd)"
-TOOL_DIR="$(dirname "$HERE")"                 # tools/autodock-vina
-INPUTS="$TOOL_DIR/inputs"
-OUTPUTS="$TOOL_DIR/outputs"
-CONFIG="$TOOL_DIR/configurations/config.yaml"
-mkdir -p "$OUTPUTS"
+vina --receptor inputs/receptor.pdbqt --ligand inputs/pyrene.pdbqt \
+  --center_x 70.83 --center_y 71.96 --center_z 59.18 \
+  --size_x 21.3 --size_y 19.6 --size_z 27.3 \
+  --exhaustiveness 16 --num_modes 9 --seed 42 \
+  --out outputs/PahP__pyrene__autodock-vina__v1.pdbqt \
+  > outputs/PahP__pyrene__autodock-vina__v1.log 2>&1
 
-echo "[autodock-vina] docking with config: $CONFIG"
-# example (AutoDock Vina):
-#   vina --receptor "$INPUTS/receptor.pdbqt" --ligand "$INPUTS/lig.pdbqt" \
-#        --config "$CONFIG" --out "$OUTPUTS/lig_out.pdbqt" --log "$OUTPUTS/lig.log"
-echo "TODO: run AutoDock Vina for each ligand -> $OUTPUTS/"
-
-echo "[autodock-vina] docking done. Next: pick poses -> ../results/poses/, fill ../results/DOCKING_RESULT.json, validate."
+mkdir -p results/poses
+cp outputs/PahP__pyrene__autodock-vina__v1.pdbqt results/poses/PahP__pyrene__autodock-vina__v1.pdbqt

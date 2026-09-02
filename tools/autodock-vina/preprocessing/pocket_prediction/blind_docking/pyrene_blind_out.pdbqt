@@ -1,0 +1,620 @@
+MODEL 1
+REMARK VINA RESULT:    -7.980      0.000      0.000
+REMARK INTER + INTRA:          -7.980
+REMARK INTER:                  -7.980
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      67.806  70.784  55.832  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      68.828  71.465  55.173  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      69.988  71.852  55.862  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      71.027  72.536  55.216  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      72.176  72.915  55.916  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      72.315  72.620  57.279  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      73.462  72.994  57.995  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      73.583  72.691  59.351  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      72.560  72.011  60.010  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      71.400  71.624  59.321  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      70.361  70.939  59.966  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      69.212  70.561  59.266  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      69.073  70.855  57.904  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      67.927  70.482  57.188  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      70.112  71.545  57.236  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      71.276  71.930  57.946  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:    -7.809      0.566      5.056
+REMARK INTER + INTRA:          -7.809
+REMARK INTER:                  -7.809
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      73.935  73.047  58.374  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      73.074  72.419  59.272  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      71.823  71.944  58.850  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      70.945  71.309  59.738  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      69.701  70.842  59.302  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      69.305  70.999  57.968  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      68.060  70.537  57.515  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      67.683  70.702  56.183  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      68.543  71.331  55.284  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      69.795  71.805  55.707  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      70.673  72.440  54.818  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      71.916  72.907  55.254  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      72.313  72.750  56.589  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      73.557  73.213  57.042  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      71.439  72.111  57.499  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      70.178  71.638  57.057  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:    -7.779      0.585      4.117
+REMARK INTER + INTRA:          -7.779
+REMARK INTER:                  -7.779
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      73.931  73.147  58.307  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      73.559  73.274  56.969  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      72.321  72.787  56.523  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      71.930  72.907  55.182  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      70.694  72.416  54.753  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      69.818  71.793  55.651  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      68.575  71.296  55.235  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      67.716  70.679  56.145  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      68.087  70.551  57.482  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      69.325  71.039  57.929  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      69.717  70.919  59.270  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      70.953  71.409  59.699  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      71.829  72.032  58.801  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      73.072  72.530  59.216  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      71.450  72.162  57.444  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      70.197  71.664  57.008  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:    -7.442      0.745      1.115
+REMARK INTER + INTRA:          -7.442
+REMARK INTER:                  -7.442
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      68.007  70.500  57.079  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      68.678  71.099  56.014  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      69.935  71.692  56.206  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      70.626  72.299  55.148  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      71.878  72.885  55.355  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      72.470  72.881  56.625  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      73.725  73.466  56.849  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      74.299  73.452  58.120  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      73.627  72.853  59.184  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      72.370  72.260  58.992  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      71.679  71.653  60.050  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      70.428  71.067  59.843  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      69.835  71.071  58.574  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      68.580  70.486  58.350  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      70.518  71.678  57.494  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      71.787  72.274  57.704  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:    -7.346      1.038      3.878
+REMARK INTER + INTRA:          -7.346
+REMARK INTER:                  -7.346
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      72.335  72.991  54.106  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      73.026  72.731  55.289  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      72.374  72.136  56.380  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      73.052  71.866  57.577  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      72.389  71.273  58.655  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      71.032  70.937  58.565  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      70.352  70.342  59.638  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      69.001  70.014  59.530  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      68.311  70.275  58.347  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      68.962  70.869  57.256  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      68.284  71.140  56.059  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      68.948  71.732  54.981  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      70.305  72.069  55.071  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      70.984  72.663  53.998  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      71.005  71.803  56.271  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      70.332  71.203  57.365  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:    -7.307      1.046      3.702
+REMARK INTER + INTRA:          -7.307
+REMARK INTER:                  -7.307
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      72.138  72.968  53.964  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      70.786  72.628  53.964  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      70.198  72.039  55.094  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      68.840  71.691  55.114  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      68.269  71.106  56.248  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      69.041  70.854  57.390  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      68.483  70.267  58.535  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      69.266  70.023  59.662  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      70.618  70.363  59.662  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      71.206  70.952  58.531  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      72.563  71.300  58.512  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      73.134  71.885  57.378  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      72.363  72.138  56.236  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      72.921  72.725  55.091  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      70.991  71.793  56.238  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      70.413  71.198  57.387  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:    -7.228      0.747      5.074
+REMARK INTER + INTRA:          -7.228
+REMARK INTER:                  -7.228
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      73.609  72.627  60.565  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      72.440  71.916  60.834  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      71.505  71.667  59.816  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      70.325  70.954  60.067  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      69.404  70.714  59.044  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      69.639  71.181  57.744  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      68.725  70.949  56.706  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      68.976  71.422  55.419  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      70.145  72.132  55.150  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      71.079  72.381  56.167  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      72.260  73.094  55.916  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      73.181  73.334  56.940  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      72.945  72.867  58.239  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      73.860  73.099  59.277  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      71.760  72.145  58.511  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      70.825  71.903  57.473  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:    -6.737      1.050      3.807
+REMARK INTER + INTRA:          -6.737
+REMARK INTER:                  -6.737
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      70.442  70.141  60.035  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      71.690  70.598  59.613  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      71.851  71.156  58.336  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      73.098  71.621  57.894  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      73.243  72.175  56.619  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      72.146  72.278  55.753  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      72.276  72.830  54.471  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      71.173  72.924  53.623  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      69.925  72.468  54.045  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      69.763  71.910  55.322  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      68.516  71.445  55.764  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      68.372  70.891  57.039  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      69.468  70.788  57.905  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      69.339  70.236  59.187  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      70.734  71.253  57.476  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      70.881  71.813  56.182  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:    -6.719      0.983      3.344
+REMARK INTER + INTRA:          -6.719
+REMARK INTER:                  -6.719
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      69.920  71.882  55.178  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      69.521  71.289  56.375  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      70.285  71.452  57.541  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      69.899  70.865  58.754  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      70.671  71.035  59.907  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      71.847  71.796  59.877  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      72.632  71.976  61.025  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      73.799  72.737  60.975  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      74.198  73.330  59.778  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      73.434  73.167  58.612  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      73.820  73.754  57.399  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      73.048  73.584  56.246  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      71.872  72.823  56.276  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      71.087  72.643  55.128  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      71.468  72.223  57.492  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      72.251  72.396  58.661  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 10
+REMARK VINA RESULT:    -6.653      1.007      4.237
+REMARK INTER + INTRA:          -6.653
+REMARK INTER:                  -6.653
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      73.365  72.449  61.330  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      73.897  73.105  60.221  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      73.260  73.027  58.973  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      73.779  73.681  57.846  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      73.133  73.594  56.610  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      71.953  72.852  56.467  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      71.294  72.755  55.233  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      70.121  72.011  55.111  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      69.590  71.354  56.220  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      70.226  71.432  57.469  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      69.708  70.778  58.595  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      70.354  70.865  59.831  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      71.533  71.608  59.974  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      72.192  71.705  61.208  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      72.070  72.274  58.848  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      71.416  72.185  57.594  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 11
+REMARK VINA RESULT:    -6.519     14.125     15.377
+REMARK INTER + INTRA:          -6.519
+REMARK INTER:                  -6.519
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      64.050  57.520  51.325  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      64.522  57.157  52.585  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      65.866  57.367  52.932  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      66.358  57.009  54.195  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      67.699  57.225  54.526  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      68.581  57.803  53.604  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      69.929  58.026  53.921  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      70.792  58.603  52.990  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      70.320  58.967  51.729  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      68.976  58.756  51.382  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      68.484  59.114  50.120  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      67.143  58.898  49.789  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      66.261  58.320  50.711  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      64.913  58.097  50.394  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      66.741  57.953  51.990  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      68.101  58.171  52.325  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 12
+REMARK VINA RESULT:    -6.431     14.105     15.900
+REMARK INTER + INTRA:          -6.431
+REMARK INTER:                  -6.431
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      70.756  58.740  52.720  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      69.931  58.207  53.710  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      68.577  57.949  53.448  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      67.733  57.412  54.430  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      66.386  57.161  54.154  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      65.849  57.439  52.891  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      64.499  57.193  52.599  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      63.982  57.477  51.335  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      64.807  58.010  50.345  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      66.161  58.268  50.607  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      67.005  58.805  49.625  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      68.352  59.057  49.901  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      68.889  58.778  51.164  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      70.239  59.024  51.457  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      68.052  58.236  52.167  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      66.686  57.982  51.888  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 13
+REMARK VINA RESULT:    -6.336     15.748     16.723
+REMARK INTER + INTRA:          -6.336
+REMARK INTER:                  -6.336
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      70.704  56.357  52.702  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      70.280  56.446  51.377  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      68.926  56.657  51.074  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      68.480  56.750  49.748  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      67.129  56.961  49.462  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      66.188  57.084  50.493  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      64.829  57.296  50.222  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      63.907  57.416  51.262  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      64.332  57.328  52.587  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      65.685  57.116  52.890  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      66.131  57.023  54.216  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      67.483  56.812  54.502  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      68.423  56.689  53.471  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      69.783  56.477  53.742  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      67.991  56.780  52.127  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      66.620  56.993  51.837  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 14
+REMARK VINA RESULT:    -6.307     14.607     16.021
+REMARK INTER + INTRA:          -6.307
+REMARK INTER:                  -6.307
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      66.736  56.941  54.763  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      65.563  56.902  54.011  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      65.547  57.368  52.688  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      64.377  57.335  51.916  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      64.377  57.803  50.599  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      65.545  58.315  50.020  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      65.561  58.788  48.700  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      66.734  59.294  48.141  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      67.908  59.333  48.892  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      67.924  58.868  50.216  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      69.094  58.900  50.987  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      69.094  58.432  52.304  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      67.925  57.920  52.883  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      67.909  57.447  54.203  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      66.735  57.880  52.119  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      66.735  58.355  50.784  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 15
+REMARK VINA RESULT:    -6.293     14.680     15.911
+REMARK INTER + INTRA:          -6.293
+REMARK INTER:                  -6.293
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      66.693  59.159  48.121  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      65.508  58.670  48.667  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      65.466  58.221  49.996  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      64.283  57.727  50.563  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      64.257  57.283  51.888  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      65.412  57.321  52.680  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      65.403  56.880  54.011  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      66.562  56.926  54.783  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      67.748  57.415  54.237  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      67.790  57.864  52.908  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      68.973  58.358  52.341  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      68.999  58.802  51.016  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      67.843  58.763  50.224  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      67.853  59.205  48.894  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      66.641  58.268  50.781  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      66.615  57.817  52.124  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 16
+REMARK VINA RESULT:    -6.253      2.089      5.682
+REMARK INTER + INTRA:          -6.253
+REMARK INTER:                  -6.253
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      74.318  73.403  62.132  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      73.151  72.681  61.887  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      72.786  72.338  60.575  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      71.618  71.611  60.309  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      71.267  71.278  58.998  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      72.075  71.663  57.920  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      71.737  71.337  56.598  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      72.554  71.729  55.538  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      73.720  72.451  55.784  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      74.086  72.794  57.095  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      75.254  73.521  57.361  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      75.604  73.854  58.673  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      74.797  73.469  59.751  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      75.135  73.795  61.072  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      73.614  72.734  59.500  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      73.258  72.398  58.170  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 17
+REMARK VINA RESULT:    -6.243      2.096      3.566
+REMARK INTER + INTRA:          -6.243
+REMARK INTER:                  -6.243
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      72.510  71.589  55.610  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      73.673  72.326  55.829  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      74.047  72.701  57.129  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      75.213  73.441  57.368  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      75.571  73.807  58.669  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      74.774  73.444  59.762  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      75.120  73.804  61.072  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      74.314  73.433  62.148  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      73.151  72.696  61.929  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      72.778  72.321  60.629  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      71.611  71.581  60.390  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      71.253  71.214  59.089  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      72.050  71.578  57.996  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      71.704  71.218  56.686  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      73.230  72.325  58.220  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      73.594  72.697  59.538  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 18
+REMARK VINA RESULT:    -6.235      1.176      5.131
+REMARK INTER + INTRA:          -6.235
+REMARK INTER:                  -6.235
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      75.408  74.053  57.703  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      75.057  73.621  58.981  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      73.832  72.975  59.206  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      73.462  72.533  60.484  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      72.238  71.891  60.691  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      71.353  71.675  59.627  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      70.121  71.033  59.819  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      69.253  70.826  58.748  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      69.603  71.257  57.470  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      70.829  71.903  57.245  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      71.198  72.345  55.967  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      72.422  72.987  55.760  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      73.308  73.204  56.824  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      74.539  73.846  56.632  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      72.951  72.764  58.120  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      71.709  72.114  58.331  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 19
+REMARK VINA RESULT:    -6.165     15.883     16.123
+REMARK INTER + INTRA:          -6.165
+REMARK INTER:                  -6.165
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      64.110  57.878  51.098  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      65.082  57.832  50.099  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      66.411  57.507  50.412  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      67.402  57.455  49.422  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      68.722  57.130  49.749  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      69.084  56.849  51.073  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      70.404  56.522  51.417  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      70.745  56.245  52.740  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      69.773  56.291  53.738  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      68.444  56.616  53.426  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      67.453  56.669  54.416  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      66.134  56.994  54.089  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      65.771  57.274  52.765  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      64.452  57.602  52.421  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      66.759  57.226  51.753  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      68.097  56.897  52.085  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
+MODEL 20
+REMARK VINA RESULT:    -6.000      2.023      3.579
+REMARK INTER + INTRA:          -6.000
+REMARK INTER:                  -6.000
+REMARK INTRA:                   0.000
+REMARK UNBOUND:                 0.000
+REMARK  Name = pyrene
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      70.646  70.787  58.587  0.00  0.00    +0.000 A 
+ATOM      2  C   UNL     1      71.446  71.133  57.499  0.00  0.00    +0.000 A 
+ATOM      3  C   UNL     1      72.627  71.867  57.686  0.00  0.00    +0.000 A 
+ATOM      4  C   UNL     1      73.444  72.223  56.604  0.00  0.00    +0.000 A 
+ATOM      5  C   UNL     1      74.618  72.955  56.806  0.00  0.00    +0.000 A 
+ATOM      6  C   UNL     1      75.004  73.349  58.094  0.00  0.00    +0.000 A 
+ATOM      7  C   UNL     1      76.179  74.084  58.312  0.00  0.00    +0.000 A 
+ATOM      8  C   UNL     1      76.547  74.468  59.601  0.00  0.00    +0.000 A 
+ATOM      9  C   UNL     1      75.747  74.122  60.690  0.00  0.00    +0.000 A 
+ATOM     10  C   UNL     1      74.566  73.388  60.503  0.00  0.00    +0.000 A 
+ATOM     11  C   UNL     1      73.749  73.032  61.585  0.00  0.00    +0.000 A 
+ATOM     12  C   UNL     1      72.575  72.300  61.383  0.00  0.00    +0.000 A 
+ATOM     13  C   UNL     1      72.189  71.906  60.095  0.00  0.00    +0.000 A 
+ATOM     14  C   UNL     1      71.014  71.171  59.876  0.00  0.00    +0.000 A 
+ATOM     15  C   UNL     1      73.002  72.256  58.992  0.00  0.00    +0.000 A 
+ATOM     16  C   UNL     1      74.191  72.999  59.197  0.00  0.00    +0.000 A 
+ENDROOT
+TORSDOF 0
+ENDMDL

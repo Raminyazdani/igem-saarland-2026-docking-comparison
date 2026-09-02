@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "tool_name": "AutoDock Vina",
+  "branch": "tool/autodock-vina",
+  "team_members": ["Ana", "Divyashree"],
+  "software_version": "1.2.7",
+  "date_completed": "2026-08-09",
+  "input_commit_hash": "6564a76",
+  "score_direction": "lower_is_better",
+  "receptor_prep_method": "canonical PahP structure.pdb (pre-protonated, chain A, no waters/hetero groups); PDBQT via Open Babel 3.1.0",
+  "ligand_prep_method": "canonical ligands.sdf, used shared 3D conformer as-is; PDBQT via Open Babel 3.1.0",
+  "docking_parameters": {"exhaustiveness": 16, "num_modes": 9, "box_center": [70.83, 71.96, 59.18], "box_size": [21.3, 19.6, 27.3], "seed": 42, "box_source": "fpocket Pocket 4, hydrophobicity/aromaticity composite ranking, cross-validated by blind docking"},
+  "hardware": "Apple Silicon (osx-arm64), CPUs auto-detected",
+  "runtime_total_sec": null,
+  "results": [
+    {"target_id": "PahP", "ligand_id": "pyrene", "pubchem_cid": "31423", "docking_score": -8.021, "score_unit": "kcal/mol", "rank_within_tool": 1, "pose_file": "tools/autodock-vina/results/poses/PahP__pyrene__autodock-vina__v1.pdbqt", "runtime_sec": null, "status": "ok", "failure_reason": null, "notes": "primary target ligand; top 4 poses tightly clustered (-8.02 to -7.84 kcal/mol); consistent with independent blind-docking validation (-7.98 kcal/mol, same site)"},
+    {"target_id": "PahP", "ligand_id": "naphthalene", "pubchem_cid": "931", "docking_score": -6.053, "score_unit": "kcal/mol", "rank_within_tool": 2, "pose_file": "tools/autodock-vina/results/poses/PahP__naphthalene__autodock-vina__v1.pdbqt", "runtime_sec": null, "status": "ok", "failure_reason": null, "notes": "smallest PAH (2 rings vs pyrene's 4); weaker affinity than pyrene as expected"}
+  ],
+  "failed_cases": [],
+  "warnings": ["Only pyrene and naphthalene docked so far - remaining canonical ligands (phenanthrene, benzo_a_pyrene, anthracene, fluoranthene, glucose_NEGCTRL) and PahS not yet attempted"],
+  "notes": "input-v1 not yet frozen at time of this run; used current main (6564a76). Binding box from fpocket Pocket 4, proposed to team as candidate for canonical binding_site.yaml, not yet formally adopted."
+}
