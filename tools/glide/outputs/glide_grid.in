@@ -1,0 +1,6 @@
+GRIDFILE   PahP_glide_grid.zip
+RECEP_FILE inputs/PahP_prepared.maegz
+GRID_CENTER 70.83, 71.96, 59.18
+INNERBOX   8, 8, 8
+OUTERBOX   21.3, 19.6, 27.3
+FORCEFIELD OPLS_2005

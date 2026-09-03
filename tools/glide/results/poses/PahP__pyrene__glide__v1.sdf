@@ -1,0 +1,170 @@
+pyrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 26 29 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 74.778227 73.467127 57.940431 0
+M  V30 2 C 74.006210 72.960800 58.995695 0
+M  V30 3 C 72.721393 72.432526 58.761995 0
+M  V30 4 C 71.920878 71.916740 59.797611 0
+M  V30 5 C 70.644572 71.396436 59.536899 0
+M  V30 6 C 70.121660 71.372808 58.231063 0
+M  V30 7 C 68.843456 70.856349 57.941290 0
+M  V30 8 C 68.352274 70.847747 56.628054 0
+M  V30 9 C 69.143078 71.359994 55.588377 0
+M  V30 10 C 70.429020 71.887340 55.829920 0
+M  V30 11 C 71.243763 72.419147 54.732994 0
+M  V30 12 C 72.462222 72.915804 54.981838 0
+M  V30 13 C 72.984557 72.929105 56.351869 0
+M  V30 14 C 74.265596 73.447962 56.634556 0
+M  V30 15 C 72.212588 72.418508 57.434154 0
+M  V30 16 C 70.913823 71.889112 57.168902 0
+M  V30 17 H 75.762049 73.869676 58.131797 0
+M  V30 18 H 74.406436 72.978312 59.998994 0
+M  V30 19 H 72.290684 71.919047 60.812593 0
+M  V30 20 H 70.057237 71.008637 60.356436 0
+M  V30 21 H 68.229919 70.460611 58.737522 0
+M  V30 22 H 67.370696 70.449143 56.417998 0
+M  V30 23 H 68.753260 71.347585 54.580917 0
+M  V30 24 H 70.841842 72.400729 53.730499 0
+M  V30 25 H 73.077257 73.311945 54.187046 0
+M  V30 26 H 74.870184 73.841016 55.830211 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 10
+M  V30 11 2 12 11
+M  V30 12 1 13 12
+M  V30 13 1 14 1
+M  V30 14 2 14 13
+M  V30 15 1 15 3
+M  V30 16 1 15 13
+M  V30 17 1 16 6
+M  V30 18 1 16 10
+M  V30 19 2 16 15
+M  V30 20 1 17 1
+M  V30 21 1 18 2
+M  V30 22 1 19 4
+M  V30 23 1 20 5
+M  V30 24 1 21 7
+M  V30 25 1 22 8
+M  V30 26 1 23 9
+M  V30 27 1 24 11
+M  V30 28 1 25 12
+M  V30 29 1 26 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (10) 
+1
+
+>  <i_i_glide_lignum>  (10) 
+1
+
+>  <i_i_glide_posenum>  (10) 
+84
+
+>  <i_i_glide_rotatable_bonds>  (10) 
+0
+
+>  <i_lp_mmshare_version>  (10) 
+73136
+
+>  <i_m_source_file_index>  (10) 
+1
+
+>  <PubChemCID>  (10) 
+31423
+
+>  <i_f3d_flags>  (10) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (10) 
+1
+
+>  <r_glide_cpu_time>  (10) 
+3.359375
+
+>  <r_glide_ring_energy>  (10) 
+0
+
+>  <r_i_docking_score>  (10) 
+-5.8828628789160025
+
+>  <r_i_glide_ecoul>  (10) 
+-0.72013378357576763
+
+>  <r_i_glide_einternal>  (10) 
+0
+
+>  <r_i_glide_emodel>  (10) 
+-30.47010639328067
+
+>  <r_i_glide_energy>  (10) 
+-22.389991720247501
+
+>  <r_i_glide_erotb>  (10) 
+0
+
+>  <r_i_glide_esite>  (10) 
+0
+
+>  <r_i_glide_evdw>  (10) 
+-21.669857936671733
+
+>  <r_i_glide_gscore>  (10) 
+-5.8828628789160025
+
+>  <r_i_glide_hbond>  (10) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (10) 
+-0.36767892993225015
+
+>  <r_i_glide_ligand_efficiency_ln>  (10) 
+-1.5593703189101817
+
+>  <r_i_glide_ligand_efficiency_sa>  (10) 
+-0.9264928468489283
+
+>  <r_i_glide_lipo>  (10) 
+-2.6612915054551411
+
+>  <r_i_glide_metal>  (10) 
+-0
+
+>  <r_i_glide_rewards>  (10) 
+-2.0300584090909095
+
+>  <r_lp_Energy>  (10) 
+37.198661000000001
+
+>  <s_glide_docking_method>  (10) 
+confgen
+
+>  <s_i_glide_gridfile>  (10) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (10) 
+OPLS_2005
+
+>  <s_lp_Variant>  (10) 
+pyrene-1
+
+>  <s_m_source_file>  (10) 
+input/canonical/ligands/ligands.sdf
+
+>  <provenance>  (10) 
+PRIMARY - team named it ('pyrene, should be common', 2.April)
+
+$$$$

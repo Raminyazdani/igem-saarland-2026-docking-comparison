@@ -1,0 +1,5360 @@
+anthracene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 24 26 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 68.218638 70.785401 56.939924 0
+M  V30 2 C 68.830004 71.171231 55.733566 0
+M  V30 3 C 70.111065 71.759865 55.736428 0
+M  V30 4 C 70.801646 71.927608 56.952290 0
+M  V30 5 C 72.091475 72.495010 56.965423 0
+M  V30 6 C 72.773966 72.667880 58.186820 0
+M  V30 7 C 74.056583 73.253108 58.207080 0
+M  V30 8 C 74.728928 73.435594 59.431180 0
+M  V30 9 C 74.124290 73.030476 60.636565 0
+M  V30 10 C 72.847754 72.437746 60.621458 0
+M  V30 11 C 72.167124 72.256895 59.399888 0
+M  V30 12 C 70.883780 71.675405 59.379997 0
+M  V30 13 C 70.193874 71.520102 58.165193 0
+M  V30 14 C 68.900610 70.960015 58.157729 0
+M  V30 15 H 67.230000 70.353134 56.927334 0
+M  V30 16 H 68.315224 71.020929 54.796841 0
+M  V30 17 H 70.563647 72.054178 54.800519 0
+M  V30 18 H 72.553133 72.806007 56.039548 0
+M  V30 19 H 74.528279 73.569232 57.287877 0
+M  V30 20 H 75.710160 73.887106 59.446449 0
+M  V30 21 H 74.642742 73.171471 61.573812 0
+M  V30 22 H 72.399745 72.131163 61.553641 0
+M  V30 23 H 70.411738 71.355345 60.294120 0
+M  V30 24 H 68.430078 70.658231 59.082562 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 6
+M  V30 11 1 11 10
+M  V30 12 2 12 11
+M  V30 13 1 13 4
+M  V30 14 1 13 12
+M  V30 15 1 14 1
+M  V30 16 2 14 13
+M  V30 17 1 15 1
+M  V30 18 1 16 2
+M  V30 19 1 17 3
+M  V30 20 1 18 5
+M  V30 21 1 19 7
+M  V30 22 1 20 8
+M  V30 23 1 21 9
+M  V30 24 1 22 10
+M  V30 25 1 23 12
+M  V30 26 1 24 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (1) 
+1
+
+>  <i_i_glide_lignum>  (1) 
+5
+
+>  <i_i_glide_posenum>  (1) 
+116
+
+>  <i_i_glide_rotatable_bonds>  (1) 
+0
+
+>  <i_lp_mmshare_version>  (1) 
+73136
+
+>  <i_m_source_file_index>  (1) 
+5
+
+>  <PubChemCID>  (1) 
+8418
+
+>  <i_f3d_flags>  (1) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (1) 
+1
+
+>  <r_glide_cpu_time>  (1) 
+1.25
+
+>  <r_glide_ring_energy>  (1) 
+0
+
+>  <r_i_docking_score>  (1) 
+-6.1143972930111419
+
+>  <r_i_glide_ecoul>  (1) 
+-0.35775160442110621
+
+>  <r_i_glide_einternal>  (1) 
+0
+
+>  <r_i_glide_emodel>  (1) 
+-28.704764845543419
+
+>  <r_i_glide_energy>  (1) 
+-20.868393691823155
+
+>  <r_i_glide_erotb>  (1) 
+0
+
+>  <r_i_glide_esite>  (1) 
+0
+
+>  <r_i_glide_evdw>  (1) 
+-20.510642087402047
+
+>  <r_i_glide_gscore>  (1) 
+-6.1143972930111419
+
+>  <r_i_glide_hbond>  (1) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (1) 
+-0.43674266378651011
+
+>  <r_i_glide_ligand_efficiency_ln>  (1) 
+-1.6802146103198627
+
+>  <r_i_glide_ligand_efficiency_sa>  (1) 
+-1.0526119525603408
+
+>  <r_i_glide_lipo>  (1) 
+-2.799688963129388
+
+>  <r_i_glide_metal>  (1) 
+-0
+
+>  <r_i_glide_rewards>  (1) 
+-2.2355134848484846
+
+>  <r_lp_Energy>  (1) 
+13.742320999999999
+
+>  <s_glide_docking_method>  (1) 
+confgen
+
+>  <s_i_glide_gridfile>  (1) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (1) 
+OPLS_2005
+
+>  <s_lp_Variant>  (1) 
+anthracene-1
+
+>  <s_m_source_file>  (1) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (1) 
+specificity probe (phenanthrene isomer)
+
+$$$$
+glucose_NEGCTRL
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 24 24 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 O 72.030000 74.161790 55.825067 0
+M  V30 2 C 72.779452 73.359457 56.733716 0
+M  V30 3 C 71.879575 72.737943 57.816820 0 CFG=1
+M  V30 4 O 70.951395 71.873683 57.134713 0
+M  V30 5 C 69.984142 71.252210 57.948323 0 CFG=2
+M  V30 6 O 69.203900 72.243775 58.580000 0
+M  V30 7 C 70.677476 70.351604 58.979996 0 CFG=2
+M  V30 8 O 69.676376 69.760031 59.795601 0
+M  V30 9 C 71.708620 71.132797 59.807476 0 CFG=1
+M  V30 10 O 72.429994 70.225739 60.649218 0
+M  V30 11 C 72.658869 71.901611 58.862682 0 CFG=2
+M  V30 12 O 73.524851 72.742580 59.622398 0
+M  V30 13 H 72.626193 74.481684 55.132108 0
+M  V30 14 H 73.293624 72.576689 56.174852 0
+M  V30 15 H 73.548832 73.982992 57.189595 0
+M  V30 16 H 71.336379 73.541541 58.317414 0
+M  V30 17 H 69.368024 70.655160 57.262936 0
+M  V30 18 H 68.723632 72.726462 57.891759 0
+M  V30 19 H 71.204276 69.559842 58.447566 0
+M  V30 20 H 69.157020 70.473964 60.199097 0
+M  V30 21 H 71.197940 71.857953 60.440827 0
+M  V30 22 H 72.862295 69.546234 60.107308 0
+M  V30 23 H 73.255738 71.173244 58.316779 0
+M  V30 24 H 74.204497 73.113635 59.043731 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 1 2 1
+M  V30 2 1 3 2
+M  V30 3 1 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 5
+M  V30 6 1 7 5
+M  V30 7 1 8 7
+M  V30 8 1 9 7
+M  V30 9 1 10 9
+M  V30 10 1 11 3
+M  V30 11 1 11 9
+M  V30 12 1 12 11
+M  V30 13 1 13 1
+M  V30 14 1 14 2
+M  V30 15 1 15 2
+M  V30 16 1 3 16 CFG=1
+M  V30 17 1 5 17 CFG=3
+M  V30 18 1 18 6
+M  V30 19 1 7 19 CFG=3
+M  V30 20 1 20 8
+M  V30 21 1 9 21 CFG=1
+M  V30 22 1 22 10
+M  V30 23 1 11 23 CFG=3
+M  V30 24 1 24 12
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (2) 
+2
+
+>  <i_i_glide_lignum>  (2) 
+7
+
+>  <i_i_glide_posenum>  (2) 
+408
+
+>  <i_i_glide_rotatable_bonds>  (2) 
+6
+
+>  <i_lp_mmshare_version>  (2) 
+73136
+
+>  <i_m_source_file_index>  (2) 
+7
+
+>  <PubChemCID>  (2) 
+5793
+
+>  <i_f3d_flags>  (2) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (2) 
+1
+
+>  <r_glide_cpu_time>  (2) 
+4.984375
+
+>  <r_glide_ring_energy>  (2) 
+0
+
+>  <r_i_docking_score>  (2) 
+-6.0404315003792917
+
+>  <r_i_glide_ecoul>  (2) 
+-8.8661767502690818
+
+>  <r_i_glide_einternal>  (2) 
+1.7971728627954886
+
+>  <r_i_glide_emodel>  (2) 
+-31.95946986938776
+
+>  <r_i_glide_energy>  (2) 
+-24.576457724093174
+
+>  <r_i_glide_erotb>  (2) 
+0.48540671602594931
+
+>  <r_i_glide_esite>  (2) 
+0
+
+>  <r_i_glide_evdw>  (2) 
+-15.710280973824092
+
+>  <r_i_glide_gscore>  (2) 
+-6.0404315003792917
+
+>  <r_i_glide_hbond>  (2) 
+-0.78572984999751672
+
+>  <r_i_glide_ligand_efficiency>  (2) 
+-0.50336929169827427
+
+>  <r_i_glide_ligand_efficiency_ln>  (2) 
+-1.7333122827685365
+
+>  <r_i_glide_ligand_efficiency_sa>  (2) 
+-1.1524279949419947
+
+>  <r_i_glide_lipo>  (2) 
+-1.005865623121535
+
+>  <r_i_glide_metal>  (2) 
+-0
+
+>  <r_i_glide_rewards>  (2) 
+-2.6188021820546212
+
+>  <r_lp_Energy>  (2) 
+23.232617999999999
+
+>  <s_glide_docking_method>  (2) 
+confgen
+
+>  <s_i_glide_gridfile>  (2) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (2) 
+OPLS_2005
+
+>  <s_lp_Variant>  (2) 
+glucose_NEGCTRL-1
+
+>  <s_m_source_file>  (2) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (2) 
+PROPOSED negative control (polar, non-aromatic) - not from files
+
+$$$$
+fluoranthene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 26 29 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 74.197779 72.960040 54.115610 0
+M  V30 2 C 73.125761 72.718297 53.222124 0
+M  V30 3 C 71.859752 72.320506 53.706340 0
+M  V30 4 C 71.697855 72.174862 55.094306 0
+M  V30 5 C 72.760039 72.412245 55.979840 0
+M  V30 6 C 74.024151 72.806622 55.509514 0
+M  V30 7 C 72.265400 72.140551 57.332311 0
+M  V30 8 C 72.837642 72.177521 58.618774 0
+M  V30 9 C 72.069033 71.782367 59.739849 0
+M  V30 10 C 70.726474 71.359991 59.584706 0
+M  V30 11 C 70.121629 71.350095 58.313170 0
+M  V30 12 C 68.806680 70.960000 57.990745 0
+M  V30 13 C 68.363570 70.960000 56.647185 0
+M  V30 14 C 69.230001 71.360000 55.603090 0
+M  V30 15 C 70.547558 71.760000 55.899918 0
+M  V30 16 C 70.931636 71.742083 57.241050 0
+M  V30 17 H 75.158929 73.264151 53.727853 0
+M  V30 18 H 73.277055 72.838226 52.159410 0
+M  V30 19 H 71.040915 72.124487 53.029849 0
+M  V30 20 H 74.840792 72.984109 56.193736 0
+M  V30 21 H 73.863385 72.491277 58.746001 0
+M  V30 22 H 72.515607 71.797556 60.723172 0
+M  V30 23 H 70.150275 71.044781 60.440931 0
+M  V30 24 H 68.134032 70.644555 58.773564 0
+M  V30 25 H 67.355196 70.647421 56.417791 0
+M  V30 26 H 68.888903 71.343171 54.580000 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 1
+M  V30 6 2 6 5
+M  V30 7 1 7 5
+M  V30 8 2 8 7
+M  V30 9 1 9 8
+M  V30 10 2 10 9
+M  V30 11 1 11 10
+M  V30 12 1 12 11
+M  V30 13 2 13 12
+M  V30 14 1 14 13
+M  V30 15 1 15 4
+M  V30 16 2 15 14
+M  V30 17 1 16 7
+M  V30 18 2 16 11
+M  V30 19 1 16 15
+M  V30 20 1 17 1
+M  V30 21 1 18 2
+M  V30 22 1 19 3
+M  V30 23 1 20 6
+M  V30 24 1 21 8
+M  V30 25 1 22 9
+M  V30 26 1 23 10
+M  V30 27 1 24 12
+M  V30 28 1 25 13
+M  V30 29 1 26 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (3) 
+1
+
+>  <i_i_glide_lignum>  (3) 
+6
+
+>  <i_i_glide_posenum>  (3) 
+264
+
+>  <i_i_glide_rotatable_bonds>  (3) 
+0
+
+>  <i_lp_mmshare_version>  (3) 
+73136
+
+>  <i_m_source_file_index>  (3) 
+6
+
+>  <PubChemCID>  (3) 
+9154
+
+>  <i_f3d_flags>  (3) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (3) 
+1
+
+>  <r_glide_cpu_time>  (3) 
+1.46875
+
+>  <r_glide_ring_energy>  (3) 
+0
+
+>  <r_i_docking_score>  (3) 
+-6.0296473247213385
+
+>  <r_i_glide_ecoul>  (3) 
+-0.34113073918183484
+
+>  <r_i_glide_einternal>  (3) 
+0
+
+>  <r_i_glide_emodel>  (3) 
+-32.241074479016376
+
+>  <r_i_glide_energy>  (3) 
+-23.651247238472767
+
+>  <r_i_glide_erotb>  (3) 
+0
+
+>  <r_i_glide_esite>  (3) 
+0
+
+>  <r_i_glide_evdw>  (3) 
+-23.310116499290931
+
+>  <r_i_glide_gscore>  (3) 
+-6.0296473247213385
+
+>  <r_i_glide_hbond>  (3) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (3) 
+-0.37685295779508365
+
+>  <r_i_glide_ligand_efficiency_ln>  (3) 
+-1.5982784683567479
+
+>  <r_i_glide_ligand_efficiency_sa>  (3) 
+-0.94960994848234026
+
+>  <r_i_glide_lipo>  (3) 
+-2.7162468131219413
+
+>  <r_i_glide_metal>  (3) 
+-0
+
+>  <r_i_glide_rewards>  (3) 
+-2.0967250757575764
+
+>  <r_lp_Energy>  (3) 
+49.371870999999999
+
+>  <s_glide_docking_method>  (3) 
+confgen
+
+>  <s_i_glide_gridfile>  (3) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (3) 
+OPLS_2005
+
+>  <s_lp_Variant>  (3) 
+fluoranthene-1
+
+>  <s_m_source_file>  (3) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (3) 
+EQS Saar PAH
+
+$$$$
+benzo_a_pyrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 32 36 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 76.202640 74.209652 59.496672 0
+M  V30 2 C 75.469611 73.685041 60.574032 0
+M  V30 3 C 74.222684 73.071659 60.348293 0
+M  V30 4 C 73.682899 72.971550 59.039103 0
+M  V30 5 C 74.428209 73.518836 57.967096 0
+M  V30 6 C 75.680046 74.128465 58.194335 0
+M  V30 7 C 73.923787 73.461164 56.659908 0
+M  V30 8 C 72.675437 72.881004 56.373000 0
+M  V30 9 C 72.166831 72.854079 54.997796 0
+M  V30 10 C 70.968819 72.320011 54.735025 0
+M  V30 11 C 70.165900 71.760000 55.822920 0
+M  V30 12 C 68.875779 71.243491 55.578900 0
+M  V30 13 C 68.095484 70.685723 56.596539 0
+M  V30 14 C 68.607896 70.646116 57.896577 0
+M  V30 15 C 69.870505 71.185283 58.197751 0
+M  V30 16 C 70.396418 71.157657 59.494373 0
+M  V30 17 C 71.642372 71.728136 59.781152 0
+M  V30 18 C 72.430559 72.346343 58.785128 0
+M  V30 19 C 71.926976 72.330118 57.450120 0
+M  V30 20 C 70.649345 71.760000 57.161139 0
+M  V30 21 H 77.160241 74.678880 59.669741 0
+M  V30 22 H 75.866219 73.747622 61.577027 0
+M  V30 23 H 73.707572 72.686415 61.212296 0
+M  V30 24 H 76.245060 74.541053 57.371011 0
+M  V30 25 H 74.502904 73.883912 55.851557 0
+M  V30 26 H 72.777707 73.266294 54.207883 0
+M  V30 27 H 70.579701 72.280623 53.727936 0
+M  V30 28 H 68.476538 71.251189 54.580000 0
+M  V30 29 H 67.122306 70.277002 56.373532 0
+M  V30 30 H 68.030000 70.190821 58.680358 0
+M  V30 31 H 69.821555 70.706936 60.290462 0
+M  V30 32 H 71.976045 71.679439 60.803932 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 1
+M  V30 6 2 6 5
+M  V30 7 1 7 5
+M  V30 8 2 8 7
+M  V30 9 1 9 8
+M  V30 10 2 10 9
+M  V30 11 1 11 10
+M  V30 12 2 12 11
+M  V30 13 1 13 12
+M  V30 14 2 14 13
+M  V30 15 1 15 14
+M  V30 16 2 16 15
+M  V30 17 1 17 16
+M  V30 18 1 18 4
+M  V30 19 2 18 17
+M  V30 20 1 19 8
+M  V30 21 1 19 18
+M  V30 22 1 20 11
+M  V30 23 1 20 15
+M  V30 24 2 20 19
+M  V30 25 1 21 1
+M  V30 26 1 22 2
+M  V30 27 1 23 3
+M  V30 28 1 24 6
+M  V30 29 1 25 7
+M  V30 30 1 26 9
+M  V30 31 1 27 10
+M  V30 32 1 28 12
+M  V30 33 1 29 13
+M  V30 34 1 30 14
+M  V30 35 1 31 16
+M  V30 36 1 32 17
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (4) 
+1
+
+>  <i_i_glide_lignum>  (4) 
+3
+
+>  <i_i_glide_posenum>  (4) 
+230
+
+>  <i_i_glide_rotatable_bonds>  (4) 
+0
+
+>  <i_lp_mmshare_version>  (4) 
+73136
+
+>  <i_m_source_file_index>  (4) 
+3
+
+>  <PubChemCID>  (4) 
+2336
+
+>  <i_f3d_flags>  (4) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (4) 
+1
+
+>  <r_glide_cpu_time>  (4) 
+1.34375
+
+>  <r_glide_ring_energy>  (4) 
+0
+
+>  <r_i_docking_score>  (4) 
+-6.008091901737675
+
+>  <r_i_glide_ecoul>  (4) 
+-0.56781606923362427
+
+>  <r_i_glide_einternal>  (4) 
+0
+
+>  <r_i_glide_emodel>  (4) 
+-33.995949211818655
+
+>  <r_i_glide_energy>  (4) 
+-24.972486718796954
+
+>  <r_i_glide_erotb>  (4) 
+0
+
+>  <r_i_glide_esite>  (4) 
+0
+
+>  <r_i_glide_evdw>  (4) 
+-24.404670649563329
+
+>  <r_i_glide_gscore>  (4) 
+-6.008091901737675
+
+>  <r_i_glide_hbond>  (4) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (4) 
+-0.30040459508688377
+
+>  <r_i_glide_ligand_efficiency_ln>  (4) 
+-1.5036272428717548
+
+>  <r_i_glide_ligand_efficiency_sa>  (4) 
+-0.81542352500989701
+
+>  <r_i_glide_lipo>  (4) 
+-2.9473764627803773
+
+>  <r_i_glide_metal>  (4) 
+-0
+
+>  <r_i_glide_rewards>  (4) 
+-1.7553094960940869
+
+>  <r_lp_Energy>  (4) 
+44.326904999999996
+
+>  <s_glide_docking_method>  (4) 
+confgen
+
+>  <s_i_glide_gridfile>  (4) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (4) 
+OPLS_2005
+
+>  <s_lp_Variant>  (4) 
+benzo_a_pyrene-1
+
+>  <s_m_source_file>  (4) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (4) 
+named (TonB transport hypothesis, slide 5); carcinogenic marker
+
+$$$$
+glucose_NEGCTRL
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 24 24 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 O 72.030876 74.147791 55.878788 0
+M  V30 2 C 72.739528 73.296688 56.773623 0
+M  V30 3 C 71.803097 72.625245 57.774091 0 CFG=1
+M  V30 4 O 70.888377 71.767701 57.093210 0
+M  V30 5 C 69.912663 71.191434 57.960152 0 CFG=2
+M  V30 6 O 69.153416 72.205058 58.579999 0
+M  V30 7 C 70.606118 70.306864 59.008933 0 CFG=2
+M  V30 8 O 69.651235 69.760001 59.890544 0
+M  V30 9 C 71.648535 71.115537 59.790973 0 CFG=1
+M  V30 10 O 72.384426 70.254222 60.630437 0
+M  V30 11 C 72.598355 71.817886 58.812853 0 CFG=2
+M  V30 12 O 73.460993 72.680236 59.520177 0
+M  V30 13 H 72.659412 74.529756 55.251433 0
+M  V30 14 H 73.281083 72.545827 56.197581 0
+M  V30 15 H 73.486121 73.894673 57.296760 0
+M  V30 16 H 71.244290 73.420854 58.266879 0
+M  V30 17 H 69.219123 70.594906 57.367484 0
+M  V30 18 H 68.620212 72.621450 57.887869 0
+M  V30 19 H 71.087979 69.463991 58.513477 0
+M  V30 20 H 69.187846 70.495234 60.316401 0
+M  V30 21 H 71.160500 71.843145 60.439439 0
+M  V30 22 H 72.839775 69.607045 60.074452 0
+M  V30 23 H 73.233683 71.086502 58.313316 0
+M  V30 24 H 72.926096 73.362291 59.948551 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 1 2 1
+M  V30 2 1 3 2
+M  V30 3 1 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 5
+M  V30 6 1 7 5
+M  V30 7 1 8 7
+M  V30 8 1 9 7
+M  V30 9 1 10 9
+M  V30 10 1 11 3
+M  V30 11 1 11 9
+M  V30 12 1 12 11
+M  V30 13 1 13 1
+M  V30 14 1 14 2
+M  V30 15 1 15 2
+M  V30 16 1 3 16 CFG=1
+M  V30 17 1 5 17 CFG=3
+M  V30 18 1 18 6
+M  V30 19 1 7 19 CFG=3
+M  V30 20 1 20 8
+M  V30 21 1 9 21 CFG=1
+M  V30 22 1 22 10
+M  V30 23 1 11 23 CFG=3
+M  V30 24 1 24 12
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (5) 
+2
+
+>  <i_i_glide_lignum>  (5) 
+7
+
+>  <i_i_glide_posenum>  (5) 
+407
+
+>  <i_i_glide_rotatable_bonds>  (5) 
+6
+
+>  <i_lp_mmshare_version>  (5) 
+73136
+
+>  <i_m_source_file_index>  (5) 
+7
+
+>  <PubChemCID>  (5) 
+5793
+
+>  <i_f3d_flags>  (5) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (5) 
+1
+
+>  <r_glide_cpu_time>  (5) 
+4.984375
+
+>  <r_glide_ring_energy>  (5) 
+0
+
+>  <r_i_docking_score>  (5) 
+-6.0027440811414632
+
+>  <r_i_glide_ecoul>  (5) 
+-8.5215639800935108
+
+>  <r_i_glide_einternal>  (5) 
+1.7774543871670851
+
+>  <r_i_glide_emodel>  (5) 
+-31.06350351493365
+
+>  <r_i_glide_energy>  (5) 
+-23.722302625480751
+
+>  <r_i_glide_erotb>  (5) 
+0.48540671602594931
+
+>  <r_i_glide_esite>  (5) 
+0
+
+>  <r_i_glide_evdw>  (5) 
+-15.200738645387242
+
+>  <r_i_glide_gscore>  (5) 
+-6.0027440811414632
+
+>  <r_i_glide_hbond>  (5) 
+-0.81611541074877159
+
+>  <r_i_glide_ligand_efficiency>  (5) 
+-0.50022867342845523
+
+>  <r_i_glide_ligand_efficiency_ln>  (5) 
+-1.7224978125329791
+
+>  <r_i_glide_ligand_efficiency_sa>  (5) 
+-1.1452377740142246
+
+>  <r_i_glide_lipo>  (5) 
+-1.0066157773015103
+
+>  <r_i_glide_metal>  (5) 
+-0
+
+>  <r_i_glide_rewards>  (5) 
+-2.627148079833741
+
+>  <r_lp_Energy>  (5) 
+23.232617999999999
+
+>  <s_glide_docking_method>  (5) 
+confgen
+
+>  <s_i_glide_gridfile>  (5) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (5) 
+OPLS_2005
+
+>  <s_lp_Variant>  (5) 
+glucose_NEGCTRL-1
+
+>  <s_m_source_file>  (5) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (5) 
+PROPOSED negative control (polar, non-aromatic) - not from files
+
+$$$$
+benzo_a_pyrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 32 36 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 68.218014 70.759034 56.979996 0
+M  V30 2 C 68.823342 71.123323 55.768673 0
+M  V30 3 C 70.102706 71.713033 55.755409 0
+M  V30 4 C 70.825026 71.904949 56.958510 0
+M  V30 5 C 70.205275 71.517624 58.169241 0
+M  V30 6 C 68.910162 70.960013 58.183666 0
+M  V30 7 C 70.881921 71.684066 59.380007 0
+M  V30 8 C 72.166035 72.252205 59.446295 0
+M  V30 9 C 72.829980 72.442516 60.740209 0
+M  V30 10 C 74.054244 72.974930 60.795301 0
+M  V30 11 C 74.735741 73.360000 59.559564 0
+M  V30 12 C 76.037643 73.900963 59.598932 0
+M  V30 13 C 76.713402 74.271272 58.427586 0
+M  V30 14 C 76.085220 74.104093 57.185928 0
+M  V30 15 C 74.786188 73.566249 57.100019 0
+M  V30 16 C 74.131582 73.386902 55.871919 0
+M  V30 17 C 72.839555 72.849436 55.809551 0
+M  V30 18 C 72.135790 72.457984 56.972207 0
+M  V30 19 C 72.794600 72.631581 58.226988 0
+M  V30 20 C 74.109440 73.189969 58.290623 0
+M  V30 21 H 67.230006 70.325569 56.983608 0
+M  V30 22 H 68.302533 70.960019 54.837047 0
+M  V30 23 H 70.507877 71.976302 54.792306 0
+M  V30 24 H 68.443113 70.677808 59.116658 0
+M  V30 25 H 70.389693 71.372132 60.286486 0
+M  V30 26 H 72.314098 72.160000 61.643455 0
+M  V30 27 H 74.558966 73.129419 61.738279 0
+M  V30 28 H 76.530936 74.034350 60.551038 0
+M  V30 29 H 77.709442 74.685530 58.482763 0
+M  V30 30 H 76.609359 74.394003 56.286887 0
+M  V30 31 H 74.628459 73.668066 54.954637 0
+M  V30 32 H 72.407076 72.746354 54.827906 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 1
+M  V30 6 2 6 5
+M  V30 7 1 7 5
+M  V30 8 2 8 7
+M  V30 9 1 9 8
+M  V30 10 2 10 9
+M  V30 11 1 11 10
+M  V30 12 2 12 11
+M  V30 13 1 13 12
+M  V30 14 2 14 13
+M  V30 15 1 15 14
+M  V30 16 2 16 15
+M  V30 17 1 17 16
+M  V30 18 1 18 4
+M  V30 19 2 18 17
+M  V30 20 1 19 8
+M  V30 21 1 19 18
+M  V30 22 1 20 11
+M  V30 23 1 20 15
+M  V30 24 2 20 19
+M  V30 25 1 21 1
+M  V30 26 1 22 2
+M  V30 27 1 23 3
+M  V30 28 1 24 6
+M  V30 29 1 25 7
+M  V30 30 1 26 9
+M  V30 31 1 27 10
+M  V30 32 1 28 12
+M  V30 33 1 29 13
+M  V30 34 1 30 14
+M  V30 35 1 31 16
+M  V30 36 1 32 17
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (6) 
+1
+
+>  <i_i_glide_lignum>  (6) 
+3
+
+>  <i_i_glide_posenum>  (6) 
+385
+
+>  <i_i_glide_rotatable_bonds>  (6) 
+0
+
+>  <i_lp_mmshare_version>  (6) 
+73136
+
+>  <i_m_source_file_index>  (6) 
+3
+
+>  <PubChemCID>  (6) 
+2336
+
+>  <i_f3d_flags>  (6) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (6) 
+1
+
+>  <r_glide_cpu_time>  (6) 
+1.34375
+
+>  <r_glide_ring_energy>  (6) 
+0
+
+>  <r_i_docking_score>  (6) 
+-5.9727006059785968
+
+>  <r_i_glide_ecoul>  (6) 
+-0.54909088002722206
+
+>  <r_i_glide_einternal>  (6) 
+0
+
+>  <r_i_glide_emodel>  (6) 
+-33.859190176631124
+
+>  <r_i_glide_energy>  (6) 
+-24.888881336230675
+
+>  <r_i_glide_erotb>  (6) 
+0
+
+>  <r_i_glide_esite>  (6) 
+0
+
+>  <r_i_glide_evdw>  (6) 
+-24.339790456203453
+
+>  <r_i_glide_gscore>  (6) 
+-5.9727006059785968
+
+>  <r_i_glide_hbond>  (6) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (6) 
+-0.29863503029892985
+
+>  <r_i_glide_ligand_efficiency_ln>  (6) 
+-1.4947699688263143
+
+>  <r_i_glide_ligand_efficiency_sa>  (6) 
+-0.81062018717576889
+
+>  <r_i_glide_lipo>  (6) 
+-2.9429442390431277
+
+>  <r_i_glide_metal>  (6) 
+-0
+
+>  <r_i_glide_rewards>  (6) 
+-1.730403212121213
+
+>  <r_lp_Energy>  (6) 
+44.326904999999996
+
+>  <s_glide_docking_method>  (6) 
+confgen
+
+>  <s_i_glide_gridfile>  (6) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (6) 
+OPLS_2005
+
+>  <s_lp_Variant>  (6) 
+benzo_a_pyrene-1
+
+>  <s_m_source_file>  (6) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (6) 
+named (TonB transport hypothesis, slide 5); carcinogenic marker
+
+$$$$
+phenanthrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 24 26 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 73.186190 72.888144 60.550095 0
+M  V30 2 C 74.260491 73.360003 59.776575 0
+M  V30 3 C 74.189649 73.297618 58.374063 0
+M  V30 4 C 73.041717 72.774961 57.741774 0
+M  V30 5 C 73.004215 72.727351 56.335227 0
+M  V30 6 C 71.864321 72.241426 55.676713 0
+M  V30 7 C 70.751778 71.805390 56.419626 0
+M  V30 8 C 69.608167 71.360000 55.726436 0
+M  V30 9 C 68.471136 70.927718 56.426127 0
+M  V30 10 C 68.493008 70.915836 57.827345 0
+M  V30 11 C 69.627558 71.360136 58.532731 0
+M  V30 12 C 70.776418 71.823845 57.841488 0
+M  V30 13 C 71.937188 72.311775 58.510373 0
+M  V30 14 C 72.037299 72.368596 59.923725 0
+M  V30 15 H 73.242431 72.930139 61.628069 0
+M  V30 16 H 75.139859 73.762522 60.258183 0
+M  V30 17 H 75.022504 73.656374 57.786402 0
+M  V30 18 H 73.846490 73.072151 55.752666 0
+M  V30 19 H 71.842303 72.217776 54.596417 0
+M  V30 20 H 69.597117 71.359999 54.645740 0
+M  V30 21 H 67.598969 70.581551 55.891104 0
+M  V30 22 H 67.630000 70.560001 58.364201 0
+M  V30 23 H 69.571556 71.337324 59.608557 0
+M  V30 24 H 71.241463 72.032103 60.564839 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 10
+M  V30 11 1 12 7
+M  V30 12 2 12 11
+M  V30 13 1 13 4
+M  V30 14 1 13 12
+M  V30 15 1 14 1
+M  V30 16 2 14 13
+M  V30 17 1 15 1
+M  V30 18 1 16 2
+M  V30 19 1 17 3
+M  V30 20 1 18 5
+M  V30 21 1 19 6
+M  V30 22 1 20 8
+M  V30 23 1 21 9
+M  V30 24 1 22 10
+M  V30 25 1 23 11
+M  V30 26 1 24 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (7) 
+1
+
+>  <i_i_glide_lignum>  (7) 
+2
+
+>  <i_i_glide_posenum>  (7) 
+377
+
+>  <i_i_glide_rotatable_bonds>  (7) 
+0
+
+>  <i_lp_mmshare_version>  (7) 
+73136
+
+>  <i_m_source_file_index>  (7) 
+2
+
+>  <PubChemCID>  (7) 
+995
+
+>  <i_f3d_flags>  (7) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (7) 
+1
+
+>  <r_glide_cpu_time>  (7) 
+1.125
+
+>  <r_glide_ring_energy>  (7) 
+0
+
+>  <r_i_docking_score>  (7) 
+-5.9383426531582781
+
+>  <r_i_glide_ecoul>  (7) 
+-0.83766936244626899
+
+>  <r_i_glide_einternal>  (7) 
+0
+
+>  <r_i_glide_emodel>  (7) 
+-29.641606964444307
+
+>  <r_i_glide_energy>  (7) 
+-21.711690578168891
+
+>  <r_i_glide_erotb>  (7) 
+0
+
+>  <r_i_glide_esite>  (7) 
+0
+
+>  <r_i_glide_evdw>  (7) 
+-20.874021215722621
+
+>  <r_i_glide_gscore>  (7) 
+-5.9383426531582781
+
+>  <r_i_glide_hbond>  (7) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (7) 
+-0.42416733236844845
+
+>  <r_i_glide_ligand_efficiency_ln>  (7) 
+-1.6318354220009261
+
+>  <r_i_glide_ligand_efficiency_sa>  (7) 
+-1.0223036148236597
+
+>  <r_i_glide_lipo>  (7) 
+-2.5044364821264233
+
+>  <r_i_glide_metal>  (7) 
+-0
+
+>  <r_i_glide_rewards>  (7) 
+-2.2645547058787838
+
+>  <r_lp_Energy>  (7) 
+16.839226999999998
+
+>  <s_glide_docking_method>  (7) 
+confgen
+
+>  <s_i_glide_gridfile>  (7) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (7) 
+OPLS_2005
+
+>  <s_lp_Variant>  (7) 
+phenanthrene-1
+
+>  <s_m_source_file>  (7) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (7) 
+named (degradation intermediate; slides 8/19)
+
+$$$$
+glucose_NEGCTRL
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 24 24 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 O 72.030001 73.988990 55.779993 0
+M  V30 2 C 72.803174 73.289475 56.749834 0
+M  V30 3 C 71.903462 72.668427 57.829489 0 CFG=1
+M  V30 4 O 70.967797 71.809222 57.150799 0
+M  V30 5 C 69.995774 71.203222 57.973329 0 CFG=2
+M  V30 6 O 69.215795 72.210466 58.580008 0
+M  V30 7 C 70.677730 70.317609 59.030105 0 CFG=2
+M  V30 8 O 69.668383 69.760004 59.858983 0
+M  V30 9 C 71.719107 71.103919 59.841303 0 CFG=1
+M  V30 10 O 72.430001 70.213070 60.707026 0
+M  V30 11 C 72.675584 71.826304 58.870232 0 CFG=2
+M  V30 12 O 73.601139 72.641634 59.583393 0
+M  V30 13 H 71.533297 73.333926 55.267931 0
+M  V30 14 H 73.388660 72.519062 56.247060 0
+M  V30 15 H 73.513133 73.983125 57.201299 0
+M  V30 16 H 71.365526 73.475449 58.329936 0
+M  V30 17 H 69.379899 70.595158 57.297515 0
+M  V30 18 H 68.719139 72.664427 57.883998 0
+M  V30 19 H 71.194374 69.503967 58.521243 0
+M  V30 20 H 69.151068 70.488638 60.238283 0
+M  V30 21 H 71.218779 71.853236 60.454304 0
+M  V30 22 H 72.876479 69.530377 60.179984 0
+M  V30 23 H 73.230004 71.067708 58.320558 0
+M  V30 24 H 73.111099 73.282816 60.117041 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 1 2 1
+M  V30 2 1 3 2
+M  V30 3 1 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 5
+M  V30 6 1 7 5
+M  V30 7 1 8 7
+M  V30 8 1 9 7
+M  V30 9 1 10 9
+M  V30 10 1 11 3
+M  V30 11 1 11 9
+M  V30 12 1 12 11
+M  V30 13 1 13 1
+M  V30 14 1 14 2
+M  V30 15 1 15 2
+M  V30 16 1 3 16 CFG=1
+M  V30 17 1 5 17 CFG=3
+M  V30 18 1 18 6
+M  V30 19 1 7 19 CFG=3
+M  V30 20 1 20 8
+M  V30 21 1 9 21 CFG=1
+M  V30 22 1 22 10
+M  V30 23 1 11 23 CFG=3
+M  V30 24 1 24 12
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (8) 
+2
+
+>  <i_i_glide_lignum>  (8) 
+7
+
+>  <i_i_glide_posenum>  (8) 
+265
+
+>  <i_i_glide_rotatable_bonds>  (8) 
+6
+
+>  <i_lp_mmshare_version>  (8) 
+73136
+
+>  <i_m_source_file_index>  (8) 
+7
+
+>  <PubChemCID>  (8) 
+5793
+
+>  <i_f3d_flags>  (8) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (8) 
+1
+
+>  <r_glide_cpu_time>  (8) 
+4.984375
+
+>  <r_glide_ring_energy>  (8) 
+0
+
+>  <r_i_docking_score>  (8) 
+-5.904060307934472
+
+>  <r_i_glide_ecoul>  (8) 
+-7.6993779308131804
+
+>  <r_i_glide_einternal>  (8) 
+1.9927815539793685
+
+>  <r_i_glide_emodel>  (8) 
+-30.548664040025088
+
+>  <r_i_glide_energy>  (8) 
+-23.450424915189778
+
+>  <r_i_glide_erotb>  (8) 
+0.48540671602594931
+
+>  <r_i_glide_esite>  (8) 
+0
+
+>  <r_i_glide_evdw>  (8) 
+-15.751046984376599
+
+>  <r_i_glide_gscore>  (8) 
+-5.904060307934472
+
+>  <r_i_glide_hbond>  (8) 
+-0.81840913305899354
+
+>  <r_i_glide_ligand_efficiency>  (8) 
+-0.49200502566120602
+
+>  <r_i_glide_ligand_efficiency_ln>  (8) 
+-1.6941803328630447
+
+>  <r_i_glide_ligand_efficiency_sa>  (8) 
+-1.1264103205644003
+
+>  <r_i_glide_lipo>  (8) 
+-1.0074299183586888
+
+>  <r_i_glide_metal>  (8) 
+-0
+
+>  <r_i_glide_rewards>  (8) 
+-2.6211689337019313
+
+>  <r_lp_Energy>  (8) 
+23.232617999999999
+
+>  <s_glide_docking_method>  (8) 
+confgen
+
+>  <s_i_glide_gridfile>  (8) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (8) 
+OPLS_2005
+
+>  <s_lp_Variant>  (8) 
+glucose_NEGCTRL-1
+
+>  <s_m_source_file>  (8) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (8) 
+PROPOSED negative control (polar, non-aromatic) - not from files
+
+$$$$
+fluoranthene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 26 29 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 74.908752 73.499972 60.104904 0
+M  V30 2 C 74.025463 73.021942 61.102352 0
+M  V30 3 C 72.769356 72.481187 60.750380 0
+M  V30 4 C 72.423041 72.426337 59.389944 0
+M  V30 5 C 73.296464 72.907205 58.403344 0
+M  V30 6 C 74.549201 73.448534 58.739535 0
+M  V30 7 C 72.628968 72.732338 57.111823 0
+M  V30 8 C 72.981098 73.020292 55.778543 0
+M  V30 9 C 72.067356 72.730933 54.737713 0
+M  V30 10 C 70.802630 72.160000 55.018839 0
+M  V30 11 C 70.430008 71.856516 56.347035 0
+M  V30 12 C 69.214897 71.300468 56.802450 0
+M  V30 13 C 69.010252 71.045300 58.179999 0
+M  V30 14 C 70.007430 71.360002 59.132660 0
+M  V30 15 C 71.216181 71.947949 58.707174 0
+M  V30 16 C 71.374788 72.159993 57.335561 0
+M  V30 17 H 75.865469 73.911833 60.391496 0
+M  V30 18 H 74.314767 73.075300 62.142024 0
+M  V30 19 H 72.088189 72.130835 61.507198 0
+M  V30 20 H 75.216910 73.819848 57.976144 0
+M  V30 21 H 73.940162 73.463165 55.553460 0
+M  V30 22 H 72.335904 72.951833 53.715023 0
+M  V30 23 H 70.121193 71.946771 54.207915 0
+M  V30 24 H 68.439870 71.049526 56.093040 0
+M  V30 25 H 68.078623 70.608086 58.508003 0
+M  V30 26 H 69.831602 71.166848 60.179999 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 1
+M  V30 6 2 6 5
+M  V30 7 1 7 5
+M  V30 8 2 8 7
+M  V30 9 1 9 8
+M  V30 10 2 10 9
+M  V30 11 1 11 10
+M  V30 12 1 12 11
+M  V30 13 2 13 12
+M  V30 14 1 14 13
+M  V30 15 1 15 4
+M  V30 16 2 15 14
+M  V30 17 1 16 7
+M  V30 18 2 16 11
+M  V30 19 1 16 15
+M  V30 20 1 17 1
+M  V30 21 1 18 2
+M  V30 22 1 19 3
+M  V30 23 1 20 6
+M  V30 24 1 21 8
+M  V30 25 1 22 9
+M  V30 26 1 23 10
+M  V30 27 1 24 12
+M  V30 28 1 25 13
+M  V30 29 1 26 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (9) 
+1
+
+>  <i_i_glide_lignum>  (9) 
+6
+
+>  <i_i_glide_posenum>  (9) 
+328
+
+>  <i_i_glide_rotatable_bonds>  (9) 
+0
+
+>  <i_lp_mmshare_version>  (9) 
+73136
+
+>  <i_m_source_file_index>  (9) 
+6
+
+>  <PubChemCID>  (9) 
+9154
+
+>  <i_f3d_flags>  (9) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (9) 
+1
+
+>  <r_glide_cpu_time>  (9) 
+1.46875
+
+>  <r_glide_ring_energy>  (9) 
+0
+
+>  <r_i_docking_score>  (9) 
+-5.8904107088083162
+
+>  <r_i_glide_ecoul>  (9) 
+-0.50605485659858174
+
+>  <r_i_glide_einternal>  (9) 
+0
+
+>  <r_i_glide_emodel>  (9) 
+-32.321893731543156
+
+>  <r_i_glide_energy>  (9) 
+-23.930422781482264
+
+>  <r_i_glide_erotb>  (9) 
+0
+
+>  <r_i_glide_esite>  (9) 
+0
+
+>  <r_i_glide_evdw>  (9) 
+-23.424367924883683
+
+>  <r_i_glide_gscore>  (9) 
+-5.8904107088083162
+
+>  <r_i_glide_hbond>  (9) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (9) 
+-0.36815066930051976
+
+>  <r_i_glide_ligand_efficiency_ln>  (9) 
+-1.5613710219944641
+
+>  <r_i_glide_ligand_efficiency_sa>  (9) 
+-0.92768155556922227
+
+>  <r_i_glide_lipo>  (9) 
+-2.6132256749834357
+
+>  <r_i_glide_metal>  (9) 
+-0
+
+>  <r_i_glide_rewards>  (9) 
+-2.0300584090909095
+
+>  <r_lp_Energy>  (9) 
+49.371870999999999
+
+>  <s_glide_docking_method>  (9) 
+confgen
+
+>  <s_i_glide_gridfile>  (9) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (9) 
+OPLS_2005
+
+>  <s_lp_Variant>  (9) 
+fluoranthene-1
+
+>  <s_m_source_file>  (9) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (9) 
+EQS Saar PAH
+
+$$$$
+pyrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 26 29 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 74.778227 73.467127 57.940431 0
+M  V30 2 C 74.006210 72.960800 58.995695 0
+M  V30 3 C 72.721393 72.432526 58.761995 0
+M  V30 4 C 71.920878 71.916740 59.797611 0
+M  V30 5 C 70.644572 71.396436 59.536899 0
+M  V30 6 C 70.121660 71.372808 58.231063 0
+M  V30 7 C 68.843456 70.856349 57.941290 0
+M  V30 8 C 68.352274 70.847747 56.628054 0
+M  V30 9 C 69.143078 71.359994 55.588377 0
+M  V30 10 C 70.429020 71.887340 55.829920 0
+M  V30 11 C 71.243763 72.419147 54.732994 0
+M  V30 12 C 72.462222 72.915804 54.981838 0
+M  V30 13 C 72.984557 72.929105 56.351869 0
+M  V30 14 C 74.265596 73.447962 56.634556 0
+M  V30 15 C 72.212588 72.418508 57.434154 0
+M  V30 16 C 70.913823 71.889112 57.168902 0
+M  V30 17 H 75.762049 73.869676 58.131797 0
+M  V30 18 H 74.406436 72.978312 59.998994 0
+M  V30 19 H 72.290684 71.919047 60.812593 0
+M  V30 20 H 70.057237 71.008637 60.356436 0
+M  V30 21 H 68.229919 70.460611 58.737522 0
+M  V30 22 H 67.370696 70.449143 56.417998 0
+M  V30 23 H 68.753260 71.347585 54.580917 0
+M  V30 24 H 70.841842 72.400729 53.730499 0
+M  V30 25 H 73.077257 73.311945 54.187046 0
+M  V30 26 H 74.870184 73.841016 55.830211 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 10
+M  V30 11 2 12 11
+M  V30 12 1 13 12
+M  V30 13 1 14 1
+M  V30 14 2 14 13
+M  V30 15 1 15 3
+M  V30 16 1 15 13
+M  V30 17 1 16 6
+M  V30 18 1 16 10
+M  V30 19 2 16 15
+M  V30 20 1 17 1
+M  V30 21 1 18 2
+M  V30 22 1 19 4
+M  V30 23 1 20 5
+M  V30 24 1 21 7
+M  V30 25 1 22 8
+M  V30 26 1 23 9
+M  V30 27 1 24 11
+M  V30 28 1 25 12
+M  V30 29 1 26 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (10) 
+1
+
+>  <i_i_glide_lignum>  (10) 
+1
+
+>  <i_i_glide_posenum>  (10) 
+84
+
+>  <i_i_glide_rotatable_bonds>  (10) 
+0
+
+>  <i_lp_mmshare_version>  (10) 
+73136
+
+>  <i_m_source_file_index>  (10) 
+1
+
+>  <PubChemCID>  (10) 
+31423
+
+>  <i_f3d_flags>  (10) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (10) 
+1
+
+>  <r_glide_cpu_time>  (10) 
+3.359375
+
+>  <r_glide_ring_energy>  (10) 
+0
+
+>  <r_i_docking_score>  (10) 
+-5.8828628789160025
+
+>  <r_i_glide_ecoul>  (10) 
+-0.72013378357576763
+
+>  <r_i_glide_einternal>  (10) 
+0
+
+>  <r_i_glide_emodel>  (10) 
+-30.47010639328067
+
+>  <r_i_glide_energy>  (10) 
+-22.389991720247501
+
+>  <r_i_glide_erotb>  (10) 
+0
+
+>  <r_i_glide_esite>  (10) 
+0
+
+>  <r_i_glide_evdw>  (10) 
+-21.669857936671733
+
+>  <r_i_glide_gscore>  (10) 
+-5.8828628789160025
+
+>  <r_i_glide_hbond>  (10) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (10) 
+-0.36767892993225015
+
+>  <r_i_glide_ligand_efficiency_ln>  (10) 
+-1.5593703189101817
+
+>  <r_i_glide_ligand_efficiency_sa>  (10) 
+-0.9264928468489283
+
+>  <r_i_glide_lipo>  (10) 
+-2.6612915054551411
+
+>  <r_i_glide_metal>  (10) 
+-0
+
+>  <r_i_glide_rewards>  (10) 
+-2.0300584090909095
+
+>  <r_lp_Energy>  (10) 
+37.198661000000001
+
+>  <s_glide_docking_method>  (10) 
+confgen
+
+>  <s_i_glide_gridfile>  (10) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (10) 
+OPLS_2005
+
+>  <s_lp_Variant>  (10) 
+pyrene-1
+
+>  <s_m_source_file>  (10) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (10) 
+PRIMARY - team named it ('pyrene, should be common', 2.April)
+
+$$$$
+glucose_NEGCTRL
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 24 24 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 O 72.029984 73.990408 55.765175 0
+M  V30 2 C 72.781069 73.311381 56.764554 0
+M  V30 3 C 71.863050 72.696245 57.832596 0 CFG=1
+M  V30 4 O 70.945239 71.817527 57.152391 0
+M  V30 5 C 69.979619 71.197469 57.973512 0 CFG=2
+M  V30 6 O 69.177003 72.189545 58.579995 0
+M  V30 7 C 70.672858 70.327007 59.032368 0 CFG=2
+M  V30 8 O 69.668869 69.760031 59.860713 0
+M  V30 9 C 71.691869 71.135757 59.847687 0 CFG=1
+M  V30 10 O 72.430006 70.258402 60.704898 0
+M  V30 11 C 72.637517 71.880022 58.892227 0 CFG=2
+M  V30 12 O 73.504660 72.729461 59.636153 0
+M  V30 13 H 71.573194 73.322120 55.233437 0
+M  V30 14 H 73.387139 72.539669 56.287344 0
+M  V30 15 H 73.472606 74.017033 57.225973 0
+M  V30 16 H 71.307732 73.503490 58.313756 0
+M  V30 17 H 69.378051 70.575045 57.298542 0
+M  V30 18 H 68.664633 72.627803 57.884268 0
+M  V30 19 H 71.206900 69.520885 58.528327 0
+M  V30 20 H 69.135303 70.483843 60.227891 0
+M  V30 21 H 71.175059 71.872581 60.462881 0
+M  V30 22 H 72.817540 69.538052 60.180016 0
+M  V30 23 H 73.229997 71.139475 58.359976 0
+M  V30 24 H 73.924571 72.200066 60.330266 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 1 2 1
+M  V30 2 1 3 2
+M  V30 3 1 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 5
+M  V30 6 1 7 5
+M  V30 7 1 8 7
+M  V30 8 1 9 7
+M  V30 9 1 10 9
+M  V30 10 1 11 3
+M  V30 11 1 11 9
+M  V30 12 1 12 11
+M  V30 13 1 13 1
+M  V30 14 1 14 2
+M  V30 15 1 15 2
+M  V30 16 1 3 16 CFG=1
+M  V30 17 1 5 17 CFG=3
+M  V30 18 1 18 6
+M  V30 19 1 7 19 CFG=3
+M  V30 20 1 20 8
+M  V30 21 1 9 21 CFG=1
+M  V30 22 1 22 10
+M  V30 23 1 11 23 CFG=3
+M  V30 24 1 24 12
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (11) 
+2
+
+>  <i_i_glide_lignum>  (11) 
+7
+
+>  <i_i_glide_posenum>  (11) 
+149
+
+>  <i_i_glide_rotatable_bonds>  (11) 
+6
+
+>  <i_lp_mmshare_version>  (11) 
+73136
+
+>  <i_m_source_file_index>  (11) 
+7
+
+>  <PubChemCID>  (11) 
+5793
+
+>  <i_f3d_flags>  (11) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (11) 
+1
+
+>  <r_glide_cpu_time>  (11) 
+4.984375
+
+>  <r_glide_ring_energy>  (11) 
+0
+
+>  <r_i_docking_score>  (11) 
+-5.7988391434596354
+
+>  <r_i_glide_ecoul>  (11) 
+-7.0003532880032511
+
+>  <r_i_glide_einternal>  (11) 
+2.0176157473146232
+
+>  <r_i_glide_emodel>  (11) 
+-29.92573527026363
+
+>  <r_i_glide_energy>  (11) 
+-22.984174367463893
+
+>  <r_i_glide_erotb>  (11) 
+0.48540671602594931
+
+>  <r_i_glide_esite>  (11) 
+0
+
+>  <r_i_glide_evdw>  (11) 
+-15.983821079460641
+
+>  <r_i_glide_gscore>  (11) 
+-5.7988391434596354
+
+>  <r_i_glide_hbond>  (11) 
+-0.80125705002325542
+
+>  <r_i_glide_ligand_efficiency>  (11) 
+-0.48323659528830293
+
+>  <r_i_glide_ligand_efficiency_ln>  (11) 
+-1.6639869374441925
+
+>  <r_i_glide_ligand_efficiency_sa>  (11) 
+-1.1063356262990014
+
+>  <r_i_glide_lipo>  (11) 
+-1.0107512037999389
+
+>  <r_i_glide_metal>  (11) 
+-0
+
+>  <r_i_glide_rewards>  (11) 
+-2.6229935584888695
+
+>  <r_lp_Energy>  (11) 
+23.232617999999999
+
+>  <s_glide_docking_method>  (11) 
+confgen
+
+>  <s_i_glide_gridfile>  (11) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (11) 
+OPLS_2005
+
+>  <s_lp_Variant>  (11) 
+glucose_NEGCTRL-1
+
+>  <s_m_source_file>  (11) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (11) 
+PROPOSED negative control (polar, non-aromatic) - not from files
+
+$$$$
+fluoranthene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 26 29 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 68.473742 70.804088 56.367441 0
+M  V30 2 C 68.403808 70.628277 57.767028 0
+M  V30 3 C 69.442208 71.063447 58.617960 0
+M  V30 4 C 70.575505 71.639852 58.022966 0
+M  V30 5 C 70.677023 71.761986 56.628645 0
+M  V30 6 C 69.630002 71.360001 55.780000 0
+M  V30 7 C 71.986253 72.352420 56.342642 0
+M  V30 8 C 72.672361 72.691337 55.160321 0
+M  V30 9 C 73.963602 73.264828 55.244660 0
+M  V30 10 C 74.573207 73.508753 56.500370 0
+M  V30 11 C 73.904628 73.177373 57.698924 0
+M  V30 12 C 74.356761 73.359992 59.024494 0
+M  V30 13 C 73.552062 72.960003 60.119979 0
+M  V30 14 C 72.282316 72.370348 59.912134 0
+M  V30 15 C 71.807598 72.184554 58.598815 0
+M  V30 16 C 72.635436 72.601176 57.554431 0
+M  V30 17 H 67.656549 70.473242 55.743671 0
+M  V30 18 H 67.527336 70.159999 58.180000 0
+M  V30 19 H 69.367210 70.950367 59.689774 0
+M  V30 20 H 69.711650 71.465320 54.708033 0
+M  V30 21 H 72.215630 72.514228 54.197539 0
+M  V30 22 H 74.489858 73.526202 54.338449 0
+M  V30 23 H 75.556504 73.954117 56.539580 0
+M  V30 24 H 75.324472 73.804362 59.206958 0
+M  V30 25 H 73.914291 73.106779 61.127179 0
+M  V30 26 H 71.676240 72.074963 60.754117 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 1
+M  V30 6 2 6 5
+M  V30 7 1 7 5
+M  V30 8 2 8 7
+M  V30 9 1 9 8
+M  V30 10 2 10 9
+M  V30 11 1 11 10
+M  V30 12 1 12 11
+M  V30 13 2 13 12
+M  V30 14 1 14 13
+M  V30 15 1 15 4
+M  V30 16 2 15 14
+M  V30 17 1 16 7
+M  V30 18 2 16 11
+M  V30 19 1 16 15
+M  V30 20 1 17 1
+M  V30 21 1 18 2
+M  V30 22 1 19 3
+M  V30 23 1 20 6
+M  V30 24 1 21 8
+M  V30 25 1 22 9
+M  V30 26 1 23 10
+M  V30 27 1 24 12
+M  V30 28 1 25 13
+M  V30 29 1 26 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (12) 
+1
+
+>  <i_i_glide_lignum>  (12) 
+6
+
+>  <i_i_glide_posenum>  (12) 
+287
+
+>  <i_i_glide_rotatable_bonds>  (12) 
+0
+
+>  <i_lp_mmshare_version>  (12) 
+73136
+
+>  <i_m_source_file_index>  (12) 
+6
+
+>  <PubChemCID>  (12) 
+9154
+
+>  <i_f3d_flags>  (12) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (12) 
+1
+
+>  <r_glide_cpu_time>  (12) 
+1.46875
+
+>  <r_glide_ring_energy>  (12) 
+0
+
+>  <r_i_docking_score>  (12) 
+-5.7982071609030728
+
+>  <r_i_glide_ecoul>  (12) 
+-0.85284294605866273
+
+>  <r_i_glide_einternal>  (12) 
+0
+
+>  <r_i_glide_emodel>  (12) 
+-30.785229457614292
+
+>  <r_i_glide_energy>  (12) 
+-22.525111554393138
+
+>  <r_i_glide_erotb>  (12) 
+0
+
+>  <r_i_glide_esite>  (12) 
+0
+
+>  <r_i_glide_evdw>  (12) 
+-21.672268608334477
+
+>  <r_i_glide_gscore>  (12) 
+-5.7982071609030728
+
+>  <r_i_glide_hbond>  (12) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (12) 
+-0.36238794755644205
+
+>  <r_i_glide_ligand_efficiency_ln>  (12) 
+-1.5369306298145016
+
+>  <r_i_glide_ligand_efficiency_sa>  (12) 
+-0.91316040670912146
+
+>  <r_i_glide_lipo>  (12) 
+-2.4942171522002687
+
+>  <r_i_glide_metal>  (12) 
+-0
+
+>  <r_i_glide_rewards>  (12) 
+-2.0924501363772796
+
+>  <r_lp_Energy>  (12) 
+49.371870999999999
+
+>  <s_glide_docking_method>  (12) 
+confgen
+
+>  <s_i_glide_gridfile>  (12) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (12) 
+OPLS_2005
+
+>  <s_lp_Variant>  (12) 
+fluoranthene-1
+
+>  <s_m_source_file>  (12) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (12) 
+EQS Saar PAH
+
+$$$$
+anthracene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 24 26 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 74.924817 73.718917 57.900086 0
+M  V30 2 C 74.640980 73.543925 59.268517 0
+M  V30 3 C 73.423386 72.960002 59.667866 0
+M  V30 4 C 72.485036 72.550912 58.698066 0
+M  V30 5 C 71.267806 71.961924 59.094100 0
+M  V30 6 C 70.325600 71.567314 58.123896 0
+M  V30 7 C 69.109040 70.976679 58.517734 0
+M  V30 8 C 68.168678 70.592274 57.543455 0
+M  V30 9 C 68.430000 70.794840 56.180000 0
+M  V30 10 C 69.653443 71.360001 55.780001 0
+M  V30 11 C 70.601198 71.760000 56.746895 0
+M  V30 12 C 71.824303 72.336879 56.349424 0
+M  V30 13 C 72.766973 72.733605 57.320649 0
+M  V30 14 C 73.990255 73.314216 56.927031 0
+M  V30 15 H 75.859530 74.167885 57.596869 0
+M  V30 16 H 75.358868 73.856767 60.012627 0
+M  V30 17 H 73.216327 72.829547 60.720108 0
+M  V30 18 H 71.055763 71.815352 60.143244 0
+M  V30 19 H 68.884471 70.825578 59.564241 0
+M  V30 20 H 67.230028 70.160000 57.842485 0
+M  V30 21 H 67.703399 70.494327 55.439828 0
+M  V30 22 H 69.857360 71.492994 54.727321 0
+M  V30 23 H 72.037714 72.477739 55.299196 0
+M  V30 24 H 74.215536 73.456705 55.880276 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 6
+M  V30 11 1 11 10
+M  V30 12 2 12 11
+M  V30 13 1 13 4
+M  V30 14 1 13 12
+M  V30 15 1 14 1
+M  V30 16 2 14 13
+M  V30 17 1 15 1
+M  V30 18 1 16 2
+M  V30 19 1 17 3
+M  V30 20 1 18 5
+M  V30 21 1 19 7
+M  V30 22 1 20 8
+M  V30 23 1 21 9
+M  V30 24 1 22 10
+M  V30 25 1 23 12
+M  V30 26 1 24 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (13) 
+1
+
+>  <i_i_glide_lignum>  (13) 
+5
+
+>  <i_i_glide_posenum>  (13) 
+58
+
+>  <i_i_glide_rotatable_bonds>  (13) 
+0
+
+>  <i_lp_mmshare_version>  (13) 
+73136
+
+>  <i_m_source_file_index>  (13) 
+5
+
+>  <PubChemCID>  (13) 
+8418
+
+>  <i_f3d_flags>  (13) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (13) 
+1
+
+>  <r_glide_cpu_time>  (13) 
+1.25
+
+>  <r_glide_ring_energy>  (13) 
+0
+
+>  <r_i_docking_score>  (13) 
+-5.7716328726679942
+
+>  <r_i_glide_ecoul>  (13) 
+-0.85474649771576283
+
+>  <r_i_glide_einternal>  (13) 
+0
+
+>  <r_i_glide_emodel>  (13) 
+-27.527571845874611
+
+>  <r_i_glide_energy>  (13) 
+-20.130496519262092
+
+>  <r_i_glide_erotb>  (13) 
+0
+
+>  <r_i_glide_esite>  (13) 
+0
+
+>  <r_i_glide_evdw>  (13) 
+-19.27575002154633
+
+>  <r_i_glide_gscore>  (13) 
+-5.7716328726679942
+
+>  <r_i_glide_hbond>  (13) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (13) 
+-0.41225949090485675
+
+>  <r_i_glide_ligand_efficiency_ln>  (13) 
+-1.5860241677693503
+
+>  <r_i_glide_ligand_efficiency_sa>  (13) 
+-0.9936040228371591
+
+>  <r_i_glide_lipo>  (13) 
+-2.4238093716153735
+
+>  <r_i_glide_metal>  (13) 
+-0
+
+>  <r_i_glide_rewards>  (13) 
+-2.2558240253179398
+
+>  <r_lp_Energy>  (13) 
+13.742320999999999
+
+>  <s_glide_docking_method>  (13) 
+confgen
+
+>  <s_i_glide_gridfile>  (13) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (13) 
+OPLS_2005
+
+>  <s_lp_Variant>  (13) 
+anthracene-1
+
+>  <s_m_source_file>  (13) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (13) 
+specificity probe (phenanthrene isomer)
+
+$$$$
+fluoranthene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 26 29 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 72.402064 72.572821 53.019579 0
+M  V30 2 C 73.636329 73.042941 53.530426 0
+M  V30 3 C 73.863416 73.104901 54.923622 0
+M  V30 4 C 72.832908 72.684829 55.781679 0
+M  V30 5 C 71.609593 72.222142 55.275883 0
+M  V30 6 C 71.372217 72.160010 53.893241 0
+M  V30 7 C 70.773056 71.863450 56.423115 0
+M  V30 8 C 69.464990 71.360003 56.565892 0
+M  V30 9 C 68.955895 71.097162 57.859504 0
+M  V30 10 C 69.737183 71.349075 59.013801 0
+M  V30 11 C 71.044420 71.872889 58.896880 0
+M  V30 12 C 71.951587 72.196172 59.930516 0
+M  V30 13 C 73.227724 72.731478 59.631476 0
+M  V30 14 C 73.632015 72.940906 58.291866 0
+M  V30 15 C 72.751847 72.612318 57.242443 0
+M  V30 16 C 71.498728 72.103216 57.591692 0
+M  V30 17 H 72.244547 72.530354 51.952070 0
+M  V30 18 H 74.411398 73.359889 52.848151 0
+M  V30 19 H 74.802048 73.464804 55.318406 0
+M  V30 20 H 70.431330 71.793194 53.510342 0
+M  V30 21 H 68.863980 71.158023 55.691034 0
+M  V30 22 H 67.960500 70.693396 57.967980 0
+M  V30 23 H 69.323395 71.141845 59.990315 0
+M  V30 24 H 71.669745 72.053103 60.961734 0
+M  V30 25 H 73.903105 72.980608 60.437419 0
+M  V30 26 H 74.609682 73.346026 58.076002 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 1
+M  V30 6 2 6 5
+M  V30 7 1 7 5
+M  V30 8 2 8 7
+M  V30 9 1 9 8
+M  V30 10 2 10 9
+M  V30 11 1 11 10
+M  V30 12 1 12 11
+M  V30 13 2 13 12
+M  V30 14 1 14 13
+M  V30 15 1 15 4
+M  V30 16 2 15 14
+M  V30 17 1 16 7
+M  V30 18 2 16 11
+M  V30 19 1 16 15
+M  V30 20 1 17 1
+M  V30 21 1 18 2
+M  V30 22 1 19 3
+M  V30 23 1 20 6
+M  V30 24 1 21 8
+M  V30 25 1 22 9
+M  V30 26 1 23 10
+M  V30 27 1 24 12
+M  V30 28 1 25 13
+M  V30 29 1 26 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (14) 
+1
+
+>  <i_i_glide_lignum>  (14) 
+6
+
+>  <i_i_glide_posenum>  (14) 
+268
+
+>  <i_i_glide_rotatable_bonds>  (14) 
+0
+
+>  <i_lp_mmshare_version>  (14) 
+73136
+
+>  <i_m_source_file_index>  (14) 
+6
+
+>  <PubChemCID>  (14) 
+9154
+
+>  <i_f3d_flags>  (14) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (14) 
+1
+
+>  <r_glide_cpu_time>  (14) 
+1.46875
+
+>  <r_glide_ring_energy>  (14) 
+0
+
+>  <r_i_docking_score>  (14) 
+-5.7068964231913757
+
+>  <r_i_glide_ecoul>  (14) 
+-0.51747083611838607
+
+>  <r_i_glide_einternal>  (14) 
+0
+
+>  <r_i_glide_emodel>  (14) 
+-31.225343730499702
+
+>  <r_i_glide_energy>  (14) 
+-23.095306977951207
+
+>  <r_i_glide_erotb>  (14) 
+0
+
+>  <r_i_glide_esite>  (14) 
+0
+
+>  <r_i_glide_evdw>  (14) 
+-22.577836141832822
+
+>  <r_i_glide_gscore>  (14) 
+-5.7068964231913757
+
+>  <r_i_glide_hbond>  (14) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (14) 
+-0.35668102644946098
+
+>  <r_i_glide_ligand_efficiency_ln>  (14) 
+-1.5127268948106272
+
+>  <r_i_glide_ligand_efficiency_sa>  (14) 
+-0.8987798666435719
+
+>  <r_i_glide_lipo>  (14) 
+-2.4703255815910663
+
+>  <r_i_glide_metal>  (14) 
+-0
+
+>  <r_i_glide_rewards>  (14) 
+-2.0300584090909095
+
+>  <r_lp_Energy>  (14) 
+49.371870999999999
+
+>  <s_glide_docking_method>  (14) 
+confgen
+
+>  <s_i_glide_gridfile>  (14) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (14) 
+OPLS_2005
+
+>  <s_lp_Variant>  (14) 
+fluoranthene-1
+
+>  <s_m_source_file>  (14) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (14) 
+EQS Saar PAH
+
+$$$$
+pyrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 26 29 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 68.830038 70.985152 57.975148 0
+M  V30 2 C 69.737997 71.209644 59.018654 0
+M  V30 3 C 71.010642 71.757593 58.762261 0
+M  V30 4 C 71.942054 72.013961 59.784257 0
+M  V30 5 C 73.201512 72.560001 59.501323 0
+M  V30 6 C 73.584611 72.855558 58.180965 0
+M  V30 7 C 74.851293 73.384917 57.866624 0
+M  V30 8 C 75.203217 73.665483 56.538953 0
+M  V30 9 C 74.280098 73.422390 55.510770 0
+M  V30 10 C 72.998822 72.896258 55.778126 0
+M  V30 11 C 72.041770 72.656533 54.694552 0
+M  V30 12 C 70.829958 72.159999 54.970123 0
+M  V30 13 C 70.460558 71.842932 56.352654 0
+M  V30 14 C 69.190036 71.315809 56.661289 0
+M  V30 15 C 71.371782 72.066066 57.422277 0
+M  V30 16 C 72.659523 72.607750 57.130589 0
+M  V30 17 H 67.858873 70.559998 58.179981 0
+M  V30 18 H 69.448322 70.961430 60.029838 0
+M  V30 19 H 71.689014 71.796078 60.809353 0
+M  V30 20 H 73.889343 72.747543 60.313274 0
+M  V30 21 H 75.565535 73.578035 58.654424 0
+M  V30 22 H 76.177784 74.071632 56.309949 0
+M  V30 23 H 74.561277 73.649859 54.492805 0
+M  V30 24 H 72.333842 72.886266 53.680080 0
+M  V30 25 H 70.113868 71.969001 54.184094 0
+M  V30 26 H 68.480922 71.136242 55.866388 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 10
+M  V30 11 2 12 11
+M  V30 12 1 13 12
+M  V30 13 1 14 1
+M  V30 14 2 14 13
+M  V30 15 1 15 3
+M  V30 16 1 15 13
+M  V30 17 1 16 6
+M  V30 18 1 16 10
+M  V30 19 2 16 15
+M  V30 20 1 17 1
+M  V30 21 1 18 2
+M  V30 22 1 19 4
+M  V30 23 1 20 5
+M  V30 24 1 21 7
+M  V30 25 1 22 8
+M  V30 26 1 23 9
+M  V30 27 1 24 11
+M  V30 28 1 25 12
+M  V30 29 1 26 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (15) 
+1
+
+>  <i_i_glide_lignum>  (15) 
+1
+
+>  <i_i_glide_posenum>  (15) 
+298
+
+>  <i_i_glide_rotatable_bonds>  (15) 
+0
+
+>  <i_lp_mmshare_version>  (15) 
+73136
+
+>  <i_m_source_file_index>  (15) 
+1
+
+>  <PubChemCID>  (15) 
+31423
+
+>  <i_f3d_flags>  (15) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (15) 
+1
+
+>  <r_glide_cpu_time>  (15) 
+3.359375
+
+>  <r_glide_ring_energy>  (15) 
+0
+
+>  <r_i_docking_score>  (15) 
+-5.6948612075082821
+
+>  <r_i_glide_ecoul>  (15) 
+-0.62407203911707088
+
+>  <r_i_glide_einternal>  (15) 
+0
+
+>  <r_i_glide_emodel>  (15) 
+-30.890124389231858
+
+>  <r_i_glide_energy>  (15) 
+-23.068230092053547
+
+>  <r_i_glide_erotb>  (15) 
+0
+
+>  <r_i_glide_esite>  (15) 
+0
+
+>  <r_i_glide_evdw>  (15) 
+-22.444158052936476
+
+>  <r_i_glide_gscore>  (15) 
+-5.6948612075082821
+
+>  <r_i_glide_hbond>  (15) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (15) 
+-0.35592882546926763
+
+>  <r_i_glide_ligand_efficiency_ln>  (15) 
+-1.5095367204849328
+
+>  <r_i_glide_ligand_efficiency_sa>  (15) 
+-0.89688443894617753
+
+>  <r_i_glide_lipo>  (15) 
+-2.4489840899029884
+
+>  <r_i_glide_metal>  (15) 
+-0
+
+>  <r_i_glide_rewards>  (15) 
+-2.0300584090909095
+
+>  <r_lp_Energy>  (15) 
+37.198661000000001
+
+>  <s_glide_docking_method>  (15) 
+confgen
+
+>  <s_i_glide_gridfile>  (15) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (15) 
+OPLS_2005
+
+>  <s_lp_Variant>  (15) 
+pyrene-1
+
+>  <s_m_source_file>  (15) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (15) 
+PRIMARY - team named it ('pyrene, should be common', 2.April)
+
+$$$$
+benzo_a_pyrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 32 36 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 68.483597 70.936980 56.423667 0
+M  V30 2 C 68.495877 70.920262 57.824735 0
+M  V30 3 C 69.627541 71.362474 58.536222 0
+M  V30 4 C 70.785475 71.816086 57.852777 0
+M  V30 5 C 70.771430 71.791753 56.438375 0
+M  V30 6 C 69.629767 71.360002 55.733961 0
+M  V30 7 C 71.898521 72.204806 55.716134 0
+M  V30 8 C 73.056940 72.673778 56.359559 0
+M  V30 9 C 74.214632 73.106068 55.571837 0
+M  V30 10 C 75.305471 73.576977 56.186031 0
+M  V30 11 C 75.342191 73.659469 57.647213 0
+M  V30 12 C 76.484839 74.153579 58.311193 0
+M  V30 13 C 76.544088 74.234399 59.709987 0
+M  V30 14 C 75.445329 73.817598 60.472876 0
+M  V30 15 C 74.283948 73.319312 59.851493 0
+M  V30 16 C 73.176097 72.875533 60.588443 0
+M  V30 17 C 72.037388 72.370593 59.948270 0
+M  V30 18 C 71.936719 72.292104 58.541349 0
+M  V30 19 C 73.063339 72.730143 57.781912 0
+M  V30 20 C 74.230973 73.238837 58.433734 0
+M  V30 21 H 67.613692 70.597054 55.881703 0
+M  V30 22 H 67.630036 70.560000 58.354811 0
+M  V30 23 H 69.566748 71.339499 59.612000 0
+M  V30 24 H 69.628125 71.360000 54.653244 0
+M  V30 25 H 71.875819 72.169541 54.636040 0
+M  V30 26 H 74.166697 73.038713 54.494765 0
+M  V30 27 H 76.168151 73.904018 55.623954 0
+M  V30 28 H 77.338612 74.478098 57.734154 0
+M  V30 29 H 77.430153 74.615164 60.196651 0
+M  V30 30 H 75.497796 73.877425 61.550573 0
+M  V30 31 H 73.199016 72.920284 61.667753 0
+M  V30 32 H 71.229999 72.050857 60.580000 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 1
+M  V30 6 2 6 5
+M  V30 7 1 7 5
+M  V30 8 2 8 7
+M  V30 9 1 9 8
+M  V30 10 2 10 9
+M  V30 11 1 11 10
+M  V30 12 2 12 11
+M  V30 13 1 13 12
+M  V30 14 2 14 13
+M  V30 15 1 15 14
+M  V30 16 2 16 15
+M  V30 17 1 17 16
+M  V30 18 1 18 4
+M  V30 19 2 18 17
+M  V30 20 1 19 8
+M  V30 21 1 19 18
+M  V30 22 1 20 11
+M  V30 23 1 20 15
+M  V30 24 2 20 19
+M  V30 25 1 21 1
+M  V30 26 1 22 2
+M  V30 27 1 23 3
+M  V30 28 1 24 6
+M  V30 29 1 25 7
+M  V30 30 1 26 9
+M  V30 31 1 27 10
+M  V30 32 1 28 12
+M  V30 33 1 29 13
+M  V30 34 1 30 14
+M  V30 35 1 31 16
+M  V30 36 1 32 17
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (16) 
+1
+
+>  <i_i_glide_lignum>  (16) 
+3
+
+>  <i_i_glide_posenum>  (16) 
+244
+
+>  <i_i_glide_rotatable_bonds>  (16) 
+0
+
+>  <i_lp_mmshare_version>  (16) 
+73136
+
+>  <i_m_source_file_index>  (16) 
+3
+
+>  <PubChemCID>  (16) 
+2336
+
+>  <i_f3d_flags>  (16) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (16) 
+1
+
+>  <r_glide_cpu_time>  (16) 
+1.34375
+
+>  <r_glide_ring_energy>  (16) 
+0
+
+>  <r_i_docking_score>  (16) 
+-5.6852726518376162
+
+>  <r_i_glide_ecoul>  (16) 
+-0.75912133502249501
+
+>  <r_i_glide_einternal>  (16) 
+0
+
+>  <r_i_glide_emodel>  (16) 
+-33.837210897517181
+
+>  <r_i_glide_energy>  (16) 
+-25.29858576070438
+
+>  <r_i_glide_erotb>  (16) 
+0
+
+>  <r_i_glide_esite>  (16) 
+0
+
+>  <r_i_glide_evdw>  (16) 
+-24.539464425681885
+
+>  <r_i_glide_gscore>  (16) 
+-5.6852726518376162
+
+>  <r_i_glide_hbond>  (16) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (16) 
+-0.28426363259188081
+
+>  <r_i_glide_ligand_efficiency_ln>  (16) 
+-1.4228362319132231
+
+>  <r_i_glide_ligand_efficiency_sa>  (16) 
+-0.7716102120646634
+
+>  <r_i_glide_lipo>  (16) 
+-2.5859555330409041
+
+>  <r_i_glide_metal>  (16) 
+-0
+
+>  <r_i_glide_rewards>  (16) 
+-1.758475697259243
+
+>  <r_lp_Energy>  (16) 
+44.326904999999996
+
+>  <s_glide_docking_method>  (16) 
+confgen
+
+>  <s_i_glide_gridfile>  (16) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (16) 
+OPLS_2005
+
+>  <s_lp_Variant>  (16) 
+benzo_a_pyrene-1
+
+>  <s_m_source_file>  (16) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (16) 
+named (TonB transport hypothesis, slide 5); carcinogenic marker
+
+$$$$
+phenanthrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 24 26 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 74.078169 72.807915 54.923357 0
+M  V30 2 C 74.954284 73.106452 55.980467 0
+M  V30 3 C 74.519713 72.960008 57.308764 0
+M  V30 4 C 73.211762 72.510180 57.583580 0
+M  V30 5 C 72.815963 72.356600 58.925458 0
+M  V30 6 C 71.530064 71.886757 59.231439 0
+M  V30 7 C 70.623646 71.584283 58.198936 0
+M  V30 8 C 69.347233 71.092771 58.538859 0
+M  V30 9 C 68.429706 70.765091 57.527693 0
+M  V30 10 C 68.763872 70.960000 56.180012 0
+M  V30 11 C 70.030001 71.469199 55.836345 0
+M  V30 12 C 70.993623 71.761707 56.836249 0
+M  V30 13 C 72.309371 72.212302 56.524664 0
+M  V30 14 C 72.768253 72.367324 55.191139 0
+M  V30 15 H 74.410015 72.920407 53.901677 0
+M  V30 16 H 75.957783 73.448699 55.773777 0
+M  V30 17 H 75.199697 73.189668 58.116678 0
+M  V30 18 H 73.502370 72.585821 59.727892 0
+M  V30 19 H 71.243595 71.759124 60.264212 0
+M  V30 20 H 69.068472 70.952531 59.573830 0
+M  V30 21 H 67.459319 70.368796 57.781226 0
+M  V30 22 H 68.052023 70.713736 55.405949 0
+M  V30 23 H 70.235535 71.590373 54.785685 0
+M  V30 24 H 72.143468 72.150845 54.340295 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 10
+M  V30 11 1 12 7
+M  V30 12 2 12 11
+M  V30 13 1 13 4
+M  V30 14 1 13 12
+M  V30 15 1 14 1
+M  V30 16 2 14 13
+M  V30 17 1 15 1
+M  V30 18 1 16 2
+M  V30 19 1 17 3
+M  V30 20 1 18 5
+M  V30 21 1 19 6
+M  V30 22 1 20 8
+M  V30 23 1 21 9
+M  V30 24 1 22 10
+M  V30 25 1 23 11
+M  V30 26 1 24 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (17) 
+1
+
+>  <i_i_glide_lignum>  (17) 
+2
+
+>  <i_i_glide_posenum>  (17) 
+129
+
+>  <i_i_glide_rotatable_bonds>  (17) 
+0
+
+>  <i_lp_mmshare_version>  (17) 
+73136
+
+>  <i_m_source_file_index>  (17) 
+2
+
+>  <PubChemCID>  (17) 
+995
+
+>  <i_f3d_flags>  (17) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (17) 
+1
+
+>  <r_glide_cpu_time>  (17) 
+1.125
+
+>  <r_glide_ring_energy>  (17) 
+0
+
+>  <r_i_docking_score>  (17) 
+-5.6840633203873638
+
+>  <r_i_glide_ecoul>  (17) 
+-0.94222010296670333
+
+>  <r_i_glide_einternal>  (17) 
+0
+
+>  <r_i_glide_emodel>  (17) 
+-28.569114617827971
+
+>  <r_i_glide_energy>  (17) 
+-20.978756584009503
+
+>  <r_i_glide_erotb>  (17) 
+0
+
+>  <r_i_glide_esite>  (17) 
+0
+
+>  <r_i_glide_evdw>  (17) 
+-20.036536481042798
+
+>  <r_i_glide_gscore>  (17) 
+-5.6840633203873638
+
+>  <r_i_glide_hbond>  (17) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (17) 
+-0.4060045228848117
+
+>  <r_i_glide_ligand_efficiency_ln>  (17) 
+-1.5619603665294042
+
+>  <r_i_glide_ligand_efficiency_sa>  (17) 
+-0.97852866005098416
+
+>  <r_i_glide_lipo>  (17) 
+-2.3470566627084004
+
+>  <r_i_glide_metal>  (17) 
+-0
+
+>  <r_i_glide_rewards>  (17) 
+-2.193846818181818
+
+>  <r_lp_Energy>  (17) 
+16.839226999999998
+
+>  <s_glide_docking_method>  (17) 
+confgen
+
+>  <s_i_glide_gridfile>  (17) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (17) 
+OPLS_2005
+
+>  <s_lp_Variant>  (17) 
+phenanthrene-1
+
+>  <s_m_source_file>  (17) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (17) 
+named (degradation intermediate; slides 8/19)
+
+$$$$
+phenanthrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 24 26 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 74.471562 73.360002 58.817686 0
+M  V30 2 C 75.013177 73.706031 57.568460 0
+M  V30 3 C 74.269823 73.475207 56.398235 0
+M  V30 4 C 72.985311 72.897530 56.473192 0
+M  V30 5 C 72.262218 72.694842 55.282617 0
+M  V30 6 C 70.976282 72.135674 55.325331 0
+M  V30 7 C 70.409026 71.760006 56.557257 0
+M  V30 8 C 69.112098 71.206016 56.566900 0
+M  V30 9 C 68.525114 70.801085 57.775871 0
+M  V30 10 C 69.230000 70.960000 58.980006 0
+M  V30 11 C 70.515407 71.530645 58.979997 0
+M  V30 12 C 71.128823 71.943986 57.770376 0
+M  V30 13 C 72.427088 72.531053 57.729504 0
+M  V30 14 C 73.193325 72.775801 58.898397 0
+M  V30 15 H 75.039724 73.540019 59.718907 0
+M  V30 16 H 75.994949 74.152748 57.508505 0
+M  V30 17 H 74.689938 73.751110 55.441792 0
+M  V30 18 H 72.687282 72.974252 54.329332 0
+M  V30 19 H 70.430140 71.986997 54.404484 0
+M  V30 20 H 68.569291 71.070470 55.642428 0
+M  V30 21 H 67.540720 70.359586 57.778831 0
+M  V30 22 H 68.782847 70.646216 59.910811 0
+M  V30 23 H 71.003043 71.633089 59.934698 0
+M  V30 24 H 72.832209 72.532489 59.883640 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 10
+M  V30 11 1 12 7
+M  V30 12 2 12 11
+M  V30 13 1 13 4
+M  V30 14 1 13 12
+M  V30 15 1 14 1
+M  V30 16 2 14 13
+M  V30 17 1 15 1
+M  V30 18 1 16 2
+M  V30 19 1 17 3
+M  V30 20 1 18 5
+M  V30 21 1 19 6
+M  V30 22 1 20 8
+M  V30 23 1 21 9
+M  V30 24 1 22 10
+M  V30 25 1 23 11
+M  V30 26 1 24 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (18) 
+1
+
+>  <i_i_glide_lignum>  (18) 
+2
+
+>  <i_i_glide_posenum>  (18) 
+320
+
+>  <i_i_glide_rotatable_bonds>  (18) 
+0
+
+>  <i_lp_mmshare_version>  (18) 
+73136
+
+>  <i_m_source_file_index>  (18) 
+2
+
+>  <PubChemCID>  (18) 
+995
+
+>  <i_f3d_flags>  (18) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (18) 
+1
+
+>  <r_glide_cpu_time>  (18) 
+1.125
+
+>  <r_glide_ring_energy>  (18) 
+0
+
+>  <r_i_docking_score>  (18) 
+-5.6691147280961651
+
+>  <r_i_glide_ecoul>  (18) 
+-1.0168153078097757
+
+>  <r_i_glide_einternal>  (18) 
+0
+
+>  <r_i_glide_emodel>  (18) 
+-28.650014090340832
+
+>  <r_i_glide_energy>  (18) 
+-21.079618038153498
+
+>  <r_i_glide_erotb>  (18) 
+0
+
+>  <r_i_glide_esite>  (18) 
+0
+
+>  <r_i_glide_evdw>  (18) 
+-20.062802730343723
+
+>  <r_i_glide_gscore>  (18) 
+-5.6691147280961651
+
+>  <r_i_glide_hbond>  (18) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (18) 
+-0.40493676629258324
+
+>  <r_i_glide_ligand_efficiency_ln>  (18) 
+-1.5578525465812147
+
+>  <r_i_glide_ligand_efficiency_sa>  (18) 
+-0.97595521476020264
+
+>  <r_i_glide_lipo>  (18) 
+-2.3196054772256942
+
+>  <r_i_glide_metal>  (18) 
+-0
+
+>  <r_i_glide_rewards>  (18) 
+-2.193846818181818
+
+>  <r_lp_Energy>  (18) 
+16.839226999999998
+
+>  <s_glide_docking_method>  (18) 
+confgen
+
+>  <s_i_glide_gridfile>  (18) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (18) 
+OPLS_2005
+
+>  <s_lp_Variant>  (18) 
+phenanthrene-1
+
+>  <s_m_source_file>  (18) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (18) 
+named (degradation intermediate; slides 8/19)
+
+$$$$
+phenanthrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 24 26 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 72.155339 72.612320 53.313983 0
+M  V30 2 C 73.475038 72.991469 53.611908 0
+M  V30 3 C 73.924643 72.962101 54.943134 0
+M  V30 4 C 73.057784 72.554337 55.978529 0
+M  V30 5 C 73.541709 72.537061 57.300186 0
+M  V30 6 C 72.704625 72.136480 58.352946 0
+M  V30 7 C 71.376406 71.749725 58.093113 0
+M  V30 8 C 70.561003 71.352454 59.173414 0
+M  V30 9 C 69.230002 70.960035 58.950677 0
+M  V30 10 C 68.711855 70.964464 57.644683 0
+M  V30 11 C 69.520947 71.360000 56.562358 0
+M  V30 12 C 70.867433 71.760000 56.764287 0
+M  V30 13 C 71.718308 72.167181 55.694184 0
+M  V30 14 C 71.285440 72.204386 54.343242 0
+M  V30 15 H 71.807015 72.633894 52.291785 0
+M  V30 16 H 74.141256 73.304186 52.821333 0
+M  V30 17 H 74.940551 73.254847 55.165676 0
+M  V30 18 H 74.559027 72.831413 57.513738 0
+M  V30 19 H 73.088925 72.127905 59.362612 0
+M  V30 20 H 70.953490 71.346866 60.180000 0
+M  V30 21 H 68.608186 70.656372 59.780000 0
+M  V30 22 H 67.689271 70.663375 57.470467 0
+M  V30 23 H 69.069178 71.343124 55.584522 0
+M  V30 24 H 70.285812 71.925336 54.054418 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 10
+M  V30 11 1 12 7
+M  V30 12 2 12 11
+M  V30 13 1 13 4
+M  V30 14 1 13 12
+M  V30 15 1 14 1
+M  V30 16 2 14 13
+M  V30 17 1 15 1
+M  V30 18 1 16 2
+M  V30 19 1 17 3
+M  V30 20 1 18 5
+M  V30 21 1 19 6
+M  V30 22 1 20 8
+M  V30 23 1 21 9
+M  V30 24 1 22 10
+M  V30 25 1 23 11
+M  V30 26 1 24 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (19) 
+1
+
+>  <i_i_glide_lignum>  (19) 
+2
+
+>  <i_i_glide_posenum>  (19) 
+364
+
+>  <i_i_glide_rotatable_bonds>  (19) 
+0
+
+>  <i_lp_mmshare_version>  (19) 
+73136
+
+>  <i_m_source_file_index>  (19) 
+2
+
+>  <PubChemCID>  (19) 
+995
+
+>  <i_f3d_flags>  (19) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (19) 
+1
+
+>  <r_glide_cpu_time>  (19) 
+1.125
+
+>  <r_glide_ring_energy>  (19) 
+0
+
+>  <r_i_docking_score>  (19) 
+-5.5935864945583971
+
+>  <r_i_glide_ecoul>  (19) 
+-0.62317310063027143
+
+>  <r_i_glide_einternal>  (19) 
+0
+
+>  <r_i_glide_emodel>  (19) 
+-29.791668592825509
+
+>  <r_i_glide_energy>  (19) 
+-22.322131081773225
+
+>  <r_i_glide_erotb>  (19) 
+0
+
+>  <r_i_glide_esite>  (19) 
+0
+
+>  <r_i_glide_evdw>  (19) 
+-21.698957981142954
+
+>  <r_i_glide_gscore>  (19) 
+-5.5935864945583971
+
+>  <r_i_glide_hbond>  (19) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (19) 
+-0.39954189246845695
+
+>  <r_i_glide_ligand_efficiency_ln>  (19) 
+-1.5370976568675774
+
+>  <r_i_glide_ligand_efficiency_sa>  (19) 
+-0.96295280134678318
+
+>  <r_i_glide_lipo>  (19) 
+-2.2213158122248902
+
+>  <r_i_glide_metal>  (19) 
+-0
+
+>  <r_i_glide_rewards>  (19) 
+-2.193846818181818
+
+>  <r_lp_Energy>  (19) 
+16.839226999999998
+
+>  <s_glide_docking_method>  (19) 
+confgen
+
+>  <s_i_glide_gridfile>  (19) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (19) 
+OPLS_2005
+
+>  <s_lp_Variant>  (19) 
+phenanthrene-1
+
+>  <s_m_source_file>  (19) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (19) 
+named (degradation intermediate; slides 8/19)
+
+$$$$
+benzo_a_pyrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 32 36 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 77.090514 74.358493 57.952957 0
+M  V30 2 C 76.590168 74.035913 59.225252 0
+M  V30 3 C 75.300099 73.488719 59.359923 0
+M  V30 4 C 74.485389 73.248168 58.223483 0
+M  V30 5 C 75.001029 73.590912 56.950817 0
+M  V30 6 C 76.294238 74.138098 56.816209 0
+M  V30 7 C 74.222867 73.390059 55.803074 0
+M  V30 8 C 72.926930 72.849754 55.873719 0
+M  V30 9 C 72.137055 72.674435 54.653335 0
+M  V30 10 C 70.905774 72.160016 54.722720 0
+M  V30 11 C 70.348292 71.765598 56.018056 0
+M  V30 12 C 69.036787 71.253911 56.112592 0
+M  V30 13 C 68.472582 70.898022 57.345382 0
+M  V30 14 C 69.230153 71.038096 58.516160 0
+M  V30 15 C 70.540470 71.553153 58.468427 0
+M  V30 16 C 71.321292 71.718726 59.620691 0
+M  V30 17 C 72.605899 72.269769 59.559053 0
+M  V30 18 C 73.187553 72.674231 58.335314 0
+M  V30 19 C 72.414116 72.485127 57.150628 0
+M  V30 20 C 71.097502 71.929928 57.217938 0
+M  V30 21 H 78.079959 74.779277 57.849545 0
+M  V30 22 H 77.195966 74.209962 60.102316 0
+M  V30 23 H 74.969585 73.261559 60.359989 0
+M  V30 24 H 76.681682 74.394623 55.840909 0
+M  V30 25 H 74.623807 73.666921 54.838692 0
+M  V30 26 H 72.567739 72.964704 53.705980 0
+M  V30 27 H 70.315469 72.007960 53.831456 0
+M  V30 28 H 68.445766 71.133682 55.215672 0
+M  V30 29 H 67.464619 70.513596 57.389259 0
+M  V30 30 H 68.794597 70.756553 59.464385 0
+M  V30 31 H 70.925570 71.429799 60.579971 0
+M  V30 32 H 73.132648 72.369219 60.493768 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 1
+M  V30 6 2 6 5
+M  V30 7 1 7 5
+M  V30 8 2 8 7
+M  V30 9 1 9 8
+M  V30 10 2 10 9
+M  V30 11 1 11 10
+M  V30 12 2 12 11
+M  V30 13 1 13 12
+M  V30 14 2 14 13
+M  V30 15 1 15 14
+M  V30 16 2 16 15
+M  V30 17 1 17 16
+M  V30 18 1 18 4
+M  V30 19 2 18 17
+M  V30 20 1 19 8
+M  V30 21 1 19 18
+M  V30 22 1 20 11
+M  V30 23 1 20 15
+M  V30 24 2 20 19
+M  V30 25 1 21 1
+M  V30 26 1 22 2
+M  V30 27 1 23 3
+M  V30 28 1 24 6
+M  V30 29 1 25 7
+M  V30 30 1 26 9
+M  V30 31 1 27 10
+M  V30 32 1 28 12
+M  V30 33 1 29 13
+M  V30 34 1 30 14
+M  V30 35 1 31 16
+M  V30 36 1 32 17
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (20) 
+1
+
+>  <i_i_glide_lignum>  (20) 
+3
+
+>  <i_i_glide_posenum>  (20) 
+275
+
+>  <i_i_glide_rotatable_bonds>  (20) 
+0
+
+>  <i_lp_mmshare_version>  (20) 
+73136
+
+>  <i_m_source_file_index>  (20) 
+3
+
+>  <PubChemCID>  (20) 
+2336
+
+>  <i_f3d_flags>  (20) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (20) 
+1
+
+>  <r_glide_cpu_time>  (20) 
+1.34375
+
+>  <r_glide_ring_energy>  (20) 
+0
+
+>  <r_i_docking_score>  (20) 
+-5.5549096278092964
+
+>  <r_i_glide_ecoul>  (20) 
+-0.63810028119045437
+
+>  <r_i_glide_einternal>  (20) 
+0
+
+>  <r_i_glide_emodel>  (20) 
+-32.680116905124073
+
+>  <r_i_glide_energy>  (20) 
+-24.337282025357144
+
+>  <r_i_glide_erotb>  (20) 
+0
+
+>  <r_i_glide_esite>  (20) 
+0
+
+>  <r_i_glide_evdw>  (20) 
+-23.69918174416669
+
+>  <r_i_glide_gscore>  (20) 
+-5.5549096278092964
+
+>  <r_i_glide_hbond>  (20) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (20) 
+-0.27774548139046484
+
+>  <r_i_glide_ligand_efficiency_ln>  (20) 
+-1.3902106666592304
+
+>  <r_i_glide_ligand_efficiency_sa>  (20) 
+-0.75391722761591051
+
+>  <r_i_glide_lipo>  (20) 
+-2.5854989529678476
+
+>  <r_i_glide_metal>  (20) 
+-0
+
+>  <r_i_glide_rewards>  (20) 
+-1.6887365454545462
+
+>  <r_lp_Energy>  (20) 
+44.326904999999996
+
+>  <s_glide_docking_method>  (20) 
+confgen
+
+>  <s_i_glide_gridfile>  (20) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (20) 
+OPLS_2005
+
+>  <s_lp_Variant>  (20) 
+benzo_a_pyrene-1
+
+>  <s_m_source_file>  (20) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (20) 
+named (TonB transport hypothesis, slide 5); carcinogenic marker
+
+$$$$
+anthracene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 24 26 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 73.448521 73.006872 53.026405 0
+M  V30 2 C 74.617135 72.873203 53.801097 0
+M  V30 3 C 74.527459 72.499262 55.156025 0
+M  V30 4 C 73.266892 72.252792 55.738598 0
+M  V30 5 C 73.173291 71.857755 57.088510 0
+M  V30 6 C 71.913345 71.595623 57.663899 0
+M  V30 7 C 71.821800 71.152133 58.999388 0
+M  V30 8 C 70.563480 70.863186 59.560893 0
+M  V30 9 C 69.393003 71.030359 58.798398 0
+M  V30 10 C 69.477483 71.478037 57.466497 0
+M  V30 11 C 70.735458 71.760003 56.892095 0
+M  V30 12 C 70.829893 72.159999 55.543320 0
+M  V30 13 C 72.090787 72.396350 54.960921 0
+M  V30 14 C 72.186443 72.770863 53.605051 0
+M  V30 15 H 73.519387 73.294762 51.987886 0
+M  V30 16 H 75.583450 73.060039 53.356302 0
+M  V30 17 H 75.429599 72.397694 55.741688 0
+M  V30 18 H 74.070655 71.746691 57.679462 0
+M  V30 19 H 72.713721 71.021656 59.594924 0
+M  V30 20 H 70.492905 70.515248 60.579954 0
+M  V30 21 H 68.430006 70.812621 59.235784 0
+M  V30 22 H 68.572881 71.591652 56.887619 0
+M  V30 23 H 69.936245 72.259011 54.944979 0
+M  V30 24 H 71.295286 72.877938 53.003703 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 6
+M  V30 11 1 11 10
+M  V30 12 2 12 11
+M  V30 13 1 13 4
+M  V30 14 1 13 12
+M  V30 15 1 14 1
+M  V30 16 2 14 13
+M  V30 17 1 15 1
+M  V30 18 1 16 2
+M  V30 19 1 17 3
+M  V30 20 1 18 5
+M  V30 21 1 19 7
+M  V30 22 1 20 8
+M  V30 23 1 21 9
+M  V30 24 1 22 10
+M  V30 25 1 23 12
+M  V30 26 1 24 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (21) 
+1
+
+>  <i_i_glide_lignum>  (21) 
+5
+
+>  <i_i_glide_posenum>  (21) 
+15
+
+>  <i_i_glide_rotatable_bonds>  (21) 
+0
+
+>  <i_lp_mmshare_version>  (21) 
+73136
+
+>  <i_m_source_file_index>  (21) 
+5
+
+>  <PubChemCID>  (21) 
+8418
+
+>  <i_f3d_flags>  (21) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (21) 
+1
+
+>  <r_glide_cpu_time>  (21) 
+1.25
+
+>  <r_glide_ring_energy>  (21) 
+0
+
+>  <r_i_docking_score>  (21) 
+-5.4730151180143674
+
+>  <r_i_glide_ecoul>  (21) 
+0.20937881373751255
+
+>  <r_i_glide_einternal>  (21) 
+0
+
+>  <r_i_glide_emodel>  (21) 
+-28.739238576321227
+
+>  <r_i_glide_energy>  (21) 
+-21.724879557860806
+
+>  <r_i_glide_erotb>  (21) 
+0
+
+>  <r_i_glide_esite>  (21) 
+0
+
+>  <r_i_glide_evdw>  (21) 
+-21.934258371598318
+
+>  <r_i_glide_gscore>  (21) 
+-5.4730151180143674
+
+>  <r_i_glide_hbond>  (21) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (21) 
+-0.39092965128674051
+
+>  <r_i_glide_ligand_efficiency_ln>  (21) 
+-1.5039650717986917
+
+>  <r_i_glide_ligand_efficiency_sa>  (21) 
+-0.94219607488545798
+
+>  <r_i_glide_lipo>  (21) 
+-2.2138622033132602
+
+>  <r_i_glide_metal>  (21) 
+-0
+
+>  <r_i_glide_rewards>  (21) 
+-2.193846818181818
+
+>  <r_lp_Energy>  (21) 
+13.742320999999999
+
+>  <s_glide_docking_method>  (21) 
+confgen
+
+>  <s_i_glide_gridfile>  (21) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (21) 
+OPLS_2005
+
+>  <s_lp_Variant>  (21) 
+anthracene-1
+
+>  <s_m_source_file>  (21) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (21) 
+specificity probe (phenanthrene isomer)
+
+$$$$
+naphthalene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 18 19 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 72.829485 72.160167 58.659649 0
+M  V30 2 C 72.019731 71.760117 59.740329 0
+M  V30 3 C 70.688182 71.359825 59.514901 0
+M  V30 4 C 70.162465 71.358671 58.206211 0
+M  V30 5 C 68.830007 70.958948 57.974170 0
+M  V30 6 C 68.310631 70.959898 56.664851 0
+M  V30 7 C 69.120393 71.359982 55.584181 0
+M  V30 8 C 70.451944 71.760222 55.809591 0
+M  V30 9 C 70.977651 71.761395 57.118292 0
+M  V30 10 C 72.310109 72.161121 57.350328 0
+M  V30 11 H 73.850237 72.466705 58.834954 0
+M  V30 12 H 72.420194 71.760209 60.743450 0
+M  V30 13 H 70.074220 71.054523 60.349737 0
+M  V30 14 H 68.201758 70.650548 58.797149 0
+M  V30 15 H 67.289881 70.653358 56.489548 0
+M  V30 16 H 68.719929 71.359851 54.581052 0
+M  V30 17 H 71.065894 72.065532 54.974752 0
+M  V30 18 H 72.938364 72.469514 56.527349 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 4
+M  V30 9 1 9 8
+M  V30 10 1 10 1
+M  V30 11 2 10 9
+M  V30 12 1 11 1
+M  V30 13 1 12 2
+M  V30 14 1 13 3
+M  V30 15 1 14 5
+M  V30 16 1 15 6
+M  V30 17 1 16 7
+M  V30 18 1 17 8
+M  V30 19 1 18 10
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (22) 
+1
+
+>  <i_i_glide_lignum>  (22) 
+4
+
+>  <i_i_glide_posenum>  (22) 
+319
+
+>  <i_i_glide_rotatable_bonds>  (22) 
+0
+
+>  <i_lp_mmshare_version>  (22) 
+73136
+
+>  <i_m_source_file_index>  (22) 
+4
+
+>  <PubChemCID>  (22) 
+931
+
+>  <i_f3d_flags>  (22) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (22) 
+1
+
+>  <r_glide_cpu_time>  (22) 
+1.046875
+
+>  <r_glide_ring_energy>  (22) 
+0
+
+>  <r_i_docking_score>  (22) 
+-5.4706804264329101
+
+>  <r_i_glide_ecoul>  (22) 
+-0.29819854670984081
+
+>  <r_i_glide_einternal>  (22) 
+0
+
+>  <r_i_glide_emodel>  (22) 
+-23.810767978382643
+
+>  <r_i_glide_energy>  (22) 
+-17.649538925996833
+
+>  <r_i_glide_erotb>  (22) 
+0
+
+>  <r_i_glide_esite>  (22) 
+0
+
+>  <r_i_glide_evdw>  (22) 
+-17.351340379286992
+
+>  <r_i_glide_gscore>  (22) 
+-5.4706804264329101
+
+>  <r_i_glide_hbond>  (22) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (22) 
+-0.54706804264329101
+
+>  <r_i_glide_ligand_efficiency_ln>  (22) 
+-1.6564843213391121
+
+>  <r_i_glide_ligand_efficiency_sa>  (22) 
+-1.1786223688785482
+
+>  <r_i_glide_lipo>  (22) 
+-2.3083836254620844
+
+>  <r_i_glide_metal>  (22) 
+-0
+
+>  <r_i_glide_rewards>  (22) 
+-2.25
+
+>  <r_lp_Energy>  (22) 
+9.5043810000000004
+
+>  <s_glide_docking_method>  (22) 
+confgen
+
+>  <s_i_glide_gridfile>  (22) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (22) 
+OPLS_2005
+
+>  <s_lp_Variant>  (22) 
+naphthalene-1
+
+>  <s_m_source_file>  (22) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (22) 
+reference smallest PAH (PAH class)
+
+$$$$
+fluoranthene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 26 29 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 68.679950 71.118753 57.381111 0
+M  V30 2 C 69.230008 71.347909 58.665856 0
+M  V30 3 C 70.553063 71.822530 58.809591 0
+M  V30 4 C 71.302668 72.059045 57.644379 0
+M  V30 5 C 70.757726 71.832021 56.371560 0
+M  V30 6 C 69.442893 71.359999 56.216588 0
+M  V30 7 C 71.791283 72.174389 55.390306 0
+M  V30 8 C 71.854130 72.160195 53.982732 0
+M  V30 9 C 73.044190 72.566889 53.333053 0
+M  V30 10 C 74.173637 72.988225 54.077569 0
+M  V30 11 C 74.134248 73.010867 55.488984 0
+M  V30 12 C 75.159210 73.398809 56.379553 0
+M  V30 13 C 74.948135 73.360061 57.780061 0
+M  V30 14 C 73.710418 72.933518 58.318430 0
+M  V30 15 C 72.672845 72.541646 57.449354 0
+M  V30 16 C 72.931213 72.597972 56.077697 0
+M  V30 17 H 67.666721 70.755779 57.290232 0
+M  V30 18 H 68.632132 71.157975 59.545130 0
+M  V30 19 H 70.976933 71.998798 59.787140 0
+M  V30 20 H 69.027859 71.186803 55.234710 0
+M  V30 21 H 70.999769 71.841083 53.404324 0
+M  V30 22 H 73.091871 72.555837 52.254109 0
+M  V30 23 H 75.071006 73.294183 53.560068 0
+M  V30 24 H 76.112060 73.727877 55.991636 0
+M  V30 25 H 75.743143 73.660337 58.446631 0
+M  V30 26 H 73.561534 72.908301 59.387783 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 1
+M  V30 6 2 6 5
+M  V30 7 1 7 5
+M  V30 8 2 8 7
+M  V30 9 1 9 8
+M  V30 10 2 10 9
+M  V30 11 1 11 10
+M  V30 12 1 12 11
+M  V30 13 2 13 12
+M  V30 14 1 14 13
+M  V30 15 1 15 4
+M  V30 16 2 15 14
+M  V30 17 1 16 7
+M  V30 18 2 16 11
+M  V30 19 1 16 15
+M  V30 20 1 17 1
+M  V30 21 1 18 2
+M  V30 22 1 19 3
+M  V30 23 1 20 6
+M  V30 24 1 21 8
+M  V30 25 1 22 9
+M  V30 26 1 23 10
+M  V30 27 1 24 12
+M  V30 28 1 25 13
+M  V30 29 1 26 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (23) 
+1
+
+>  <i_i_glide_lignum>  (23) 
+6
+
+>  <i_i_glide_posenum>  (23) 
+317
+
+>  <i_i_glide_rotatable_bonds>  (23) 
+0
+
+>  <i_lp_mmshare_version>  (23) 
+73136
+
+>  <i_m_source_file_index>  (23) 
+6
+
+>  <PubChemCID>  (23) 
+9154
+
+>  <i_f3d_flags>  (23) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (23) 
+1
+
+>  <r_glide_cpu_time>  (23) 
+1.46875
+
+>  <r_glide_ring_energy>  (23) 
+0
+
+>  <r_i_docking_score>  (23) 
+-5.4538556985901545
+
+>  <r_i_glide_ecoul>  (23) 
+-0.91592628582156321
+
+>  <r_i_glide_einternal>  (23) 
+0
+
+>  <r_i_glide_emodel>  (23) 
+-30.155930605634573
+
+>  <r_i_glide_energy>  (23) 
+-22.386375319429042
+
+>  <r_i_glide_erotb>  (23) 
+0
+
+>  <r_i_glide_esite>  (23) 
+0
+
+>  <r_i_glide_evdw>  (23) 
+-21.47044903360748
+
+>  <r_i_glide_gscore>  (23) 
+-5.4538556985901545
+
+>  <r_i_glide_hbond>  (23) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (23) 
+-0.34086598116188466
+
+>  <r_i_glide_ligand_efficiency_ln>  (23) 
+-1.4456533961518623
+
+>  <r_i_glide_ligand_efficiency_sa>  (23) 
+-0.85892844971785565
+
+>  <r_i_glide_lipo>  (23) 
+-2.2128858949456363
+
+>  <r_i_glide_metal>  (23) 
+-0
+
+>  <r_i_glide_rewards>  (23) 
+-2.0300584090909095
+
+>  <r_lp_Energy>  (23) 
+49.371870999999999
+
+>  <s_glide_docking_method>  (23) 
+confgen
+
+>  <s_i_glide_gridfile>  (23) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (23) 
+OPLS_2005
+
+>  <s_lp_Variant>  (23) 
+fluoranthene-1
+
+>  <s_m_source_file>  (23) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (23) 
+EQS Saar PAH
+
+$$$$
+anthracene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 24 26 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 69.655941 70.960007 59.224502 0
+M  V30 2 C 68.830004 70.962180 58.083830 0
+M  V30 3 C 69.349662 71.360001 56.836613 0
+M  V30 4 C 70.698503 71.757226 56.726731 0
+M  V30 5 C 71.222334 72.156132 55.479878 0
+M  V30 6 C 72.571112 72.552866 55.372331 0
+M  V30 7 C 73.097181 72.952257 54.126147 0
+M  V30 8 C 74.445000 73.347897 54.022675 0
+M  V30 9 C 75.270937 73.345723 55.163347 0
+M  V30 10 C 74.751278 72.947904 56.410564 0
+M  V30 11 C 73.402438 72.550678 56.520445 0
+M  V30 12 C 72.878606 72.151772 57.767298 0
+M  V30 13 C 71.529828 71.755038 57.874847 0
+M  V30 14 C 71.003761 71.355647 59.121029 0
+M  V30 15 H 69.255457 70.654578 60.179995 0
+M  V30 16 H 67.796697 70.658416 58.165355 0
+M  V30 17 H 68.708715 71.358534 55.966944 0
+M  V30 18 H 70.588628 72.157799 54.604692 0
+M  V30 19 H 72.470984 72.957059 53.245810 0
+M  V30 20 H 74.845485 73.653327 53.067182 0
+M  V30 21 H 76.304243 73.649488 55.081822 0
+M  V30 22 H 75.392225 72.949371 57.280233 0
+M  V30 23 H 73.512310 72.150105 58.642486 0
+M  V30 24 H 71.629957 71.350847 60.001366 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 6
+M  V30 11 1 11 10
+M  V30 12 2 12 11
+M  V30 13 1 13 4
+M  V30 14 1 13 12
+M  V30 15 1 14 1
+M  V30 16 2 14 13
+M  V30 17 1 15 1
+M  V30 18 1 16 2
+M  V30 19 1 17 3
+M  V30 20 1 18 5
+M  V30 21 1 19 7
+M  V30 22 1 20 8
+M  V30 23 1 21 9
+M  V30 24 1 22 10
+M  V30 25 1 23 12
+M  V30 26 1 24 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (24) 
+1
+
+>  <i_i_glide_lignum>  (24) 
+5
+
+>  <i_i_glide_posenum>  (24) 
+184
+
+>  <i_i_glide_rotatable_bonds>  (24) 
+0
+
+>  <i_lp_mmshare_version>  (24) 
+73136
+
+>  <i_m_source_file_index>  (24) 
+5
+
+>  <PubChemCID>  (24) 
+8418
+
+>  <i_f3d_flags>  (24) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (24) 
+1
+
+>  <r_glide_cpu_time>  (24) 
+1.25
+
+>  <r_glide_ring_energy>  (24) 
+0
+
+>  <r_i_docking_score>  (24) 
+-5.4526746242763169
+
+>  <r_i_glide_ecoul>  (24) 
+-0.59338580379735439
+
+>  <r_i_glide_einternal>  (24) 
+0
+
+>  <r_i_glide_emodel>  (24) 
+-28.338445384931543
+
+>  <r_i_glide_energy>  (24) 
+-21.35015527412347
+
+>  <r_i_glide_erotb>  (24) 
+0
+
+>  <r_i_glide_esite>  (24) 
+0
+
+>  <r_i_glide_evdw>  (24) 
+-20.756769470326116
+
+>  <r_i_glide_gscore>  (24) 
+-5.4526746242763169
+
+>  <r_i_glide_hbond>  (24) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (24) 
+-0.38947675887687977
+
+>  <r_i_glide_ligand_efficiency_ln>  (24) 
+-1.4983755765267937
+
+>  <r_i_glide_ligand_efficiency_sa>  (24) 
+-0.9386943974831532
+
+>  <r_i_glide_lipo>  (24) 
+-2.1319814620085897
+
+>  <r_i_glide_metal>  (24) 
+-0
+
+>  <r_i_glide_rewards>  (24) 
+-2.193846818181818
+
+>  <r_lp_Energy>  (24) 
+13.742320999999999
+
+>  <s_glide_docking_method>  (24) 
+confgen
+
+>  <s_i_glide_gridfile>  (24) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (24) 
+OPLS_2005
+
+>  <s_lp_Variant>  (24) 
+anthracene-1
+
+>  <s_m_source_file>  (24) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (24) 
+specificity probe (phenanthrene isomer)
+
+$$$$
+naphthalene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 18 19 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 69.645922 70.959939 59.228205 0
+M  V30 2 C 68.829998 70.960750 58.080216 0
+M  V30 3 C 69.359601 71.360001 56.837560 0
+M  V30 4 C 70.708499 71.760000 56.739864 0
+M  V30 5 C 71.244506 72.160807 55.498446 0
+M  V30 6 C 72.592466 72.559245 55.407205 0
+M  V30 7 C 73.408389 72.558435 56.555195 0
+M  V30 8 C 72.878787 72.159185 57.797850 0
+M  V30 9 C 71.529889 71.759185 57.895546 0
+M  V30 10 C 70.993882 71.358378 59.136965 0
+M  V30 11 H 69.237597 70.653383 60.180003 0
+M  V30 12 H 67.796663 70.654813 58.152633 0
+M  V30 13 H 68.726514 71.357540 55.962175 0
+M  V30 14 H 70.625924 72.164510 54.612756 0
+M  V30 15 H 73.000790 72.865802 54.455408 0
+M  V30 16 H 74.441725 72.864372 56.482777 0
+M  V30 17 H 73.511874 72.161645 58.673236 0
+M  V30 18 H 71.612464 71.354675 60.022654 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 4
+M  V30 9 1 9 8
+M  V30 10 1 10 1
+M  V30 11 2 10 9
+M  V30 12 1 11 1
+M  V30 13 1 12 2
+M  V30 14 1 13 3
+M  V30 15 1 14 5
+M  V30 16 1 15 6
+M  V30 17 1 16 7
+M  V30 18 1 17 8
+M  V30 19 1 18 10
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (25) 
+1
+
+>  <i_i_glide_lignum>  (25) 
+4
+
+>  <i_i_glide_posenum>  (25) 
+386
+
+>  <i_i_glide_rotatable_bonds>  (25) 
+0
+
+>  <i_lp_mmshare_version>  (25) 
+73136
+
+>  <i_m_source_file_index>  (25) 
+4
+
+>  <PubChemCID>  (25) 
+931
+
+>  <i_f3d_flags>  (25) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (25) 
+1
+
+>  <r_glide_cpu_time>  (25) 
+1.046875
+
+>  <r_glide_ring_energy>  (25) 
+0
+
+>  <r_i_docking_score>  (25) 
+-5.3294340061704588
+
+>  <r_i_glide_ecoul>  (25) 
+-0.67278968782861814
+
+>  <r_i_glide_einternal>  (25) 
+0
+
+>  <r_i_glide_emodel>  (25) 
+-24.810337420411599
+
+>  <r_i_glide_energy>  (25) 
+-18.808183927230758
+
+>  <r_i_glide_erotb>  (25) 
+0
+
+>  <r_i_glide_esite>  (25) 
+0
+
+>  <r_i_glide_evdw>  (25) 
+-18.135394239402139
+
+>  <r_i_glide_gscore>  (25) 
+-5.3294340061704588
+
+>  <r_i_glide_hbond>  (25) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (25) 
+-0.53294340061704593
+
+>  <r_i_glide_ligand_efficiency_ln>  (25) 
+-1.613715878956784
+
+>  <r_i_glide_ligand_efficiency_sa>  (25) 
+-1.1481917501129233
+
+>  <r_i_glide_lipo>  (25) 
+-2.071745841026059
+
+>  <r_i_glide_metal>  (25) 
+-0
+
+>  <r_i_glide_rewards>  (25) 
+-2.25
+
+>  <r_lp_Energy>  (25) 
+9.5043810000000004
+
+>  <s_glide_docking_method>  (25) 
+confgen
+
+>  <s_i_glide_gridfile>  (25) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (25) 
+OPLS_2005
+
+>  <s_lp_Variant>  (25) 
+naphthalene-1
+
+>  <s_m_source_file>  (25) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (25) 
+reference smallest PAH (PAH class)
+
+$$$$
+benzo_a_pyrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 32 36 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 69.231334 71.005722 58.931941 0
+M  V30 2 C 68.684854 70.984837 57.637804 0
+M  V30 3 C 69.471269 71.359975 56.531690 0
+M  V30 4 C 70.821608 71.763926 56.696541 0
+M  V30 5 C 71.355099 71.778738 58.007890 0
+M  V30 6 C 70.566753 71.402893 59.115797 0
+M  V30 7 C 72.683888 72.170593 58.219566 0
+M  V30 8 C 73.520177 72.556143 57.157267 0
+M  V30 9 C 74.904906 72.959809 57.418913 0
+M  V30 10 C 75.699322 73.326248 56.407442 0
+M  V30 11 C 75.183352 73.323735 55.037503 0
+M  V30 12 C 76.007990 73.707505 53.959064 0
+M  V30 13 C 75.535244 73.712745 52.638943 0
+M  V30 14 C 74.213101 73.328681 52.378099 0
+M  V30 15 C 73.354804 72.938078 53.424568 0
+M  V30 16 C 72.026778 72.548594 53.194507 0
+M  V30 17 C 71.189840 72.163666 54.249913 0
+M  V30 18 C 71.635492 72.147300 55.592524 0
+M  V30 19 C 72.986117 72.542119 55.837545 0
+M  V30 20 C 73.840568 72.935201 54.759447 0
+M  V30 21 H 68.628570 70.718184 59.780841 0
+M  V30 22 H 67.658933 70.680358 57.491144 0
+M  V30 23 H 69.000365 71.324811 55.563238 0
+M  V30 24 H 70.982994 71.417528 60.112714 0
+M  V30 25 H 73.078872 72.177519 59.225357 0
+M  V30 26 H 75.265229 72.954341 58.437325 0
+M  V30 27 H 76.722549 73.627003 56.579118 0
+M  V30 28 H 77.028875 74.005411 54.148964 0
+M  V30 29 H 76.185179 74.010545 51.829341 0
+M  V30 30 H 73.852589 73.334051 51.359726 0
+M  V30 31 H 71.637459 72.543682 52.186815 0
+M  V30 32 H 70.184348 71.878979 53.987633 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 1
+M  V30 6 2 6 5
+M  V30 7 1 7 5
+M  V30 8 2 8 7
+M  V30 9 1 9 8
+M  V30 10 2 10 9
+M  V30 11 1 11 10
+M  V30 12 2 12 11
+M  V30 13 1 13 12
+M  V30 14 2 14 13
+M  V30 15 1 15 14
+M  V30 16 2 16 15
+M  V30 17 1 17 16
+M  V30 18 1 18 4
+M  V30 19 2 18 17
+M  V30 20 1 19 8
+M  V30 21 1 19 18
+M  V30 22 1 20 11
+M  V30 23 1 20 15
+M  V30 24 2 20 19
+M  V30 25 1 21 1
+M  V30 26 1 22 2
+M  V30 27 1 23 3
+M  V30 28 1 24 6
+M  V30 29 1 25 7
+M  V30 30 1 26 9
+M  V30 31 1 27 10
+M  V30 32 1 28 12
+M  V30 33 1 29 13
+M  V30 34 1 30 14
+M  V30 35 1 31 16
+M  V30 36 1 32 17
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (26) 
+1
+
+>  <i_i_glide_lignum>  (26) 
+3
+
+>  <i_i_glide_posenum>  (26) 
+285
+
+>  <i_i_glide_rotatable_bonds>  (26) 
+0
+
+>  <i_lp_mmshare_version>  (26) 
+73136
+
+>  <i_m_source_file_index>  (26) 
+3
+
+>  <PubChemCID>  (26) 
+2336
+
+>  <i_f3d_flags>  (26) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (26) 
+1
+
+>  <r_glide_cpu_time>  (26) 
+1.34375
+
+>  <r_glide_ring_energy>  (26) 
+0
+
+>  <r_i_docking_score>  (26) 
+-5.250564476238103
+
+>  <r_i_glide_ecoul>  (26) 
+-0.54982271109800529
+
+>  <r_i_glide_einternal>  (26) 
+0
+
+>  <r_i_glide_emodel>  (26) 
+-32.920231007295911
+
+>  <r_i_glide_energy>  (26) 
+-25.03448751445357
+
+>  <r_i_glide_erotb>  (26) 
+0
+
+>  <r_i_glide_esite>  (26) 
+0
+
+>  <r_i_glide_evdw>  (26) 
+-24.484664803355564
+
+>  <r_i_glide_gscore>  (26) 
+-5.250564476238103
+
+>  <r_i_glide_hbond>  (26) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (26) 
+-0.26252822381190516
+
+>  <r_i_glide_ligand_efficiency_ln>  (26) 
+-1.3140431131958712
+
+>  <r_i_glide_ligand_efficiency_sa>  (26) 
+-0.71261123556840578
+
+>  <r_i_glide_lipo>  (26) 
+-2.2551212839510777
+
+>  <r_i_glide_metal>  (26) 
+-0
+
+>  <r_i_glide_rewards>  (26) 
+-1.6887365454545462
+
+>  <r_lp_Energy>  (26) 
+44.326904999999996
+
+>  <s_glide_docking_method>  (26) 
+confgen
+
+>  <s_i_glide_gridfile>  (26) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (26) 
+OPLS_2005
+
+>  <s_lp_Variant>  (26) 
+benzo_a_pyrene-1
+
+>  <s_m_source_file>  (26) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (26) 
+named (TonB transport hypothesis, slide 5); carcinogenic marker
+
+$$$$
+anthracene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 24 26 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 73.341313 72.254545 52.358525 0
+M  V30 2 C 74.579612 72.559274 52.957166 0
+M  V30 3 C 74.702738 72.569219 54.360701 0
+M  V30 4 C 73.580311 72.295916 55.170176 0
+M  V30 5 C 73.693662 72.315859 56.575166 0
+M  V30 6 C 72.561825 72.070569 57.378372 0
+M  V30 7 C 72.669615 72.104525 58.782254 0
+M  V30 8 C 71.537844 71.860949 59.580657 0
+M  V30 9 C 70.291613 71.594242 58.980538 0
+M  V30 10 C 70.174050 71.567176 57.579614 0
+M  V30 11 C 71.308920 71.797682 56.775165 0
+M  V30 12 C 71.200551 71.760000 55.372069 0
+M  V30 13 C 72.330174 72.009343 54.567010 0
+M  V30 14 C 72.217612 71.981538 53.161893 0
+M  V30 15 H 73.249170 72.239101 51.282435 0
+M  V30 16 H 75.437653 72.778309 52.338920 0
+M  V30 17 H 75.658696 72.795130 54.811049 0
+M  V30 18 H 74.646028 72.534691 57.037095 0
+M  V30 19 H 73.617684 72.320164 59.252998 0
+M  V30 20 H 71.629716 71.891099 60.655062 0
+M  V30 21 H 69.423291 71.413608 59.597584 0
+M  V30 22 H 69.212821 71.366785 57.128793 0
+M  V30 23 H 70.248236 71.541299 54.910082 0
+M  V30 24 H 71.268726 71.754159 52.697181 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 6
+M  V30 11 1 11 10
+M  V30 12 2 12 11
+M  V30 13 1 13 4
+M  V30 14 1 13 12
+M  V30 15 1 14 1
+M  V30 16 2 14 13
+M  V30 17 1 15 1
+M  V30 18 1 16 2
+M  V30 19 1 17 3
+M  V30 20 1 18 5
+M  V30 21 1 19 7
+M  V30 22 1 20 8
+M  V30 23 1 21 9
+M  V30 24 1 22 10
+M  V30 25 1 23 12
+M  V30 26 1 24 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (27) 
+1
+
+>  <i_i_glide_lignum>  (27) 
+5
+
+>  <i_i_glide_posenum>  (27) 
+226
+
+>  <i_i_glide_rotatable_bonds>  (27) 
+0
+
+>  <i_lp_mmshare_version>  (27) 
+73136
+
+>  <i_m_source_file_index>  (27) 
+5
+
+>  <PubChemCID>  (27) 
+8418
+
+>  <i_f3d_flags>  (27) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (27) 
+1
+
+>  <r_glide_cpu_time>  (27) 
+1.25
+
+>  <r_glide_ring_energy>  (27) 
+0
+
+>  <r_i_docking_score>  (27) 
+-5.2028872439220821
+
+>  <r_i_glide_ecoul>  (27) 
+-0.57941111837526649
+
+>  <r_i_glide_einternal>  (27) 
+0
+
+>  <r_i_glide_emodel>  (27) 
+-26.850950890570179
+
+>  <r_i_glide_energy>  (27) 
+-20.182794805761471
+
+>  <r_i_glide_erotb>  (27) 
+0
+
+>  <r_i_glide_esite>  (27) 
+0
+
+>  <r_i_glide_evdw>  (27) 
+-19.603383687386206
+
+>  <r_i_glide_gscore>  (27) 
+-5.2028872439220821
+
+>  <r_i_glide_hbond>  (27) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (27) 
+-0.37163480313729158
+
+>  <r_i_glide_ligand_efficiency_ln>  (27) 
+-1.4297348935890934
+
+>  <r_i_glide_ligand_efficiency_sa>  (27) 
+-0.89569274587962788
+
+>  <r_i_glide_lipo>  (27) 
+-1.941959573614664
+
+>  <r_i_glide_metal>  (27) 
+-0
+
+>  <r_i_glide_rewards>  (27) 
+-2.193846818181818
+
+>  <r_lp_Energy>  (27) 
+13.742320999999999
+
+>  <s_glide_docking_method>  (27) 
+confgen
+
+>  <s_i_glide_gridfile>  (27) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (27) 
+OPLS_2005
+
+>  <s_lp_Variant>  (27) 
+anthracene-1
+
+>  <s_m_source_file>  (27) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (27) 
+specificity probe (phenanthrene isomer)
+
+$$$$
+naphthalene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 18 19 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 70.272712 70.960066 59.472859 0
+M  V30 2 C 71.597995 71.327867 59.780000 0
+M  V30 3 C 72.430002 71.871450 58.783673 0
+M  V30 4 C 71.949828 72.022243 57.467960 0
+M  V30 5 C 72.792970 72.525645 56.456092 0
+M  V30 6 C 72.317172 72.643858 55.135860 0
+M  V30 7 C 70.999950 72.257133 54.823790 0
+M  V30 8 C 70.152607 71.760002 55.832484 0
+M  V30 9 C 70.618129 71.650597 57.158439 0
+M  V30 10 C 69.777701 71.134443 58.167252 0
+M  V30 11 H 69.630001 70.551382 60.238674 0
+M  V30 12 H 71.982311 71.200713 60.781148 0
+M  V30 13 H 73.441369 72.159996 59.031151 0
+M  V30 14 H 73.808358 72.815457 56.685143 0
+M  V30 15 H 72.965420 73.024550 54.360135 0
+M  V30 16 H 70.639894 72.334440 53.808103 0
+M  V30 17 H 69.148323 71.452524 55.579402 0
+M  V30 18 H 68.761048 70.847654 57.939428 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 4
+M  V30 9 1 9 8
+M  V30 10 1 10 1
+M  V30 11 2 10 9
+M  V30 12 1 11 1
+M  V30 13 1 12 2
+M  V30 14 1 13 3
+M  V30 15 1 14 5
+M  V30 16 1 15 6
+M  V30 17 1 16 7
+M  V30 18 1 17 8
+M  V30 19 1 18 10
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (28) 
+1
+
+>  <i_i_glide_lignum>  (28) 
+4
+
+>  <i_i_glide_posenum>  (28) 
+325
+
+>  <i_i_glide_rotatable_bonds>  (28) 
+0
+
+>  <i_lp_mmshare_version>  (28) 
+73136
+
+>  <i_m_source_file_index>  (28) 
+4
+
+>  <PubChemCID>  (28) 
+931
+
+>  <i_f3d_flags>  (28) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (28) 
+1
+
+>  <r_glide_cpu_time>  (28) 
+1.046875
+
+>  <r_glide_ring_energy>  (28) 
+0
+
+>  <r_i_docking_score>  (28) 
+-5.0221830255397135
+
+>  <r_i_glide_ecoul>  (28) 
+-0.43612073838976001
+
+>  <r_i_glide_einternal>  (28) 
+0
+
+>  <r_i_glide_emodel>  (28) 
+-22.650722064727056
+
+>  <r_i_glide_energy>  (28) 
+-16.994602980554916
+
+>  <r_i_glide_erotb>  (28) 
+0
+
+>  <r_i_glide_esite>  (28) 
+0
+
+>  <r_i_glide_evdw>  (28) 
+-16.558482242165155
+
+>  <r_i_glide_gscore>  (28) 
+-5.0221830255397135
+
+>  <r_i_glide_hbond>  (28) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (28) 
+-0.50221830255397137
+
+>  <r_i_glide_ligand_efficiency_ln>  (28) 
+-1.5206824000367303
+
+>  <r_i_glide_ligand_efficiency_sa>  (28) 
+-1.0819965329912042
+
+>  <r_i_glide_lipo>  (28) 
+-1.8788408026729919
+
+>  <r_i_glide_metal>  (28) 
+-0
+
+>  <r_i_glide_rewards>  (28) 
+-2.25
+
+>  <r_lp_Energy>  (28) 
+9.5043810000000004
+
+>  <s_glide_docking_method>  (28) 
+confgen
+
+>  <s_i_glide_gridfile>  (28) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (28) 
+OPLS_2005
+
+>  <s_lp_Variant>  (28) 
+naphthalene-1
+
+>  <s_m_source_file>  (28) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (28) 
+reference smallest PAH (PAH class)
+
+$$$$
+pyrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 26 29 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 69.467181 71.360014 56.323843 0
+M  V30 2 C 70.418500 71.869769 55.428779 0
+M  V30 3 C 71.647697 72.377696 55.893027 0
+M  V30 4 C 72.623724 72.896261 55.022461 0
+M  V30 5 C 73.839704 73.395942 55.511612 0
+M  V30 6 C 74.124560 73.395509 56.889395 0
+M  V30 7 C 75.337235 73.891020 57.407441 0
+M  V30 8 C 75.589406 73.875803 58.786623 0
+M  V30 9 C 74.622342 73.360722 59.662962 0
+M  V30 10 C 73.393458 72.853685 59.190793 0
+M  V30 11 C 72.392388 72.318523 60.118946 0
+M  V30 12 C 71.231525 71.841483 59.651957 0
+M  V30 13 C 70.958636 71.853139 58.211338 0
+M  V30 14 C 69.741885 71.355221 57.699706 0
+M  V30 15 C 71.914713 72.367504 57.289746 0
+M  V30 16 C 73.152085 72.875974 57.787503 0
+M  V30 17 H 68.528167 70.973205 55.956177 0
+M  V30 18 H 70.201150 71.870749 54.370567 0
+M  V30 19 H 72.438522 72.912202 53.958331 0
+M  V30 20 H 74.566394 73.786605 54.814310 0
+M  V30 21 H 76.085747 74.288898 56.737764 0
+M  V30 22 H 76.522909 74.258470 59.172221 0
+M  V30 23 H 74.828630 73.354585 60.723327 0
+M  V30 24 H 72.611579 72.318421 61.176681 0
+M  V30 25 H 70.481822 71.443240 60.319931 0
+M  V30 26 H 69.000816 70.959773 58.378975 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 10
+M  V30 11 2 12 11
+M  V30 12 1 13 12
+M  V30 13 1 14 1
+M  V30 14 2 14 13
+M  V30 15 1 15 3
+M  V30 16 1 15 13
+M  V30 17 1 16 6
+M  V30 18 1 16 10
+M  V30 19 2 16 15
+M  V30 20 1 17 1
+M  V30 21 1 18 2
+M  V30 22 1 19 4
+M  V30 23 1 20 5
+M  V30 24 1 21 7
+M  V30 25 1 22 8
+M  V30 26 1 23 9
+M  V30 27 1 24 11
+M  V30 28 1 25 12
+M  V30 29 1 26 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (29) 
+1
+
+>  <i_i_glide_lignum>  (29) 
+1
+
+>  <i_i_glide_posenum>  (29) 
+386
+
+>  <i_i_glide_rotatable_bonds>  (29) 
+0
+
+>  <i_lp_mmshare_version>  (29) 
+73136
+
+>  <i_m_source_file_index>  (29) 
+1
+
+>  <PubChemCID>  (29) 
+31423
+
+>  <i_f3d_flags>  (29) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (29) 
+1
+
+>  <r_glide_cpu_time>  (29) 
+3.359375
+
+>  <r_glide_ring_energy>  (29) 
+0
+
+>  <r_i_docking_score>  (29) 
+-4.9975451234953567
+
+>  <r_i_glide_ecoul>  (29) 
+-0.82137143045995653
+
+>  <r_i_glide_einternal>  (29) 
+0
+
+>  <r_i_glide_emodel>  (29) 
+-26.197222663072846
+
+>  <r_i_glide_energy>  (29) 
+-19.333092304668014
+
+>  <r_i_glide_erotb>  (29) 
+0
+
+>  <r_i_glide_esite>  (29) 
+0
+
+>  <r_i_glide_evdw>  (29) 
+-18.511720874208059
+
+>  <r_i_glide_gscore>  (29) 
+-4.9975451234953567
+
+>  <r_i_glide_hbond>  (29) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (29) 
+-0.3123465702184598
+
+>  <r_i_glide_ligand_efficiency_ln>  (29) 
+-1.3246991632123419
+
+>  <r_i_glide_ligand_efficiency_sa>  (29) 
+-0.78706403736140929
+
+>  <r_i_glide_lipo>  (29) 
+-1.9186949561250515
+
+>  <r_i_glide_metal>  (29) 
+-0
+
+>  <r_i_glide_rewards>  (29) 
+-2.0300584090909095
+
+>  <r_lp_Energy>  (29) 
+37.198661000000001
+
+>  <s_glide_docking_method>  (29) 
+confgen
+
+>  <s_i_glide_gridfile>  (29) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (29) 
+OPLS_2005
+
+>  <s_lp_Variant>  (29) 
+pyrene-1
+
+>  <s_m_source_file>  (29) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (29) 
+PRIMARY - team named it ('pyrene, should be common', 2.April)
+
+$$$$
+pyrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 26 29 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 72.838940 72.531529 53.322568 0
+M  V30 2 C 73.983678 72.923000 54.030986 0
+M  V30 3 C 73.988922 72.945223 55.439476 0
+M  V30 4 C 75.116665 73.342353 56.180883 0
+M  V30 5 C 75.093240 73.360000 57.583178 0
+M  V30 6 C 73.945786 72.967618 58.296150 0
+M  V30 7 C 73.900417 72.960100 59.704512 0
+M  V30 8 C 72.753965 72.526745 60.384356 0
+M  V30 9 C 71.630000 72.118128 59.651390 0
+M  V30 10 C 71.612122 72.149965 58.242134 0
+M  V30 11 C 70.413937 71.759181 57.493697 0
+M  V30 12 C 70.430019 71.760002 56.154552 0
+M  V30 13 C 71.642915 72.159210 55.434772 0
+M  V30 14 C 71.683223 72.160000 54.024937 0
+M  V30 15 C 72.814008 72.556964 56.139729 0
+M  V30 16 C 72.795505 72.560425 57.566550 0
+M  V30 17 H 72.844852 72.519108 52.242565 0
+M  V30 18 H 74.868826 73.215113 53.484996 0
+M  V30 19 H 76.017165 73.645424 55.666689 0
+M  V30 20 H 75.976746 73.673498 58.120320 0
+M  V30 21 H 74.765352 73.271013 60.272854 0
+M  V30 22 H 72.737917 72.508670 61.464173 0
+M  V30 23 H 70.751891 71.779005 60.179999 0
+M  V30 24 H 69.528135 71.471833 58.041768 0
+M  V30 25 H 69.560687 71.467799 55.583317 0
+M  V30 26 H 70.809556 71.855304 53.467339 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 10
+M  V30 11 2 12 11
+M  V30 12 1 13 12
+M  V30 13 1 14 1
+M  V30 14 2 14 13
+M  V30 15 1 15 3
+M  V30 16 1 15 13
+M  V30 17 1 16 6
+M  V30 18 1 16 10
+M  V30 19 2 16 15
+M  V30 20 1 17 1
+M  V30 21 1 18 2
+M  V30 22 1 19 4
+M  V30 23 1 20 5
+M  V30 24 1 21 7
+M  V30 25 1 22 8
+M  V30 26 1 23 9
+M  V30 27 1 24 11
+M  V30 28 1 25 12
+M  V30 29 1 26 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (30) 
+1
+
+>  <i_i_glide_lignum>  (30) 
+1
+
+>  <i_i_glide_posenum>  (30) 
+309
+
+>  <i_i_glide_rotatable_bonds>  (30) 
+0
+
+>  <i_lp_mmshare_version>  (30) 
+73136
+
+>  <i_m_source_file_index>  (30) 
+1
+
+>  <PubChemCID>  (30) 
+31423
+
+>  <i_f3d_flags>  (30) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (30) 
+1
+
+>  <r_glide_cpu_time>  (30) 
+3.359375
+
+>  <r_glide_ring_energy>  (30) 
+0
+
+>  <r_i_docking_score>  (30) 
+-4.8875429226530809
+
+>  <r_i_glide_ecoul>  (30) 
+-0.73531443003883901
+
+>  <r_i_glide_einternal>  (30) 
+0
+
+>  <r_i_glide_emodel>  (30) 
+-26.942489134809442
+
+>  <r_i_glide_energy>  (30) 
+-20.229446846173694
+
+>  <r_i_glide_erotb>  (30) 
+0
+
+>  <r_i_glide_esite>  (30) 
+0
+
+>  <r_i_glide_evdw>  (30) 
+-19.494132416134857
+
+>  <r_i_glide_gscore>  (30) 
+-4.8875429226530809
+
+>  <r_i_glide_hbond>  (30) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (30) 
+-0.30547143266581755
+
+>  <r_i_glide_ligand_efficiency_ln>  (30) 
+-1.2955408825352563
+
+>  <r_i_glide_ligand_efficiency_sa>  (30) 
+-0.76973977631441592
+
+>  <r_i_glide_lipo>  (30) 
+-1.772480728249602
+
+>  <r_i_glide_metal>  (30) 
+-0
+
+>  <r_i_glide_rewards>  (30) 
+-2.0300584090909095
+
+>  <r_lp_Energy>  (30) 
+37.198661000000001
+
+>  <s_glide_docking_method>  (30) 
+confgen
+
+>  <s_i_glide_gridfile>  (30) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (30) 
+OPLS_2005
+
+>  <s_lp_Variant>  (30) 
+pyrene-1
+
+>  <s_m_source_file>  (30) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (30) 
+PRIMARY - team named it ('pyrene, should be common', 2.April)
+
+$$$$
+pyrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 26 29 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 73.895625 73.712147 61.815741 0
+M  V30 2 C 74.132056 74.714917 60.865505 0
+M  V30 3 C 73.702760 74.564487 59.532316 0
+M  V30 4 C 73.938474 75.546141 58.552492 0
+M  V30 5 C 73.515683 75.364063 57.227854 0
+M  V30 6 C 72.833119 74.197884 56.836386 0
+M  V30 7 C 72.406916 73.986680 55.510724 0
+M  V30 8 C 71.713889 72.820370 55.157177 0
+M  V30 9 C 71.448857 71.848447 56.132928 0
+M  V30 10 C 71.871173 72.007114 57.470343 0
+M  V30 11 C 71.607197 70.973600 58.477344 0
+M  V30 12 C 72.029887 71.137572 59.737214 0
+M  V30 13 C 72.750397 72.357074 60.116706 0
+M  V30 14 C 73.212040 72.548743 61.435998 0
+M  V30 15 C 73.010975 73.379163 59.160062 0
+M  V30 16 C 72.570186 73.198909 57.814408 0
+M  V30 17 H 74.240695 73.833819 62.832579 0
+M  V30 18 H 74.657489 75.610168 61.163946 0
+M  V30 19 H 74.461514 76.454160 58.816998 0
+M  V30 20 H 73.723564 76.135727 56.500459 0
+M  V30 21 H 72.605927 74.733228 54.754840 0
+M  V30 22 H 71.384622 72.669196 54.139536 0
+M  V30 23 H 70.910710 70.960174 55.838141 0
+M  V30 24 H 71.067028 70.087523 58.182453 0
+M  V30 25 H 71.850659 70.384824 60.489883 0
+M  V30 26 H 73.043744 71.782653 62.177364 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 10
+M  V30 11 2 12 11
+M  V30 12 1 13 12
+M  V30 13 1 14 1
+M  V30 14 2 14 13
+M  V30 15 1 15 3
+M  V30 16 1 15 13
+M  V30 17 1 16 6
+M  V30 18 1 16 10
+M  V30 19 2 16 15
+M  V30 20 1 17 1
+M  V30 21 1 18 2
+M  V30 22 1 19 4
+M  V30 23 1 20 5
+M  V30 24 1 21 7
+M  V30 25 1 22 8
+M  V30 26 1 23 9
+M  V30 27 1 24 11
+M  V30 28 1 25 12
+M  V30 29 1 26 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (31) 
+1
+
+>  <i_i_glide_lignum>  (31) 
+1
+
+>  <i_i_glide_posenum>  (31) 
+356
+
+>  <i_i_glide_rotatable_bonds>  (31) 
+0
+
+>  <i_lp_mmshare_version>  (31) 
+73136
+
+>  <i_m_source_file_index>  (31) 
+1
+
+>  <PubChemCID>  (31) 
+31423
+
+>  <i_f3d_flags>  (31) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (31) 
+1
+
+>  <r_glide_cpu_time>  (31) 
+3.359375
+
+>  <r_glide_ring_energy>  (31) 
+0
+
+>  <r_i_docking_score>  (31) 
+-4.7092093588773611
+
+>  <r_i_glide_ecoul>  (31) 
+-0.20442733139485242
+
+>  <r_i_glide_einternal>  (31) 
+0
+
+>  <r_i_glide_emodel>  (31) 
+-26.336855851453134
+
+>  <r_i_glide_energy>  (31) 
+-19.868754788716569
+
+>  <r_i_glide_erotb>  (31) 
+0
+
+>  <r_i_glide_esite>  (31) 
+0
+
+>  <r_i_glide_evdw>  (31) 
+-19.664327457321715
+
+>  <r_i_glide_gscore>  (31) 
+-4.7092093588773611
+
+>  <r_i_glide_hbond>  (31) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (31) 
+-0.29432558492983507
+
+>  <r_i_glide_ligand_efficiency_ln>  (31) 
+-1.2482700091627028
+
+>  <r_i_glide_ligand_efficiency_sa>  (31) 
+-0.74165399995144099
+
+>  <r_i_glide_lipo>  (31) 
+-1.665270477211138
+
+>  <r_i_glide_metal>  (31) 
+-0
+
+>  <r_i_glide_rewards>  (31) 
+-2.0300584090909095
+
+>  <r_lp_Energy>  (31) 
+37.198661000000001
+
+>  <s_glide_docking_method>  (31) 
+confgen
+
+>  <s_i_glide_gridfile>  (31) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (31) 
+OPLS_2005
+
+>  <s_lp_Variant>  (31) 
+pyrene-1
+
+>  <s_m_source_file>  (31) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (31) 
+PRIMARY - team named it ('pyrene, should be common', 2.April)
+
+$$$$
+naphthalene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 18 19 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 73.563863 72.960032 59.569506 0
+M  V30 2 C 72.372188 72.512137 60.170464 0
+M  V30 3 C 71.289769 72.098224 59.368644 0
+M  V30 4 C 71.395111 72.141210 57.963838 0
+M  V30 5 C 70.310838 71.741188 57.157953 0
+M  V30 6 C 70.430213 71.760000 55.755010 0
+M  V30 7 C 71.623576 72.201540 55.152749 0
+M  V30 8 C 72.706797 72.614172 55.952785 0
+M  V30 9 C 72.598160 72.583699 57.358603 0
+M  V30 10 C 73.679023 72.992830 58.166040 0
+M  V30 11 H 74.392539 73.278026 60.185213 0
+M  V30 12 H 72.287097 72.494155 61.246937 0
+M  V30 13 H 70.376041 71.755451 59.831629 0
+M  V30 14 H 69.392169 71.394884 57.609298 0
+M  V30 15 H 69.604809 71.440276 55.136536 0
+M  V30 16 H 71.706735 72.223584 54.075761 0
+M  V30 17 H 73.618275 72.953914 55.482576 0
+M  V30 18 H 74.597851 73.337005 57.714085 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 4
+M  V30 9 1 9 8
+M  V30 10 1 10 1
+M  V30 11 2 10 9
+M  V30 12 1 11 1
+M  V30 13 1 12 2
+M  V30 14 1 13 3
+M  V30 15 1 14 5
+M  V30 16 1 15 6
+M  V30 17 1 16 7
+M  V30 18 1 17 8
+M  V30 19 1 18 10
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (32) 
+1
+
+>  <i_i_glide_lignum>  (32) 
+4
+
+>  <i_i_glide_posenum>  (32) 
+268
+
+>  <i_i_glide_rotatable_bonds>  (32) 
+0
+
+>  <i_lp_mmshare_version>  (32) 
+73136
+
+>  <i_m_source_file_index>  (32) 
+4
+
+>  <PubChemCID>  (32) 
+931
+
+>  <i_f3d_flags>  (32) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (32) 
+1
+
+>  <r_glide_cpu_time>  (32) 
+1.046875
+
+>  <r_glide_ring_energy>  (32) 
+0
+
+>  <r_i_docking_score>  (32) 
+-4.6555820649986099
+
+>  <r_i_glide_ecoul>  (32) 
+-0.79714710544743861
+
+>  <r_i_glide_einternal>  (32) 
+0
+
+>  <r_i_glide_emodel>  (32) 
+-20.66534143267905
+
+>  <r_i_glide_energy>  (32) 
+-15.422098318707048
+
+>  <r_i_glide_erotb>  (32) 
+0
+
+>  <r_i_glide_esite>  (32) 
+0
+
+>  <r_i_glide_evdw>  (32) 
+-14.62495121325961
+
+>  <r_i_glide_gscore>  (32) 
+-4.6555820649986099
+
+>  <r_i_glide_hbond>  (32) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (32) 
+-0.46555820649986102
+
+>  <r_i_glide_ligand_efficiency_ln>  (32) 
+-1.4096781563251013
+
+>  <r_i_glide_ligand_efficiency_sa>  (32) 
+-1.0030147503123279
+
+>  <r_i_glide_lipo>  (32) 
+-1.5547624385185135
+
+>  <r_i_glide_metal>  (32) 
+-0
+
+>  <r_i_glide_rewards>  (32) 
+-2.25
+
+>  <r_lp_Energy>  (32) 
+9.5043810000000004
+
+>  <s_glide_docking_method>  (32) 
+confgen
+
+>  <s_i_glide_gridfile>  (32) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (32) 
+OPLS_2005
+
+>  <s_lp_Variant>  (32) 
+naphthalene-1
+
+>  <s_m_source_file>  (32) 
+C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+
+>  <provenance>  (32) 
+reference smallest PAH (PAH class)
+
+$$$$

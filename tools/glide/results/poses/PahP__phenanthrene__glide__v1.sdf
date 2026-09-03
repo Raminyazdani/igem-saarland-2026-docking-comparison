@@ -1,0 +1,165 @@
+phenanthrene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 24 26 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 73.186190 72.888144 60.550095 0
+M  V30 2 C 74.260491 73.360003 59.776575 0
+M  V30 3 C 74.189649 73.297618 58.374063 0
+M  V30 4 C 73.041717 72.774961 57.741774 0
+M  V30 5 C 73.004215 72.727351 56.335227 0
+M  V30 6 C 71.864321 72.241426 55.676713 0
+M  V30 7 C 70.751778 71.805390 56.419626 0
+M  V30 8 C 69.608167 71.360000 55.726436 0
+M  V30 9 C 68.471136 70.927718 56.426127 0
+M  V30 10 C 68.493008 70.915836 57.827345 0
+M  V30 11 C 69.627558 71.360136 58.532731 0
+M  V30 12 C 70.776418 71.823845 57.841488 0
+M  V30 13 C 71.937188 72.311775 58.510373 0
+M  V30 14 C 72.037299 72.368596 59.923725 0
+M  V30 15 H 73.242431 72.930139 61.628069 0
+M  V30 16 H 75.139859 73.762522 60.258183 0
+M  V30 17 H 75.022504 73.656374 57.786402 0
+M  V30 18 H 73.846490 73.072151 55.752666 0
+M  V30 19 H 71.842303 72.217776 54.596417 0
+M  V30 20 H 69.597117 71.359999 54.645740 0
+M  V30 21 H 67.598969 70.581551 55.891104 0
+M  V30 22 H 67.630000 70.560001 58.364201 0
+M  V30 23 H 69.571556 71.337324 59.608557 0
+M  V30 24 H 71.241463 72.032103 60.564839 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 2 6 5
+M  V30 6 1 7 6
+M  V30 7 2 8 7
+M  V30 8 1 9 8
+M  V30 9 2 10 9
+M  V30 10 1 11 10
+M  V30 11 1 12 7
+M  V30 12 2 12 11
+M  V30 13 1 13 4
+M  V30 14 1 13 12
+M  V30 15 1 14 1
+M  V30 16 2 14 13
+M  V30 17 1 15 1
+M  V30 18 1 16 2
+M  V30 19 1 17 3
+M  V30 20 1 18 5
+M  V30 21 1 19 6
+M  V30 22 1 20 8
+M  V30 23 1 21 9
+M  V30 24 1 22 10
+M  V30 25 1 23 11
+M  V30 26 1 24 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (7) 
+1
+
+>  <i_i_glide_lignum>  (7) 
+2
+
+>  <i_i_glide_posenum>  (7) 
+377
+
+>  <i_i_glide_rotatable_bonds>  (7) 
+0
+
+>  <i_lp_mmshare_version>  (7) 
+73136
+
+>  <i_m_source_file_index>  (7) 
+2
+
+>  <PubChemCID>  (7) 
+995
+
+>  <i_f3d_flags>  (7) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (7) 
+1
+
+>  <r_glide_cpu_time>  (7) 
+1.125
+
+>  <r_glide_ring_energy>  (7) 
+0
+
+>  <r_i_docking_score>  (7) 
+-5.9383426531582781
+
+>  <r_i_glide_ecoul>  (7) 
+-0.83766936244626899
+
+>  <r_i_glide_einternal>  (7) 
+0
+
+>  <r_i_glide_emodel>  (7) 
+-29.641606964444307
+
+>  <r_i_glide_energy>  (7) 
+-21.711690578168891
+
+>  <r_i_glide_erotb>  (7) 
+0
+
+>  <r_i_glide_esite>  (7) 
+0
+
+>  <r_i_glide_evdw>  (7) 
+-20.874021215722621
+
+>  <r_i_glide_gscore>  (7) 
+-5.9383426531582781
+
+>  <r_i_glide_hbond>  (7) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (7) 
+-0.42416733236844845
+
+>  <r_i_glide_ligand_efficiency_ln>  (7) 
+-1.6318354220009261
+
+>  <r_i_glide_ligand_efficiency_sa>  (7) 
+-1.0223036148236597
+
+>  <r_i_glide_lipo>  (7) 
+-2.5044364821264233
+
+>  <r_i_glide_metal>  (7) 
+-0
+
+>  <r_i_glide_rewards>  (7) 
+-2.2645547058787838
+
+>  <r_lp_Energy>  (7) 
+16.839226999999998
+
+>  <s_glide_docking_method>  (7) 
+confgen
+
+>  <s_i_glide_gridfile>  (7) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (7) 
+OPLS_2005
+
+>  <s_lp_Variant>  (7) 
+phenanthrene-1
+
+>  <s_m_source_file>  (7) 
+input/canonical/ligands/ligands.sdf
+
+>  <provenance>  (7) 
+named (degradation intermediate; slides 8/19)
+
+$$$$

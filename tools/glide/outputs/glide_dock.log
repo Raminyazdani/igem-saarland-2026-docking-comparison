@@ -1,0 +1,121 @@
+Glide version 110136 (mmshare version 73136)
+mmshare         20a6d06af9
+glide-src       04e22ddce5
+psp-src         8fc7aae5a6
+macromodel-src  5ee4912ca9
+epik-src        5d12eb9895
+
+Copyright (c) Schrodinger, LLC.
+All Rights Reserved.
+
+--------------------------------------------------------------------------------
+JobId          : cd6b4ff5-a706-11f1-9dba-00ffe093d49c
+Name           : glide_dock
+Program        : Glide
+ClientVersion  : 2026-1 build 136
+Host           : Ramin_X12
+Dir            : C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\tools\glide
+HostEntry      : localhost
+JobHost        : Ramin_X12
+JobDir         : C:\Users\yazda\AppData\Local\Schrodinger\tmp\yazda\jobs\cd6b4ff5-a706-11f1-9dba-00ffe093d49c
+JobSchrodinger : C:\Program Files\Schrodinger2026-1
+Commandline    : C:\Program Files\Schrodinger2026-1\glide.exe C:/Users/yazda/OneDrive/Desktop/igem_docking/repo/tools/glide/outputs/glide_dock.in -OVERWRITE -HOST localhost -WAIT
+StartTime      : 2026-09-02-21:45:09
+Version        : 2026-1 build 136
+--------------------------------------------------------------------------------
+
+Running the optimized Glide.
+
+== Input settings ==
+
+CANONICALIZE   True
+COMPRESS_POSES   False
+DOCKING_METHOD   confgen
+EPIK_PENALTIES   False
+FORCEFIELD   OPLS_2005
+GRIDFILE   inputs\PahP_glide_grid.zip
+KEEPSKIPPED   True
+LIGANDFILE   inputs\ligands_prepared.maegz
+POSE_OUTTYPE   ligandlib_sd
+POSES_PER_LIG   5
+POSTDOCK   True
+POSTDOCK_NPOSE   5
+POSTDOCKSTRAIN   False
+PRECISION   SP
+REPORT_CPU_TIME   True
+WRITE_CSV   True
+
+== Grid info ==
+
+Receptor atoms: 4931
+Sites: 64
+Rough grid cells: (22, 20, 28)
+Fine grid cells: (56, 56, 72)
+Adaptive grid points: 113916
+Movable atoms: 0
+Excluded volumes: 0
+Peptide mode: false
+
+
+
+== Begin ligand loop ==
+
+LIG 1 (pyrene): -5.695 kcal/mol; 3.36 s
+              : -5.883 kcal/mol; 3.36 s
+              : -4.888 kcal/mol; 3.36 s
+              : -4.709 kcal/mol; 3.36 s
+              : -4.998 kcal/mol; 3.36 s
+LIG 2 (phenanthrene): -5.594 kcal/mol; 1.12 s
+                    : -5.938 kcal/mol; 1.12 s
+                    : -5.669 kcal/mol; 1.12 s
+                    : -5.684 kcal/mol; 1.12 s
+LIG 3 (benzo_a_pyrene): -6.008 kcal/mol; 1.34 s
+                      : -5.973 kcal/mol; 1.34 s
+                      : -5.685 kcal/mol; 1.34 s
+                      : -5.251 kcal/mol; 1.34 s
+                      : -5.555 kcal/mol; 1.34 s
+LIG 4 (naphthalene): -5.329 kcal/mol; 1.05 s
+                   : -5.471 kcal/mol; 1.05 s
+                   : -5.022 kcal/mol; 1.05 s
+                   : -4.656 kcal/mol; 1.05 s
+LIG 5 (anthracene): -5.473 kcal/mol; 1.25 s
+                  : -6.114 kcal/mol; 1.25 s
+                  : -5.453 kcal/mol; 1.25 s
+                  : -5.772 kcal/mol; 1.25 s
+                  : -5.203 kcal/mol; 1.25 s
+LIG 6 (fluoranthene): -5.890 kcal/mol; 1.47 s
+                    : -6.030 kcal/mol; 1.47 s
+                    : -5.707 kcal/mol; 1.47 s
+                    : -5.798 kcal/mol; 1.47 s
+                    : -5.454 kcal/mol; 1.47 s
+LIG 7 (glucose_NEGCTRL): -6.040 kcal/mol; 4.98 s
+                       : -6.003 kcal/mol; 4.98 s
+                       : -5.904 kcal/mol; 4.98 s
+                       : -5.799 kcal/mol; 4.98 s
+
+== End ligand loop ==
+
+
+                                  Glide Sort                                  
+------------------------------------------------------------------------------
+REPORT OF BEST 32 POSES
+
+The sorted ligand structures were written to the file:
+    glide_dock_lib.sdf
+
+Final rankings based on original docking score.
+
+0 poses were rejected by the energy filters,
+    Coul+vdw Energy    <=     0.0
+    Hbond Interaction  <=     0.0
+    Metal Interaction  <=    10.0
+    GlideScore         <=   100.0
+    Docking Score      <=   100.0
+(If any of the above properties is not defined for a given pose,
+ the corresponding filter is not applied to that pose.)
+
+
+Exiting Glide
+Date: Wednesday, September 02 2026, at 09:45:44 PM +0200
+CPU time (s): 15.4 user, 0.5 sys, 17.7 real
+Total elapsed time = 18 seconds (18 seconds)

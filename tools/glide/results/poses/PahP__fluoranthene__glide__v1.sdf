@@ -1,0 +1,170 @@
+fluoranthene
+     RDKit          3D
+
+  0  0  0  0  0  0  0  0  0  0999 V3000
+M  V30 BEGIN CTAB
+M  V30 COUNTS 26 29 0 0 1
+M  V30 BEGIN ATOM
+M  V30 1 C 74.197779 72.960040 54.115610 0
+M  V30 2 C 73.125761 72.718297 53.222124 0
+M  V30 3 C 71.859752 72.320506 53.706340 0
+M  V30 4 C 71.697855 72.174862 55.094306 0
+M  V30 5 C 72.760039 72.412245 55.979840 0
+M  V30 6 C 74.024151 72.806622 55.509514 0
+M  V30 7 C 72.265400 72.140551 57.332311 0
+M  V30 8 C 72.837642 72.177521 58.618774 0
+M  V30 9 C 72.069033 71.782367 59.739849 0
+M  V30 10 C 70.726474 71.359991 59.584706 0
+M  V30 11 C 70.121629 71.350095 58.313170 0
+M  V30 12 C 68.806680 70.960000 57.990745 0
+M  V30 13 C 68.363570 70.960000 56.647185 0
+M  V30 14 C 69.230001 71.360000 55.603090 0
+M  V30 15 C 70.547558 71.760000 55.899918 0
+M  V30 16 C 70.931636 71.742083 57.241050 0
+M  V30 17 H 75.158929 73.264151 53.727853 0
+M  V30 18 H 73.277055 72.838226 52.159410 0
+M  V30 19 H 71.040915 72.124487 53.029849 0
+M  V30 20 H 74.840792 72.984109 56.193736 0
+M  V30 21 H 73.863385 72.491277 58.746001 0
+M  V30 22 H 72.515607 71.797556 60.723172 0
+M  V30 23 H 70.150275 71.044781 60.440931 0
+M  V30 24 H 68.134032 70.644555 58.773564 0
+M  V30 25 H 67.355196 70.647421 56.417791 0
+M  V30 26 H 68.888903 71.343171 54.580000 0
+M  V30 END ATOM
+M  V30 BEGIN BOND
+M  V30 1 2 2 1
+M  V30 2 1 3 2
+M  V30 3 2 4 3
+M  V30 4 1 5 4
+M  V30 5 1 6 1
+M  V30 6 2 6 5
+M  V30 7 1 7 5
+M  V30 8 2 8 7
+M  V30 9 1 9 8
+M  V30 10 2 10 9
+M  V30 11 1 11 10
+M  V30 12 1 12 11
+M  V30 13 2 13 12
+M  V30 14 1 14 13
+M  V30 15 1 15 4
+M  V30 16 2 15 14
+M  V30 17 1 16 7
+M  V30 18 2 16 11
+M  V30 19 1 16 15
+M  V30 20 1 17 1
+M  V30 21 1 18 2
+M  V30 22 1 19 3
+M  V30 23 1 20 6
+M  V30 24 1 21 8
+M  V30 25 1 22 9
+M  V30 26 1 23 10
+M  V30 27 1 24 12
+M  V30 28 1 25 13
+M  V30 29 1 26 14
+M  V30 END BOND
+M  V30 END CTAB
+M  END
+>  <i_i_glide_confnum>  (3) 
+1
+
+>  <i_i_glide_lignum>  (3) 
+6
+
+>  <i_i_glide_posenum>  (3) 
+264
+
+>  <i_i_glide_rotatable_bonds>  (3) 
+0
+
+>  <i_lp_mmshare_version>  (3) 
+73136
+
+>  <i_m_source_file_index>  (3) 
+6
+
+>  <PubChemCID>  (3) 
+9154
+
+>  <i_f3d_flags>  (3) 
+0
+
+>  <b_lp_Chiralities_Consistent>  (3) 
+1
+
+>  <r_glide_cpu_time>  (3) 
+1.46875
+
+>  <r_glide_ring_energy>  (3) 
+0
+
+>  <r_i_docking_score>  (3) 
+-6.0296473247213385
+
+>  <r_i_glide_ecoul>  (3) 
+-0.34113073918183484
+
+>  <r_i_glide_einternal>  (3) 
+0
+
+>  <r_i_glide_emodel>  (3) 
+-32.241074479016376
+
+>  <r_i_glide_energy>  (3) 
+-23.651247238472767
+
+>  <r_i_glide_erotb>  (3) 
+0
+
+>  <r_i_glide_esite>  (3) 
+0
+
+>  <r_i_glide_evdw>  (3) 
+-23.310116499290931
+
+>  <r_i_glide_gscore>  (3) 
+-6.0296473247213385
+
+>  <r_i_glide_hbond>  (3) 
+0
+
+>  <r_i_glide_ligand_efficiency>  (3) 
+-0.37685295779508365
+
+>  <r_i_glide_ligand_efficiency_ln>  (3) 
+-1.5982784683567479
+
+>  <r_i_glide_ligand_efficiency_sa>  (3) 
+-0.94960994848234026
+
+>  <r_i_glide_lipo>  (3) 
+-2.7162468131219413
+
+>  <r_i_glide_metal>  (3) 
+-0
+
+>  <r_i_glide_rewards>  (3) 
+-2.0967250757575764
+
+>  <r_lp_Energy>  (3) 
+49.371870999999999
+
+>  <s_glide_docking_method>  (3) 
+confgen
+
+>  <s_i_glide_gridfile>  (3) 
+PahP_glide_grid
+
+>  <s_lp_Force_Field>  (3) 
+OPLS_2005
+
+>  <s_lp_Variant>  (3) 
+fluoranthene-1
+
+>  <s_m_source_file>  (3) 
+input/canonical/ligands/ligands.sdf
+
+>  <provenance>  (3) 
+EQS Saar PAH
+
+$$$$

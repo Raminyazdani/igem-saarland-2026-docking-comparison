@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Glide SP docking of the PAH panel into PahP</title>
+<style>
+  @page { size: A4; margin: 11mm 11mm 9mm; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: Cambria, Georgia, "Times New Roman", serif;
+    font-size: 8.35pt; line-height: 1.35; color: #10202C; margin: 0;
+    hyphens: auto;
+  }
+
+  /* ---------- title block ---------- */
+  .masthead { border-bottom: 2.2pt solid #10202C; padding-bottom: 7pt; margin-bottom: 9pt; }
+  .eyebrow {
+    font-family: "Segoe UI", Arial, sans-serif; font-size: 7.2pt; font-weight: 600;
+    letter-spacing: .16em; text-transform: uppercase; color: #14556B; margin-bottom: 4pt;
+  }
+  h1 {
+    font-family: "Segoe UI Semibold", "Segoe UI", Arial, sans-serif;
+    font-size: 15pt; font-weight: 600; line-height: 1.14; margin: 0 0 5pt;
+    letter-spacing: -.2pt; color: #10202C;
+  }
+  .byline { font-size: 8.4pt; color: #55707E; font-style: italic; margin: 0; }
+
+  .keyvals {
+    display: flex; flex-wrap: wrap; gap: 0 14pt; margin: 7pt 0 0;
+    font-family: "Segoe UI", Arial, sans-serif; font-size: 7.4pt; color: #55707E;
+  }
+  .keyvals span b { color: #10202C; font-weight: 600; }
+
+  /* ---------- abstract ---------- */
+  .abstract {
+    border-left: 2.5pt solid #14556B; background: #F4F8F9;
+    padding: 6pt 9pt; margin: 8pt 0 9pt; font-size: 8.1pt;
+  }
+  .abstract h2 {
+    font-family: "Segoe UI", Arial, sans-serif; font-size: 7.2pt; font-weight: 600;
+    letter-spacing: .14em; text-transform: uppercase; color: #14556B; margin: 0 0 3pt;
+  }
+  .abstract p { margin: 0; }
+
+  /* ---------- two-column body ---------- */
+  .body { column-count: 2; column-gap: 6mm; column-fill: balance; }
+  h2.sec {
+    font-family: "Segoe UI Semibold", "Segoe UI", Arial, sans-serif;
+    font-size: 8.8pt; font-weight: 600; color: #14556B;
+    margin: 7pt 0 2.5pt; break-after: avoid;
+  }
+  h2.sec:first-child { margin-top: 0; }
+  h2.sec .n { color: #9BB0BA; font-weight: 400; margin-right: 3pt; }
+  h3.sub {
+    font-family: "Segoe UI", Arial, sans-serif; font-size: 8.3pt; font-weight: 600;
+    margin: 6pt 0 2pt; color: #10202C; break-after: avoid;
+  }
+  p { margin: 0 0 3.2pt; text-align: justify; }
+  ul { margin: 0 0 4pt; padding-left: 11pt; }
+  li { margin-bottom: 1.5pt; }
+  code {
+    font-family: Consolas, "Cascadia Mono", monospace; font-size: 7.7pt;
+    color: #14556B; background: #F1F5F7; padding: 0 2pt; border-radius: 1.5pt;
+  }
+  .lead { color: #10202C; font-weight: 600; }
+
+  /* ---------- full-width blocks ---------- */
+  .span { column-span: all; margin: 6pt 0 7pt; }
+  figure { margin: 0; }
+  figcaption {
+    font-family: "Segoe UI", Arial, sans-serif; font-size: 7.3pt; color: #55707E;
+    margin-top: 3.5pt; line-height: 1.35;
+  }
+  figcaption b { color: #10202C; }
+
+  /* journal-style rules: no vertical lines, no fills */
+  table { border-collapse: collapse; width: 100%; font-size: 7.6pt; }
+  thead th {
+    font-family: "Segoe UI", Arial, sans-serif; font-size: 7.2pt; font-weight: 600;
+    letter-spacing: .05em; text-transform: uppercase; color: #55707E;
+    border-top: 1.1pt solid #10202C; border-bottom: .5pt solid #8FA5AF;
+    padding: 2.8pt 5pt; text-align: left;
+  }
+  tbody td { padding: 2.1pt 5pt; border-bottom: .35pt solid #DCE5E9; }
+  tbody tr:last-child td { border-bottom: 1.1pt solid #10202C; }
+  td.n, th.n { text-align: right; font-variant-numeric: tabular-nums;
+               font-family: Consolas, "Cascadia Mono", monospace; }
+  tr.mark td { background: #FBF3E3; color: #7A5410; }
+  .protocol td { vertical-align: top; }
+  .protocol td:first-child { font-family: "Segoe UI", Arial, sans-serif; font-weight: 600;
+                             font-size: 7.8pt; white-space: nowrap; }
+
+  /* ---------- caution ---------- */
+  .caution {
+    border: .5pt solid #C9A24E; border-left: 2.5pt solid #C9A24E; background: #FBF3E3;
+    padding: 6pt 9pt; font-size: 8.1pt;
+  }
+  .caution h3 {
+    font-family: "Segoe UI Semibold", "Segoe UI", Arial, sans-serif; font-size: 8.6pt;
+    color: #7A5410; margin: 0 0 3pt; font-weight: 600;
+  }
+  .caution p { margin: 0; }
+
+  footer {
+    column-span: all; margin-top: 10pt; padding-top: 5pt; border-top: .5pt solid #B9C7CE;
+    font-family: "Segoe UI", Arial, sans-serif; font-size: 7pt; color: #55707E;
+    display: flex; flex-wrap: wrap; gap: 2pt 13pt;
+  }
+  footer b { color: #10202C; font-weight: 600; }
+
+  .attribution {
+    font-family: "Segoe UI", Arial, sans-serif; font-size: 7.6pt; color: #55707E;
+    background: #F4F8F9; border: .5pt solid #CBD9E0; border-left: 2.5pt solid #14556B;
+    padding: 4.5pt 8pt; margin: 0 0 8pt;
+  }
+  .attribution b { color: #10202C; font-weight: 600; }
+</style></head><body>
+
+<p class="attribution"><b>Authorship note.</b> This PDF report and the accompanying workflow diagram
+(<code>workflow.svg</code>) were created by <b>Claude Opus 5</b>. The docking run they describe was
+executed with Schr&#246;dinger Glide; all figures and values are taken directly from that run's native
+output.</p>
+
+<header class="masthead">
+  <div class="eyebrow">iGEM Saarland 2026 · Docking-tool comparison · workspace tools/glide</div>
+  <h1>Glide SP docking of the PAH panel into the periplasmic binding protein PahP</h1>
+  <p class="byline">Ramin · branch <code>tool/glide</code> · Schrödinger Suite 2026-1, Glide v11.0</p>
+  <div class="keyvals">
+    <span><b>Target</b> PahP, 308 aa</span>
+    <span><b>Ligands</b> 7 of 7 docked</span>
+    <span><b>Mode</b> SP, defined box</span>
+    <span><b>Input commit</b> fad5b9b</span>
+    <span><b>Validator</b> exit 0</span>
+    <span><b>Run</b> 2026-09-02</span>
+  </div>
+</header>
+
+<div class="abstract">
+  <h2>Summary</h2>
+  <p>All seven canonical ligands docked into the shared PahP pocket with no failures, every best pose
+  landing 0.95–2.72 Å from the grid centre — the same site CB-Dock3 reaches by blind docking. The run is
+  deterministic: repeating it from the identical grid returned identical scores, which matters because
+  Glide exposes no random seed. The scientifically interesting result is negative. GlideScore separates
+  the seven ligands by only 0.64 kcal/mol and places the glucose negative control second; component
+  analysis shows this is a genuine property of the scoring function on a pocket that is only 62%
+  hydrophobic, not a defect in the pipeline. Neither Glide nor the comparison tools reproduce the
+  published experimental affinity order for this protein.</p>
+</div>
+
+<div class="body">
+
+  <h2 class="sec"><span class="n">1</span>Question and approach</h2>
+  <p>Does PahP bind our PAH panel, and how does Glide rank that panel relative to the other docking
+  engines in the comparison? The receptor, the seven ligands and the search region are shared across all
+  workspaces, so the only variable between them is the engine itself. This report covers the Glide arm
+  end to end: receptor preparation, ligand preparation, receptor grid, docking, and the standardised
+  result file the comparison consumes.</p>
+
+  <h2 class="sec"><span class="n">2</span>Inputs, exactly as frozen</h2>
+  <h3 class="sub">Receptor</h3>
+  <p><code>targets/PahP/structure.pdb</code>, characterised before anything was altered: 4931 atoms,
+  308 residues, a single contiguous chain A, hydrogens already present from OpenMM, and no HETATM
+  records, waters, metals or alternate locations. Critically, <span class="lead">no missing heavy atoms
+  and no chain breaks</span> — almost everything a protein-preparation checklist normally repairs is
+  simply absent here, which is why the protocol in Table 1 is deliberately short.</p>
+
+  <h3 class="sub">Ligands</h3>
+  <p><code>ligands/ligands.sdf</code> — seven molecules, all neutral with explicit hydrogens: six PAHs
+  (128–252 Da, zero rotatable bonds) and glucose as a control. The longest, benzo[a]pyrene at 11.46 Å,
+  sets the minimum legal grid dimension (Table 1).</p>
+
+  <h3 class="sub">Binding site</h3>
+  <p>The canonical <code>binding_site.yaml</code> remains a placeholder with six null values and no
+  <code>input-v1</code> tag. Because Glide has no blind-docking mode, a box is mandatory rather than
+  optional, so one had to be sourced elsewhere.</p>
+
+  <h2 class="sec"><span class="n">3</span>Assumptions</h2>
+  <ul>
+    <li><span class="lead">Receptor used exactly as frozen</span>, including its predicted N-terminal
+      signal peptide (the file spans FASTA residues 10–317). The project plan calls for the mature
+      domain, but every tool must dock an identical receptor, so this is escalated rather than fixed
+      locally. The CB-Dock3 team raised the same point independently.</li>
+    <li><span class="lead">Shared provisional box.</span> The grid uses the fpocket 4.2.2 Pocket 4 box
+      that the AutoDock Vina team derived and proposed for the canonical file, centred at
+      <code>70.83, 71.96, 59.18</code>. This is a fairness decision, not a scoring one — see §4 for the
+      three independent checks that it is the right site.</li>
+    <li><span class="lead">Ligand chemistry untouched.</span> The six PAHs have no ionisable group and
+      no tautomer at pH 7 ± 2, so ionisation and tautomer enumeration are chemically no-ops and were
+      disabled. The one unavoidable change is that LigPrep always re-minimises geometry; chemistry,
+      stereochemistry and protonation are unchanged.</li>
+    <li><span class="lead">Rigid receptor, no seed.</span> Glide exposes no random seed, so
+      <code>CANONICALIZE</code> is used as the documented substitute and the seed is recorded as
+      <code>null</code> rather than invented.</li>
+  </ul>
+
+</div>
+
+<figure class="span">
+  <table class="protocol">
+    <thead><tr><th style="width:15%">Stage</th><th style="width:37%">Command and key settings</th>
+      <th>Outcome and rationale</th></tr></thead>
+    <tbody>
+      <tr><td>Receptor prep</td>
+        <td><code>prepwizard -rehtreat -disulfides -noepik -propka_pH 7.4 -f OPLS_2005</code></td>
+        <td>Hydrogens deleted and re-added under Schrödinger naming — the canonical ones come from
+          OpenMM and their non-standard names break H-bond assignment. Restrained minimisation
+          converged at 0.29 Å RMSD. Prime side-chain and loop filling deliberately omitted: nothing
+          was missing, so it would only introduce model-dependent change.</td></tr>
+      <tr><td>Ligand prep</td>
+        <td><code>ligprep -i 0 -nt -s 1 -g</code></td>
+        <td>No ionisation, tautomeriser off (it is <i>on</i> by default), one stereoisomer, chirality
+          read from the input 3D geometry. Seven structures in, seven out, all titles preserved.</td></tr>
+      <tr><td>Receptor grid</td>
+        <td><code>GRID_CENTER 70.83, 71.96, 59.18</code> · <code>OUTERBOX 21.3, 19.6, 27.3</code> ·
+          <code>INNERBOX 8</code></td>
+        <td>The inner box bounds only the ligand centroid; Glide requires
+          outer ≥ inner + 11.46 Å on <i>every</i> axis, and the shortest axis is 19.6 Å, so 8 is the
+          largest legal value. The script enforces this per axis and refuses to build a grid that would
+          silently truncate benzo[a]pyrene.</td></tr>
+      <tr><td>Docking</td>
+        <td><code>PRECISION SP · confgen · POSES_PER_LIG 5 · POSTDOCK · CANONICALIZE · EPIK_PENALTIES False</code></td>
+        <td>XP is not licensed on this installation — <code>PRECISION</code> accepts only SP or HTVS.
+          With Epik penalties and strain correction disabled, the reported docking score equals
+          GlideScore exactly. <code>WRITE_CSV</code> and <code>KEEPSKIPPED</code> ensure no ligand can be
+          silently dropped.</td></tr>
+      <tr><td>Extraction</td>
+        <td><code>collect_results.py</code> → <code>DOCKING_RESULT.json</code></td>
+        <td>Scores copied verbatim from Glide's native CSV; every canonical ligand receives a row, and a
+          failure would carry Glide's own message. Validated against the project schema.</td></tr>
+    </tbody>
+  </table>
+  <figcaption><b>Table 1.</b> Protocol as executed. Every flag was verified against the installed
+  release via <code>prepwizard -h</code>, <code>ligprep -long_help</code> and
+  <code>glide -docking-keywords</code> rather than against external documentation.</figcaption>
+</figure>
+
+<div class="body">
+
+  <h2 class="sec"><span class="n">4</span>Is this the right site?</h2>
+  <p>Because the box was not canonical, it was checked three independent ways before the results were
+  trusted. First, all seven CB-Dock3 <i>blind</i>-docking poses on PahP land 0.8–2.1 Å from this centre —
+  an unrelated method converging on the same place. Second, a clearance scan of the canonical structure
+  finds 24.8% of the inner box free of protein, with the nearest heavy atom 3.48 Å away: a real cavity,
+  not filled space. Third, the site is lined by 16 residues, 62% hydrophobic, including five aromatics
+  available for π-stacking (Phe123, Tyr271, Tyr274, Phe275, Phe306) alongside a polar face (Ser242,
+  Ser243, Gln246, His250, Lys273).</p>
+
+  <h2 class="sec"><span class="n">5</span>Results</h2>
+  <p>All seven ligands docked with no failures (Table 2). Every best pose sits inside the intended
+  pocket, and total cost was 14.6 s CPU. Repeating the docking from the identical grid returned
+  <span class="lead">identical scores for all seven ligands</span>, establishing that the pipeline is
+  deterministic in practice despite the absence of a seed parameter.</p>
+
+</div>
+
+<figure class="span">
+  <table>
+    <thead><tr>
+      <th style="width:4%">#</th><th style="width:20%">Ligand</th>
+      <th class="n">GlideScore<br>(kcal/mol)</th><th class="n">Heavy<br>atoms</th>
+      <th class="n">Ligand<br>efficiency</th><th class="n">Pose offset<br>from centre</th>
+      <th style="width:26%">Role in the panel</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>anthracene</td><td class="n">−6.114</td><td class="n">14</td><td class="n">−0.437</td><td class="n">1.20 Å</td><td>specificity probe</td></tr>
+      <tr class="mark"><td>2</td><td><b>glucose_NEGCTRL</b></td><td class="n">−6.040</td><td class="n">12</td><td class="n">−0.503</td><td class="n">0.95 Å</td><td><b>negative control</b></td></tr>
+      <tr><td>3</td><td>fluoranthene</td><td class="n">−6.030</td><td class="n">16</td><td class="n">−0.377</td><td class="n">2.72 Å</td><td>EQS Saar PAH</td></tr>
+      <tr><td>4</td><td>benzo_a_pyrene</td><td class="n">−6.008</td><td class="n">20</td><td class="n">−0.300</td><td class="n">1.96 Å</td><td>carcinogenic marker</td></tr>
+      <tr><td>5</td><td>phenanthrene</td><td class="n">−5.938</td><td class="n">14</td><td class="n">−0.424</td><td class="n">1.52 Å</td><td>degradation intermediate</td></tr>
+      <tr><td>6</td><td>pyrene</td><td class="n">−5.883</td><td class="n">16</td><td class="n">−0.368</td><td class="n">2.04 Å</td><td>primary target ligand</td></tr>
+      <tr><td>7</td><td>naphthalene</td><td class="n">−5.471</td><td class="n">10</td><td class="n"><b>−0.547</b></td><td class="n">1.59 Å</td><td>smallest PAH</td></tr>
+    </tbody>
+  </table>
+  <figcaption><b>Table 2.</b> Glide SP results for PahP, ranked by docking score (lower is better).
+  Ligand efficiency is score divided by heavy-atom count. Pose offset is the distance from the best
+  pose's heavy-atom centroid to the grid centre; the inner box permits up to ~4 Å by construction, so
+  all seven poses are inside the intended site. Values copied verbatim from Glide's native CSV.</figcaption>
+</figure>
+
+<div class="body">
+
+  <h2 class="sec"><span class="n">6</span>Interpretation</h2>
+
+  <div class="caution">
+    <h3>The negative control ranks second — a property of the score, not a fault</h3>
+    <p>Every ligand occupies the same site, so this cannot be a placement artefact. The score components
+    explain it directly: the PAHs score through lipophilic contact (−2.3 to −2.9) and van der Waals
+    (−17 to −24) with <i>zero</i> hydrogen bonding and near-zero Coulomb, whereas glucose earns a weak
+    lipophilic −1.0 but gains <b>H-bond −0.79 and Coulomb −8.87</b> against the pocket's polar face. A
+    pocket that is only 62% hydrophobic genuinely offers a polyol something to bind.</p>
+  </div>
+
+  <p>The consequence is that glucose functions as a <span class="lead">plumbing and property control,
+  not a specificity control</span>. It is mismatched to the PAHs on nearly every physicochemical axis —
+  hydrogen-bond donors and acceptors, logP, sp³ character, stereocentres — so a score gap in either
+  direction is confounded and carries little information about pocket selectivity.</p>
+
+  <h3 class="sub">How much of the ranking is ligand size?</h3>
+  <p>Across the six PAHs, GlideScore correlates with heavy-atom count at <span class="lead">r =
+  −0.68</span>. CB-Dock3, docking the same site, gives <span class="lead">r = −1.00</span>: its ranking
+  is almost entirely explained by ligand size. Glide is therefore materially less size-driven, but it
+  still does not predict affinity. Against the four ligands with published SPR measurements for this
+  protein, the raw GlideScore order is <i>inverted</i> (Spearman ρ = −1.00), while size-normalised ligand
+  efficiency is weakly positive (ρ = +0.20) and correctly ranks naphthalene first — matching the
+  experimental finding that naphthalene binds most tightly. With n = 4 these coefficients are extremely
+  noisy and no significance is claimed.</p>
+
+  <p>The defensible summary is that <span class="lead">neither engine reproduces the experimental
+  affinity order</span>, which is the documented and expected behaviour of docking scoring functions.
+  The comparison should therefore proceed on ranks, never on raw scores across tools.</p>
+
+  <h2 class="sec"><span class="n">7</span>Status and open items</h2>
+  <ul>
+    <li><span class="lead">The box is provisional.</span> Results are comparable in practice with the
+      Vina and CB-Dock3 workspaces because all three searched the same region, but the box is not yet
+      formally canonical. Freezing it into <code>binding_site.yaml</code> and tagging
+      <code>input-v1</code> would make the comparison provably fair; every tool would then re-run from
+      one definition.</li>
+    <li><span class="lead">Signal peptide.</span> Still present in the shared receptor; needs a central
+      decision, not a per-workspace fix.</li>
+    <li><span class="lead">PahS not attempted.</span> PahP is the required minimum; CB-Dock3 has
+      completed both targets.</li>
+    <li>Reproduction instructions, including the determinism test, are in <code>REPRODUCE.md</code>; the
+      full pipeline is drawn in <code>workflow.svg</code>. An earlier run used an incorrect box centre;
+      that error and its diagnostics are recorded in <code>preprocessing/steps.md</code> so it is not
+      repeated.</li>
+  </ul>
+
+</div>
+
+<footer>
+  <span><b>Deliverable</b> tools/glide/results/DOCKING_RESULT.json — validated, 7 rows, 0 failures</span>
+  <span><b>Poses</b> results/poses/, 7 files</span>
+  <span><b>Native output</b> tools/glide/outputs/</span>
+  <span><b>Score direction</b> lower_is_better, kcal/mol</span>
+</footer>
+
+</body></html>

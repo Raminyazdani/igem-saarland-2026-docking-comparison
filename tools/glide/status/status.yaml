@@ -4,12 +4,35 @@ tool: Glide (Schrodinger)
 branch: tool/glide
 owners: [Ramin]
 
-preprocessing_status: not_started   # not_started | in_progress | done
-docking_status: not_started         # not_started | in_progress | done
-result_committed: false             # true once results/DOCKING_RESULT.json is filled + validated
-poses_committed: false
+preprocessing_status: done          # receptor, ligands and receptor grid built and checked
+docking_status: done                # Glide SP run; all 7 canonical ligands docked, 0 failures
+result_committed: true              # DOCKING_RESULT.json holds real scores and passes the validator
+poses_committed: true               # 7 poses, one per canonical ligand
 
-last_updated: 2026-07-08
+last_updated: 2026-09-02
 blockers:
-  - "Waiting on input-v1: canonical PahP structure.pdb + binding_site.yaml are still TODO placeholders"
-notes: ""
+  - "PROVISIONAL BOX, pending input-v1. input/canonical/targets/PahP/binding_site.yaml is still a
+     PLACEHOLDER (six null values) and there is no input-v1 tag. Glide has no blind-docking mode, so
+     this run uses the fpocket 4.2.2 Pocket 4 box the AutoDock Vina team proposed for the shared
+     binding_site.yaml (centre 70.83, 71.96, 59.18; size 21.3, 19.6, 27.3) - the same region CB-Dock3's
+     blind docking lands in (all 7 poses within 0.8-2.1 A). Results are therefore comparable with those
+     two tools in practice, but the box is not yet formally canonical. Coordinators: please freeze it
+     and tag input-v1, then every tool reruns from one definition."
+  - "ADVISORY: the canonical PahP model still contains its predicted N-terminal signal peptide
+     (structure.pdb = residues 10-317 of sequence.fasta), although target_metadata.csv and
+     reports/DOCKING_WORKFLOW_PLAN.md both call for the mature domain. Not changed on this branch - the
+     receptor must stay identical for every tool. Independently flagged by the CB-Dock3 team as well."
+  - "INTERPRETATION, not a defect: the glucose negative control ranks 2nd. All 7 ligands docked into the
+     same site (pose centroids 0.95-2.72 A from the grid centre); the score components show glucose
+     earning H-bond -0.79 and Coulomb -8.87 against the pocket's polar face (Ser242/Ser243/Gln246/
+     His250/Lys273), while the PAHs score on lipophilic contact alone. Glucose is a plumbing/property
+     control, not a specificity control, and the comparison is confounded. Documented in DOCKING.md."
+notes: "Full workflow executed end to end on Schrodinger Suite 2026-1 (Glide v11.0): prepwizard ->
+  LigPrep -> receptor grid -> Glide SP -> extraction -> validated DOCKING_RESULT.json (validator exits
+  0, 7 rows, no warnings). Scores are copied verbatim from Glide's native CSV and were not tuned.
+  Determinism was tested, not assumed: docking was run twice from the identical grid and returned
+  identical scores for all 7 ligands, which matters because Glide exposes no random seed.
+  Reproduction instructions in REPRODUCE.md; one-page summary in REPORT.pdf; workflow.svg shows the
+  whole pipeline. An earlier run used a wrong box centre (the centroid of the published pocket
+  residues, which falls inside protein density); that mistake and its diagnostics are recorded in
+  preprocessing/steps.md so it is not repeated."
