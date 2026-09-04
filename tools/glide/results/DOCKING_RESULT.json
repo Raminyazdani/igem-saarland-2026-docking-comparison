@@ -36,7 +36,7 @@
       19.6,
       27.3
     ],
-    "box_source": "PROVISIONAL (published pocket; canonical box still null)",
+    "box_source": "PROVISIONAL (fpocket Pocket 4; canonical box still null)",
     "seed": null,
     "seed_mechanism": "Glide exposes no random seed; CANONICALIZE=True used instead"
   },
