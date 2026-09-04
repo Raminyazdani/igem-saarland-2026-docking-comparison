@@ -1,0 +1,18 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff2
+source leaprc.water.tip3p
+
+PYR = loadmol2 ../params/pyrene_docked.mol2
+loadamberparams ../params/pyrene_docked.frcmod
+
+rec = loadpdb ../complexes/PahP_noH.pdb
+complex = combine {rec PYR}
+
+charge complex
+solvatebox complex TIP3PBOX 12.0
+addions complex Na+ 0
+addions complex Cl- 0
+
+saveamberparm complex pyrene_complex.prmtop pyrene_complex.inpcrd
+savepdb complex pyrene_complex.pdb
+quit

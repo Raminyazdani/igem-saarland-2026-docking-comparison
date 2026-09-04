@@ -10,3 +10,12 @@
 # *.bak
 # scratch/
 # .cache/
+
+# MD generated files
+md/systems/*_complex.pdb
+md/jobs/*_run/
+md/**/*.trr
+md/**/*.xtc
+md/**/*.cpt
+md/**/#*#
+md/**/*.log
