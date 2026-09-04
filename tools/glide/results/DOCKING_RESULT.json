@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "tool_name": "Glide (Schrodinger)",
+  "branch": "tool/glide",
+  "team_members": [
+    "Ramin"
+  ],
+  "software_version": "Schrodinger Suite 2026-1, Build 136",
+  "date_completed": "2026-09-02",
+  "input_commit_hash": "fad5b9b",
+  "score_direction": "lower_is_better",
+  "receptor_prep_method": "prepwizard: hydrogens deleted and re-added, disulfides assigned, PROPKA pH 7.4, restrained minimization (OPLS_2005); no Epik, no Prime side-chain/loop filling (model has no missing heavy atoms)",
+  "ligand_prep_method": "LigPrep minimal-change (-i 0 -nt -s 1 -g): canonical 3D conformers and stereochemistry kept, no ionization, no tautomers, one stereoisomer per ligand",
+  "docking_parameters": {
+    "precision": "SP",
+    "docking_method": "confgen",
+    "poses_per_lig": 5,
+    "postdock": true,
+    "postdock_npose": 5,
+    "postdockstrain": false,
+    "canonicalize": true,
+    "epik_penalties": false,
+    "forcefield": "OPLS_2005",
+    "grid_center": [
+      70.83,
+      71.96,
+      59.18
+    ],
+    "inner_box": [
+      8.0,
+      8.0,
+      8.0
+    ],
+    "outer_box": [
+      21.3,
+      19.6,
+      27.3
+    ],
+    "box_source": "PROVISIONAL (fpocket Pocket 4; canonical box still null)",
+    "seed": null,
+    "seed_mechanism": "Glide exposes no random seed; CANONICALIZE=True used instead"
+  },
+  "hardware": "Windows 11 x86-64, single core (-HOST localhost)",
+  "runtime_total_sec": 14.578,
+  "results": [
+    {
+      "target_id": "PahP",
+      "ligand_id": "pyrene",
+      "pubchem_cid": "31423",
+      "score_unit": "kcal/mol",
+      "notes": "",
+      "docking_score": -5.883,
+      "rank_within_tool": 6,
+      "pose_file": "tools/glide/results/poses/PahP__pyrene__glide__v1.sdf",
+      "runtime_sec": 3.359,
+      "status": "ok",
+      "failure_reason": null
+    },
+    {
+      "target_id": "PahP",
+      "ligand_id": "phenanthrene",
+      "pubchem_cid": "995",
+      "score_unit": "kcal/mol",
+      "notes": "",
+      "docking_score": -5.938,
+      "rank_within_tool": 5,
+      "pose_file": "tools/glide/results/poses/PahP__phenanthrene__glide__v1.sdf",
+      "runtime_sec": 1.125,
+      "status": "ok",
+      "failure_reason": null
+    },
+    {
+      "target_id": "PahP",
+      "ligand_id": "benzo_a_pyrene",
+      "pubchem_cid": "2336",
+      "score_unit": "kcal/mol",
+      "notes": "",
+      "docking_score": -6.008,
+      "rank_within_tool": 4,
+      "pose_file": "tools/glide/results/poses/PahP__benzo_a_pyrene__glide__v1.sdf",
+      "runtime_sec": 1.344,
+      "status": "ok",
+      "failure_reason": null
+    },
+    {
+      "target_id": "PahP",
+      "ligand_id": "naphthalene",
+      "pubchem_cid": "931",
+      "score_unit": "kcal/mol",
+      "notes": "",
+      "docking_score": -5.471,
+      "rank_within_tool": 7,
+      "pose_file": "tools/glide/results/poses/PahP__naphthalene__glide__v1.sdf",
+      "runtime_sec": 1.047,
+      "status": "ok",
+      "failure_reason": null
+    },
+    {
+      "target_id": "PahP",
+      "ligand_id": "anthracene",
+      "pubchem_cid": "8418",
+      "score_unit": "kcal/mol",
+      "notes": "",
+      "docking_score": -6.114,
+      "rank_within_tool": 1,
+      "pose_file": "tools/glide/results/poses/PahP__anthracene__glide__v1.sdf",
+      "runtime_sec": 1.25,
+      "status": "ok",
+      "failure_reason": null
+    },
+    {
+      "target_id": "PahP",
+      "ligand_id": "fluoranthene",
+      "pubchem_cid": "9154",
+      "score_unit": "kcal/mol",
+      "notes": "",
+      "docking_score": -6.03,
+      "rank_within_tool": 3,
+      "pose_file": "tools/glide/results/poses/PahP__fluoranthene__glide__v1.sdf",
+      "runtime_sec": 1.469,
+      "status": "ok",
+      "failure_reason": null
+    },
+    {
+      "target_id": "PahP",
+      "ligand_id": "glucose_NEGCTRL",
+      "pubchem_cid": "5793",
+      "score_unit": "kcal/mol",
+      "notes": "",
+      "docking_score": -6.04,
+      "rank_within_tool": 2,
+      "pose_file": "tools/glide/results/poses/PahP__glucose_NEGCTRL__glide__v1.sdf",
+      "runtime_sec": 4.984,
+      "status": "ok",
+      "failure_reason": null
+    }
+  ],
+  "failed_cases": [],
+  "warnings": [
+    "BINDING SITE: the canonical binding_site.yaml is still a PLACEHOLDER (six null values, no input-v1 tag), and Glide has no blind-docking mode, so a box had to come from somewhere. This run uses the fpocket 4.2.2 Pocket 4 box that the AutoDock Vina team derived and proposed for the shared binding_site.yaml, so all tools search one region. It is independently corroborated: all 7 CB-Dock3 blind-docking poses on PahP land 0.8-2.1 A from this centre, and a clearance scan of the canonical structure finds 24.8% of the inner box free of protein here (nearest heavy atom 3.48 A). The site is lined by 16 residues, 62% hydrophobic, with five aromatics available for pi-stacking (Phe123, Tyr271, Tyr274, Phe275, Phe306) and a polar face (Ser242, Ser243, Gln246, His250, Lys273). The box is still PROVISIONAL: rerun once input-v1 freezes the canonical box.",
+    "NEGATIVE CONTROL RANKS 2nd - this is a real property of the score, not a pipeline fault. All 7 ligands docked into the same site (best-pose centroids 0.95-2.72 A from the grid centre). The GlideScore components show why: the PAHs score through lipophilic contact (-2.3 to -2.9) and vdW (-17 to -24) with zero H-bond and near-zero Coulomb, whereas glucose scores a weak lipophilic -1.0 but gains H-bond -0.79 and Coulomb -8.87 from the pocket's polar face. The pocket is only 62% hydrophobic, so a polyol genuinely does have something to bind. Interpretation: glucose is a plumbing/property control, not a specificity control - it is mismatched to the PAHs on nearly every physicochemical axis, so the comparison is confounded and cannot be read as evidence about pocket selectivity either way.",
+    "HOW TO READ THE RANKING. Across the 6 PAHs, GlideScore correlates with heavy-atom count at r = -0.68; CB-Dock3 on the same site gives r = -1.00, i.e. its ranking is almost entirely ligand size. Glide is less size-driven but still not an affinity predictor: against the four ligands with published SPR affinities for this protein (iScience 2023, 26:107912), the raw GlideScore ordering is inverted (Spearman rho = -1.00, n=4) while size-normalised ligand efficiency is weakly positive (rho = +0.20) and correctly puts naphthalene first, matching the experimental finding that naphthalene binds tightest. With n=4 these coefficients are extremely noisy and no significance is claimed. The honest summary is that neither tool reproduces the experimental affinity order, which is the expected behaviour of docking scores. Compare RANKS across tools, never raw scores.",
+    "Canonical receptor caveat: structure.pdb covers residues 10-317 of sequence.fasta, so it still contains the predicted N-terminal signal peptide, although target_metadata.csv and reports/DOCKING_WORKFLOW_PLAN.md both call for docking the mature domain. Not changed here - the receptor must stay identical across tools. Independently flagged by the CB-Dock3 team too."
+  ],
+  "notes": "Real Glide SP run on Schrodinger Suite 2026-1 (Glide v11.0). All 7 canonical ligands docked successfully into the shared fpocket-4 site; no failures. Scores are copied verbatim from Glide's native CSV and were not tuned. Docking was run twice from the identical grid and gave identical scores, so the pipeline is deterministic despite Glide exposing no random seed. See warnings for how to read the ranking."
+}

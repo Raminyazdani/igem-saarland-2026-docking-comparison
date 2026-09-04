@@ -1,0 +1,55 @@
+Glide version 110136 (mmshare version 73136)
+mmshare         20a6d06af9
+glide-src       04e22ddce5
+psp-src         8fc7aae5a6
+macromodel-src  5ee4912ca9
+epik-src        5d12eb9895
+
+Copyright (c) Schrodinger, LLC.
+All Rights Reserved.
+
+--------------------------------------------------------------------------------
+JobId          : 17f300aa-a706-11f1-97d5-00ffe093d49c
+Name           : glide_grid
+Program        : Glide
+ClientVersion  : 2026-1 build 136
+Host           : Ramin_X12
+Dir            : C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\tools\glide
+HostEntry      : localhost
+JobHost        : Ramin_X12
+JobDir         : C:\Users\yazda\AppData\Local\Schrodinger\tmp\yazda\jobs\17f300aa-a706-11f1-97d5-00ffe093d49c
+JobSchrodinger : C:\Program Files\Schrodinger2026-1
+Commandline    : C:\Program Files\Schrodinger2026-1\glide.exe C:/Users/yazda/OneDrive/Desktop/igem_docking/repo/tools/glide/outputs/glide_grid.in -OVERWRITE -HOST localhost -WAIT
+StartTime      : 2026-09-02-21:40:04
+Version        : 2026-1 build 136
+--------------------------------------------------------------------------------
+
+Running the optimized Glide.
+
+== Input settings ==
+
+FORCEFIELD   OPLS_2005
+GRID_CENTER   70.83, 71.96, 59.18
+GRIDFILE   PahP_glide_grid.zip
+INNERBOX   8, 8, 8
+OUTERBOX   21.3, 19.6, 27.3
+RECEP_FILE   inputs\PahP_prepared.maegz
+
+Receptor atoms: 4931
+Sites: 64
+Rough grid cells: (22, 20, 28)
+Fine grid cells: (56, 56, 72)
+Adaptive grid points: 113916
+Force field: OPLS_2005
+Partial charges: from force field
+Charge/vdW scaling: from RECEP_VSCALE / RECEP_CCUT
+Movable atoms: 0
+Excluded volumes: 0
+Peptide mode: false
+Constraints: 0
+
+
+Exiting Glide
+Date: Wednesday, September 02 2026, at 09:40:43 PM +0200
+CPU time (s): 22.5 user, 2.8 sys, 26.5 real
+Total elapsed time = 27 seconds (27 seconds)

@@ -1,0 +1,16 @@
+GRIDFILE        inputs/PahP_glide_grid.zip
+LIGANDFILE      inputs/ligands_prepared.maegz
+PRECISION       SP
+DOCKING_METHOD  confgen
+POSES_PER_LIG   5
+POSTDOCK        True
+POSTDOCK_NPOSE  5
+POSTDOCKSTRAIN  False
+CANONICALIZE    True
+EPIK_PENALTIES  False
+FORCEFIELD      OPLS_2005
+POSE_OUTTYPE    ligandlib_sd
+COMPRESS_POSES  False
+WRITE_CSV       True
+REPORT_CPU_TIME True
+KEEPSKIPPED     True

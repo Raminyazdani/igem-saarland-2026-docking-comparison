@@ -10,45 +10,84 @@
 tool: Glide (Schrodinger)
 branch: tool/glide
 owners: [Ramin]
-input_version_used: v0-draft        # set to "input-v1" once the canonical structure+box are frozen
+input_version_used: v0-draft        # input-v1 does not exist yet (no such tag in the repo)
 
 # ---------- RECEPTOR preprocessing (what you did to the shared structure.pdb) ----------
 receptor:
   source: input/canonical/targets/PahP/structure.pdb   # the shared receptor (PahP primary)
-  signal_peptide_removed: null      # true|false ; if true, which residues (e.g. "1-24")
-  residue_range_used: null          # e.g. "25-317" (mature domain) or "full"
-  protonation_pH: 7.4               # match canonical unless you justify otherwise
-  hydrogens_added: null             # true|false + method
-  charges_method: null              # e.g. Gasteiger | AM1-BCC | Kollman | none
-  waters_removed: null              # true|false
-  cofactors_or_ions_kept: null      # list or none
-  flexible_residues: null           # list or none (rigid)
-  output_format: null               # e.g. PDBQT | mol2 | Maestro(.maegz) | PDB
-  prep_software: null               # e.g. Meeko 0.5 | ADFR | Maestro 2024 | MOE
-  output_file: inputs/receptor.<ext>
+  signal_peptide_removed: false     # NOT removed - see assumptions_and_deviations[0]
+  residue_range_used: "1-308 (the whole canonical model; = residues 10-317 of sequence.fasta)"
+  protonation_pH: 7.4               # PROPKA at pH 7.4, matching the canonical config
+  hydrogens_added: "true - prepwizard -rehtreat (canonical OpenMM hydrogens deleted and re-added)"
+  charges_method: OPLS_2005         # force-field charges; REC_MAECHARGES not used
+  waters_removed: false             # canonical structure contains no waters to remove
+  cofactors_or_ions_kept: none      # canonical structure has no HETATM records at all
+  flexible_residues: none           # rigid receptor (Glide default)
+  output_format: Maestro (.maegz)   # Glide RECEP_FILE must be Maestro, not PDB
+  prep_software: Schrodinger Protein Preparation Wizard (prepwizard), Suite 2026-1
+  output_file: inputs/PahP_prepared.maegz
 
 # ---------- LIGAND preprocessing (what you did to the shared ligands.sdf) ----------
 ligand:
   source: input/canonical/ligands/ligands.sdf          # shared 3D conformers (with Hs)
-  used_canonical_3d: null           # true = docked the shared conformers as-is (preferred for fairness)
-  regenerated_conformers: null      # true|false + method if you re-embedded
-  protonation_pH: 7.4
-  tautomers_enumerated: null        # true|false + tool
-  charges_method: null              # e.g. Gasteiger | AM1-BCC | none
-  output_format: null               # e.g. PDBQT | mol2 | SDF
-  prep_software: null
-  output_file: inputs/ligands.<ext>
+  used_canonical_3d: true           # canonical conformers kept; LigPrep re-minimizes them (deviation 3)
+  regenerated_conformers: false     # no re-embedding; Glide samples conformers at docking time
+  protonation_pH: 7.4               # nominal only - no ionization performed (-i 0); all 7 ligands neutral
+  tautomers_enumerated: false       # -nt ; LigPrep's tautomerizer is ON by default and was disabled
+  charges_method: OPLS_2005
+  output_format: Maestro (.maegz)
+  prep_software: Schrodinger LigPrep, Suite 2026-1
+  output_file: inputs/ligands_prepared.maegz
 
 # ---------- BINDING SITE / BOX ----------
 binding_site:
   source: input/canonical/targets/PahP/binding_site.yaml
-  mode: null                        # defined | blind
-  center_xyz: null                  # [x, y, z] in angstrom, or null if blind
-  size_xyz: null                    # [x, y, z] in angstrom, or null if blind
-  pocket_detection: null            # e.g. server-auto | fpocket | P2Rank | manual
+  mode: defined                     # Glide has no blind mode; a grid needs an explicit centre
+  center_xyz: [70.83, 71.96, 59.18]  # PROVISIONAL - see assumptions_and_deviations[1]
+  size_xyz: [21.3, 19.6, 27.3]       # Glide OUTERBOX = the volume AutoDock Vina searched
+  pocket_detection: "fpocket 4.2.2 Pocket 4 (AutoDock Vina team); corroborated by CB-Dock3 blind docking" 
 
 # ---------- provenance ----------
-software_versions: {}               # {receptor_prep: "...", ligand_prep: "...", docking: "..."}
-random_seed: null
-assumptions_and_deviations: []      # anything you changed vs canonical, and WHY (list of strings)
-notes: ""
+software_versions:
+  receptor_prep: "Schrodinger Suite 2026-1, Build 136 (prepwizard)"
+  ligand_prep: "Schrodinger Suite 2026-1, Build 136 (LigPrep)"
+  docking: "Schrodinger Suite 2026-1, Build 136 (Glide v11.0)"
+random_seed: null                   # Glide exposes no random seed; CANONICALIZE=True is used instead
+assumptions_and_deviations:
+  - "The canonical PahP model still contains its predicted N-terminal signal peptide. structure.pdb
+     covers residues 10-317 of sequence.fasta, so only 9 residues were trimmed, and the hydrophobic
+     stretch FYSVYLAVALLLMPLPLLAQ (model residues 1-20) is still present - but target_metadata.csv and
+     reports/DOCKING_WORKFLOW_PLAN.md both say the MATURE domain should be docked. The receptor was
+     NOT altered here, because every tool must dock an identical receptor; flagged for the coordinators
+     instead. Risk for this project specifically: an exposed hydrophobic helix is an attractive
+     off-target site for PAHs and can win a docking run against the real pocket."
+  - "PROVISIONAL BINDING BOX, shared with the other tools. The canonical binding_site.yaml is still a
+     PLACEHOLDER (six null values) and there is no input-v1 tag, but Glide has no blind-docking mode,
+     so a box is mandatory. This run uses the fpocket 4.2.2 Pocket 4 box that the AutoDock Vina team
+     derived and proposed for the shared binding_site.yaml, so every tool searches the same region.
+     Independently corroborated: all 7 CB-Dock3 blind-docking poses on PahP land 0.8-2.1 A from this
+     centre, and a clearance scan of the canonical structure finds 24.8% of the inner box free of
+     protein here (nearest heavy atom 3.48 A). An earlier attempt centred the grid on the centroid of
+     the published pocket residues (iScience 2023, 26:107912) and was WRONG: that centroid falls 1.71 A
+     from Asp201 OD2, inside protein density, with only 2% of the inner box free - three ligands could
+     not be posed and the rest were pushed 11.5-15.0 A onto the surface. Recorded here so nobody
+     repeats it. Rerun once input-v1 freezes the canonical box."
+  - "Glide INNERBOX is 8 A, not the usual 10. The inner box bounds the ligand CENTROID and Glide
+     requires outer >= inner + longest ligand on EVERY axis; the shared box is 19.6 A on its shortest
+     axis and benzo[a]pyrene is 11.46 A long, so 8 is the largest legal value (8 + 11.46 = 19.46).
+     Still inside the documented 6-14 A range. preprocess.sh checks this per axis and refuses to build
+     a grid that would silently clip the largest ligand."
+  - "LigPrep always re-minimizes ligand geometry in its final bmin stage, so the docked conformers are
+     not bit-identical to the canonical SDF coordinates. There is no flag to suppress this. Chemistry,
+     stereochemistry and protonation are unchanged (-i 0 -nt -s 1 -g)."
+  - "prepwizard -fillsidechains / -fillloops were deliberately NOT used: the canonical model has no
+     missing heavy atoms and no chain breaks (checked: 0 incomplete residues, no CA-CA gap > 4.5 A),
+     so they would only add Prime-dependent changes and consume Prime tokens."
+  - "The receptor's two cysteines are not disulfide-bonded (SG-SG distance > 2.5 A), so -disulfides is
+     a no-op here; it is kept in the script so the recipe stays correct if the input is re-frozen."
+notes: "Receptor facts checked directly from the canonical file before choosing the recipe: 4931 atoms,
+  308 residues, single chain A, contiguous 1-308, hydrogens already present (2509 H, from OpenMM), no
+  HETATM/waters/metals, no alternate locations, all occupancies 1.0, no missing heavy atoms, C-terminal
+  OXT present. That is why the recipe is deliberately short: the only genuinely necessary receptor steps
+  are re-adding hydrogens under Schrodinger atom-naming, assigning protonation states at pH 7.4, and the
+  restrained minimization, plus conversion to Maestro format which Glide requires."

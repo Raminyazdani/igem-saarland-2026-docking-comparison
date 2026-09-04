@@ -1,0 +1,45 @@
+--------------------------------------------------------------------------------
+JobId          : 0a3c3daf-a706-11f1-8032-00ffe093d49c
+Name           : ligands_prepared
+Program        : LigPrep
+ClientVersion  : 2026-1 build 136
+Host           : Ramin_X12
+Dir            : C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\tools\glide
+HostEntry      : localhost
+JobHost        : Ramin_X12
+JobDir         : C:\Users\yazda\AppData\Local\Schrodinger\tmp\yazda\jobs\0a3c3daf-a706-11f1-8032-00ffe093d49c
+JobSchrodinger : C:\Program Files\Schrodinger2026-1
+Commandline    : C:\Program Files\Schrodinger2026-1\ligprep.exe -i 0 -nt -s 1 -g -isd C:/Users/yazda/OneDrive/Desktop/igem_docking/repo/input/canonical/ligands/ligands.sdf -omae ligands_prepared.maegz -JOBNAME glide_prep_ligands -HOST localhost -WAIT
+StartTime      : 2026-09-02-21:39:41
+Version        : 2026-1 build 136
+--------------------------------------------------------------------------------
+LigPrep (version 77136). Copyright Schrodinger, LLC. All rights reserved.
+
+LigPrep command:
+$SCHRODINGER/ligprep -i 0 -nt -s 1 -g -isd C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf -omae ligands_prepared.maegz
+
+Processing steps:
+$DO.sd_ingest -bad -orig_file_index 0 -orig_file C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf C:\Users\yazda\OneDrive\Desktop\igem_docking\repo\input\canonical\ligands\ligands.sdf
+$DO.htreat -t All-None -a all -s -l 200 <infile.mae> <outfile.mae>
+$DO.desalter <infile.mae> <outfile.mae>
+$DO.guard <infile.mae> <outfile.mae>
+$DO.stereoizer -label_specified_chiralities -n 1 -g <infile.mae> <outfile.mae>
+$DO.cgx -optimize -ffld 14 -epsilon 10.0 <infile.mae> <outfile.mae>
+$DO.filterstereo -max_stereo 1 <infile.mae> <outfile.mae>
+
+DO=$SCHRODINGER\run python3 -m schrodinger.application.macromodel.packages.ligprep3
+
+# counts of output and dropped structures after processing steps
+# index  htreat  desalt   guard  stereo    cgx   filter  title
+       1   1/0     1/0     1/0     1/0     1/0     1/0   'pyrene'
+       2   1/0     1/0     1/0     1/0     1/0     1/0   'phenanthrene'
+       3   1/0     1/0     1/0     1/0     1/0     1/0   'benzo_a_pyrene'
+       4   1/0     1/0     1/0     1/0     1/0     1/0   'naphthalene'
+       5   1/0     1/0     1/0     1/0     1/0     1/0   'anthracene'
+       6   1/0     1/0     1/0     1/0     1/0     1/0   'fluoranthene'
+       7   1/0     1/0     1/0     1/0     1/0     1/0   'glucose_NEGCTRL'
+
+# of processed structures in "ligands_prepared.maegz" : 7
+# of dropped structures in "ligands_prepared-dropped.sdf" : 0
+
+backend run time: 0 hours 0 minutes 4.297 seconds

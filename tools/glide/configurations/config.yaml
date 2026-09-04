@@ -5,18 +5,52 @@ branch: tool/glide
 
 # How Glide (Schrodinger)'s native score should be read for ranking.
 # Vina/Glide: lower_is_better ; GOLD: higher_is_better ; CONFIRM for your tool.
-score_direction: lower_is_better   # CONFIRM
-score_unit: null                        # e.g. kcal/mol | ChemPLP | GlideScore | confidence
+score_direction: lower_is_better   # CONFIRMED - Glide manual: "favorable scores are negative,
+                                   # and the lower (more negative) the better"
+score_unit: kcal/mol               # reported value is the Glide "docking score" (r_i_docking_score)
 
 # Search box (fill from input/canonical/targets/PahP/binding_site.yaml once it is real).
+#
+# The canonical binding_site.yaml is STILL a placeholder (six null values, no input-v1 tag), and
+# Glide has no blind-docking mode, so a box has to come from somewhere. These values are the box
+# the AutoDock Vina team derived with fpocket 4.2.2 (Pocket 4) and proposed for the shared
+# binding_site.yaml. Using the same region is what makes the tools comparable, and it is
+# independently corroborated: all 7 CB-Dock3 blind-docking poses on PahP land 0.8-2.1 A from this
+# centre, and a clearance scan puts 24.8% of the inner box free of protein here (buriedness 0.81,
+# nearest heavy atom 3.48 A). preprocess.sh still prefers the canonical box the moment it exists.
 box:
-  mode: null            # defined | blind
-  center_xyz: null      # [x, y, z] angstrom
-  size_xyz: null        # [x, y, z] angstrom
+  mode: defined
+  center_xyz: [70.83, 71.96, 59.18]   # = AutoDock Vina's proposed canonical centre, angstrom
+  size_xyz: [21.3, 19.6, 27.3]        # Glide OUTERBOX = the same volume Vina searched
+  inner_xyz: [8, 8, 8]                # Glide INNERBOX: bounds the ligand CENTROID only.
+                                      # Glide requires outer >= inner + longest ligand (11.46 A for
+                                      # benzo[a]pyrene); the smallest outer side is 19.6, so the
+                                      # largest legal inner box is 8 (8 + 11.46 = 19.46 <= 19.6).
+                                      # Documented allowed range is 6-14.
+  status: PROVISIONAL_pending_input_v1
+  source: "AutoDock Vina team, fpocket 4.2.2 Pocket 4; proposed for canonical binding_site.yaml"
 
 # Sampling / scoring settings (tool-specific).
-exhaustiveness: null    # e.g. 16 (Vina); null if N/A
-num_poses: null         # poses to keep per ligand
-scoring_function: null  # e.g. vina | ChemPLP | SP/XP | CDOCKER
-random_seed: 42         # fix where the tool allows, for reproducibility
-extra: {}               # any other tool-specific flags
+exhaustiveness: null    # N/A - Glide has no exhaustiveness parameter
+num_poses: 5            # POSES_PER_LIG; the best-scoring pose per ligand is the reported one
+scoring_function: GlideScore SP
+random_seed: null       # Glide exposes NO random seed - see reproducibility below
+extra:
+  precision: SP                  # PRECISION. This install offers only SP and HTVS:
+                                 # `glide -docking-keywords` gives PRECISION = option('SP','HTVS').
+                                 # XP is not available here, so SP is both the standard and the
+                                 # only production choice.
+  docking_method: confgen        # flexible ligand docking (Glide default)
+  postdock: true                 # post-docking minimization (default)
+  postdock_npose: 5              # must be >= num_poses
+  postdockstrain: false          # no strain correction (default)
+  epik_penalties: false          # Epik was not run, so docking score == GlideScore
+  forcefield: OPLS_2005          # matches the grid and the receptor minimization
+  receptor_vscale: 1.0           # RECEP_VSCALE default - no receptor softening
+  reproducibility: >-
+    Glide has no seed keyword (confirmed against `glide -docking-keywords` on Suite 2026-1).
+    CANONICALIZE=True is the documented substitute: it discards the input coordinates and rebuilds
+    each ligand from connectivity and stereochemistry, so a rerun does not depend on the input
+    geometry. Reproducibility therefore rests on pinning the Schrodinger release, the prepared
+    receptor grid and ligand file, and this keyword set. Measured, not assumed: the docking was run twice from the identical grid and gave
+    identical scores for all 7 ligands (see REPRODUCE.md).
