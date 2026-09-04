@@ -16,7 +16,7 @@ score_unit: kcal/mol               # reported value is the Glide "docking score"
 # the AutoDock Vina team derived with fpocket 4.2.2 (Pocket 4) and proposed for the shared
 # binding_site.yaml. Using the same region is what makes the tools comparable, and it is
 # independently corroborated: all 7 CB-Dock3 blind-docking poses on PahP land 0.8-2.1 A from this
-# centre, and a clearance scan puts 23% of the inner box free of protein here (buriedness 0.81,
+# centre, and a clearance scan puts 24.8% of the inner box free of protein here (buriedness 0.81,
 # nearest heavy atom 3.48 A). preprocess.sh still prefers the canonical box the moment it exists.
 box:
   mode: defined
