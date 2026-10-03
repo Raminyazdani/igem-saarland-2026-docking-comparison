@@ -1,0 +1,450 @@
+MODEL 1
+REMARK VINA RESULT:    -5.383      0.000      0.000
+REMARK INTER + INTRA:          -6.729
+REMARK INTER:                  -6.484
+REMARK INTRA:                  -0.245
+REMARK UNBOUND:                -0.245
+REMARK  Name = glucose_NEGCTRL
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: O_1  and  C_2
+REMARK    2  A    between atoms: C_2  and  C_3
+REMARK    3  A    between atoms: C_5  and  O_6
+REMARK    4  A    between atoms: C_7  and  O_8
+REMARK    5  A    between atoms: C_9  and  O_10
+REMARK    6  A    between atoms: C_11  and  O_12
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      71.741  71.189  56.372  0.00  0.00    +0.000 C 
+ATOM      2  O   UNL     1      72.536  71.472  57.542  0.00  0.00    +0.000 OA
+ATOM      3  C   UNL     1      72.029  70.874  58.729  0.00  0.00    +0.000 C 
+ATOM      4  C   UNL     1      70.592  71.349  59.024  0.00  0.00    +0.000 C 
+ATOM      5  C   UNL     1      69.696  71.106  57.808  0.00  0.00    +0.000 C 
+ATOM      6  C   UNL     1      70.313  71.715  56.549  0.00  0.00    +0.000 C 
+ENDROOT
+BRANCH   3   7
+ATOM      7  O   UNL     1      72.098  69.456  58.657  0.00  0.00    +0.000 OA
+ATOM      8  H   UNL     1      72.275  69.224  57.727  0.00  0.00    +0.000 HD
+ENDBRANCH   3   7
+BRANCH   4   9
+ATOM      9  O   UNL     1      70.033  70.639  60.143  0.00  0.00    +0.000 OA
+ATOM     10  H   UNL     1      69.483  69.919  59.783  0.00  0.00    +0.000 HD
+ENDBRANCH   4   9
+BRANCH   5  11
+ATOM     11  O   UNL     1      68.402  71.693  58.026  0.00  0.00    +0.000 OA
+ATOM     12  H   UNL     1      67.998  71.171  58.748  0.00  0.00    +0.000 HD
+ENDBRANCH   5  11
+BRANCH   6  13
+ATOM     13  O   UNL     1      69.494  71.395  55.423  0.00  0.00    +0.000 OA
+ATOM     14  H   UNL     1      70.119  71.177  54.701  0.00  0.00    +0.000 HD
+ENDBRANCH   6  13
+BRANCH   1  15
+ATOM     15  C   UNL     1      72.436  71.853  55.178  0.00  0.00    +0.000 C 
+BRANCH  15  16
+ATOM     16  O   UNL     1      72.014  71.228  53.963  0.00  0.00    +0.000 OA
+ATOM     17  H   UNL     1      72.748  71.361  53.332  0.00  0.00    +0.000 HD
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 6
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:    -5.207      0.925      2.726
+REMARK INTER + INTRA:          -6.518
+REMARK INTER:                  -6.276
+REMARK INTRA:                  -0.242
+REMARK UNBOUND:                -0.245
+REMARK  Name = glucose_NEGCTRL
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: O_1  and  C_2
+REMARK    2  A    between atoms: C_2  and  C_3
+REMARK    3  A    between atoms: C_5  and  O_6
+REMARK    4  A    between atoms: C_7  and  O_8
+REMARK    5  A    between atoms: C_9  and  O_10
+REMARK    6  A    between atoms: C_11  and  O_12
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      70.783  71.927  56.546  0.00  0.00    +0.000 C 
+ATOM      2  O   UNL     1      69.551  71.179  56.613  0.00  0.00    +0.000 OA
+ATOM      3  C   UNL     1      69.052  71.030  57.937  0.00  0.00    +0.000 C 
+ATOM      4  C   UNL     1      70.074  70.315  58.843  0.00  0.00    +0.000 C 
+ATOM      5  C   UNL     1      71.420  71.040  58.795  0.00  0.00    +0.000 C 
+ATOM      6  C   UNL     1      71.884  71.229  57.351  0.00  0.00    +0.000 C 
+ENDROOT
+BRANCH   3   7
+ATOM      7  O   UNL     1      68.669  72.286  58.484  0.00  0.00    +0.000 OA
+ATOM      8  H   UNL     1      69.482  72.722  58.797  0.00  0.00    +0.000 HD
+ENDBRANCH   3   7
+BRANCH   4   9
+ATOM      9  O   UNL     1      69.625  70.290  60.209  0.00  0.00    +0.000 OA
+ATOM     10  H   UNL     1      69.406  69.365  60.425  0.00  0.00    +0.000 HD
+ENDBRANCH   4   9
+BRANCH   5  11
+ATOM     11  O   UNL     1      72.412  70.284  59.510  0.00  0.00    +0.000 OA
+ATOM     12  H   UNL     1      71.967  69.979  60.326  0.00  0.00    +0.000 HD
+ENDBRANCH   5  11
+BRANCH   6  13
+ATOM     13  O   UNL     1      73.097  71.983  57.342  0.00  0.00    +0.000 OA
+ATOM     14  H   UNL     1      73.804  71.340  57.556  0.00  0.00    +0.000 HD
+ENDBRANCH   6  13
+BRANCH   1  15
+ATOM     15  C   UNL     1      71.163  72.044  55.066  0.00  0.00    +0.000 C 
+BRANCH  15  16
+ATOM     16  O   UNL     1      71.988  70.939  54.688  0.00  0.00    +0.000 OA
+ATOM     17  H   UNL     1      72.900  71.289  54.664  0.00  0.00    +0.000 HD
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 6
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:    -5.039      1.537      2.114
+REMARK INTER + INTRA:          -6.314
+REMARK INTER:                  -6.123
+REMARK INTRA:                  -0.191
+REMARK UNBOUND:                -0.245
+REMARK  Name = glucose_NEGCTRL
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: O_1  and  C_2
+REMARK    2  A    between atoms: C_2  and  C_3
+REMARK    3  A    between atoms: C_5  and  O_6
+REMARK    4  A    between atoms: C_7  and  O_8
+REMARK    5  A    between atoms: C_9  and  O_10
+REMARK    6  A    between atoms: C_11  and  O_12
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      70.192  71.323  56.429  0.00  0.00    +0.000 C 
+ATOM      2  O   UNL     1      71.340  72.163  56.669  0.00  0.00    +0.000 OA
+ATOM      3  C   UNL     1      72.140  71.727  57.762  0.00  0.00    +0.000 C 
+ATOM      4  C   UNL     1      71.323  71.679  59.069  0.00  0.00    +0.000 C 
+ATOM      5  C   UNL     1      70.068  70.826  58.875  0.00  0.00    +0.000 C 
+ATOM      6  C   UNL     1      69.275  71.296  57.656  0.00  0.00    +0.000 C 
+ENDROOT
+BRANCH   3   7
+ATOM      7  O   UNL     1      72.742  70.469  57.485  0.00  0.00    +0.000 OA
+ATOM      8  H   UNL     1      72.021  69.833  57.326  0.00  0.00    +0.000 HD
+ENDBRANCH   3   7
+BRANCH   4   9
+ATOM      9  O   UNL     1      72.095  71.107  60.139  0.00  0.00    +0.000 OA
+ATOM     10  H   UNL     1      72.877  70.685  59.738  0.00  0.00    +0.000 HD
+ENDBRANCH   4   9
+BRANCH   5  11
+ATOM     11  O   UNL     1      69.230  70.914  60.040  0.00  0.00    +0.000 OA
+ATOM     12  H   UNL     1      68.318  70.775  59.714  0.00  0.00    +0.000 HD
+ENDBRANCH   5  11
+BRANCH   6  13
+ATOM     13  O   UNL     1      68.160  70.426  57.457  0.00  0.00    +0.000 OA
+ATOM     14  H   UNL     1      67.839  70.618  56.552  0.00  0.00    +0.000 HD
+ENDBRANCH   6  13
+BRANCH   1  15
+ATOM     15  C   UNL     1      69.465  71.888  55.202  0.00  0.00    +0.000 C 
+BRANCH  15  16
+ATOM     16  O   UNL     1      68.376  71.032  54.847  0.00  0.00    +0.000 OA
+ATOM     17  H   UNL     1      68.784  70.250  54.427  0.00  0.00    +0.000 HD
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 6
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:    -4.989      1.228      3.687
+REMARK INTER + INTRA:          -6.255
+REMARK INTER:                  -6.000
+REMARK INTRA:                  -0.254
+REMARK UNBOUND:                -0.245
+REMARK  Name = glucose_NEGCTRL
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: O_1  and  C_2
+REMARK    2  A    between atoms: C_2  and  C_3
+REMARK    3  A    between atoms: C_5  and  O_6
+REMARK    4  A    between atoms: C_7  and  O_8
+REMARK    5  A    between atoms: C_9  and  O_10
+REMARK    6  A    between atoms: C_11  and  O_12
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      71.426  71.401  58.921  0.00  0.00    +0.000 C 
+ATOM      2  O   UNL     1      72.268  71.104  57.788  0.00  0.00    +0.000 OA
+ATOM      3  C   UNL     1      71.774  71.632  56.563  0.00  0.00    +0.000 C 
+ATOM      4  C   UNL     1      70.368  71.086  56.246  0.00  0.00    +0.000 C 
+ATOM      5  C   UNL     1      69.425  71.340  57.424  0.00  0.00    +0.000 C 
+ATOM      6  C   UNL     1      70.027  70.809  58.725  0.00  0.00    +0.000 C 
+ENDROOT
+BRANCH   3   7
+ATOM      7  O   UNL     1      71.783  73.054  56.578  0.00  0.00    +0.000 OA
+ATOM      8  H   UNL     1      72.465  73.330  57.218  0.00  0.00    +0.000 HD
+ENDBRANCH   3   7
+BRANCH   4   9
+ATOM      9  O   UNL     1      69.816  71.727  55.083  0.00  0.00    +0.000 OA
+ATOM     10  H   UNL     1      70.479  72.366  54.762  0.00  0.00    +0.000 HD
+ENDBRANCH   4   9
+BRANCH   5  11
+ATOM     11  O   UNL     1      68.163  70.691  57.193  0.00  0.00    +0.000 OA
+ATOM     12  H   UNL     1      68.071  70.643  56.220  0.00  0.00    +0.000 HD
+ENDBRANCH   5  11
+BRANCH   6  13
+ATOM     13  O   UNL     1      69.161  71.139  59.812  0.00  0.00    +0.000 OA
+ATOM     14  H   UNL     1      69.483  70.610  60.571  0.00  0.00    +0.000 HD
+ENDBRANCH   6  13
+BRANCH   1  15
+ATOM     15  C   UNL     1      72.111  70.815  60.162  0.00  0.00    +0.000 C 
+BRANCH  15  16
+ATOM     16  O   UNL     1      71.516  69.558  60.495  0.00  0.00    +0.000 OA
+ATOM     17  H   UNL     1      71.625  69.465  61.461  0.00  0.00    +0.000 HD
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 6
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:    -4.973      1.372      4.056
+REMARK INTER + INTRA:          -6.235
+REMARK INTER:                  -6.019
+REMARK INTRA:                  -0.216
+REMARK UNBOUND:                -0.245
+REMARK  Name = glucose_NEGCTRL
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: O_1  and  C_2
+REMARK    2  A    between atoms: C_2  and  C_3
+REMARK    3  A    between atoms: C_5  and  O_6
+REMARK    4  A    between atoms: C_7  and  O_8
+REMARK    5  A    between atoms: C_9  and  O_10
+REMARK    6  A    between atoms: C_11  and  O_12
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      70.528  70.764  58.877  0.00  0.00    +0.000 C 
+ATOM      2  O   UNL     1      69.327  71.563  58.902  0.00  0.00    +0.000 OA
+ATOM      3  C   UNL     1      68.503  71.380  57.756  0.00  0.00    +0.000 C 
+ATOM      4  C   UNL     1      69.262  71.730  56.461  0.00  0.00    +0.000 C 
+ATOM      5  C   UNL     1      70.568  70.938  56.384  0.00  0.00    +0.000 C 
+ATOM      6  C   UNL     1      71.389  71.119  57.661  0.00  0.00    +0.000 C 
+ENDROOT
+BRANCH   3   7
+ATOM      7  O   UNL     1      67.982  70.058  57.707  0.00  0.00    +0.000 OA
+ATOM      8  H   UNL     1      68.112  69.665  58.589  0.00  0.00    +0.000 HD
+ENDBRANCH   3   7
+BRANCH   4   9
+ATOM      9  O   UNL     1      68.475  71.412  55.300  0.00  0.00    +0.000 OA
+ATOM     10  H   UNL     1      68.889  70.640  54.872  0.00  0.00    +0.000 HD
+ENDBRANCH   4   9
+BRANCH   5  11
+ATOM     11  O   UNL     1      71.348  71.382  55.260  0.00  0.00    +0.000 OA
+ATOM     12  H   UNL     1      71.657  72.279  55.498  0.00  0.00    +0.000 HD
+ENDBRANCH   5  11
+BRANCH   6  13
+ATOM     13  O   UNL     1      72.557  70.300  57.589  0.00  0.00    +0.000 OA
+ATOM     14  H   UNL     1      72.435  69.613  58.276  0.00  0.00    +0.000 HD
+ENDBRANCH   6  13
+BRANCH   1  15
+ATOM     15  C   UNL     1      71.278  71.030  60.188  0.00  0.00    +0.000 C 
+BRANCH  15  16
+ATOM     16  O   UNL     1      71.944  69.839  60.616  0.00  0.00    +0.000 OA
+ATOM     17  H   UNL     1      71.686  69.150  59.973  0.00  0.00    +0.000 HD
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 6
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:    -4.896      0.988      4.412
+REMARK INTER + INTRA:          -6.143
+REMARK INTER:                  -5.899
+REMARK INTRA:                  -0.244
+REMARK UNBOUND:                -0.245
+REMARK  Name = glucose_NEGCTRL
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: O_1  and  C_2
+REMARK    2  A    between atoms: C_2  and  C_3
+REMARK    3  A    between atoms: C_5  and  O_6
+REMARK    4  A    between atoms: C_7  and  O_8
+REMARK    5  A    between atoms: C_9  and  O_10
+REMARK    6  A    between atoms: C_11  and  O_12
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      70.273  70.973  57.973  0.00  0.00    +0.000 C 
+ATOM      2  O   UNL     1      69.775  72.150  57.305  0.00  0.00    +0.000 OA
+ATOM      3  C   UNL     1      70.161  72.230  55.938  0.00  0.00    +0.000 C 
+ATOM      4  C   UNL     1      71.695  72.233  55.790  0.00  0.00    +0.000 C 
+ATOM      5  C   UNL     1      72.297  71.022  56.505  0.00  0.00    +0.000 C 
+ATOM      6  C   UNL     1      71.805  70.947  57.951  0.00  0.00    +0.000 C 
+ENDROOT
+BRANCH   3   7
+ATOM      7  O   UNL     1      69.572  71.183  55.178  0.00  0.00    +0.000 OA
+ATOM      8  H   UNL     1      70.266  70.826  54.594  0.00  0.00    +0.000 HD
+ENDBRANCH   3   7
+BRANCH   4   9
+ATOM      9  O   UNL     1      72.080  72.174  54.406  0.00  0.00    +0.000 OA
+ATOM     10  H   UNL     1      72.135  73.092  54.080  0.00  0.00    +0.000 HD
+ENDBRANCH   4   9
+BRANCH   5  11
+ATOM     11  O   UNL     1      73.731  71.112  56.504  0.00  0.00    +0.000 OA
+ATOM     12  H   UNL     1      73.997  71.004  55.568  0.00  0.00    +0.000 HD
+ENDBRANCH   5  11
+BRANCH   6  13
+ATOM     13  O   UNL     1      72.317  69.761  58.560  0.00  0.00    +0.000 OA
+ATOM     14  H   UNL     1      73.276  69.922  58.677  0.00  0.00    +0.000 HD
+ENDBRANCH   6  13
+BRANCH   1  15
+ATOM     15  C   UNL     1      69.736  71.004  59.409  0.00  0.00    +0.000 C 
+BRANCH  15  16
+ATOM     16  O   UNL     1      69.792  69.692  59.975  0.00  0.00    +0.000 OA
+ATOM     17  H   UNL     1      69.437  69.095  59.287  0.00  0.00    +0.000 HD
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 6
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:    -4.891      1.472      3.058
+REMARK INTER + INTRA:          -6.137
+REMARK INTER:                  -5.953
+REMARK INTRA:                  -0.184
+REMARK UNBOUND:                -0.245
+REMARK  Name = glucose_NEGCTRL
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: O_1  and  C_2
+REMARK    2  A    between atoms: C_2  and  C_3
+REMARK    3  A    between atoms: C_5  and  O_6
+REMARK    4  A    between atoms: C_7  and  O_8
+REMARK    5  A    between atoms: C_9  and  O_10
+REMARK    6  A    between atoms: C_11  and  O_12
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      69.202  71.175  57.292  0.00  0.00    +0.000 C 
+ATOM      2  O   UNL     1      68.896  70.149  58.259  0.00  0.00    +0.000 OA
+ATOM      3  C   UNL     1      69.749  70.171  59.397  0.00  0.00    +0.000 C 
+ATOM      4  C   UNL     1      71.226  69.994  58.992  0.00  0.00    +0.000 C 
+ATOM      5  C   UNL     1      71.613  71.036  57.940  0.00  0.00    +0.000 C 
+ATOM      6  C   UNL     1      70.633  71.013  56.767  0.00  0.00    +0.000 C 
+ENDROOT
+BRANCH   3   7
+ATOM      7  O   UNL     1      69.561  71.361  60.154  0.00  0.00    +0.000 OA
+ATOM      8  H   UNL     1      69.629  72.109  59.534  0.00  0.00    +0.000 HD
+ENDBRANCH   3   7
+BRANCH   4   9
+ATOM      9  O   UNL     1      72.095  70.157  60.126  0.00  0.00    +0.000 OA
+ATOM     10  H   UNL     1      73.012  70.110  59.796  0.00  0.00    +0.000 HD
+ENDBRANCH   4   9
+BRANCH   5  11
+ATOM     11  O   UNL     1      72.937  70.769  57.448  0.00  0.00    +0.000 OA
+ATOM     12  H   UNL     1      72.995  71.239  56.591  0.00  0.00    +0.000 HD
+ENDBRANCH   5  11
+BRANCH   6  13
+ATOM     13  O   UNL     1      70.974  72.053  55.850  0.00  0.00    +0.000 OA
+ATOM     14  H   UNL     1      71.896  71.867  55.577  0.00  0.00    +0.000 HD
+ENDBRANCH   6  13
+BRANCH   1  15
+ATOM     15  C   UNL     1      68.175  71.054  56.160  0.00  0.00    +0.000 C 
+BRANCH  15  16
+ATOM     16  O   UNL     1      68.370  72.110  55.215  0.00  0.00    +0.000 OA
+ATOM     17  H   UNL     1      69.257  72.472  55.406  0.00  0.00    +0.000 HD
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 6
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:    -4.738      1.505      3.688
+REMARK INTER + INTRA:          -5.952
+REMARK INTER:                  -5.904
+REMARK INTRA:                  -0.048
+REMARK UNBOUND:                -0.245
+REMARK  Name = glucose_NEGCTRL
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: O_1  and  C_2
+REMARK    2  A    between atoms: C_2  and  C_3
+REMARK    3  A    between atoms: C_5  and  O_6
+REMARK    4  A    between atoms: C_7  and  O_8
+REMARK    5  A    between atoms: C_9  and  O_10
+REMARK    6  A    between atoms: C_11  and  O_12
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      69.720  70.872  57.819  0.00  0.00    +0.000 C 
+ATOM      2  O   UNL     1      70.068  71.946  56.921  0.00  0.00    +0.000 OA
+ATOM      3  C   UNL     1      71.469  72.173  56.827  0.00  0.00    +0.000 C 
+ATOM      4  C   UNL     1      72.073  72.512  58.204  0.00  0.00    +0.000 C 
+ATOM      5  C   UNL     1      71.716  71.425  59.219  0.00  0.00    +0.000 C 
+ATOM      6  C   UNL     1      70.208  71.175  59.239  0.00  0.00    +0.000 C 
+ENDROOT
+BRANCH   3   7
+ATOM      7  O   UNL     1      72.129  71.062  56.234  0.00  0.00    +0.000 OA
+ATOM      8  H   UNL     1      71.542  70.718  55.536  0.00  0.00    +0.000 HD
+ENDBRANCH   3   7
+BRANCH   4   9
+ATOM      9  O   UNL     1      73.506  72.604  58.130  0.00  0.00    +0.000 OA
+ATOM     10  H   UNL     1      73.809  73.060  58.937  0.00  0.00    +0.000 HD
+ENDBRANCH   4   9
+BRANCH   5  11
+ATOM     11  O   UNL     1      72.142  71.820  60.534  0.00  0.00    +0.000 OA
+ATOM     12  H   UNL     1      72.168  70.994  61.057  0.00  0.00    +0.000 HD
+ENDBRANCH   5  11
+BRANCH   6  13
+ATOM     13  O   UNL     1      69.922  70.098  60.132  0.00  0.00    +0.000 OA
+ATOM     14  H   UNL     1      70.795  69.731  60.384  0.00  0.00    +0.000 HD
+ENDBRANCH   6  13
+BRANCH   1  15
+ATOM     15  C   UNL     1      68.196  70.717  57.774  0.00  0.00    +0.000 C 
+BRANCH  15  16
+ATOM     16  O   UNL     1      67.636  71.690  56.888  0.00  0.00    +0.000 OA
+ATOM     17  H   UNL     1      68.206  71.680  56.094  0.00  0.00    +0.000 HD
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 6
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:    -4.624      0.941      3.750
+REMARK INTER + INTRA:          -5.815
+REMARK INTER:                  -5.609
+REMARK INTRA:                  -0.206
+REMARK UNBOUND:                -0.245
+REMARK  Name = glucose_NEGCTRL
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: O_1  and  C_2
+REMARK    2  A    between atoms: C_2  and  C_3
+REMARK    3  A    between atoms: C_5  and  O_6
+REMARK    4  A    between atoms: C_7  and  O_8
+REMARK    5  A    between atoms: C_9  and  O_10
+REMARK    6  A    between atoms: C_11  and  O_12
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1      71.167  71.126  58.253  0.00  0.00    +0.000 C 
+ATOM      2  O   UNL     1      72.381  70.608  57.672  0.00  0.00    +0.000 OA
+ATOM      3  C   UNL     1      72.855  71.377  56.572  0.00  0.00    +0.000 C 
+ATOM      4  C   UNL     1      71.802  71.452  55.448  0.00  0.00    +0.000 C 
+ATOM      5  C   UNL     1      70.473  71.967  56.004  0.00  0.00    +0.000 C 
+ATOM      6  C   UNL     1      70.038  71.147  57.218  0.00  0.00    +0.000 C 
+ENDROOT
+BRANCH   3   7
+ATOM      7  O   UNL     1      73.254  72.676  56.991  0.00  0.00    +0.000 OA
+ATOM      8  H   UNL     1      74.111  72.580  57.445  0.00  0.00    +0.000 HD
+ENDBRANCH   3   7
+BRANCH   4   9
+ATOM      9  O   UNL     1      72.227  72.341  54.402  0.00  0.00    +0.000 OA
+ATOM     10  H   UNL     1      73.134  72.629  54.617  0.00  0.00    +0.000 HD
+ENDBRANCH   4   9
+BRANCH   5  11
+ATOM     11  O   UNL     1      69.453  71.884  54.994  0.00  0.00    +0.000 OA
+ATOM     12  H   UNL     1      69.727  72.512  54.296  0.00  0.00    +0.000 HD
+ENDBRANCH   5  11
+BRANCH   6  13
+ATOM     13  O   UNL     1      68.842  71.709  57.760  0.00  0.00    +0.000 OA
+ATOM     14  H   UNL     1      68.703  71.251  58.615  0.00  0.00    +0.000 HD
+ENDBRANCH   6  13
+BRANCH   1  15
+ATOM     15  C   UNL     1      70.815  70.229  59.445  0.00  0.00    +0.000 C 
+BRANCH  15  16
+ATOM     16  O   UNL     1      69.697  70.776  60.150  0.00  0.00    +0.000 OA
+ATOM     17  H   UNL     1      69.623  70.250  60.971  0.00  0.00    +0.000 HD
+ENDBRANCH  15  16
+ENDBRANCH   1  15
+TORSDOF 6
+ENDMDL
