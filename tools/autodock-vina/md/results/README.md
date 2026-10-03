@@ -18,7 +18,7 @@ phenanthrene has the more favourable vdW term (-21.7 vs -17.3) despite being sma
   different geometries. Pyrene's analysis excludes the first 30 ns for this reason.
 - Single replica per ligand; SDs overlap, so the difference is not statistically clean.
 - MM-GBSA omits configurational entropy, so absolute dG overestimates affinity.
-  Derived Kd values (pyrene ~1.6 nM, phenanthrene ~1.4 pM) are relative indicators,
+  Derived Kd values (pyrene ~0.16 nM, phenanthrene ~0.17 pM) are relative indicators,
   not measurements.
 - A single wet-lab affinity measurement would resolve the disagreement more
   effectively than further computation.
