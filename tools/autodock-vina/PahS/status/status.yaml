@@ -6,10 +6,10 @@ owners: [Ana, Divyashree]
 
 preprocessing_status: done   # not_started | in_progress | done
 docking_status: done         # not_started | in_progress | done
-result_committed: false             # true once results/DOCKING_RESULT.json is filled + validated
-poses_committed: false
+result_committed: true             # true once results/DOCKING_RESULT.json is filled + validated
+poses_committed: true
 
-last_updated: 2026-08-19
+last_updated: 2026-10-03
 blockers:
   - ""
 notes: ""

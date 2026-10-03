@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "tool_name": "AutoDock Vina",
+  "branch": "tool/autodock-vina",
+  "team_members": [
+    "Ana",
+    "Divyashree"
+  ],
+  "software_version": "1.2.7",
+  "date_completed": "2026-10-03",
+  "input_commit_hash": "6564a76",
+  "score_direction": "lower_is_better",
+  "receptor_prep_method": "canonical PahS structure, PDBQT via Open Babel",
+  "ligand_prep_method": "canonical ligands.sdf, PDBQT via Open Babel",
+  "docking_parameters": {
+    "exhaustiveness": 32,
+    "num_modes": 9,
+    "seed": 42,
+    "mode": "blind",
+    "box": "whole receptor"
+  },
+  "hardware": "local workstation",
+  "runtime_total_sec": null,
+  "results": [
+    {
+      "target_id": "PahS",
+      "ligand_id": "benzo_a_pyrene",
+      "pubchem_cid": "2336",
+      "docking_score": -8.686,
+      "score_unit": "kcal/mol",
+      "rank_within_tool": 1,
+      "pose_file": "tools/autodock-vina/PahS/results/poses/PahS_benzo-a-pyrene_autodock-vina_v1.pdbqt",
+      "runtime_sec": null,
+      "status": "ok",
+      "failure_reason": null,
+      "notes": ""
+    },
+    {
+      "target_id": "PahS",
+      "ligand_id": "phenanthrene",
+      "pubchem_cid": "995",
+      "docking_score": -8.245,
+      "score_unit": "kcal/mol",
+      "rank_within_tool": 2,
+      "pose_file": "tools/autodock-vina/PahS/results/poses/PahS_phenanthrene_autodock-vina_v1.pdbqt",
+      "runtime_sec": null,
+      "status": "ok",
+      "failure_reason": null,
+      "notes": ""
+    },
+    {
+      "target_id": "PahS",
+      "ligand_id": "fluoranthene",
+      "pubchem_cid": "9154",
+      "docking_score": -8.118,
+      "score_unit": "kcal/mol",
+      "rank_within_tool": 3,
+      "pose_file": "tools/autodock-vina/PahS/results/poses/PahS_fluoranthene_autodock-vina_v1.pdbqt",
+      "runtime_sec": null,
+      "status": "ok",
+      "failure_reason": null,
+      "notes": ""
+    },
+    {
+      "target_id": "PahS",
+      "ligand_id": "anthracene",
+      "pubchem_cid": "8418",
+      "docking_score": -7.938,
+      "score_unit": "kcal/mol",
+      "rank_within_tool": 4,
+      "pose_file": "tools/autodock-vina/PahS/results/poses/PahS_anthracene_autodock-vina_v1.pdbqt",
+      "runtime_sec": null,
+      "status": "ok",
+      "failure_reason": null,
+      "notes": ""
+    },
+    {
+      "target_id": "PahS",
+      "ligand_id": "pyrene",
+      "pubchem_cid": "31423",
+      "docking_score": -7.864,
+      "score_unit": "kcal/mol",
+      "rank_within_tool": 5,
+      "pose_file": "tools/autodock-vina/PahS/results/poses/PahS_pyrene_autodock-vina_v1.pdbqt",
+      "runtime_sec": null,
+      "status": "ok",
+      "failure_reason": null,
+      "notes": ""
+    },
+    {
+      "target_id": "PahS",
+      "ligand_id": "naphthalene",
+      "pubchem_cid": "931",
+      "docking_score": -6.578,
+      "score_unit": "kcal/mol",
+      "rank_within_tool": 6,
+      "pose_file": "tools/autodock-vina/PahS/results/poses/PahS_naphthalene_autodock-vina_v1.pdbqt",
+      "runtime_sec": null,
+      "status": "ok",
+      "failure_reason": null,
+      "notes": ""
+    },
+    {
+      "target_id": "PahS",
+      "ligand_id": "glucose_NEGCTRL",
+      "pubchem_cid": "5793",
+      "docking_score": -6.109,
+      "score_unit": "kcal/mol",
+      "rank_within_tool": 7,
+      "pose_file": "tools/autodock-vina/PahS/results/poses/PahS_glucose_NEGCTRL_autodock-vina_v1.pdbqt",
+      "runtime_sec": null,
+      "status": "ok",
+      "failure_reason": null,
+      "notes": "negative control"
+    }
+  ],
+  "failed_cases": [],
+  "warnings": [
+    "Blind docking used, per docking_config.yaml (PahS is priority 2, blind only).",
+    "A defined-box set also exists in outputs/ but naphthalene there used a different pocket (p12 vs p36), so it is not internally comparable."
+  ],
+  "notes": "Docking by Ana. Blind set chosen for internal consistency across all 7 ligands."
+}
