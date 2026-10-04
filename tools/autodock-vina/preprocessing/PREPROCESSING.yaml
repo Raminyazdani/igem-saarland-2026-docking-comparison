@@ -1,6 +1,6 @@
 tool: AutoDock Vina
 branch: tool/autodock-vina
-owners: [Ana, Divyashree]
+owners: [Divyashree]   # Ana left the team Oct 2026
 input_version_used: v0-draft
 
 receptor:
@@ -26,7 +26,7 @@ ligand:
   charges_method: Gasteiger
   output_format: PDBQT
   prep_software: Open Babel
-  output_file: inputs/pyrene.pdbqt
+  output_file: inputs/<ligand>.pdbqt   # all 7 canonical ligands
 
 binding_site:
   source: input/canonical/targets/PahP/binding_site.yaml
@@ -39,4 +39,4 @@ software_versions: {receptor_prep: "Open Babel 3.1.0", ligand_prep: "Open Babel 
 random_seed: 42
 assumptions_and_deviations:
   - "Canonical binding_site.yaml was still a placeholder (all-null) at time of this work. Defined the box from fpocket Pocket 4, chosen using a hydrophobicity/apolar-SASA/aromatic-residue composite score (not fpocket's default druggability metric, which is calibrated for oral-drug-likeness and not relevant to this PAH biosensor context). Independently cross-validated via blind Vina docking: top 10 best-affinity poses (-7.98 to -6.65 kcal/mol) landed within 1.3-2.4A of the Pocket 4 center. Proposing this as the shared binding_site.yaml value for team review."
-notes: "PahP + pyrene only in this commit. PahS/naphthalene owned by Ana, not included here."
+notes: "PahP: all 7 canonical ligands docked. MD + MM-GBSA for pyrene and phenanthrene only. PahS docked separately (see PahS/), blind docking per docking_config.yaml."

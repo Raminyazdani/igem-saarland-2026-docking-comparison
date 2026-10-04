@@ -2,14 +2,15 @@
 # Read by scripts/compare_preprocessing/status_overview.py for a team-wide dashboard.
 tool: AutoDock Vina
 branch: tool/autodock-vina
-owners: [Ana, Divyashree]
+owners: [Divyashree]
 
-preprocessing_status: not_started   # not_started | in_progress | done
-docking_status: not_started         # not_started | in_progress | done
-result_committed: false             # true once results/DOCKING_RESULT.json is filled + validated
-poses_committed: false
+preprocessing_status: done
+docking_status: done
+result_committed: true
+poses_committed: true
 
-last_updated: 2026-07-08
+last_updated: 2026-10-03
 blockers:
-  - "Waiting on input-v1: canonical PahP structure.pdb + binding_site.yaml are still TODO placeholders"
-notes: ""
+  - "input-v1 was never frozen; results reference current main (6564a76) instead"
+  - "canonical binding_site.yaml still a placeholder - Pocket 4 box proposed but not formally adopted"
+notes: "PahP: all 7 canonical ligands docked into fpocket Pocket 4 box (center 70.83/71.96/59.18, size 21.3/19.6/27.3). 100 ns MD + MM-GBSA for pyrene and phenanthrene. PahS in PahS/ subfolder (blind docking, 7 ligands, docked by Ana before leaving the team). Model 1 and Model 3 in md/models/."
