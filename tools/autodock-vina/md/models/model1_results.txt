@@ -1,0 +1,25 @@
+MM-GBSA free energies -> Kd   (RT = 0.616 kcal/mol at 310 K)
+
+ligand               dG      Kd (nM)        -1 SD        +1 SD
+pyrene           -13.88     1.64e-01     1.76e-04     1.52e+02
+phenanthrene     -18.12     1.68e-04     1.30e-07     2.16e-01
+
+The +/- 1 SD window spans 9e+05-fold in Kd.
+MM-GBSA omits configurational entropy, so these absolute values
+overestimate affinity. They are used below as a RANKING; the curves
+are drawn over a plausible Kd range instead of a single value.
+
+wrote model1_binding.png
+
+Time to equilibrium (k_on = 1e-5 nM^-1 s^-1, slow hydrophobic binder):
+  Kd (nM)  [L] (nM)         tau     ~95% eq
+        1         1    833.3 min   2500.0 min
+        1       100     16.5 min     49.5 min
+      100         1     16.5 min     49.5 min
+      100       100      8.3 min     25.0 min
+     1000         1      1.7 min      5.0 min
+     1000       100      1.5 min      4.5 min
+
+Tight binders at low concentration equilibrate over hours; at Kd ~1 uM
+it is minutes. The reporter chain (Model 2) adds hours on top, so it
+usually sets the overall response time, not the binding step.

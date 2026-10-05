@@ -1,0 +1,39 @@
+Scenario: polluted site. Concentrations (nM):
+  pyrene               20
+  phenanthrene         50
+  fluoranthene         20
+  anthracene           10
+  naphthalene         500
+  glucose            1000
+
+Occupancy under each ranking:
+
+  MM-GBSA order  (total occupancy 0.417)
+    phenanthrene     0.2917
+    naphthalene      0.0583
+    pyrene           0.0389
+    fluoranthene     0.0233
+    anthracene       0.0039
+    glucose          0.0006
+
+  Vina order  (total occupancy 0.340)
+    pyrene           0.1321
+    phenanthrene     0.1101
+    naphthalene      0.0660
+    fluoranthene     0.0264
+    anthracene       0.0044
+    glucose          0.0007
+
+wrote model3_competition.png
+
+Total occupancy across 5000 draws: median 0.731, 5th-95th pct 0.294 - 0.867
+
+How often each ligand dominates the signal:
+  phenanthrene     95.4%
+  naphthalene       4.6%
+  glucose           0.0%
+
+Negative control: glucose exceeds 5% of the signal in 4.1% of draws.
+
+Note: naphthalene is present at 25x the pyrene concentration but binds
+more weakly - concentration matters as much as affinity in a mixture.
