@@ -19,7 +19,8 @@ rng = np.random.default_rng(42)
 # The MM-GBSA ordering compares two different sites (each ligand left
 # pocket 4 before its MM-GBSA window), so it is not like-for-like.
 RANKING_MMGBSA = ["phenanthrene", "pyrene", "fluoranthene", "anthracene", "naphthalene"]
-RANKING_VINA = ["pyrene", "phenanthrene", "fluoranthene", "anthracene", "naphthalene"]
+# fluoranthene -8.095 and pyrene -8.021 differ by less than Vina resolves; order as scored
+RANKING_VINA = ["fluoranthene", "pyrene", "phenanthrene", "anthracene", "naphthalene"]
 
 # illustrative Kd set, nM - ordered to match whichever ranking is used
 KD_LADDER = [100, 300, 500, 1500, 5000]
@@ -87,7 +88,7 @@ shares = {l: [] for l in ligands}
 totals = []
 for _ in range(N):
     draw = sorted(10 ** rng.uniform(1, 4, size=len(KD_LADDER)))
-    kd = build_kd(RANKING_MMGBSA, draw)
+    kd = build_kd(RANKING_VINA, draw)
     kd["glucose"] = 10 ** rng.uniform(4, 7)
     th = occupancy(kd, CONC)
     tot = sum(th.values())

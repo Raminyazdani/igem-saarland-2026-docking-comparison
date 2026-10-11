@@ -1,0 +1,12 @@
+&general
+sys_name = "phenanthrene_run_gb_p4"
+startframe = 6
+endframe = 36
+interval = 1
+verbose = 2
+temperature = 310
+/
+&gb
+igb = 5
+saltcon = 0.150
+/

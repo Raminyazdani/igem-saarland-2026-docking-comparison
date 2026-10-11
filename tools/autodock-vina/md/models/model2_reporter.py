@@ -10,7 +10,8 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from scipy.integrate import odeint
 
-KD = {"pyrene": 100.0, "phenanthrene": 300.0, "naphthalene": 5000.0}
+# same illustrative ladder as Model 3, in the corrected Vina rank order
+KD = {"fluoranthene": 100.0, "pyrene": 300.0, "phenanthrene": 500.0, "naphthalene": 5000.0}
 ALPHA, DELTA_M = 1.0, np.log(2) / 5          # mRNA synthesis, 5 min half-life
 BETA = 2.0                                    # protein per mRNA per min
 K_MAT = np.log(2) / 30                        # 30 min YFP maturation half-life
