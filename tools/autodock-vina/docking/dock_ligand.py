@@ -1,15 +1,19 @@
-import argparse, os, shutil, subprocess, sys
+import argparse, os, shutil, subprocess, sys, yaml
 CANON = "../../../input/canonical/ligands/ligands.sdf"
 RECEPTOR = "../inputs/receptor.pdbqt"
-CENTER = (70.83, 71.96, 59.18)
-SIZE = (21.3, 19.6, 27.3)
+CONFIG = "../configurations/config.yaml"
 ap = argparse.ArgumentParser()
 ap.add_argument("ligand", help="exact name as it appears in ligands.sdf")
-ap.add_argument("--exhaustiveness", type=int, default=16)
-ap.add_argument("--num-modes", type=int, default=9)
-ap.add_argument("--seed", type=int, default=42)
+ap.add_argument("--config", default=CONFIG)
 a = ap.parse_args()
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
+cfg = yaml.safe_load(open(a.config))
+box = cfg["box"]
+if box.get("mode") != "defined" or not box.get("center_xyz") or not box.get("size_xyz"):
+    sys.exit(f"{a.config}: box.mode must be 'defined' with center_xyz and size_xyz set")
+cx, cy, cz = box["center_xyz"]
+sx, sy, sz = box["size_xyz"]
+exh, nmodes, seed = cfg["exhaustiveness"], cfg["num_poses"], cfg["random_seed"]
 sdf = f"../inputs/{a.ligand}.sdf"
 for mol in open(CANON).read().split("$$$$\n"):
     if mol.strip() and mol.split("\n")[0].strip().lower() == a.ligand.lower():
@@ -22,15 +26,15 @@ out = f"../outputs/PahP__{a.ligand}__autodock-vina__v1.pdbqt"
 log = f"../outputs/PahP__{a.ligand}__autodock-vina__v1.log"
 os.makedirs("../outputs", exist_ok=True)
 cmd = ["vina", "--receptor", RECEPTOR, "--ligand", pdbqt,
-       "--center_x", str(CENTER[0]), "--center_y", str(CENTER[1]), "--center_z", str(CENTER[2]),
-       "--size_x", str(SIZE[0]), "--size_y", str(SIZE[1]), "--size_z", str(SIZE[2]),
-       "--exhaustiveness", str(a.exhaustiveness), "--num_modes", str(a.num_modes),
-       "--seed", str(a.seed), "--out", out]
+       "--center_x", str(cx), "--center_y", str(cy), "--center_z", str(cz),
+       "--size_x", str(sx), "--size_y", str(sy), "--size_z", str(sz),
+       "--exhaustiveness", str(exh), "--num_modes", str(nmodes),
+       "--seed", str(seed), "--out", out]
 with open(log, "w") as f:
     subprocess.run(cmd, stdout=f, stderr=subprocess.STDOUT, check=True)
 os.makedirs("../results/poses", exist_ok=True)
 shutil.copy(out, f"../results/poses/PahP__{a.ligand}__autodock-vina__v1.pdbqt")
-print(f"{a.ligand}: {out}")
+print(f"{a.ligand}: box {cx}/{cy}/{cz} size {sx}/{sy}/{sz} exh {exh} seed {seed}")
 for l in open(log):
     if l.split() and l.split()[0].isdigit():
         print(l.rstrip())

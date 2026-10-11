@@ -16,7 +16,9 @@ RT = 0.001987 * 310.0
 
 # illustrative only - see header
 MMGBSA = {"pyrene": (-13.88, 4.21), "phenanthrene": (-18.12, 4.41)}
-VINA = {"pyrene": -8.02, "phenanthrene": -7.45, "naphthalene": -6.05}
+VINA = {"benzo_a_pyrene": -9.520, "fluoranthene": -8.095, "pyrene": -8.021,
+        "phenanthrene": -7.448, "anthracene": -7.363, "naphthalene": -6.053,
+        "glucose_NEGCTRL": -5.383}
 
 def kd_nM(dg):
     return np.exp(dg / RT) * 1e9

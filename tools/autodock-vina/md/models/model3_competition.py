@@ -4,8 +4,12 @@ iGEM Saarland 2026
 
 Our MM-GBSA Kd values (sub-nM to sub-pM) are too tight to use directly here:
 they saturate the receptor in every scenario and the model becomes degenerate.
-So the MM-GBSA and Vina results are used for the RANKING only, and absolute
-Kd values are sampled from a plausible range that respects that ranking.
+Absolute Kd are therefore sampled from a plausible range that respects a ranking.
+
+The ranking used is Vina's. Recomputed over windows where each ligand is actually
+in pocket 4, MM-GBSA cannot separate pyrene from phenanthrene (-16.64 +/- 5.46 vs
+-17.38 +/- 4.09, about 0.7 sigma), so the MM-GBSA order below is kept only as a
+sensitivity check, not as a competing ranking. See md/analysis/README.md.
 
 Output: model3_competition.png
 """
@@ -14,10 +18,9 @@ import matplotlib.pyplot as plt
 
 rng = np.random.default_rng(42)
 
-# ranking from this work: MM-GBSA put phenanthrene above pyrene,
-# Vina put pyrene above phenanthrene. Both orders are tested.
-# The MM-GBSA ordering compares two different sites (each ligand left
-# pocket 4 before its MM-GBSA window), so it is not like-for-like.
+# two orders are tested. the MM-GBSA one compares two different sites
+# (each ligand left pocket 4 before its MM-GBSA window), so it is not
+# like-for-like and is kept only as a sensitivity check.
 RANKING_MMGBSA = ["phenanthrene", "pyrene", "fluoranthene", "anthracene", "naphthalene"]
 # fluoranthene -8.095 and pyrene -8.021 differ by less than Vina resolves; order as scored
 RANKING_VINA = ["fluoranthene", "pyrene", "phenanthrene", "anthracene", "naphthalene"]

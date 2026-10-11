@@ -40,7 +40,8 @@ ap = argparse.ArgumentParser()
 ap.add_argument("out_dir")
 ap.add_argument("--min-volume", type=float, default=250.0)
 ap.add_argument("--weights", nargs=3, type=float, default=[0.4, 0.4, 0.2])
-ap.add_argument("--padding", type=float, default=10.0)
+ap.add_argument("--padding", type=float, default=10.0,
+                help="added to the total span, i.e. half of it on each side")
 a = ap.parse_args()
 info = glob.glob(f"{a.out_dir}/*_info.txt")
 if not info: sys.exit(f"no *_info.txt in {a.out_dir}")
@@ -67,6 +68,7 @@ print(f"weight sweep ({total} combinations, step 0.1):")
 for n, c in sorted(wins.items(), key=lambda kv: -kv[1]):
     print(f"  pocket {n}: first in {c}/{total} ({100*c/total:.0f}%)")
 c, s, nsph, nlin = box(a.out_dir, best, a.padding)
-print(f"box from {nsph} alpha spheres, {nlin} lining atoms, {a.padding:g} A padding")
+print(f"box from {nsph} alpha spheres, {nlin} lining atoms, "
+      f"{a.padding:g} A padding on the span ({a.padding/2:g} A per side)")
 print(f"  center_xyz: [{c[0]:.2f}, {c[1]:.2f}, {c[2]:.2f}]")
 print(f"  size_xyz:   [{s[0]:.1f}, {s[1]:.1f}, {s[2]:.1f}]")

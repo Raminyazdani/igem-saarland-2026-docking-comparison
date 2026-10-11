@@ -1,4 +1,4 @@
-import argparse, glob, re, sys
+import argparse, glob, os, re, sys
 def coords(path):
     return [(float(l[30:38]), float(l[38:46]), float(l[46:54]))
             for l in open(path) if l.startswith(("ATOM", "HETATM"))]
@@ -13,13 +13,20 @@ def poses(path):
             out.append((aff, atoms)); atoms, aff = [], None
     if atoms: out.append((aff, atoms))
     return out
-def pockets(d):
-    pk = {}
+def volumes(d):
+    info = glob.glob(f"{d}/*_info.txt")
+    if not info: return {}
+    blocks = re.split(r"^Pocket (\d+) :\s*$", open(info[0]).read(), flags=re.M)
+    return {int(blocks[i]): float(re.search(r"Volume\s*:\s*([\-\d.]+)", blocks[i+1]).group(1))
+            for i in range(1, len(blocks), 2)}
+def pockets(d, min_vol):
+    vol, pk = volumes(d), {}
     for f in glob.glob(f"{d}/pockets/pocket*_atm.pdb"):
         n = int(re.search(r"pocket(\d+)_atm", f).group(1))
+        if vol and vol.get(n, 0) < min_vol: continue
         sph = coords(f.replace("_atm.pdb", "_vert.pqr"))
         pk[n] = (coords(f), tuple(sum(p[i] for p in sph)/len(sph) for i in range(3)))
-    return pk
+    return pk, sorted(n for n, v in vol.items() if v < min_vol)
 def contacts(atoms, lining, cut):
     c2 = cut*cut
     return sum(1 for ax, ay, az in atoms for bx, by, bz in lining
@@ -28,10 +35,14 @@ ap = argparse.ArgumentParser()
 ap.add_argument("poses")
 ap.add_argument("out_dir")
 ap.add_argument("--cutoff", type=float, default=4.5)
+ap.add_argument("--min-volume", type=float, default=250.0,
+                help="exclude pockets below this volume, matching rank_pockets.py")
 a = ap.parse_args()
-ps, pk = poses(a.poses), pockets(a.out_dir)
+ps = poses(a.poses)
+pk, small = pockets(a.out_dir, a.min_volume)
 if not ps: sys.exit(f"no poses in {a.poses}")
-print(f"{len(ps)} poses, {len(pk)} pockets, cutoff {a.cutoff} A")
+print(f"{len(ps)} poses, {len(pk)} pockets, cutoff {a.cutoff} A; "
+      f"excluded <{a.min_volume:g} A^3: {small or 'none'}")
 print(f"{'pose':>5}{'affinity':>10}{'pocket':>8}{'contacts':>10}{'cent.d':>8}{'next':>12}")
 hits = {}
 for i, (aff, atoms) in enumerate(ps, 1):
