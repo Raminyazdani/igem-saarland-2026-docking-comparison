@@ -1,33 +1,37 @@
 #!/usr/bin/env bash
-# Reproducible preprocessing for AutoDock Vina (tool/autodock-vina).
-# Reads ONLY the shared canonical inputs and writes prepared files into ../inputs/.
-# Replace the TODO commands with your tool's real preparation. Keep it reproducible.
-#
-# If AutoDock Vina is GUI/web-only and cannot be scripted, leave this as documentation and
-# record the exact settings/clicks in steps.md instead.
+# Reproducible preprocessing for AutoDock Vina, PahP.
+# Reads only input/canonical/ and writes prepared PDBQT files into ../inputs/.
 set -euo pipefail
-
 HERE="$(cd "$(dirname "$0")" && pwd)"
-TOOL_DIR="$(dirname "$HERE")"                 # tools/autodock-vina
+TOOL_DIR="$(dirname "$HERE")"
 REPO_ROOT="$(cd "$TOOL_DIR/../.." && pwd)"
 CANON="$REPO_ROOT/input/canonical"
 INPUTS="$TOOL_DIR/inputs"
-mkdir -p "$INPUTS"
-
 RECEPTOR="$CANON/targets/PahP/structure.pdb"
 LIGANDS="$CANON/ligands/ligands.sdf"
-BOX="$CANON/targets/PahP/binding_site.yaml"
-
-echo "[autodock-vina] receptor : $RECEPTOR"
-echo "[autodock-vina] ligands  : $LIGANDS"
-echo "[autodock-vina] box      : $BOX"
-
-# --- RECEPTOR prep (TODO: e.g. strip signal peptide, protonate pH 7.4, convert to your format) ---
-# example (AutoDock/Meeko):  mk_prepare_receptor.py -i "$RECEPTOR" -o "$INPUTS/receptor.pdbqt"
-echo "TODO: prepare receptor -> $INPUTS/receptor.<ext>"
-
-# --- LIGAND prep (TODO: keep canonical 3D conformers; add charges/format as your tool needs) ---
-# example:  mk_prepare_ligand.py -i "$LIGANDS" --multimol_outdir "$INPUTS/ligands_pdbqt"
-echo "TODO: prepare ligands -> $INPUTS/ligands.<ext>"
-
-echo "[autodock-vina] preprocessing done. Now fill PREPROCESSING.yaml and run ../docking/run_docking.sh"
+METADATA="$CANON/ligands/ligand_metadata.csv"
+mkdir -p "$INPUTS"
+for f in "$RECEPTOR" "$LIGANDS" "$METADATA"; do
+  [ -f "$f" ] || { echo "missing: $f" >&2; exit 1; }
+done
+command -v obabel >/dev/null || { echo "obabel not on PATH (conda activate docking)" >&2; exit 1; }
+# receptor: canonical structure used as-is (already protonated, chain A, no waters/hetero),
+# converted to rigid PDBQT with Gasteiger charges
+cp "$RECEPTOR" "$INPUTS/PahP_fixed.pdb"
+(cd "$INPUTS" && obabel PahP_fixed.pdb -O receptor.pdbqt -xr)
+echo "receptor -> $INPUTS/receptor.pdbqt"
+# ligands: canonical 3D conformers split by title, each converted to PDBQT
+LIGAND_NAMES=$(awk -F, 'NR>1 && $1 !~ /^#/ && $1 != "" {print $1}' "$METADATA")
+for lig in $LIGAND_NAMES; do
+  python3 - "$LIGANDS" "$lig" "$INPUTS/$lig.sdf" <<'PY'
+import sys
+src, name, dest = sys.argv[1], sys.argv[2], sys.argv[3]
+for mol in open(src).read().split("$$$$\n"):
+    if mol.strip() and mol.split("\n")[0].strip().lower() == name.lower():
+        open(dest, "w").write(mol + "$$$$\n"); sys.exit(0)
+sys.exit(f"{name} not found in {src}")
+PY
+  (cd "$INPUTS" && obabel "$lig.sdf" -O "$lig.pdbqt")
+  echo "ligand   -> $INPUTS/$lig.pdbqt"
+done
+echo "done. box parameters are in ../configurations/config.yaml; dock with ../docking/dock_ligand.py"

@@ -10,8 +10,8 @@
   "date_completed": "2026-10-03",
   "input_commit_hash": "6564a76",
   "score_direction": "lower_is_better",
-  "receptor_prep_method": "canonical PahS structure, PDBQT via Open Babel",
-  "ligand_prep_method": "canonical ligands.sdf, PDBQT via Open Babel",
+  "receptor_prep_method": "canonical PahS structure.pdb; PDBQT via Meeko 0.7.1 (mk_prepare_receptor.py)",
+  "ligand_prep_method": "canonical ligands.sdf conformers as-is; PDBQT via Meeko 0.7.1 (mk_prepare_ligand.py)",
   "docking_parameters": {
     "exhaustiveness": 32,
     "num_modes": 9,
@@ -117,7 +117,8 @@
   "failed_cases": [],
   "warnings": [
     "Blind docking used, per docking_config.yaml (PahS is priority 2, blind only).",
-    "A defined-box set also exists in outputs/ but naphthalene there used a different pocket (p12 vs p36), so it is not internally comparable."
+    "A defined-box set also exists in outputs/ but naphthalene there used a different pocket (p12 vs p36), so it is not internally comparable.",
+    "PahS prepared with Meeko 0.7.1, PahP with Open Babel 3.1.0. Both assign Gasteiger charges and PAHs have no rotatable bonds, so the routes are near-equivalent for this ligand class; the targets were not re-prepared to a common tool. Scores are compared within each target only."
   ],
   "notes": "Docking by Ana. Blind set chosen for internal consistency across all 7 ligands."
 }
