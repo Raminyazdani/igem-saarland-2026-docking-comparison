@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    13:
+HEADER 0  - Pocket Score                      : 0.0116
+HEADER 1  - Drug Score                        : 0.0004
+HEADER 2  - Number of alpha spheres           :    17
+HEADER 3  - Mean alpha-sphere radius          : 3.7242
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4987
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 28.2857
+HEADER 7  - Polarity Score                    :     2
+HEADER 8  - Amino Acid based volume Score     : 3.8571
+HEADER 9  - Pocket volume (Monte Carlo)       : 181.9173
+HEADER 10 - Pocket volume (convex hull)       : 3.4068
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 2.0000
+HEADER 13 - Number of apolar alpha sphere     :     3
+HEADER 14 - Proportion of apolar alpha sphere : 0.1765
+ATOM    203    O LEU A  12      24.950  17.615  34.375  0.68  4.29           O 0
+ATOM   1076   CB ASP A  68      28.620  18.145  37.355  0.00  0.00           C 0
+ATOM   1081  OD2 ASP A  68      27.100  16.495  38.195  0.00  0.00           O 0
+ATOM   1083    O ASP A  68      31.010  17.405  35.605  0.46  9.64           O 0
+ATOM   1074   CA ASP A  68      29.740  17.065  37.605  0.00  0.00           C 0
+ATOM    202    C LEU A  12      24.930  18.445  33.465  0.00  0.00           C 0
+ATOM    187   CA LEU A  12      25.740  19.745  33.665  0.00  0.00           C 0
+ATOM    184    O LEU A  11      26.690  19.805  31.025  0.47  3.21           O 0
+ATOM    332    O GLN A  20      32.840  19.995  32.905  0.00  0.00           O 0
+ATOM    316    N GLN A  20      32.030  18.855  30.325  0.48  2.19           N 0
+ATOM    198  CD2 LEU A  12      27.850  21.205  35.525  0.00  0.00           C 0
+ATOM    228   CB PRO A  14      26.590  16.655  29.045  0.00  0.00           C 0
+ATOM    308   CA ALA A  19      31.490  16.675  29.205  0.00  0.00           C 0
+ATOM    225   CG PRO A  14      26.980  15.195  29.505  0.00  0.00           C 0
+ATOM    310   CB ALA A  19      31.670  15.465  30.055  0.00  0.00           C 0
+ATOM    222   CD PRO A  14      26.350  14.905  30.835  0.00  0.00           C 0
+ATOM    220    O MET A  13      24.260  14.895  32.685  0.57  4.29           O 0
+TER
+END

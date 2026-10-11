@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket     6:
+HEADER 0  - Pocket Score                      : 0.0107
+HEADER 1  - Drug Score                        : 0.0007
+HEADER 2  - Number of alpha spheres           :    21
+HEADER 3  - Mean alpha-sphere radius          : 3.5120
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.4298
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 42.2857
+HEADER 7  - Polarity Score                    :     1
+HEADER 8  - Amino Acid based volume Score     : 3.7143
+HEADER 9  - Pocket volume (Monte Carlo)       : 88.7399
+HEADER 10 - Pocket volume (convex hull)       : 0.6624
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 4.0000
+HEADER 13 - Number of apolar alpha sphere     :     5
+HEADER 14 - Proportion of apolar alpha sphere : 0.2381
+ATOM   1357  CG1 VAL A  85      48.550  25.255  31.407  0.00  0.00           C 0
+ATOM   1353   CA VAL A  85      50.840  26.455  31.357  0.00  0.00           C 0
+ATOM   1742   SG CYS A 109      47.720  23.095  34.097  0.00  0.00           S 0
+ATOM   1428  CD1 ILE A  89      49.990  20.775  31.007  0.00  0.00           C 0
+ATOM   1366    O VAL A  85      51.910  24.785  29.957  0.68  1.07           O 0
+ATOM   1764    O LEU A 110      50.430  23.755  36.517  0.00  0.00           O 0
+ATOM   1794   CB CYS A 113      52.430  20.795  37.587  0.00  0.00           C 0
+ATOM   1797   SG CYS A 113      53.650  20.675  36.277  0.00  0.00           S 0
+ATOM   1414    O ASN A  88      55.220  21.615  30.927  0.47  2.14           O 0
+ATOM   1415    N ILE A  89      53.410  22.425  29.857  0.00  0.00           N 0
+ATOM   1413    C ASN A  88      54.590  22.555  30.417  0.00  0.00           C 0
+ATOM   1405   CB ASN A  88      54.840  24.495  31.947  0.00  0.00           C 0
+ATOM   1775   CA PRO A 111      52.300  25.645  35.547  0.00  0.00           C 0
+ATOM   1778    O PRO A 111      53.830  23.845  35.887  0.00  0.00           O 0
+TER
+END

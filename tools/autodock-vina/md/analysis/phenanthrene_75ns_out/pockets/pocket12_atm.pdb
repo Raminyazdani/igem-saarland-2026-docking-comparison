@@ -1,0 +1,39 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    12:
+HEADER 0  - Pocket Score                      : 0.0226
+HEADER 1  - Drug Score                        : 0.0047
+HEADER 2  - Number of alpha spheres           :    26
+HEADER 3  - Mean alpha-sphere radius          : 3.7580
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5671
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : -3.1429
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 3.7143
+HEADER 9  - Pocket volume (Monte Carlo)       : 225.9078
+HEADER 10 - Pocket volume (convex hull)       : 4.4503
+HEADER 11 - Charge Score                      :     1
+HEADER 12 - Local hydrophobic density Score   : 14.0000
+HEADER 13 - Number of apolar alpha sphere     :    15
+HEADER 14 - Proportion of apolar alpha sphere : 0.5769
+ATOM   2709  OD1 ASP A 167      70.146  39.285  35.225  0.79  8.57           O 0
+ATOM   2662    N ILE A 164      65.686  41.275  38.885  0.00  0.00           N 0
+ATOM   2664   CA ILE A 164      66.046  42.205  37.815  0.00  0.00           C 0
+ATOM   2647   CG LYS A 163      65.576  37.585  39.375  0.00  0.00           C 0
+ATOM   2661    O LYS A 163      67.676  40.765  39.435  0.83  1.07           O 0
+ATOM   2675  CD1 ILE A 164      66.156  42.245  34.705  0.00  0.00           C 0
+ATOM   2650   CD LYS A 163      64.616  36.565  38.935  0.00  0.00           C 0
+ATOM   2666   CB ILE A 164      64.866  42.515  36.895  0.00  0.00           C 0
+ATOM   2598    O HID A 160      62.820  41.015  39.615  0.68  2.14           O 0
+ATOM   2084   CB ALA A 130      61.950  42.325  32.805  0.00  0.00           C 0
+ATOM   2080    N ALA A 130      60.070  42.965  34.225  0.62  1.09           N 0
+ATOM   2586   CB HID A 160      60.010  39.625  39.625  0.00  0.00           C 0
+ATOM   2067   CD PRO A 129      57.760  40.715  36.495  0.00  0.00           C 0
+ATOM   2595  CD2 HID A 160      59.540  37.685  38.015  0.00  0.00           C 0
+ATOM   2059   CB PRO A 128      58.170  39.015  32.535  0.00  0.00           C 0
+ATOM   2062   CA PRO A 128      57.390  39.575  33.695  0.00  0.00           C 0
+ATOM   2066    N PRO A 129      57.870  41.455  35.255  0.00  0.00           N 0
+TER
+END

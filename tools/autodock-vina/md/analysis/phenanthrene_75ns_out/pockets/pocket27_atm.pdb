@@ -1,0 +1,38 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    27:
+HEADER 0  - Pocket Score                      : -0.1260
+HEADER 1  - Drug Score                        : 0.0000
+HEADER 2  - Number of alpha spheres           :    15
+HEADER 3  - Mean alpha-sphere radius          : 3.8962
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5651
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 14.6250
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 4.1250
+HEADER 9  - Pocket volume (Monte Carlo)       : 272.1007
+HEADER 10 - Pocket volume (convex hull)       : 12.2613
+HEADER 11 - Charge Score                      :     2
+HEADER 12 - Local hydrophobic density Score   : 0.0000
+HEADER 13 - Number of apolar alpha sphere     :     0
+HEADER 14 - Proportion of apolar alpha sphere : 0.0000
+ATOM   4219    O PRO A 264      48.990  16.615  34.885  0.38  4.29           O 0
+ATOM   1906  ND2 ASN A 119      47.070  14.955  39.435  0.00  7.66           N 0
+ATOM   4238    O LEU A 265      51.140  13.665  34.345  0.22  7.50           O 0
+ATOM   1905  OD1 ASN A 119      48.330  15.565  41.265  0.00  0.00           O 0
+ATOM   1904   CG ASN A 119      47.490  15.825  40.365  0.00  0.00           C 0
+ATOM   1911    N HID A 120      47.940  20.325  41.385  0.55  1.09           N 0
+ATOM   1923  NE2 HID A 120      52.310  21.255  42.645  0.73  3.28           N 0
+ATOM   1921  CE1 HID A 120      52.400  21.675  41.395  0.00  0.00           C 0
+ATOM   1927    O HID A 120      49.130  21.545  39.085  0.76  6.43           O 0
+ATOM   1901   CB ASN A 119      46.810  17.185  40.275  0.00  0.00           C 0
+ATOM   1924  CD2 HID A 120      51.020  21.375  43.055  0.00  0.00           C 0
+ATOM   1899   CA ASN A 119      47.000  18.025  41.595  0.00  0.00           C 0
+ATOM   1800    O CYS A 113      52.200  18.785  48.115  0.59  5.36           O 0
+ATOM   1858    O LEU A 116      48.610  17.305  47.695  0.60  3.21           O 0
+ATOM   1896    O PRO A 118      46.440  18.885  44.245  0.74  1.07           O 0
+ATOM   1882    O ARG A 117      46.570  15.255  45.485  0.65  3.21           O 0
+TER
+END

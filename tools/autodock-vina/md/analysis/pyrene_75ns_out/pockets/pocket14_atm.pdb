@@ -1,0 +1,41 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    14:
+HEADER 0  - Pocket Score                      : -0.0327
+HEADER 1  - Drug Score                        : 0.0033
+HEADER 2  - Number of alpha spheres           :    23
+HEADER 3  - Mean alpha-sphere radius          : 4.0109
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.5448
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 43.5556
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 4.2222
+HEADER 9  - Pocket volume (Monte Carlo)       : 271.7373
+HEADER 10 - Pocket volume (convex hull)       : 16.0846
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 10.0000
+HEADER 13 - Number of apolar alpha sphere     :    11
+HEADER 14 - Proportion of apolar alpha sphere : 0.4783
+ATOM   3583   CG PRO A 223      15.980  47.528  36.437  0.00  0.00           C 0
+ATOM   2256  CD2 LEU A 139      16.940  49.278  40.847  0.00  0.00           C 0
+ATOM   2266   CB SER A 140      13.440  47.548  43.307  0.00  0.00           C 0
+ATOM   3153  CD1 ILE A 195      17.970  45.028  38.887  0.00  0.00           C 0
+ATOM   2262    N SER A 140      15.870  47.548  44.087  0.00  0.00           N 0
+ATOM   2272    O SER A 140      14.740  44.878  44.117  0.44  3.21           O 0
+ATOM   2306    N PHE A 143      12.160  42.208  42.837  0.70  1.09           N 0
+ATOM   2305    O LEU A 142       9.970  42.098  42.337  0.73  7.50           O 0
+ATOM   2269   OG SER A 140      12.160  47.568  43.727  0.50  3.21           O 0
+ATOM   3144   CB ILE A 195      16.560  43.308  37.557  0.00  0.00           C 0
+ATOM   3139    O ASP A 194      13.580  43.878  35.907  0.33  6.43           O 0
+ATOM   2310   CB PHE A 143      14.160  41.648  41.537  0.00  0.00           C 0
+ATOM   2308   CA PHE A 143      12.670  41.338  41.797  0.00  0.00           C 0
+ATOM   3132   CB ASP A 194      12.330  41.168  37.347  0.00  0.00           C 0
+ATOM   2304    C LEU A 142      10.890  42.448  43.077  0.00  0.00           C 0
+ATOM   2291   CB LEU A 142       9.360  44.228  44.197  0.00  0.00           C 0
+ATOM   4621  CD2 LEU A 289      12.960  52.238  38.327  0.00  0.00           C 0
+ATOM   4639  NE2 HID A 290      12.420  52.088  43.407  0.63  4.37           N 0
+ATOM   4637  CE1 HID A 290      13.570  51.748  42.717  0.00  0.00           C 0
+TER
+END

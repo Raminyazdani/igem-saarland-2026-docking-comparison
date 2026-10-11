@@ -1,0 +1,36 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    10:
+HEADER 0  - Pocket Score                      : -0.0102
+HEADER 1  - Drug Score                        : 0.0067
+HEADER 2  - Number of alpha spheres           :    20
+HEADER 3  - Mean alpha-sphere radius          : 3.6940
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.3652
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 10.4286
+HEADER 7  - Polarity Score                    :     4
+HEADER 8  - Amino Acid based volume Score     : 3.8571
+HEADER 9  - Pocket volume (Monte Carlo)       : 127.2510
+HEADER 10 - Pocket volume (convex hull)       : 1.8535
+HEADER 11 - Charge Score                      :    -1
+HEADER 12 - Local hydrophobic density Score   : 10.0000
+HEADER 13 - Number of apolar alpha sphere     :    11
+HEADER 14 - Proportion of apolar alpha sphere : 0.5500
+ATOM   3646  CD1 PHE A 227      29.700  40.738  37.097  0.00  0.00           C 0
+ATOM   2035    N GLN A 127      34.200  38.758  41.327  0.69  2.19           N 0
+ATOM   2051    O GLN A 127      31.590  37.718  41.857  0.44  4.29           O 0
+ATOM   2032  OD2 ASP A 126      35.610  37.188  37.217  0.64  9.64           O 0
+ATOM   2494   OG SER A 154      32.180  35.628  33.767  0.60  2.14           O 0
+ATOM   3225    O ILE A 199      30.680  39.158  33.717  0.72  4.29           O 0
+ATOM   3648  CE1 PHE A 227      28.750  39.868  37.557  0.00  0.00           C 0
+ATOM   2539   CG GLN A 157      32.130  34.518  39.997  0.00  0.00           C 0
+ATOM   3213  CG2 ILE A 199      28.650  36.508  33.457  0.00  0.00           C 0
+ATOM   2491   CB SER A 154      31.560  34.448  34.157  0.00  0.00           C 0
+ATOM   2544  NE2 GLN A 157      33.920  34.468  38.437  0.79  1.09           N 0
+ATOM   2536   CB GLN A 157      30.890  34.068  39.217  0.00  0.00           C 0
+ATOM   2073   CB PRO A 129      26.860  36.008  41.887  0.00  0.00           C 0
+ATOM   3220  CD1 ILE A 199      26.670  37.098  35.917  0.00  0.00           C 0
+TER
+END

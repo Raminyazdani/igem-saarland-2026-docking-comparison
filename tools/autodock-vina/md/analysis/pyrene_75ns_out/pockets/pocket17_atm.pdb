@@ -1,0 +1,42 @@
+HEADER
+HEADER This is a pdb format file writen by the programm fpocket.                 
+HEADER It represents the atoms contacted by the voronoi vertices of the pocket.  
+HEADER                                                                           
+HEADER Information about the pocket    17:
+HEADER 0  - Pocket Score                      : -0.0695
+HEADER 1  - Drug Score                        : 0.0046
+HEADER 2  - Number of alpha spheres           :    16
+HEADER 3  - Mean alpha-sphere radius          : 4.0555
+HEADER 4  - Mean alpha-sphere Solvent Acc.    : 0.6919
+HEADER 5  - Mean B-factor of pocket residues  : 0.0000
+HEADER 6  - Hydrophobicity Score              : 18.1667
+HEADER 7  - Polarity Score                    :     3
+HEADER 8  - Amino Acid based volume Score     : 3.3333
+HEADER 9  - Pocket volume (Monte Carlo)       : 319.0481
+HEADER 10 - Pocket volume (convex hull)       : 15.2783
+HEADER 11 - Charge Score                      :     0
+HEADER 12 - Local hydrophobic density Score   : 11.0000
+HEADER 13 - Number of apolar alpha sphere     :    12
+HEADER 14 - Proportion of apolar alpha sphere : 0.7500
+ATOM    419    O ILE A  25      52.980  38.118  27.507  0.00  0.00           O 0
+ATOM    405   CB ILE A  25      53.860  40.968  28.257  0.00  0.00           C 0
+ATOM    921    O THR A  57      57.620  38.278  29.267  0.66  1.07           O 0
+ATOM    926   CB SER A  58      58.710  36.408  26.477  0.00  0.00           C 0
+ATOM    452  ND2 ASN A  28      52.810  42.518  23.457  0.00  0.00           N 0
+ATOM    929   OG SER A  58      57.740  35.478  25.847  0.00  0.00           O 0
+ATOM    901   CB PRO A  56      58.060  43.388  28.827  0.00  0.00           C 0
+ATOM    920    C THR A  57      58.830  38.148  29.337  0.00  0.00           C 0
+ATOM    451  OD1 ASN A  28      54.000  44.068  24.637  0.00  0.00           O 0
+ATOM     61  CG1 VAL A   4      58.640  46.648  23.137  0.00  0.00           C 0
+ATOM     65  CG2 VAL A   4      56.250  46.278  23.367  0.00  0.00           C 0
+ATOM     57   CA VAL A   4      57.610  47.528  25.167  0.00  0.00           C 0
+ATOM    898   CG PRO A  56      59.280  44.358  28.867  0.00  0.00           C 0
+ATOM    910   CA THR A  57      59.600  39.218  30.107  0.00  0.00           C 0
+ATOM    922    N SER A  58      59.430  37.158  28.717  0.00  0.00           N 0
+ATOM    906    C PRO A  56      59.250  41.728  30.317  0.00  0.00           C 0
+ATOM    907    O PRO A  56      60.440  41.948  30.297  0.85  3.21           O 0
+ATOM    411  CG1 ILE A  25      54.880  41.968  28.997  0.00  0.00           C 0
+ATOM    407  CG2 ILE A  25      52.880  41.838  27.447  0.00  0.00           C 0
+ATOM    908    N THR A  57      58.820  40.458  30.397  0.00  0.00           N 0
+TER
+END
