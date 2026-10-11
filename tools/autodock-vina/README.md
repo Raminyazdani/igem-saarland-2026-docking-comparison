@@ -76,7 +76,7 @@ Pyrene's window is entirely post-dissociation; ~3 of phenanthrene's 95 ns are in
 
 - **Per-residue decomposition** (`idecomp = 2`): zero contribution for every protein residue, full interaction energy on the ligand, SDs are propagation artifacts (√2 × per-term SD). Input file was correct; the RRES/LRES partition does not attribute cross terms to the protein side.
 - **MM-GBSA as a ligand-ranking method here.** Even on correct frames at a common site it cannot distinguish pyrene from phenanthrene, and for pyrene it contradicts the trajectory. Reported for completeness, not used to rank.
-- **Ligand RMSD traces** (`*_ligand_rmsd.xvg`): the earlier "moved 2.4–3.0 Å and remained stable" is superseded — actual displacement is 15–20 Å. Not measured in the protein frame.
+- **Ligand RMSD traces** (`*_ligand_rmsd.xvg`): the earlier "moved 2.4–3.0 Å and remained stable" is superseded — actual displacement is 15–20 Å. Not measured in the protein frame; removed from the repo, superseded by the mindist traces in md/analysis/.
 
 ## Known inconsistency
 

@@ -43,7 +43,7 @@ For pyrene, MM-GBSA scores pocket 4 (-16.64) above the site it settled into from
 - **The derived Kd values are withdrawn.** Previously quoted as pyrene ~0.16 nM and phenanthrene ~0.17 pM, they were computed from ΔG values that describe post-migration sites.
 - **The Vina/MM-GBSA ranking disagreement was not real.** The two original values came from different sites; recomputed at a common site the two ligands are statistically indistinguishable, so MM-GBSA never inverted the Vina order — it simply cannot resolve these ligands.
 - **The per-residue decomposition is discarded.** `idecomp = 2` returned zero contribution for every protein residue, with the full interaction energy assigned to the ligand; its standard deviations are propagation artifacts.
-- **The earlier statement that both ligands "moved 2.4–3.0 Å from their docked poses and remained stable thereafter" is superseded.** The actual displacement is 15–20 Å. The `*_ligand_rmsd.xvg` traces do not measure displacement in the protein frame and should be re-derived or dropped.
+- **The earlier statement that both ligands "moved 2.4–3.0 Å from their docked poses and remained stable thereafter" is superseded.** The actual displacement is 15–20 Å. The `*_ligand_rmsd.xvg` traces did not measure displacement in the protein frame and have been removed; `md/analysis/` measures it correctly.
 
 ## What survives
 

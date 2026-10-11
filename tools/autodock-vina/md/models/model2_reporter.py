@@ -8,6 +8,7 @@ Output: model2_reporter.png
 import numpy as np, matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import os; os.chdir(os.path.dirname(os.path.abspath(__file__)))  # write figures next to the script
 from scipy.integrate import odeint
 
 # same illustrative ladder as Model 3, in the corrected Vina rank order

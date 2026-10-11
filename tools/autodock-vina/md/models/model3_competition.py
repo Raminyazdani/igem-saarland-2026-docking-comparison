@@ -15,6 +15,7 @@ Output: model3_competition.png
 """
 import numpy as np
 import matplotlib.pyplot as plt
+import os; os.chdir(os.path.dirname(os.path.abspath(__file__)))  # write figures next to the script
 
 rng = np.random.default_rng(42)
 
