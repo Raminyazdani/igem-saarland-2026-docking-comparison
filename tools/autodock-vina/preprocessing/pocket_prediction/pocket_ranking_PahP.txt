@@ -1,0 +1,25 @@
+17 pockets; excluded <250 A^3: [3, 9, 12, 13]
+weights [0.4, 0.4, 0.2] (hydro/sasa/aromatic); hydro and sasa min-max normalised within this set
+ pocket   score   hydro    sasa      vol  arom   drug
+      4   0.896    25.9   111.1    522.9     4  0.719
+     15   0.635    43.0    62.8    297.6     1  0.002
+      2   0.587    23.8    77.3    673.1     1  0.052
+      6   0.551    28.8    77.3    427.9     0  0.068
+      1   0.495   -12.8    90.6    583.9     2  0.130
+      7   0.455    -4.5    85.7    655.5     1  0.018
+     11   0.404    16.0    62.8    348.7     0  0.014
+     17   0.317    19.8    39.9    312.5     0  0.000
+      8   0.283    16.1    37.4    281.0     0  0.010
+      5   0.218    -2.2    47.1    270.1     0  0.017
+     16   0.183    -3.6    27.8    355.4     1  0.000
+     14   0.071   -22.4    42.3    527.2     0  0.008
+     10   0.046   -22.7    37.4    306.7     0  0.002
+top: pocket 4
+lining: PHE123, SER243, GLU245, GLN246, LEU247, HIS250, VAL270, TYR271, PRO272, LYS273, TYR274, PHE306, ASP307
+aromatic: PHE123, TYR271, TYR274, PHE306
+weight sweep (66 combinations, step 0.1):
+  pocket 4: first in 59/66 (89%)
+  pocket 15: first in 7/66 (11%)
+box from 53 alpha spheres, 31 lining atoms, 10 A padding
+  center_xyz: [70.83, 71.96, 59.18]
+  size_xyz:   [21.3, 19.6, 27.3]
