@@ -2,7 +2,11 @@
 Model 1: ligand-receptor binding for PahP + PAHs
 iGEM Saarland 2026
 
-Input:  MM-GBSA binding free energies from 100 ns MD (this work)
+Input:  MM-GBSA binding free energies from 100 ns MD (this work).
+        Both ligands dissociate from pocket 4 during the run, so these are
+        post-migration values for two different sites. Illustrative only -
+        not pocket-4 affinities and not comparable between ligands.
+        See md/analysis/README.md.
 Output: model1_binding.png
 """
 import numpy as np
@@ -10,6 +14,7 @@ import matplotlib.pyplot as plt
 
 RT = 0.001987 * 310.0
 
+# illustrative only - see header
 MMGBSA = {"pyrene": (-13.88, 4.21), "phenanthrene": (-18.12, 4.41)}
 VINA = {"pyrene": -8.02, "phenanthrene": -7.45, "naphthalene": -6.05}
 

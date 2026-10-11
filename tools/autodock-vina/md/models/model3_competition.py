@@ -16,6 +16,8 @@ rng = np.random.default_rng(42)
 
 # ranking from this work: MM-GBSA put phenanthrene above pyrene,
 # Vina put pyrene above phenanthrene. Both orders are tested.
+# The MM-GBSA ordering compares two different sites (each ligand left
+# pocket 4 before its MM-GBSA window), so it is not like-for-like.
 RANKING_MMGBSA = ["phenanthrene", "pyrene", "fluoranthene", "anthracene", "naphthalene"]
 RANKING_VINA = ["pyrene", "phenanthrene", "fluoranthene", "anthracene", "naphthalene"]
 
