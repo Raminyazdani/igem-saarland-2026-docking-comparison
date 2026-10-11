@@ -9,12 +9,12 @@
 
 tool: AutoDock Vina
 branch: tool/autodock-vina
-owners: [Ana, Divyashree]
+owners: [Divyashree, Ana]
 input_version_used: v0-draft        # set to "input-v1" once the canonical structure+box are frozen
 
 # ---------- RECEPTOR preprocessing (what you did to the shared structure.pdb) ----------
 receptor:
-  source: input/canonical/targets/PahS/structure.pdb   # the shared receptor (PahP primary)
+  source: input/canonical/targets/PahS/structure.pdb   # the shared receptor (PahS; PahP handled in ../../preprocessing/)
   signal_peptide_removed: false      # true|false ; if true, which residues (e.g. "1-24")
   residue_range_used: full          # e.g. "25-317" (mature domain) or "full"
   protonation_pH: 7.4               # match canonical unless you justify otherwise
@@ -41,7 +41,7 @@ ligand:
 
 # ---------- BINDING SITE / BOX ----------
 binding_site:
-  source: input/canonical/targets/PahP/binding_site.yaml
+  source: input/canonical/targets/PahS/binding_site.yaml   # placeholder at time of this work
   mode: blind                        # defined | blind
   center_xyz: [73.8275, 71.3505, 76.722]                  # [x, y, z] in angstrom, or null if blind
   size_xyz: [65, 70, 93]                    # [x, y, z] in angstrom, or null if blind
@@ -50,5 +50,7 @@ binding_site:
 # ---------- provenance ----------
 software_versions: {receptor_prep: "Meeko 0.7.1", ligand_prep: "Meeko 0.7.1", pocket_detection: "none", docking: "AutoDock Vina 1.2.7"}               # {receptor_prep: "...", ligand_prep: "...", docking: "..."}
 random_seed: 42
-assumptions_and_deviations: []      # anything you changed vs canonical, and WHY (list of strings)
-notes: ""
+assumptions_and_deviations:
+  - "Blind whole-receptor box rather than a defined box: canonical binding_site.yaml for PahS was a placeholder, docking_config.yaml mandates blind mode for PahS, and fpocket ranking gives no robust pocket (three-way split across the weight sweep: pocket 36 42%, pocket 32 41%, pocket 58 15%)."
+  - "Prepared with Meeko 0.7.1 while PahP used Open Babel 3.1.0. Not harmonised: PAHs have no rotatable bonds so Meeko's advantage does not apply, and redoing PahP would invalidate the MD built on it."
+notes: "Docking by Ana; documented by Divyashree. Blind docking of 7 canonical ligands. configurations/config.yaml previously carried a defined box that was never used; corrected to match results/DOCKING_RESULT.json, which records mode blind, whole receptor."

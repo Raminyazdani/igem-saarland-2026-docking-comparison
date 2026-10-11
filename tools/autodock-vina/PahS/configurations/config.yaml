@@ -8,11 +8,12 @@ branch: tool/autodock-vina
 score_direction: lower_is_better   # CONFIRM
 score_unit: kcal/mol                        # e.g. kcal/mol | ChemPLP | GlideScore | confidence
 
-# Search box (fill from input/canonical/targets/PahP/binding_site.yaml once it is real).
+# Search box. PahS was docked blind (whole receptor) per docking_config.yaml;
+# canonical targets/PahS/binding_site.yaml was a placeholder at the time.
 box:
-  mode: defined            # defined | blind
-  center_xyz: [59.48, 74.74, 91.71]      # [x, y, z] angstrom, for naphthalene [80.91, 59.50, 58.87]
-  size_xyz: [21, 23, 22]        # [x, y, z] angstrom, for naphthalene [18, 22, 20]
+  mode: blind              # defined | blind
+  center_xyz: [73.8275, 71.3505, 76.722]   # [x, y, z] angstrom
+  size_xyz: [65, 70, 93]                   # [x, y, z] angstrom, encloses the whole receptor
 
 # Sampling / scoring settings (tool-specific).
 exhaustiveness: 32    # e.g. 16 (Vina); null if N/A
