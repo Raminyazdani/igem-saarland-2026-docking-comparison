@@ -18,8 +18,8 @@ AutoDock Vina v1.2.7
 #################################################################
 
 Scoring function : vina
-Rigid receptor: inputs/receptor.pdbqt
-Ligand: inputs/pyrene.pdbqt
+Rigid receptor: ../inputs/receptor.pdbqt
+Ligand: ../inputs/pyrene.pdbqt
 Grid center: X 70.83 Y 71.96 Z 59.18
 Grid size  : X 21.3 Y 19.6 Z 27.3
 Grid space : 0.375

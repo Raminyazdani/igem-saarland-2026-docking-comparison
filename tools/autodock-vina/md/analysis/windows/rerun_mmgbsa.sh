@@ -23,7 +23,7 @@ IN
   gmx_MMPBSA -O -i mmpbsa.in -cs ../md.tpr -ct ../md_fit.xtc -ci ../index.ndx -cg 1 13 \
              -cp ../topol.top -o FINAL_RESULTS.dat -eo FINAL_RESULTS.csv > run.log 2>&1
   if [ -f FINAL_RESULTS.dat ]; then
-    grep -iE "^(DELTA TOTAL|TOTAL)" FINAL_RESULTS.dat | tail -1
+    grep -E "^\xce\x94TOTAL" FINAL_RESULTS.dat || grep -iE "^DELTA TOTAL" FINAL_RESULTS.dat
   else
     echo "FAILED - see $PWD/run.log"
   fi
