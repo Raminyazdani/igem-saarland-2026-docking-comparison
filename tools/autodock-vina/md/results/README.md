@@ -21,7 +21,7 @@ Pyrene is 9.7 kcal/mol more favourable, and the separation survives even a pessi
 
 This **agrees with the Vina ranking** (-8.02 vs -7.45). The earlier report that the two methods disagreed was an artefact of comparing different sites on under-sampled frames.
 
-Files: `../analysis/` holds the replicate trajectories; the raw outputs are in each run's `rep2/FINAL_RESULTS.dat` on the compute host.
+Files: `../analysis/` holds the replicate trajectories; the raw outputs are in each run's `rep2/pyrene_FINAL_RESULTS.dat and rep2/phenanthrene_FINAL_RESULTS.dat` on the compute host.
 
 ## Superseded values
 
