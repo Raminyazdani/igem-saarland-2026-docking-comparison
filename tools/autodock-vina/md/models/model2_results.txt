@@ -1,0 +1,31 @@
+sensor peaks at 9.9 h; at 20 h it is 93.8% of peak
+
+FRET ratio at 20 h (ratiometric, independent of sensor level)
+ligand           Kd (nM)    20 nM   100 nM     1 uM
+fluoranthene         100    1.100    1.300    1.545
+pyrene               300    1.038    1.150    1.462
+phenanthrene         500    1.023    1.100    1.400
+naphthalene         5000    1.002    1.012    1.100
+
+signal at the top of the typical surface-water range (4 nM):
+  fluoranthene   ratio 1.0231  (3.8% of full scale)
+  pyrene         ratio 1.0079  (1.3% of full scale)
+  phenanthrene   ratio 1.0048  (0.8% of full scale)
+  naphthalene    ratio 1.0005  (0.1% of full scale)
+Kd would need to be ~4 nM for half-maximal signal at that concentration.
+
+time to 95% of new ratio after a pollutant step at 20 h
+  fluoranthene   [L]=  20 nM   tau  13.9 min   95%  41.7 min
+  fluoranthene   [L]= 200 nM   tau   5.6 min   95%  16.7 min
+  pyrene         [L]=  20 nM   tau   5.2 min   95%  15.6 min
+  pyrene         [L]= 200 nM   tau   3.3 min   95%  10.0 min
+  phenanthrene   [L]=  20 nM   tau   3.2 min   95%   9.6 min
+  phenanthrene   [L]= 200 nM   tau   2.4 min   95%   7.1 min
+  naphthalene    [L]=  20 nM   tau   0.3 min   95%   1.0 min
+  naphthalene    [L]= 200 nM   tau   0.3 min   95%   1.0 min
+
+wrote model2_reporter.png
+The ratio in (b) does not depend on sensor concentration, so the 20 h wait
+sets signal-to-noise, not the measured value. Once expressed, the sensor
+tracks a change in pollutant within an hour - the slow step is expression,
+which happens once, not the binding, which happens on every reading.

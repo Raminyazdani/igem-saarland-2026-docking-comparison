@@ -14,7 +14,9 @@ mkdir -p ${LIG}_run && cd ${LIG}_run
 
 [ -f topol.top ] || cp ${SYS}.top topol.top
 [ -f conf.gro ]  || cp ${SYS}.gro conf.gro
-[ -f index.ndx ] || printf "\"Protein\" | \"${RES}\"\n\"Water\" | \"Cl-\"\nname 19 Water_and_ions\nq\n" | gmx make_ndx -f conf.gro -o index.ndx
+[ -f index.ndx ] || # NOTE: group index 19 below is the position make_ndx assigns the merged Water|Cl- group
+# for these systems. Verify it if the topology changes - a wrong index renames the wrong group.
+printf "\"Protein\" | \"${RES}\"\n\"Water\" | \"Cl-\"\nname 19 Water_and_ions\nq\n" | gmx make_ndx -f conf.gro -o index.ndx
 
 [ -f em.gro ]  || { gmx grompp -f ${MDP}/em.mdp  -c conf.gro -p topol.top -n index.ndx -o em.tpr  -maxwarn 2 || exit 1; gmx mdrun -deffnm em  -ntmpi 1 -ntomp $NT || exit 1; }
 [ -f nvt.gro ] || { gmx grompp -f ${MDP}/nvt.mdp -c em.gro   -p topol.top -n index.ndx -o nvt.tpr -maxwarn 2 || exit 1; gmx mdrun -deffnm nvt -ntmpi 1 -ntomp $NT || exit 1; }

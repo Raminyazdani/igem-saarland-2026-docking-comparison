@@ -2,14 +2,14 @@
 # Read by scripts/compare_preprocessing/status_overview.py for a team-wide dashboard.
 tool: AutoDock Vina
 branch: tool/autodock-vina
-owners: [Ana, Divyashree]
+owners: [Divyashree, Ana]
 
 preprocessing_status: done   # not_started | in_progress | done
 docking_status: done         # not_started | in_progress | done
 result_committed: true             # true once results/DOCKING_RESULT.json is filled + validated
 poses_committed: true
 
-last_updated: 2026-10-03
+last_updated: 2026-10-13
 blockers:
-  - ""
-notes: ""
+  - "canonical targets/PahS/binding_site.yaml was a placeholder; blind mode used per docking_config.yaml"
+notes: "PahS blind docking of all 7 canonical ligands, docked by Ana, documented by Divyashree. Prepared with Meeko 0.7.1 (PahP used Open Babel 3.1.0; not harmonised - see preprocessing/PREPROCESSING.yaml). Per-pocket focused runs (p36, p12) kept in outputs/ as a cross-check; the blind run is the reported deliverable and poses and scores both come from it. No MD for PahS."
