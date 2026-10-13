@@ -36,7 +36,7 @@ A blind search over the whole receptor, and per-pocket focused runs kept in `out
 
 ## Known inconsistency
 
-PahS was prepared with **Meeko 0.7.1**; PahP with **Open Babel 3.1.0**. Not harmonised: PAHs have no rotatable bonds so Meeko's main advantage does not apply, redoing PahP would invalidate the MD built on it, and the MD shows the ligands leave the docked pocket regardless. Recorded rather than fixed — see `preprocessing/PREPROCESSING.yaml`.
+PahS was prepared with **Meeko 0.7.1**; PahP with **Open Babel 3.1.0**. Not harmonised: PAHs have no rotatable bonds so Meeko's main advantage does not apply, redoing PahP would invalidate the MD built on it, and the PahP MD result does not depend on which preparation route was used. Recorded rather than fixed — see `preprocessing/PREPROCESSING.yaml`.
 
 ## Rules
 

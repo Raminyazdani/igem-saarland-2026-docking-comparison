@@ -9,8 +9,8 @@ docking_status: done
 result_committed: true
 poses_committed: true
 
-last_updated: 2026-10-03
+last_updated: 2026-10-13
 blockers:
   - "input-v1 was never frozen; results reference current main (6564a76) instead"
   - "canonical binding_site.yaml still a placeholder - Pocket 4 box proposed but not formally adopted"
-notes: "PahP: all 7 canonical ligands docked into fpocket Pocket 4 box (center 70.83/71.96/59.18, size 21.3/19.6/27.3). 100 ns MD for pyrene and phenanthrene, two independent replicates each. The docked pose is metastable: both ligands left Pocket 4 within 25 ns in replicate 1 and stayed bound for the full 100 ns in replicate 2. MM-GBSA over replicate 2 (500 frames, ligand in the pocket throughout) gives pyrene -28.43 +/- 3.73 and phenanthrene -18.71 +/- 3.06 kcal/mol, agreeing with the Vina ranking. The replicate-1 values and the Kd derived from them are withdrawn (see md/analysis/). PahS in PahS/ subfolder (blind docking, 7 ligands, docked by Ana). Model 1 (binding), Model 2 (reporter output, CFP/YFP FRET) and Model 3 (competition) in md/models/, all on an illustrative Kd ladder."
+notes: "PahP: all 7 canonical ligands docked into fpocket Pocket 4 box (center 70.83/71.96/59.18, size 21.3/19.6/27.3). 100 ns MD for pyrene and phenanthrene, three independent replicates each. The docked pose is metastable: pyrene holds it for the full 100 ns in 2 of 3 replicates, phenanthrene in 1 of 3 (73% vs 43% of total simulated time in contact). MM-GBSA over replicate 2, the one run with both ligands bound throughout, gives pyrene -28.43 +/- 3.73 and phenanthrene -18.71 +/- 3.06 kcal/mol, agreeing with the Vina ranking and with the residence-time ordering. The replicate-1 values and the Kd derived from them are withdrawn (see md/analysis/). PahS in PahS/ subfolder (blind docking, 7 ligands, docked by Ana). Model 1 (binding), Model 2 (reporter output, CFP/YFP FRET) and Model 3 (competition) in md/models/, all on an illustrative Kd ladder."

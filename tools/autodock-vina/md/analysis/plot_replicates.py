@@ -1,39 +1,46 @@
 import sys, numpy as np, matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-CUT = 0.5
-COLORS = {"pyrene": "#1b6ca8", "phenanthrene": "#c25a1e"}
-if len(sys.argv) < 3:
-    sys.exit('usage: plot_replicates.py out.png "ligand|run=file.xvg" ...')
-out, specs = sys.argv[1], sys.argv[2:]
-n = len(specs)
-fig, axes = plt.subplots((n + 1) // 2, 2, figsize=(11, 3 * ((n + 1) // 2)), sharex=True, sharey=True)
-for ax, spec in zip(np.atleast_1d(axes).flat, specs):
-    label, path = spec.split("=", 1)
-    lig, run = label.split("|")
-    t, y = np.loadtxt(path, unpack=True)
-    t /= 1000
-    b = y < CUT
-    last = t[b].max() if b.any() else 0
-    print(f"{lig:<13}{run}: bound {100*b.mean():5.1f}%, last contact {last:5.1f} ns, "
-          f"final-50ns mean {y[t>=50].mean():.2f} nm, max {y.max():.2f} nm")
-    ax.plot(t, y, lw=0.5, color=COLORS.get(lig, "#444"), alpha=0.85)
-    ax.axhline(CUT, ls="--", lw=0.9, color="0.35")
-    if b.mean() < 0.99:
-        ax.axvline(last, ls=":", lw=1.1, color="#b00020")
-        ax.annotate(f"leaves at {last:.1f} ns", xy=(last, 0), xytext=(last + 3, 3.5),
-                    fontsize=8.5, color="#b00020")
-    ax.text(0.98, 0.93, f"{lig}, {run}", transform=ax.transAxes, ha="right", va="top",
-            fontsize=10.5, fontweight="bold")
-    ax.text(0.98, 0.81, f"bound {100*b.mean():.1f}% of run", transform=ax.transAxes,
-            ha="right", va="top", fontsize=9, color="0.35")
-    ax.set_xlim(0, t.max()); ax.set_ylim(0, 4.4)
-    ax.spines[["top", "right"]].set_visible(False)
-axes = np.atleast_2d(axes)
-for ax in axes[:, 0]: ax.set_ylabel("min. distance (nm)")
-for ax in axes[-1, :]: ax.set_xlabel("time (ns)")
-axes[0, 0].text(99, 0.62, "contact threshold 0.5 nm", ha="right", va="bottom", fontsize=8, color="0.35")
-fig.suptitle("Ligand to pocket-4 distance — independent 100 ns replicates", fontsize=11.5, y=0.98)
-fig.tight_layout(rect=[0, 0, 1, 0.95])
-fig.savefig(out, dpi=300)
-print("\n" + out)
+
+CUT, TOP = 0.5, 3.4
+COL = {"pyrene": "#1b5e9c", "phenanthrene": "#c0601a"}
+out = sys.argv[1] if len(sys.argv) > 1 else "pocket4_replicates.png"
+
+def load(f):
+    a = np.array([l.split() for l in open(f) if l.strip() and l[0] not in "#@"], float)
+    return a[:, 0] / 1000, a[:, 1]
+
+fig, ax = plt.subplots(2, 3, figsize=(13.2, 6.8), sharex=True, sharey=True)
+for r, lig in enumerate(("pyrene", "phenanthrene")):
+    for c, rep in enumerate((1, 2, 3)):
+        a = ax[r][c]
+        t, y = load(f"{lig}_rep{rep}_mindist.xvg")
+        bound = y < CUT
+        frac = 100 * bound.mean()
+        last = t[bound].max() if bound.any() else 0.0
+        tail = y[t >= 50].mean()
+        a.fill_between(t, TOP * 0.955, TOP, where=bound, color=COL[lig], lw=0)
+        a.fill_between(t, TOP * 0.955, TOP, where=~bound, color="0.86", lw=0)
+        a.plot(t, y, color=COL[lig], lw=0.7)
+        a.axhline(CUT, ls="--", lw=0.9, color="0.35")
+        if frac < 99.9:
+            a.axvline(last, ls=":", lw=1.1, color="#b00020")
+            a.annotate(f"leaves {last:.1f} ns", (last, 2.95), xytext=(5, 0),
+                       textcoords="offset points", fontsize=8.5, color="#b00020")
+        a.set_title(f"{lig} · replicate {rep}   —   {frac:.1f}% in contact",
+                    fontsize=10, loc="left", pad=7)
+        a.text(0.985, 0.80, f"mean 50-100 ns: {tail:.2f} nm", transform=a.transAxes,
+               ha="right", fontsize=8.5, color="0.3")
+        a.set(xlim=(0, 100), ylim=(0, TOP))
+        a.grid(alpha=0.25, lw=0.5)
+        if r == 1: a.set_xlabel("time (ns)")
+        if c == 0: a.set_ylabel("min. distance to pocket 4 (nm)")
+
+ax[0][1].text(50, 0.70, "0.5 nm contact cutoff", fontsize=8.5, color="0.35", ha="center")
+fig.text(0.012, 0.972, "PahP pocket 4 - ligand retention across three independent 100 ns replicates",
+         fontsize=12.5, color="0.1")
+fig.text(0.012, 0.937, "Top bar marks frames in contact (colour) or away (grey). "
+         "Pyrene holds the docked pose in 2 of 3 runs, phenanthrene in 1 of 3.",
+         fontsize=9, color="0.4")
+fig.tight_layout(rect=(0, 0, 1, 0.925))
+fig.savefig(out, dpi=200)
