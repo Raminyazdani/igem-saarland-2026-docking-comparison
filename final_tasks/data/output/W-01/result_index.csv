@@ -1,0 +1,26 @@
+task,result
+C-06,The labelled CDS spans reference bases 748-2097: 1350 nt and 450 aa; its translation matches its annotation.
+C-06,The adjacent triplet is TAA; a start-to-adjacent-stop segment has 1353 nt.
+C-06,"Count-derived yeast-reference CAI is 0.1708, versus 0.1495 in the first 50 codons; zero = 1 gives 0.1764."
+C-06,There are 185/450 low-weight codons and 40 consecutive stretches of at least 2 codons; GC is 40.37% and GC3 is 35.78%.
+D-01,"Recovered 150 readings across 3 distinct stored results, with 50 physical wells A1:E10 each."
+D-01,"gain 2939: range 23036-260000, 29/50 entries equal 260000; gain 2976: range 27641-260000, 13/50 entries equal 260000; gain 933: range 22-3328, 0/50 entries equal 260000."
+F-01,"120 input files, including derived context, were inventoried and byte-verified; 107 native/export image containers were processed."
+F-01,20 time-series acquisitions; 14 with native clocks. All 146 static/Z frames are retained; 141 contain fluorescence and 94 have a usable BF-region metric.
+F-01,"13 October, nominal 10 mM Ca / 5 mM Cd: C8: +2.66 ADU over 298.2s; Empty: +0.12 ADU over 299.5s; C6: +15.01 ADU over 298.4s; C1: +0.57 ADU over 299.6s; C2: +0.77 ADU over 299.6s. The C6 recording has the largest within-recording increase in this group. Candidate field-matched pre/post contrasts are C1 -10.22 ADU; C2 +1.92 ADU; Empty +0.68 ADU. Within-recording change and the field-matched treatment contrast answer different questions: the C1 field decreases across its paired acquisitions despite rising slightly within the challenged recording."
+F-01,"No recording met the preset resolved-plateau criterion; an empirical reaction time constant, t50 and t90 were not estimated."
+F-01,Four same-well comparisons meet the stage/BF field-match criterion. Their pre/post contrasts are tabulated separately from within-recording change.
+F-01,Recorded stage Z spans 2.34 µm in C2 Ca 1 mM / Cd 5 mM and 1.08 µm in C2 Ca 10 mM / Cd 5 mM. PFS Status is code 1 except for three code-5 frames across those two C2 recordings; PFS offsets are constant within all 14 native time series. Codes are retained without assigning a lock-state meaning; stage motion alone does not establish defocus.
+F-01,6 AVI files were decoded as processed-export QC and were not counted as additional biological observations.
+C-EX,The review retains 7 F-01 findings and 4 C-06 findings verbatim in source_findings.csv.
+C-EX,"Recorded imaging findings from F-01: 13 October, nominal 10 mM Ca / 5 mM Cd: C8: +2.66 ADU over 298.2s; Empty: +0.12 ADU over 299.5s; C6: +15.01 ADU over 298.4s; C1: +0.57 ADU over 299.6s; C2: +0.77 ADU over 299.6s. The C6 recording has the largest within-recording increase in this group. Candidate field-matched pre/post contrasts are C1 -10.22 ADU; C2 +1.92 ADU; Empty +0.68 ADU. Within-recording change and the field-matched treatment contrast answer different questions: the C1 field decreases across its paired acquisitions despite rising slightly within the challenged recording."
+C-EX,Selected reference-only finding from C-06:
+C-EX,The labelled CDS spans reference bases 748-2097: 1350 nt and 450 aa; its translation matches its annotation.
+C-EX,"Seven questions are classified by evidence type; direct expression, biological power and direct binding remain unresolved."
+P-01,35 docking scores; PahP first ranks: CB-Dock3: benzo_a_pyrene; Glide: anthracene; Vina: benzo_a_pyrene.
+P-01,"Contact fractions: pyrene: 19.80%, 100.00%, 100.00%; phenanthrene: 8.00%, 99.68%, 21.13%."
+P-01,Replicate-2 MM-GBSA displayed-mean difference: 9.72 kcal/mol favouring pyrene.
+P-02,"Model 1, Kd=L=100 nM: t95=24.9644 min."
+P-02,Reporter sampled maximum: 9.9333 simulated h; ideal pyrene ratio at 100 nM=1.1500.
+P-02,"Model 3 mixture: pyrene fraction=0.045218, unbound=0.678273; competitor half-site=422.3 nM."
+V-01,Created 3 panels and an animation lasting 12 presentation seconds per loop.

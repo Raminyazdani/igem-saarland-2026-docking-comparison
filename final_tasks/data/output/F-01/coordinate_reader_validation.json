@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "native_event_coordinates_checked": 50,
+  "Z_stack_pixels_rechecked": [
+    {
+      "record": "R089",
+      "planes": 38,
+      "Z_range_um": 56.05999999999949
+    },
+    {
+      "record": "R095",
+      "planes": 23,
+      "Z_range_um": 33.23999999999978
+    }
+  ]
+}

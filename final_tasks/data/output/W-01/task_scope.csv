@@ -1,0 +1,8 @@
+Task,Evidence,Input data,Finished without more wet-lab data?
+C-06,Reference coding sequence,W01_C06_summary.json,Yes: offline synthesis
+D-01,Native plate-reader signals,W01_D01_summary.json,Yes: offline synthesis
+F-01,Native microscopy and recording behavior,W01_F01_summary.json,Yes: offline synthesis
+C-EX,Evidence review,W01_CEX_summary.json,Yes: offline synthesis
+P-01,Stored PAH calculations,W01_P01_summary.json,Yes: offline synthesis
+P-02,Conditional PAH models,W01_P02_summary.json,Yes: offline synthesis
+V-01,Conceptual calcium reporter,W01_V01_summary.json,Yes: offline synthesis

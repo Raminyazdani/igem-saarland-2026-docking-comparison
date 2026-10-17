@@ -1,0 +1,31 @@
+{
+  "input_sha256": {
+    "construct_reference.gbk": "877b766997d508ddd0c7cf129f6622b1573e607f86821e50e88f0e05b3f5df6a",
+    "yeast_codon_reference.cut": "def24b9f2cb6fa4c1f20bdacee467c9ca8038fac673199aa35490f426b3d1d17"
+  },
+  "utc": "2026-10-17T00:30:22.880214+00:00",
+  "parsing": {
+    "original_LOCUS": "LOCUS       New_DNA                 2389 bp    DNA        linear       30-JUN-2026",
+    "in_memory_LOCUS": "LOCUS       New_DNA                 2389 bp    DNA     linear   UNK 30-JUN-2026",
+    "origin_bases_unchanged": true,
+    "warnings": [
+      "The NCBI states double-quote characters like \" should be escaped as \"\" (two double - quotes), but here it was not: 'the original enhanced GFP (<a href=\"https://www.ncbi.nlm.nih.gov/pubmed/8948654\" title=\"https://www.ncbi.nlm.nih.gov/pubmed/8948654\">Yang et al., 1996</a>)'"
+    ]
+  },
+  "runtime": {
+    "Python": "3.12.14",
+    "Biopython": "1.87",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.10.8"
+  },
+  "settings": {
+    "genetic_code": 1,
+    "zero_count": 0.5,
+    "low_weight": 0.2,
+    "first_codons": 50,
+    "min_cluster": 2,
+    "min_AT_run": 6
+  },
+  "reference_scope": "24 CDS, S. cerevisiae, TranstermMay1994; integer Number field"
+}

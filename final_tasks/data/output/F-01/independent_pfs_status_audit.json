@@ -1,0 +1,44 @@
+[
+  {
+    "file": "C2_10mM-calcium_5mM-cadmium_B7_t5min_1001.nd2",
+    "frame_index_zero_based": 76,
+    "time_s": 156.5959809499979,
+    "event_PFS_Status": 5,
+    "event_PFS_Offset": 17166.0,
+    "event_Z_Coord_um": 7498.92,
+    "frame_metadata_PFS_Status": 5,
+    "neighbor_event_codes": [
+      1,
+      5,
+      1
+    ]
+  },
+  {
+    "file": "C2_10mM-calcium_5mM-cadmium_B7_t5min_1001.nd2",
+    "frame_index_zero_based": 122,
+    "time_s": 254.69010494999588,
+    "event_PFS_Status": 5,
+    "event_PFS_Offset": 17166.0,
+    "event_Z_Coord_um": 7498.28,
+    "frame_metadata_PFS_Status": 5,
+    "neighbor_event_codes": [
+      1,
+      5,
+      1
+    ]
+  },
+  {
+    "file": "C2_1mM-calcium_5mM-cadmium_B6_t5min_1.nd2",
+    "frame_index_zero_based": 103,
+    "time_s": 195.02752245000005,
+    "event_PFS_Status": 5,
+    "event_PFS_Offset": 17384.0,
+    "event_Z_Coord_um": 7582.92,
+    "frame_metadata_PFS_Status": 5,
+    "neighbor_event_codes": [
+      1,
+      5,
+      1
+    ]
+  }
+]

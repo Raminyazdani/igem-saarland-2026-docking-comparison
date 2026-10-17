@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "hash_binding": {
+    "frame_measurements.csv": "500f47c3555e0a2615af5683c9e6c60de884e09a86510d618b812ba975e18619",
+    "summary.json": "33476bc3fac53c41922be05ea45def58d9a6a1b4d7a809604f328cb40fb03e2f",
+    "notebook": "e99d77067ae6751bbd098d0284252b0db1ec2f462b6ff04d12fb10596ce285b3"
+  },
+  "counts": {
+    "inputs_including_derived_context": 120,
+    "image_containers": 107,
+    "sequence_frames": 2067,
+    "T_series_rows": 1921,
+    "T_series_groups": 20,
+    "native_T_groups": 14,
+    "TIFF_frame_index_groups": 6,
+    "static_Z_rows": 146,
+    "static_Z_fluorescence_rows": 141,
+    "static_Z_usable_BF_region_rows": 94,
+    "failures": 0
+  },
+  "independent_raw_frames": {
+    "count": 30,
+    "maximum_absolute_difference": 2.842170943040401e-14
+  },
+  "all_50_native_Z_vectors_match_independent_metadata": true,
+  "all_14_native_T_clocks_and_PFS_vectors_match_independent_metadata": true,
+  "PFS_event_status_counts": {
+    "1": 1402,
+    "5": 3
+  },
+  "PFS_interpretation": "Opaque status codes preserved; recorded Z changes alone do not prove defocus. PFS offsets constant within each acquisition.",
+  "old_Z_stack_event_ranges_um": {
+    "B2": 33.24,
+    "B10": 56.06
+  },
+  "TIFF_primary_frame_index_checks": [
+    {
+      "record": "R058",
+      "frames": 65,
+      "primary_clock": "frame index",
+      "status": "PASS"
+    },
+    {
+      "record": "R059",
+      "frames": 65,
+      "primary_clock": "frame index",
+      "status": "PASS"
+    },
+    {
+      "record": "R060",
+      "frames": 65,
+      "primary_clock": "frame index",
+      "status": "PASS"
+    },
+    {
+      "record": "R061",
+      "frames": 107,
+      "primary_clock": "frame index",
+      "status": "PASS"
+    },
+    {
+      "record": "R062",
+      "frames": 107,
+      "primary_clock": "frame index",
+      "status": "PASS"
+    },
+    {
+      "record": "R063",
+      "frames": 107,
+      "primary_clock": "frame index",
+      "status": "PASS"
+    }
+  ],
+  "paired_acquisition_checks": [
+    {
+      "sample": "C1",
+      "baseline_record": "R008",
+      "challenged_record": "R024",
+      "baseline_original_file": "C1_0mM-calcium_0mM-cadmium_B6_t0min_1001.nd2",
+      "challenged_original_file": "C1_10mM-calcium_5mM-cadmium_B6_t5min_1001.nd2",
+      "candidate_pre_post_change_adu": -10.219024658203125,
+      "interpretation": "Conditional paired acquisitions; not an isolated Cd effect; C1/Empty change both Ca and Cd",
+      "status": "PASS"
+    },
+    {
+      "sample": "C2",
+      "baseline_record": "R014",
+      "challenged_record": "R012",
+      "baseline_original_file": "C2_1mM-calcium_0uM-cadmium_B6_t0min_1.nd2",
+      "challenged_original_file": "C2_0mM-calcium_5mM-cadmium_B6_t5min_2.nd2",
+      "candidate_pre_post_change_adu": 2.0186080932617188,
+      "interpretation": "Conditional paired acquisitions; not an isolated Cd effect; C1/Empty change both Ca and Cd",
+      "status": "PASS"
+    },
+    {
+      "sample": "C2",
+      "baseline_record": "R014",
+      "challenged_record": "R026",
+      "baseline_original_file": "C2_1mM-calcium_0uM-cadmium_B6_t0min_1.nd2",
+      "challenged_original_file": "C2_1mM-calcium_5mM-cadmium_B6_t5min_1.nd2",
+      "candidate_pre_post_change_adu": 1.9229793548583984,
+      "interpretation": "Conditional paired acquisitions; not an isolated Cd effect; C1/Empty change both Ca and Cd",
+      "status": "PASS"
+    },
+    {
+      "sample": "Empty",
+      "baseline_record": "R018",
+      "challenged_record": "R022",
+      "baseline_original_file": "Empty_0mM-calcium_0mM-cadmium_A6_t0min_1001.nd2",
+      "challenged_original_file": "Empty_10mM-calcium_5mM-cadmium_A6_t5min_1001.nd2",
+      "candidate_pre_post_change_adu": 0.6817493438720703,
+      "interpretation": "Conditional paired acquisitions; not an isolated Cd effect; C1/Empty change both Ca and Cd",
+      "status": "PASS"
+    }
+  ],
+  "empirical_fits": {
+    "eligible_length_checks": 12,
+    "resolved_plateau": 0,
+    "accepted_tau_t50_t90": 0
+  },
+  "denoise_catalog_counts": {
+    "unknown": 58,
+    "on": 49
+  },
+  "notebook": {
+    "cells": 15,
+    "executed_code_cells": 10,
+    "execution_errors": 0,
+    "inline_code_syntax": "PASS"
+  },
+  "scientific_scope_review": "PASS: nominal labelled acquisitions, recording-relative references, no independent-culture p-values or causal Cd/binding/latency claims; incomplete BF masks used as secondary regions, not certified cells.",
+  "resolved_findings": [
+    "Preserve all T frames in metrics",
+    "Serialize NumPy event arrays",
+    "Freeze temporal preview contrast",
+    "Use native event Z rather than constant per-frame Z",
+    "Preserve 3 PFS status5 exceptions",
+    "Separate paired-acquisition contrasts from within-recording change and isolated Cd effects",
+    "Treat denoising metadata as on/unknown, rather than interpreting absent fields as off"
+  ],
+  "no_outstanding_scientific_review_findings": true,
+  "no_clean_package_files_modified_by_reviewer": true
+}

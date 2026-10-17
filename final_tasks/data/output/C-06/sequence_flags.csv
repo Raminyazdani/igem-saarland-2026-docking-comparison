@@ -1,0 +1,43 @@
+feature,cds_nt_start,cds_nt_end,detail
+low_weight_cluster,43,51,codons 15-17; weight < 0.2
+low_weight_cluster,94,102,codons 32-34; weight < 0.2
+low_weight_cluster,118,126,codons 40-42; weight < 0.2
+low_weight_cluster,154,162,codons 52-54; weight < 0.2
+low_weight_cluster,172,177,codons 58-59; weight < 0.2
+low_weight_cluster,181,186,codons 61-62; weight < 0.2
+low_weight_cluster,190,195,codons 64-65; weight < 0.2
+low_weight_cluster,226,234,codons 76-78; weight < 0.2
+low_weight_cluster,310,321,codons 104-107; weight < 0.2
+low_weight_cluster,337,342,codons 113-114; weight < 0.2
+low_weight_cluster,346,360,codons 116-120; weight < 0.2
+low_weight_cluster,373,378,codons 125-126; weight < 0.2
+low_weight_cluster,448,459,codons 150-153; weight < 0.2
+low_weight_cluster,463,468,codons 155-156; weight < 0.2
+low_weight_cluster,481,486,codons 161-162; weight < 0.2
+low_weight_cluster,490,495,codons 164-165; weight < 0.2
+low_weight_cluster,499,504,codons 167-168; weight < 0.2
+low_weight_cluster,535,543,codons 179-181; weight < 0.2
+low_weight_cluster,547,555,codons 183-185; weight < 0.2
+low_weight_cluster,583,597,codons 195-199; weight < 0.2
+low_weight_cluster,625,639,codons 209-213; weight < 0.2
+low_weight_cluster,664,669,codons 222-223; weight < 0.2
+low_weight_cluster,682,687,codons 228-229; weight < 0.2
+low_weight_cluster,766,774,codons 256-258; weight < 0.2
+low_weight_cluster,781,792,codons 261-264; weight < 0.2
+low_weight_cluster,796,801,codons 266-267; weight < 0.2
+low_weight_cluster,841,855,codons 281-285; weight < 0.2
+low_weight_cluster,859,867,codons 287-289; weight < 0.2
+low_weight_cluster,874,879,codons 292-293; weight < 0.2
+low_weight_cluster,892,897,codons 298-299; weight < 0.2
+low_weight_cluster,952,960,codons 318-320; weight < 0.2
+low_weight_cluster,982,996,codons 328-332; weight < 0.2
+low_weight_cluster,1015,1020,codons 339-340; weight < 0.2
+low_weight_cluster,1099,1104,codons 367-368; weight < 0.2
+low_weight_cluster,1108,1116,codons 370-372; weight < 0.2
+low_weight_cluster,1135,1143,codons 379-381; weight < 0.2
+low_weight_cluster,1156,1161,codons 386-387; weight < 0.2
+low_weight_cluster,1240,1245,codons 414-415; weight < 0.2
+low_weight_cluster,1327,1332,codons 443-444; weight < 0.2
+low_weight_cluster,1345,1350,codons 449-450; weight < 0.2
+AT_homopolymer,764,771,TTTTTTTT
+N_terminal_His_tag,10,27,His6 at residues 4-9

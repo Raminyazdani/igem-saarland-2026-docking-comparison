@@ -1,0 +1,23 @@
+[
+  {
+    "task": "F-01",
+    "input_stem": "W01_F01_expanded_1",
+    "output_stem": "F01_expanded_1",
+    "caption": "All native time-series traces; references and positions belong to individual recordings. No Cd-addition frame is assumed.",
+    "underlying_data": "../F-01/ (native trace and QC CSV tables)"
+  },
+  {
+    "task": "F-01",
+    "input_stem": "W01_F01_expanded_2",
+    "output_stem": "F01_expanded_2",
+    "caption": "Candidate same-field comparisons pass stage-distance and registered BF-correlation checks. Post values use initial/final 10% medians; the C2 calcium-conflict static file has a single post frame. C1/Empty comparisons change both calcium and cadmium labels; C2 R026 keeps nominal calcium at 1 mM. Field matching does not establish same-cell identity, equal exposure or addition time.",
+    "underlying_data": "../F-01/ (native trace and QC CSV tables)"
+  },
+  {
+    "task": "P-01",
+    "input_stem": "W01_P01_contact",
+    "output_stem": "P01_contact",
+    "caption": "All six stored finite traces; dashed line is the strict 0.5 nm criterion. Run 1 initialization differs from runs 2\u20133.",
+    "underlying_data": "../P-01/distance_trace_plot_data.csv"
+  }
+]

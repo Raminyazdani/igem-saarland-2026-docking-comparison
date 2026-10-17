@@ -1,0 +1,113 @@
+{
+  "title": "C-06: codon use in the supplied reporter reference",
+  "question": "How does the reference CDS compare with historical highly expressed yeast codon counts?",
+  "materials": [
+    "G1: construct_reference.gbk; original project GenBank reference.",
+    "R1: yeast_codon_reference.cut; EMBOSS Eyeast_cai, 24 CDS, TranstermMay1994."
+  ],
+  "methods": [
+    "Format only LOCUS metadata spacing in memory; verify ORIGIN bases and raw-file hashes are unchanged. Extract the labelled CDS and translate with standard nuclear code 1; record adjacent stop separately.",
+    "Derive weights from integer counts within full synonymous families; replace true zeros by 0.5; exclude Met, Trp and stops from CAI. Sensitivity: zero = 1.",
+    "Compare whole CDS and first 50 codons; measure GC by position and flag low-weight clusters and A/T homopolymers."
+  ],
+  "results": [
+    "The labelled CDS spans reference bases 748-2097: 1350 nt and 450 aa; its translation matches its annotation.",
+    "The adjacent triplet is TAA; a start-to-adjacent-stop segment has 1353 nt.",
+    "Count-derived yeast-reference CAI is 0.1708, versus 0.1495 in the first 50 codons; zero = 1 gives 0.1764.",
+    "There are 185/450 low-weight codons and 40 consecutive stretches of at least 2 codons; GC is 40.37% and GC3 is 35.78%."
+  ],
+  "conclusion": "The 1350-nt reporter CDS encodes 450 amino acids and matches its annotated translation. Its yeast-reference CAI is 0.1708, compared with 0.1495 in the first 50 codons. There are 185 low-weight codon positions and 40 consecutive stretches of at least 2 codons, locating regions for a synonymous-redesign comparison.",
+  "figures": [
+    {
+      "file": "codon_adaptation.png",
+      "caption": "G1 CDS weights and CAI using R1 integer counts. CAI excludes Met/Trp; zero counts replaced by 0.5, with zero = 1 sensitivity. Cutoff 0.2 is descriptive. One reference sequence; no biological error bars."
+    },
+    {
+      "file": "gc_composition.png",
+      "caption": "GC percentage in G1 overall and by codon position. One deterministic reference sequence; no biological error bars."
+    }
+  ],
+  "references": [
+    "Sharp & Li (1987), doi:10.1093/nar/15.3.1281.",
+    "Xia (2007), doi:10.1177/117693430700300028.",
+    "EMBOSS CAI manual: https://emboss.sourceforge.net/apps/cvs/emboss/apps/cai.html",
+    "Count source: https://sources.debian.org/data/main/e/emboss/6.6.0%2Bdfsg-15/emboss/data/CODONS/Eyeast_cai.cut"
+  ],
+  "table": {
+    "columns": [
+      "Metric",
+      "Value",
+      "Input data",
+      "Finished without more wet-lab data?"
+    ],
+    "rows": [
+      [
+        "Labelled CDS",
+        "1350 nt; 450 aa",
+        "G1",
+        "Yes: reference scope"
+      ],
+      [
+        "Reference coordinates",
+        "748-2097",
+        "G1",
+        "Yes: reference scope"
+      ],
+      [
+        "Adjacent stop",
+        "TAA; 2098-2100",
+        "G1",
+        "Yes: reference scope"
+      ],
+      [
+        "CAI, whole CDS",
+        "0.1708",
+        "G1 + R1",
+        "Yes: reference scope"
+      ],
+      [
+        "CAI, first 50 codons",
+        "0.1495",
+        "G1 + R1",
+        "Yes: reference scope"
+      ],
+      [
+        "CAI, zero-count replacement 1",
+        "0.1764",
+        "G1 + R1",
+        "Yes: reference scope"
+      ],
+      [
+        "GC / GC3",
+        "40.37% / 35.78%",
+        "G1",
+        "Yes: reference scope"
+      ],
+      [
+        "Codons with weight < 0.2",
+        "185/450",
+        "G1 + R1",
+        "Yes: reference scope"
+      ],
+      [
+        "Consecutive low-weight stretches",
+        "40",
+        "G1 + R1",
+        "Yes: reference scope"
+      ],
+      [
+        "Longest A / T homopolymer",
+        "5 / 8 nt",
+        "G1",
+        "Yes: reference scope"
+      ],
+      [
+        "N-terminal His stretch",
+        "HHHHHH",
+        "G1",
+        "Yes: reference scope"
+      ]
+    ]
+  },
+  "scope_and_assumptions": "The supplied GenBank reference is the analysis sequence. Codon weights use integer counts from the historical 24-CDS yeast table, with the stated zero-count convention. This sequence-level comparison covers coding integrity and codon composition; tested-clone identity, strain-specific expression, transcript context and cadmium performance are outside its scope."
+}

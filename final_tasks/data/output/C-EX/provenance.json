@@ -1,0 +1,14 @@
+{
+  "inputs": {
+    "F01_expanded_summary.json": "33476bc3fac53c41922be05ea45def58d9a6a1b4d7a809604f328cb40fb03e2f",
+    "CEX_C06_summary.json": "2a6f4a146a4cf019a12ef0cad8962976d2cb3f459d948787942aaf0005dc06c8",
+    "F01_context_review.json": "a1a19e537c3038b094f68fee48dacfebe526e759485621446a6f4261c5027e2e"
+  },
+  "python": "3.12.14",
+  "pandas": "3.0.1",
+  "matplotlib": "3.10.8",
+  "method": "Qualitative evidence synthesis; upstream source sentences retained unchanged",
+  "independent_culture_n": null,
+  "statistical_tests": null,
+  "causal_probabilities": null
+}

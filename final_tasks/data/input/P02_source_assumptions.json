@@ -1,0 +1,50 @@
+{
+  "model1": {
+    "Kd_grid_nM": [
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0
+    ],
+    "kon_nM_inv_s_inv": 1e-05
+  },
+  "model2": {
+    "Kd_nM": {
+      "fluoranthene": 100.0,
+      "pyrene": 300.0,
+      "phenanthrene": 500.0,
+      "naphthalene": 5000.0
+    },
+    "R_free": 1.0,
+    "R_bound": 1.6,
+    "parameters": {
+      "alpha_arbitrary_per_min": 1.0,
+      "mRNA_half_life_min": 5,
+      "translation_per_mRNA_per_min": 2.0,
+      "maturation_half_life_min": 30,
+      "doubling_time_min": 40,
+      "turnover_half_life_min": 1440,
+      "stationary_promoter_floor": 0.02,
+      "kon_nM_inv_min_inv": 0.0006
+    }
+  },
+  "model3": {
+    "assumed_Kd_nM": {
+      "fluoranthene": 100.0,
+      "pyrene": 300.0,
+      "phenanthrene": 500.0,
+      "anthracene": 1500.0,
+      "naphthalene": 5000.0,
+      "glucose": 1000000.0
+    },
+    "assumed_free_concentration_nM": {
+      "pyrene": 20.0,
+      "phenanthrene": 50.0,
+      "fluoranthene": 20.0,
+      "anthracene": 10.0,
+      "naphthalene": 500.0,
+      "glucose": 1000.0
+    }
+  }
+}

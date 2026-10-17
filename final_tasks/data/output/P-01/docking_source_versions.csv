@@ -1,0 +1,5 @@
+file,tool,software,date,input_commit,snapshot_commit
+P01_vina_PahP.json,Vina,1.2.7,2026-10-03,6564a76,3539358236841e3f95f3e9efdc6d954fe1a1eca2
+P01_vina_PahS.json,Vina,1.2.7,2026-10-03,6564a76,3539358236841e3f95f3e9efdc6d954fe1a1eca2
+P01_cb_dock.json,CB-Dock3,CB-Dock3 web server; structure-based engine: AutoDock Vina 1.2.0,2026-08-20,6564a76,04fd02b7d71f14314549e2e0887300ea54fd5035
+P01_glide.json,Glide,"Schrodinger Suite 2026-1, Build 136",2026-09-02,fad5b9b,04fd02b7d71f14314549e2e0887300ea54fd5035

@@ -1,0 +1,12 @@
+id,source,locator,evidence_type,claim
+CTX01,NEW13OCT,body.b0005,documented_rationale,S. cerevisiae biosensor conditions screen; source names piGEM004? and proposed Cd-associated calcium influx reporter mechanism; exact construct remains unresolved.
+CTX02,NEW13OCT,body.b0012–body.b0020,documented_methods,"OD normalization, 3 washes in60mMPIPESpH6.5,500µL4000rpm2min,100µL/well."
+CTX03,NEW13OCT,word/media/image1.jpeg,visually_transcribed_preparation_record,OD and dilution volumes consistent with targetOD≈0.1; not measured per-image biomass.
+CTX04,NEW13OCT,body.b0023–body.b0025,documented_methods_with_conflict,Black flat-bottom96wellplate; tentativeGreiner; sourceinstrumentwordingNikonAxiovert; stocks100mMCaCl2and1mMCdCl2.
+CTX05,NEW13OCT,body.b0029,documented_nominal_condition_map,"20rowstableprovidesC1/C2/C6/C8/Empty,Ca0/1/10mM,Cd0/0.5/5mM,t0/5min,well/fieldlabels."
+CTX06,NEW13OCT,body.b0037–body.b0045;body.b0050;body.b0062;body.b0069,prior_qualitative_observation,"Authorreportsstrongest5mMCdlabelledresponse,around2min;some500µMresponders;activationat1and10mMCa;emptyvectornosignalchange. Quantificationexplicitlypending;notnewcomputedresults."
+CTX07,NARESHFIGURES,ppt/slides/slide2.xml; ppt/media/image1.png,prior_processed_plot_visual_review,S1labelled5mMCd;0–300sec;normalizedmeanfluorescenceapprox0.05to0.9;banddefinitionandnunknown.
+CTX08,NARESHFIGURES,ppt/slides/slide3.xml; ppt/media/image2.png,prior_processed_plot_visual_review,S1noCdcontrol;0–300sec;rawmeanfluorescencearound156arb.unitsnearlyflat. Differentnormalizationprecludesdirectfoldcomparisonwithchallengedplot.
+CTX09,OLDNOTEBOOK,body.b0195–body.b0215,dated_context_separate_12Aug,"BY4741GCaMPinSDUra,nontransformedBY4741inYPD,OD~0.5upto1,confocalandTecanmention;Ca/Cdplatelayoutcandidate;notOctoberacquisitiongain."
+CTX10,OLDNOTEBOOK,body.b0623–body.b0630,dated_plate_reader_context_separate_8Oct,OD0.2;Ex480Em530Gain80Z30000every30min;notmicroscopysettings.
+CTX11,OLDNOTEBOOK,body.b0632–body.b0646,dated_context_separate_9Oct,"PIPESpH6.5washed3x500µL5000rpm1min;100µL/well;A1buffer,B1–4S1,C1–4S2,D1–4S6,E1–4BSX,F1–4control;1mMCa50µLCd;Cdstock1or100mMunresolved."

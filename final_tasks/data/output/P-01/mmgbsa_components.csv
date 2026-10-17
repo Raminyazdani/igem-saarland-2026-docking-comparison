@@ -1,0 +1,11 @@
+ligand,component,mean_kcal_mol,frame_SD_kcal_mol
+pyrene,ΔVDWAALS,-32.94,3.57
+pyrene,ΔEEL,-5.82,2.48
+pyrene,ΔGGAS,-38.75,4.04
+pyrene,ΔGSOLV,10.32,1.94
+pyrene,ΔTOTAL,-28.43,3.73
+phenanthrene,ΔVDWAALS,-24.06,3.05
+phenanthrene,ΔEEL,-3.47,3.57
+phenanthrene,ΔGGAS,-27.52,4.82
+phenanthrene,ΔGSOLV,8.82,3.33
+phenanthrene,ΔTOTAL,-18.71,3.06

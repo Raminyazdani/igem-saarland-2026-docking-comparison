@@ -1,0 +1,12 @@
+{
+  "inputs": {
+    "iGEM Test1 2026-08-12 17-44-05autogained cadmium.vmr": "3dda176666717151d0564356f6b3375d3844f3b8c515ea37ad741e130b11ff25",
+    "iGEM Test1 2026-08-12 17-44-05gaincorrectedFisempty.vmr": "99527e1e8e36e10b2f14dcbf1762dce8f548d0f61e587b9bd7cfec760636c0ca",
+    "iGEM Test1 2026-08-12 17-44-05gained933 cadmium.vmr": "3fb95e1ec3cd4971b3f447278c08e563554ba4110b93572e628a8072d91c38d2",
+    "iGEM Calcium GFP.vwp": "b1076280423b82df3b81ab85f772d80564d2d0c0198ae0de9e6ef3ff291fbc33",
+    "cadmium_experiment_notes.md": "f892000632b361ae577dfaa8daad6227c959d6a408b3096495b5e5168b85c3d8"
+  },
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "pandas": "3.0.1"
+}

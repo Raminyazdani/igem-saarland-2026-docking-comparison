@@ -1,0 +1,389 @@
+{
+  "decision": "Use frame index for primary TIFF temporal results; preserve candidate clocks for sensitivity analysis only",
+  "all_six_exported_clocks_ambiguous": true,
+  "unambiguous_image_page_order": "For each TIFF, page = time_index * 2 + channel_index, C1 then C2",
+  "strong_evidence": "Each per-file ImageJ finterval exactly equals float32(mean(diff(concatenated source timestamps[position::3]))) in all six files",
+  "inference": "Three acquisition positions were probably interleaved; source Info timestamp labels likely group a flattened time vector into contiguous blocks",
+  "not_proven": "The original ND2 loop order and per-plane timestamp-to-pixel mapping are absent; an exporter or reader error cannot be assigned to a named tool from these TIFFs alone",
+  "plausible_alternatives": [
+    "Three interleaved positions: stride3 reconstructed actual timestamps and global acquisition period describe each field",
+    "Contiguous per-series acquisition: labelled blocks are true clocks and finterval calibration is misleading",
+    "An export/reader grouping mismatch affects timestamp or pixel series assignment; neither mapping can be certified from TIFF tags alone"
+  ],
+  "needed_to_resolve": "Original B1Cd5mM001.nd2 and B3Ca10mMBaselinecontrol.nd2 with native loop indices and per-frame timestamps, or authoritative acquisition/export logs",
+  "cadmium_addition_time": "Absent from these clock tags; acquisition time alone cannot establish Cd-response latency",
+  "files": [
+    {
+      "file_id": "M055",
+      "path": "E:\\igem\\archives\\F01_Expanded_2026-10-17\\extracted\\_expanded_nested\\09102026RawdataToAlvaro\\Alvaro\\Control (no Cadmium)\\B3Ca10mMBaselinecontrol.nd2 - B3Ca10mMBaselinecontrol.nd2 (series 1).tif",
+      "file_series": 1,
+      "shape_TCYX": {
+        "T": 65,
+        "C": 2,
+        "Y": 1024,
+        "X": 1024
+      },
+      "pages": 130,
+      "page_order_verified_from_every_label": true,
+      "stored_page_dimensions_verified": true,
+      "all_labels_belong_to_own_series": true,
+      "imagej_finterval_s": 4.660110950469971,
+      "source_average_period_s": 4.660110843749949,
+      "own_labelled_timestamp_block": {
+        "count": 65,
+        "first_s": 0.6213173000067472,
+        "last_s": 97.38602830000222,
+        "elapsed_s": 96.76471099999547,
+        "mean_interval_s": 1.5119486093749295
+      },
+      "stride3_candidate": {
+        "count": 65,
+        "first_s": 0.6213173000067472,
+        "last_s": 298.8684113000035,
+        "elapsed_s": 298.24709399999676,
+        "mean_interval_s": 4.660110843749949,
+        "mean_minus_header_s": -1.0672002126455027e-07,
+        "float32_mean_exactly_equals_header": true
+      },
+      "all_source_timestamp_blocks": {
+        "1": {
+          "count": 65,
+          "first_s": 0.6213173000067472,
+          "last_s": 97.38602830000222
+        },
+        "2": {
+          "count": 65,
+          "first_s": 98.7180772999972,
+          "last_s": 198.983198300004
+        },
+        "3": {
+          "count": 65,
+          "first_s": 200.79043430000544,
+          "last_s": 302.0004023000002
+        }
+      },
+      "source_Info_sha256": "8c31deabc96ab3e208060925fc926160362b1bf6094cad306daf5a8fa7384bf9",
+      "per_plane_timestamp_or_position_tags": [],
+      "has_OME_metadata": false,
+      "stage_position_metadata_lines": [
+        "m_dXYPositionX0 = 40832.3",
+        "m_dXYPositionY0 = -21991.600000000002",
+        "m_dZPosition0 = 7154.38",
+        "m_dZPosition1 = 250.0"
+      ],
+      "distinct_IFD_descriptions": 1,
+      "decision": "Primary analysis uses frame index; optional stride3 clock is an explicit reconstruction assumption",
+      "per_plane_clock_definitively_certified": false
+    },
+    {
+      "file_id": "M056",
+      "path": "E:\\igem\\archives\\F01_Expanded_2026-10-17\\extracted\\_expanded_nested\\09102026RawdataToAlvaro\\Alvaro\\Control (no Cadmium)\\B3Ca10mMBaselinecontrol.nd2 - B3Ca10mMBaselinecontrol.nd2 (series 2).tif",
+      "file_series": 2,
+      "shape_TCYX": {
+        "T": 65,
+        "C": 2,
+        "Y": 1024,
+        "X": 1024
+      },
+      "pages": 130,
+      "page_order_verified_from_every_label": true,
+      "stored_page_dimensions_verified": true,
+      "all_labels_belong_to_own_series": true,
+      "imagej_finterval_s": 4.661046028137207,
+      "source_average_period_s": 4.660110843749949,
+      "own_labelled_timestamp_block": {
+        "count": 65,
+        "first_s": 98.7180772999972,
+        "last_s": 198.983198300004,
+        "elapsed_s": 100.2651210000068,
+        "mean_interval_s": 1.5666425156251063
+      },
+      "stride3_candidate": {
+        "count": 65,
+        "first_s": 2.2942912999987604,
+        "last_s": 300.60124629999694,
+        "elapsed_s": 298.3069549999982,
+        "mean_interval_s": 4.661046171874972,
+        "mean_minus_header_s": 1.4373776480169909e-07,
+        "float32_mean_exactly_equals_header": true
+      },
+      "all_source_timestamp_blocks": {
+        "1": {
+          "count": 65,
+          "first_s": 0.6213173000067472,
+          "last_s": 97.38602830000222
+        },
+        "2": {
+          "count": 65,
+          "first_s": 98.7180772999972,
+          "last_s": 198.983198300004
+        },
+        "3": {
+          "count": 65,
+          "first_s": 200.79043430000544,
+          "last_s": 302.0004023000002
+        }
+      },
+      "source_Info_sha256": "8c31deabc96ab3e208060925fc926160362b1bf6094cad306daf5a8fa7384bf9",
+      "per_plane_timestamp_or_position_tags": [],
+      "has_OME_metadata": false,
+      "stage_position_metadata_lines": [
+        "m_dXYPositionX0 = 40832.3",
+        "m_dXYPositionY0 = -21991.600000000002",
+        "m_dZPosition0 = 7154.38",
+        "m_dZPosition1 = 250.0"
+      ],
+      "distinct_IFD_descriptions": 1,
+      "decision": "Primary analysis uses frame index; optional stride3 clock is an explicit reconstruction assumption",
+      "per_plane_clock_definitively_certified": false
+    },
+    {
+      "file_id": "M057",
+      "path": "E:\\igem\\archives\\F01_Expanded_2026-10-17\\extracted\\_expanded_nested\\09102026RawdataToAlvaro\\Alvaro\\Control (no Cadmium)\\B3Ca10mMBaselinecontrol.nd2 - B3Ca10mMBaselinecontrol.nd2 (series 3).tif",
+      "file_series": 3,
+      "shape_TCYX": {
+        "T": 65,
+        "C": 2,
+        "Y": 1024,
+        "X": 1024
+      },
+      "pages": 130,
+      "page_order_verified_from_every_label": true,
+      "stored_page_dimensions_verified": true,
+      "all_labels_belong_to_own_series": true,
+      "imagej_finterval_s": 4.665274620056152,
+      "source_average_period_s": 4.660110843749949,
+      "own_labelled_timestamp_block": {
+        "count": 65,
+        "first_s": 200.79043430000544,
+        "last_s": 302.0004023000002,
+        "elapsed_s": 101.20996799999475,
+        "mean_interval_s": 1.581405749999918
+      },
+      "stride3_candidate": {
+        "count": 65,
+        "first_s": 3.4228183000087737,
+        "last_s": 302.0004023000002,
+        "elapsed_s": 298.5775839999914,
+        "mean_interval_s": 4.665274749999866,
+        "mean_minus_header_s": 1.2994371356711554e-07,
+        "float32_mean_exactly_equals_header": true
+      },
+      "all_source_timestamp_blocks": {
+        "1": {
+          "count": 65,
+          "first_s": 0.6213173000067472,
+          "last_s": 97.38602830000222
+        },
+        "2": {
+          "count": 65,
+          "first_s": 98.7180772999972,
+          "last_s": 198.983198300004
+        },
+        "3": {
+          "count": 65,
+          "first_s": 200.79043430000544,
+          "last_s": 302.0004023000002
+        }
+      },
+      "source_Info_sha256": "8c31deabc96ab3e208060925fc926160362b1bf6094cad306daf5a8fa7384bf9",
+      "per_plane_timestamp_or_position_tags": [],
+      "has_OME_metadata": false,
+      "stage_position_metadata_lines": [
+        "m_dXYPositionX0 = 40832.3",
+        "m_dXYPositionY0 = -21991.600000000002",
+        "m_dZPosition0 = 7154.38",
+        "m_dZPosition1 = 250.0"
+      ],
+      "distinct_IFD_descriptions": 1,
+      "decision": "Primary analysis uses frame index; optional stride3 clock is an explicit reconstruction assumption",
+      "per_plane_clock_definitively_certified": false
+    },
+    {
+      "file_id": "M058",
+      "path": "E:\\igem\\archives\\F01_Expanded_2026-10-17\\extracted\\_expanded_nested\\09102026RawdataToAlvaro\\Alvaro\\Cd5mM-Sample S1\\B1Cd5mM001.nd2 - B1Cd5mM001.nd2 (series 1).tif",
+      "file_series": 1,
+      "shape_TCYX": {
+        "T": 107,
+        "C": 2,
+        "Y": 1024,
+        "X": 1024
+      },
+      "pages": 214,
+      "page_order_verified_from_every_label": true,
+      "stored_page_dimensions_verified": true,
+      "all_labels_belong_to_own_series": true,
+      "imagej_finterval_s": 2.815650463104248,
+      "source_average_period_s": 2.8156503867924494,
+      "own_labelled_timestamp_block": {
+        "count": 107,
+        "first_s": 0.2982905500084162,
+        "last_s": 97.51302655000984,
+        "elapsed_s": 97.21473600000142,
+        "mean_interval_s": 0.9171201509434097
+      },
+      "stride3_candidate": {
+        "count": 107,
+        "first_s": 0.2982905500084162,
+        "last_s": 298.75723155000804,
+        "elapsed_s": 298.45894099999964,
+        "mean_interval_s": 2.8156503867924494,
+        "mean_minus_header_s": -7.631179865796867e-08,
+        "float32_mean_exactly_equals_header": true
+      },
+      "all_source_timestamp_blocks": {
+        "1": {
+          "count": 107,
+          "first_s": 0.2982905500084162,
+          "last_s": 97.51302655000984
+        },
+        "2": {
+          "count": 107,
+          "first_s": 98.39437254999578,
+          "last_s": 196.21291054999827
+        },
+        "3": {
+          "count": 107,
+          "first_s": 197.17284454999864,
+          "last_s": 300.67975855000316
+        }
+      },
+      "source_Info_sha256": "80be4b1eef9a891a390d160861ecc3b825593c3e201f4df3a65dcde4474648d9",
+      "per_plane_timestamp_or_position_tags": [],
+      "has_OME_metadata": false,
+      "stage_position_metadata_lines": [
+        "m_dXYPositionX0 = 49126.600000000006",
+        "m_dXYPositionY0 = -22164.100000000002",
+        "m_dZPosition0 = 7130.76",
+        "m_dZPosition1 = 250.0"
+      ],
+      "distinct_IFD_descriptions": 1,
+      "decision": "Primary analysis uses frame index; optional stride3 clock is an explicit reconstruction assumption",
+      "per_plane_clock_definitively_certified": false
+    },
+    {
+      "file_id": "M059",
+      "path": "E:\\igem\\archives\\F01_Expanded_2026-10-17\\extracted\\_expanded_nested\\09102026RawdataToAlvaro\\Alvaro\\Cd5mM-Sample S1\\B1Cd5mM001.nd2 - B1Cd5mM001.nd2 (series 3).tif",
+      "file_series": 3,
+      "shape_TCYX": {
+        "T": 107,
+        "C": 2,
+        "Y": 1024,
+        "X": 1024
+      },
+      "pages": 214,
+      "page_order_verified_from_every_label": true,
+      "stored_page_dimensions_verified": true,
+      "all_labels_belong_to_own_series": true,
+      "imagej_finterval_s": 2.816669464111328,
+      "source_average_period_s": 2.8156503867924494,
+      "own_labelled_timestamp_block": {
+        "count": 107,
+        "first_s": 197.17284454999864,
+        "last_s": 300.67975855000316,
+        "elapsed_s": 103.50691400000451,
+        "mean_interval_s": 0.9764803207547595
+      },
+      "stride3_candidate": {
+        "count": 107,
+        "first_s": 2.1127975500077008,
+        "last_s": 300.67975855000316,
+        "elapsed_s": 298.56696099999544,
+        "mean_interval_s": 2.816669443396184,
+        "mean_minus_header_s": -2.0715144266603147e-08,
+        "float32_mean_exactly_equals_header": true
+      },
+      "all_source_timestamp_blocks": {
+        "1": {
+          "count": 107,
+          "first_s": 0.2982905500084162,
+          "last_s": 97.51302655000984
+        },
+        "2": {
+          "count": 107,
+          "first_s": 98.39437254999578,
+          "last_s": 196.21291054999827
+        },
+        "3": {
+          "count": 107,
+          "first_s": 197.17284454999864,
+          "last_s": 300.67975855000316
+        }
+      },
+      "source_Info_sha256": "80be4b1eef9a891a390d160861ecc3b825593c3e201f4df3a65dcde4474648d9",
+      "per_plane_timestamp_or_position_tags": [],
+      "has_OME_metadata": false,
+      "stage_position_metadata_lines": [
+        "m_dXYPositionX0 = 49126.600000000006",
+        "m_dXYPositionY0 = -22164.100000000002",
+        "m_dZPosition0 = 7130.76",
+        "m_dZPosition1 = 250.0"
+      ],
+      "distinct_IFD_descriptions": 1,
+      "decision": "Primary analysis uses frame index; optional stride3 clock is an explicit reconstruction assumption",
+      "per_plane_clock_definitively_certified": false
+    },
+    {
+      "file_id": "M060",
+      "path": "E:\\igem\\archives\\F01_Expanded_2026-10-17\\extracted\\_expanded_nested\\09102026RawdataToAlvaro\\Alvaro\\Cd5mM-Sample S1\\B1Cd5mM001.nd2 - B1Cd5mM001.nd2 (series 2).tif",
+      "file_series": 2,
+      "shape_TCYX": {
+        "T": 107,
+        "C": 2,
+        "Y": 1024,
+        "X": 1024
+      },
+      "pages": 214,
+      "page_order_verified_from_every_label": true,
+      "stored_page_dimensions_verified": true,
+      "all_labels_belong_to_own_series": true,
+      "imagej_finterval_s": 2.8159689903259277,
+      "source_average_period_s": 2.8156503867924494,
+      "own_labelled_timestamp_block": {
+        "count": 107,
+        "first_s": 98.39437254999578,
+        "last_s": 196.21291054999827,
+        "elapsed_s": 97.81853800000249,
+        "mean_interval_s": 0.9228163962264386
+      },
+      "stride3_candidate": {
+        "count": 107,
+        "first_s": 1.240840550005436,
+        "last_s": 299.73356554999947,
+        "elapsed_s": 298.49272499999404,
+        "mean_interval_s": 2.815969103773528,
+        "mean_minus_header_s": 1.1344760020293165e-07,
+        "float32_mean_exactly_equals_header": true
+      },
+      "all_source_timestamp_blocks": {
+        "1": {
+          "count": 107,
+          "first_s": 0.2982905500084162,
+          "last_s": 97.51302655000984
+        },
+        "2": {
+          "count": 107,
+          "first_s": 98.39437254999578,
+          "last_s": 196.21291054999827
+        },
+        "3": {
+          "count": 107,
+          "first_s": 197.17284454999864,
+          "last_s": 300.67975855000316
+        }
+      },
+      "source_Info_sha256": "80be4b1eef9a891a390d160861ecc3b825593c3e201f4df3a65dcde4474648d9",
+      "per_plane_timestamp_or_position_tags": [],
+      "has_OME_metadata": false,
+      "stage_position_metadata_lines": [
+        "m_dXYPositionX0 = 49126.600000000006",
+        "m_dXYPositionY0 = -22164.100000000002",
+        "m_dZPosition0 = 7130.76",
+        "m_dZPosition1 = 250.0"
+      ],
+      "distinct_IFD_descriptions": 1,
+      "decision": "Primary analysis uses frame index; optional stride3 clock is an explicit reconstruction assumption",
+      "per_plane_clock_definitively_certified": false
+    }
+  ]
+}

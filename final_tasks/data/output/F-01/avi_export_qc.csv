@@ -1,0 +1,7 @@
+record,file,decoded_frames,unique_decoded_frames,initial_green_8bit,final_green_8bit,native_candidate,role,exact_duplicate_of
+R002,F01_Naresh_B1Cd5mM001.nd2_-_B1Cd5mM001.nd2_series_3_-2.avi,107,107,154.2209990530303,154.60570549242425,,"processed export, not independent replicate",
+R003,F01_Naresh_B1Cd5mM001.nd2_-_B1Cd5mM001.nd2_series_3_-1.avi,107,107,171.34740377632534,170.95293209876544,,"processed export, not independent replicate",
+R004,F01_Naresh_B1Cd5mM001.nd2_-_B1Cd5mM001.nd2_series_1_-22x.avi,107,107,85.76381357433989,84.9565124933546,,"processed export, not independent replicate",
+R019,F01_recording.avi,121,121,9.701950073242188,10.683555603027344,R023,"processed export, not independent replicate",
+R029,F01_30Sep_C5_Colony6_no-calcium_FLUO_cadmium_timelapse5s-300s-001.avi,61,61,9.118335723876953,9.135082244873047,R044,"processed export, not independent replicate",
+R030,F01_30Sep_E6_Colony8_calcium-1mM_FLUO_cadmium_timelapse5s-300s-001.avi,61,61,10.122936248779297,10.228828430175781,R045,"processed export, not independent replicate",

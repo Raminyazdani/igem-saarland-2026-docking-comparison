@@ -1,0 +1,394 @@
+{
+  "review_date": "2026-10-17",
+  "review_status": "context_complete; native semantic axes pending parent inventory",
+  "sources": {
+    "NEW13OCT": {
+      "path": "E:\\igem\\archives\\F01_Expanded_2026-10-17\\extracted\\Cadmium\\13102026\\13102026_Cadmium_LabNotebook.docx",
+      "sha256": "9f87deea5095fa6e125c1d01e93682531ecf956ac74d779de1f5f6e43db353ad"
+    },
+    "NARESHFIGURES": {
+      "path": "E:\\igem\\archives\\F01_Expanded_2026-10-17\\extracted\\NareshAnalysisFigures\\Figures.pptx",
+      "sha256": "b35309ace024d8e971575fa58c78f4bdfb92b5f22f1a7f0af6aaa81324b234ef"
+    },
+    "OLDNOTEBOOK": {
+      "path": "E:\\igem\\igem_task_digest_2026-10-16\\01_ORIGINALS_ARCHIVE\\EXPANDED\\SRC007\\Protocols and Lab Notebook\\Shared Lab Notebook.docx",
+      "sha256": "15eb826989cc939cba04a258f712b23924c1d1accc47eafe0459119e7a9c9de6"
+    }
+  },
+  "claims": [
+    {
+      "id": "CTX01",
+      "source": "NEW13OCT",
+      "locator": "body.b0005",
+      "evidence_type": "documented_rationale",
+      "claim": "S. cerevisiae biosensor conditions screen; source names piGEM004? and proposed Cd-associated calcium influx reporter mechanism; exact construct remains unresolved."
+    },
+    {
+      "id": "CTX02",
+      "source": "NEW13OCT",
+      "locator": "body.b0012–body.b0020",
+      "evidence_type": "documented_methods",
+      "claim": "OD normalization, 3 washes in60mMPIPESpH6.5,500µL4000rpm2min,100µL/well."
+    },
+    {
+      "id": "CTX03",
+      "source": "NEW13OCT",
+      "locator": "word/media/image1.jpeg",
+      "evidence_type": "visually_transcribed_preparation_record",
+      "claim": "OD and dilution volumes consistent with targetOD≈0.1; not measured per-image biomass.",
+      "rows": [
+        {
+          "sample": "Empty",
+          "recorded_od": 0.243,
+          "culture_volume": 206,
+          "buffer_volume": 294,
+          "volume_unit_assumed": "µL"
+        },
+        {
+          "sample": "C1",
+          "recorded_od": 0.2,
+          "culture_volume": 250,
+          "buffer_volume": 250,
+          "volume_unit_assumed": "µL"
+        },
+        {
+          "sample": "C2",
+          "recorded_od": 0.167,
+          "culture_volume": 299.4,
+          "buffer_volume": 200.6,
+          "volume_unit_assumed": "µL"
+        },
+        {
+          "sample": "C6",
+          "recorded_od": 0.1,
+          "culture_volume": 500,
+          "buffer_volume": 0,
+          "volume_unit_assumed": "µL"
+        },
+        {
+          "sample": "C8",
+          "recorded_od": 0.15,
+          "culture_volume": 333,
+          "buffer_volume": 167,
+          "volume_unit_assumed": "µL"
+        }
+      ]
+    },
+    {
+      "id": "CTX04",
+      "source": "NEW13OCT",
+      "locator": "body.b0023–body.b0025",
+      "evidence_type": "documented_methods_with_conflict",
+      "claim": "Black flat-bottom96wellplate; tentativeGreiner; sourceinstrumentwordingNikonAxiovert; stocks100mMCaCl2and1mMCdCl2."
+    },
+    {
+      "id": "CTX05",
+      "source": "NEW13OCT",
+      "locator": "body.b0029",
+      "evidence_type": "documented_nominal_condition_map",
+      "claim": "20rowstableprovidesC1/C2/C6/C8/Empty,Ca0/1/10mM,Cd0/0.5/5mM,t0/5min,well/fieldlabels.",
+      "condition_rows": [
+        {
+          "Filename": "C1_0mM-calcium_0mM_cadmium_B5_1.nd2",
+          "Sample": "C1",
+          "Ca2+ (mM)": "0",
+          "Cd2+ (mM)": "0",
+          "Time": "t0",
+          "Well/Field": "B5",
+          "Notes": "Baseline control"
+        },
+        {
+          "Filename": "C1_0mM-calcium_0mM-cadmium_B6_t0min_1001.nd2",
+          "Sample": "C1",
+          "Ca2+ (mM)": "0",
+          "Cd2+ (mM)": "0",
+          "Time": "t0",
+          "Well/Field": "B6",
+          "Notes": "Baseline control"
+        },
+        {
+          "Filename": "C1_1mM-calcium_0mM_cadmium_B5_t0_1001.nd2",
+          "Sample": "C1",
+          "Ca2+ (mM)": "1",
+          "Cd2+ (mM)": "0",
+          "Time": "t0",
+          "Well/Field": "B5",
+          "Notes": "Calcium only"
+        },
+        {
+          "Filename": "C1_1mM-calcium_0mM_cadmium_B5_t0_1.nd2",
+          "Sample": "C1",
+          "Ca2+ (mM)": "1",
+          "Cd2+ (mM)": "0",
+          "Time": "t0",
+          "Well/Field": "B5",
+          "Notes": "Calcium only (replicate acquisition)"
+        },
+        {
+          "Filename": "C1_1mM-calcium_0mM_cadmium_B5_t5min_1.nd2",
+          "Sample": "C1",
+          "Ca2+ (mM)": "1",
+          "Cd2+ (mM)": "0",
+          "Time": "5 min",
+          "Well/Field": "B5",
+          "Notes": "Calcium only"
+        },
+        {
+          "Filename": "C1_10mM-calcium_5mM-cadmium_B6_t5min_1001.nd2",
+          "Sample": "C1",
+          "Ca2+ (mM)": "10",
+          "Cd2+ (mM)": "5",
+          "Time": "5 min",
+          "Well/Field": "B6",
+          "Notes": "High Ca + high Cd"
+        },
+        {
+          "Filename": "C2_0mM-calcium_0mM_cadmium_C5_1.nd2",
+          "Sample": "C2",
+          "Ca2+ (mM)": "0",
+          "Cd2+ (mM)": "0",
+          "Time": "t0",
+          "Well/Field": "C5",
+          "Notes": "Baseline control"
+        },
+        {
+          "Filename": "C2_1mM-calcium_0mM_cadmium_C5_t0_1.nd2",
+          "Sample": "C2",
+          "Ca2+ (mM)": "1",
+          "Cd2+ (mM)": "0",
+          "Time": "t0",
+          "Well/Field": "C5",
+          "Notes": "Calcium only"
+        },
+        {
+          "Filename": "C2_1mM-calcium_0uM-cadmium_B6_t0min_1.nd2",
+          "Sample": "C2",
+          "Ca2+ (mM)": "1",
+          "Cd2+ (mM)": "0",
+          "Time": "t0",
+          "Well/Field": "B6",
+          "Notes": "Calcium only"
+        },
+        {
+          "Filename": "C2_10mM-calcium_500uM-cadmium_B5_t5min_1.nd2",
+          "Sample": "C2",
+          "Ca2+ (mM)": "10",
+          "Cd2+ (mM)": "0.5",
+          "Time": "5 min",
+          "Well/Field": "B5",
+          "Notes": "High Ca + low Cd"
+        },
+        {
+          "Filename": "C2_1mM-calcium_5mM-cadmium_B6_t5min_2.nd2",
+          "Sample": "C2",
+          "Ca2+ (mM)": "1",
+          "Cd2+ (mM)": "5",
+          "Time": "5 min",
+          "Well/Field": "B6",
+          "Notes": "Low Ca + high Cd"
+        },
+        {
+          "Filename": "C2_10mM-calcium_5mM-cadmium_B7_t5min_1001.nd2",
+          "Sample": "C2",
+          "Ca2+ (mM)": "10",
+          "Cd2+ (mM)": "5",
+          "Time": "5 min",
+          "Well/Field": "B7",
+          "Notes": "High Ca + high Cd"
+        },
+        {
+          "Filename": "C6_0mM-calcium_0mM_cadmium_D5_1.nd2",
+          "Sample": "C6",
+          "Ca2+ (mM)": "0",
+          "Cd2+ (mM)": "0",
+          "Time": "t0",
+          "Well/Field": "D5",
+          "Notes": "Baseline control"
+        },
+        {
+          "Filename": "C6_10mM-calcium_500uM-cadmium_D7_t5min_1001.nd2",
+          "Sample": "C6",
+          "Ca2+ (mM)": "10",
+          "Cd2+ (mM)": "0.5",
+          "Time": "5 min",
+          "Well/Field": "D7",
+          "Notes": "High Ca + low Cd"
+        },
+        {
+          "Filename": "C6_10mM-calcium_5mM-cadmium_D6_t5min_1001.nd2",
+          "Sample": "C6",
+          "Ca2+ (mM)": "10",
+          "Cd2+ (mM)": "5",
+          "Time": "5 min",
+          "Well/Field": "D6",
+          "Notes": "High Ca + high Cd"
+        },
+        {
+          "Filename": "C8_0mM-calcium_0mM_cadmium_E5_1.nd2",
+          "Sample": "C8",
+          "Ca2+ (mM)": "0",
+          "Cd2+ (mM)": "0",
+          "Time": "t0",
+          "Well/Field": "E5",
+          "Notes": "Baseline control"
+        },
+        {
+          "Filename": "C8_10mM-calcium_5mM-cadmium_E6_t5min_1001.nd2",
+          "Sample": "C8",
+          "Ca2+ (mM)": "10",
+          "Cd2+ (mM)": "5",
+          "Time": "5 min",
+          "Well/Field": "E6",
+          "Notes": "High Ca + high Cd"
+        },
+        {
+          "Filename": "Empty_0mM-calcium_0mM_cadmium_A5_1.nd2",
+          "Sample": "Empty",
+          "Ca2+ (mM)": "0",
+          "Cd2+ (mM)": "0",
+          "Time": "t0",
+          "Well/Field": "A5",
+          "Notes": "Negative control"
+        },
+        {
+          "Filename": "Empty_0mM-calcium_0mM-cadmium_A6_t0min_1001.nd2",
+          "Sample": "Empty",
+          "Ca2+ (mM)": "0",
+          "Cd2+ (mM)": "0",
+          "Time": "t0",
+          "Well/Field": "A6",
+          "Notes": "Negative control"
+        },
+        {
+          "Filename": "Empty_10mM-calcium_5mM-cadmium_A6_t5min_1001.nd2",
+          "Sample": "Empty",
+          "Ca2+ (mM)": "10",
+          "Cd2+ (mM)": "5",
+          "Time": "5 min",
+          "Well/Field": "A6",
+          "Notes": "Negative control with ions"
+        }
+      ]
+    },
+    {
+      "id": "CTX06",
+      "source": "NEW13OCT",
+      "locator": "body.b0037–body.b0045;body.b0050;body.b0062;body.b0069",
+      "evidence_type": "prior_qualitative_observation",
+      "claim": "Authorreportsstrongest5mMCdlabelledresponse,around2min;some500µMresponders;activationat1and10mMCa;emptyvectornosignalchange. Quantificationexplicitlypending;notnewcomputedresults."
+    },
+    {
+      "id": "CTX07",
+      "source": "NARESHFIGURES",
+      "locator": "ppt/slides/slide2.xml; ppt/media/image1.png",
+      "evidence_type": "prior_processed_plot_visual_review",
+      "claim": "S1labelled5mMCd;0–300sec;normalizedmeanfluorescenceapprox0.05to0.9;banddefinitionandnunknown."
+    },
+    {
+      "id": "CTX08",
+      "source": "NARESHFIGURES",
+      "locator": "ppt/slides/slide3.xml; ppt/media/image2.png",
+      "evidence_type": "prior_processed_plot_visual_review",
+      "claim": "S1noCdcontrol;0–300sec;rawmeanfluorescencearound156arb.unitsnearlyflat. Differentnormalizationprecludesdirectfoldcomparisonwithchallengedplot."
+    },
+    {
+      "id": "CTX09",
+      "source": "OLDNOTEBOOK",
+      "locator": "body.b0195–body.b0215",
+      "evidence_type": "dated_context_separate_12Aug",
+      "claim": "BY4741GCaMPinSDUra,nontransformedBY4741inYPD,OD~0.5upto1,confocalandTecanmention;Ca/Cdplatelayoutcandidate;notOctoberacquisitiongain."
+    },
+    {
+      "id": "CTX10",
+      "source": "OLDNOTEBOOK",
+      "locator": "body.b0623–body.b0630",
+      "evidence_type": "dated_plate_reader_context_separate_8Oct",
+      "claim": "OD0.2;Ex480Em530Gain80Z30000every30min;notmicroscopysettings."
+    },
+    {
+      "id": "CTX11",
+      "source": "OLDNOTEBOOK",
+      "locator": "body.b0632–body.b0646",
+      "evidence_type": "dated_context_separate_9Oct",
+      "claim": "PIPESpH6.5washed3x500µL5000rpm1min;100µL/well;A1buffer,B1–4S1,C1–4S2,D1–4S6,E1–4BSX,F1–4control;1mMCa50µLCd;Cdstock1or100mMunresolved."
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "F01CON01",
+      "issue": "C2calciumnamingconflict",
+      "actual_not_table": [
+        "C2_0mM-calcium_5mM-cadmium_B6_t5min_2.nd2",
+        "C2_1mM-calcium_5mM-cadmium_B6_t5min_1.nd2"
+      ],
+      "table_not_actual": [
+        "C2_1mM-calcium_5mM-cadmium_B6_t5min_2.nd2"
+      ],
+      "handling": "Retainoriginalfilename;recordbothfilenameandtableCa;do notpoolthisambiguoustreatmentwithconfirmedCa1mM."
+    },
+    {
+      "id": "F01CON02",
+      "issue": "1mMCdstockversus5mMnominalcondition",
+      "source": "NEW13OCTbody.b0024vsb0029",
+      "handling": "Usenominalconditionlabels;donotreconstructverifiedfinaldose."
+    },
+    {
+      "id": "F01CON03",
+      "issue": "piGEM004?versuspiGEM5context",
+      "handling": "UseC1/C2/C6/C8assamplelabels;nofinaltestedsequenceclaim."
+    },
+    {
+      "id": "F01CON04",
+      "issue": "Differentdatecontextsanddifferentcontrols",
+      "handling": "Separate12Aug,17Sepplan,30Sep,9Oct,13Oct;S1noCdcontrolnotemptyvectorbydefault."
+    }
+  ],
+  "assumptions": [
+    {
+      "id": "F01ASS01",
+      "assumption": "Filenameanddocumentionconcentrationsaretreatedasnominalgroupannotations.",
+      "not_established": "Finalverifieddosesandstockdilutions."
+    },
+    {
+      "id": "F01ASS02",
+      "assumption": "IfnoCdadditionframeknown,firstwindowisinitial-recordingreference.",
+      "not_established": "PreexposurebaselineorlatencyfromCdaddition."
+    },
+    {
+      "id": "F01ASS03",
+      "assumption": "Folderdateidentifiesacquisitionbatchonlyifnativeclockagrees.",
+      "not_established": "Sharedcultureorindependentbiologicalreplicates."
+    },
+    {
+      "id": "F01ASS04",
+      "assumption": "NativeATTO488namedchannelcanbeusedasgreenreporterchannelafteropticalmetadatacheck.",
+      "not_established": "DirectCdfluorescenceorspecificbinding."
+    }
+  ],
+  "source_extraction": {
+    "new_notebook_blocks": 72,
+    "table_rows": 20,
+    "actual_13Oct_nd2": 21
+  },
+  "image_processing_performed": false,
+  "originals_modified": false,
+  "external_uploads": false,
+  "recommendations": [
+    "ResolveCvsTandnativeclockbeforekinetics",
+    "Preservenativedepth",
+    "Countculturesseparatelyfromfields/cells/frames/exports",
+    "Keepstaticimagesandtime-seriesseparate",
+    "Reportwithin-recordingchangewithbackground/QC",
+    "Nocausalinflux/directbinding/EC50/LoDclaimfromtheseimagesalone"
+  ],
+  "context_samples_csv": "E:\\igem\\tmp\\f01_expansion\\context_samples.csv",
+  "context_samples_count": 20,
+  "table_row_match_counts": {
+    "exact_filename": 19,
+    "conflicting_candidate": 1
+  },
+  "context_files_not_exactly_listed": [
+    "C2_0mM-calcium_5mM-cadmium_B6_t5min_2.nd2",
+    "C2_1mM-calcium_5mM-cadmium_B6_t5min_1.nd2"
+  ]
+}

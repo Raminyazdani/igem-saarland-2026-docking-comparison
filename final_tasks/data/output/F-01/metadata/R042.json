@@ -1,0 +1,422 @@
+{
+  "sizes": {
+    "T": 13,
+    "C": 2,
+    "Y": 512,
+    "X": 512
+  },
+  "channels": [
+    "GFP",
+    "TD"
+  ],
+  "events": {
+    "Time [s]": [
+      0.07832045006752014,
+      10.071376450061798,
+      20.07146644997597,
+      30.07156844997406,
+      40.072144450187686,
+      50.07128145003319,
+      60.07287744998932,
+      70.0725054500103,
+      80.07104045009613,
+      90.07112345004082,
+      100.0718684501648,
+      110.07112444996834,
+      120.07153845000268
+    ],
+    "Index": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "T Index": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "Camera 2 Temperature [\u00b0C]": [
+      33.4,
+      33.4,
+      33.5,
+      33.5,
+      33.5,
+      33.5,
+      33.5,
+      33.5,
+      33.4,
+      33.4,
+      33.4,
+      33.4,
+      33.5
+    ],
+    "GFP - Gain [%]": [
+      31.7,
+      31.7,
+      31.7,
+      31.7,
+      31.7,
+      31.7,
+      31.7,
+      31.7,
+      31.7,
+      31.7,
+      31.7,
+      31.7,
+      31.7
+    ],
+    "GFP - Laser Power [%]": [
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1
+    ],
+    "TD - Gain [%]": [
+      40.5,
+      40.5,
+      40.5,
+      40.5,
+      40.5,
+      40.5,
+      40.5,
+      40.5,
+      40.5,
+      40.5,
+      40.5,
+      40.5,
+      40.5
+    ],
+    "PFS Offset": [
+      18299,
+      18299,
+      18299,
+      18299,
+      18299,
+      18299,
+      18299,
+      18299,
+      18299,
+      18299,
+      18299,
+      18299,
+      18299
+    ],
+    "PFS Status": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "X Coord [\u00b5m]": [
+      22406.4,
+      22406.4,
+      22406.4,
+      22406.4,
+      22406.4,
+      22406.300000000003,
+      22406.300000000003,
+      22406.300000000003,
+      22406.300000000003,
+      22406.300000000003,
+      22406.300000000003,
+      22406.300000000003,
+      22406.300000000003
+    ],
+    "Y Coord [\u00b5m]": [
+      3036.3,
+      3036.3,
+      3036.3,
+      3036.3,
+      3036.3,
+      3036.3,
+      3036.3,
+      3036.3,
+      3036.3,
+      3036.3,
+      3036.3,
+      3036.3,
+      3036.3
+    ],
+    "Z Coord [\u00b5m]": [
+      4917.6,
+      4917.6,
+      4917.6,
+      4917.58,
+      4917.52,
+      4917.4400000000005,
+      4917.34,
+      4917.34,
+      4917.34,
+      4917.34,
+      4917.38,
+      4917.4800000000005,
+      4917.46
+    ],
+    "Ti2 ZDrive [\u00b5m]": [
+      5167.6,
+      5167.6,
+      5167.6,
+      5167.58,
+      5167.52,
+      5167.4400000000005,
+      5167.34,
+      5167.34,
+      5167.34,
+      5167.34,
+      5167.38,
+      5167.4800000000005,
+      5167.46
+    ],
+    "Nikon AX Piezo Z Drive [\u00b5m]": [
+      250.0,
+      250.0,
+      250.0,
+      250.0,
+      250.0,
+      250.0,
+      250.0,
+      250.0,
+      250.0,
+      250.0,
+      250.0,
+      250.0,
+      250.0
+    ]
+  },
+  "attributes": [
+    16,
+    12,
+    2,
+    512,
+    "unsigned",
+    13,
+    2048,
+    512,
+    null,
+    null,
+    null,
+    null,
+    2
+  ],
+  "text_info": {
+    "description": "Metadata:\r\nDimensions: T(13)\r\nCamera Name: AX\r\nNumerical Aperture: 0,6\r\nRefractive Index: 1\r\nNumber of Picture Planes: 2\r\nPlane #1:\r\n Name: GFP\r\n Component Count: 1\r\n Relay Lens Magnification: 1x\r\n Modality: Widefield Fluorescence, Laser Scan Confocal\r\n Camera Settings:   Configuration:\r\n  \tDetector mode: Multi-Channel\r\n  \tScanner: Resonant Unidirectional\r\n  \tScan Mode: Band\r\n  \tLine Averaging: 4x\r\n  \tResolution: 512 x 512\r\n  \t\tGFP, TD\r\n  Components:\r\n  Component GFP:\r\n  \tDetector: 2\r\n  \tEmission Range: 499 nm - 551 nm\r\n  \tGain: 31.7\r\n  \tOffset: 0\r\n  \tAveraging: 4x\r\n  \tPinhole Size: 25.6 \u00b5m\r\n  \tFirst DM: 405/488/561/640 (Position 1)\r\n  \tLaser 488 nm:\r\n  \t\tEnabled\r\n  \t\tPower: 1.1\r\n  \t\tLaser Port: Standard\r\n  \r\n  TD:\r\n  \tGain: 40.5\r\n  \tOffset: 0\r\n  \tPinhole Size: 25.6 \u00b5m\r\n  \tFirst DM: 405/488/561/640 (Position 1)\r\n  \tLaser 488 nm\r\n  \tLaser Port: None\r\n  \t\tEnabled\r\n  \t\tPower: 1.1\r\n  \r\n  Scan Area:\r\n  \tZoom: 1.00\r\n  \tOffset Y: 0.00\r\n  \r\n  Misc:\r\n  \tDetector Port: Standard\r\n  \tImage Mode: Normal\r\n  \tIR Filter Position: Out\r\n  \tDenoise.ai: ON\r\n\r\n Microscope Settings:   Microscope: Ti2 Microscope\r\n  Nikon Ti2, FilterChanger(Turret-Lo): 5 (BF)\r\n  Nikon Ti2, Shutter(DIA LED): Open\r\n  Nikon Ti2, Illuminator(DIA): On\r\n  Nikon Ti2, Illuminator(DIA) Intensity: 26.0\r\n  LightPath: L100\r\n  Condenser: 5 ()\r\n  PFS, offset: 18299\r\n  PFS, mirror: Inserted\r\n  PFS, Dish Type: Glass\r\n  Zoom: 1.00x\r\nPlane #2:\r\n Name: TD\r\n Component Count: 1\r\n Relay Lens Magnification: 1x\r\n Modality: Brightfield, Laser Scan Confocal\r\n Camera Settings:   Configuration:\r\n  \tDetector mode: Multi-Channel\r\n  \tScanner: Resonant Unidirectional\r\n  \tScan Mode: Band\r\n  \tLine Averaging: 4x\r\n  \tResolution: 512 x 512\r\n  \t\tGFP, TD\r\n  Components:\r\n  Component GFP:\r\n  \tDetector: 2\r\n  \tEmission Range: 499 nm - 551 nm\r\n  \tGain: 31.7\r\n  \tOffset: 0\r\n  \tAveraging: 4x\r\n  \tPinhole Size: 25.6 \u00b5m\r\n  \tFirst DM: 405/488/561/640 (Position 1)\r\n  \tLaser 488 nm:\r\n  \t\tEnabled\r\n  \t\tPower: 1.1\r\n  \t\tLaser Port: Standard\r\n  \r\n  TD:\r\n  \tGain: 40.5\r\n  \tOffset: 0\r\n  \tPinhole Size: 25.6 \u00b5m\r\n  \tFirst DM: 405/488/561/640 (Position 1)\r\n  \tLaser 488 nm\r\n  \tLaser Port: None\r\n  \t\tEnabled\r\n  \t\tPower: 1.1\r\n  \r\n  Scan Area:\r\n  \tZoom: 1.00\r\n  \tOffset Y: 0.00\r\n  \r\n  Misc:\r\n  \tDetector Port: Standard\r\n  \tImage Mode: Normal\r\n  \tIR Filter Position: Out\r\n  \tDenoise.ai: ON\r\n\r\n Microscope Settings:   Microscope: Ti2 Microscope\r\n  Nikon Ti2, FilterChanger(Turret-Lo): 5 (BF)\r\n  Nikon Ti2, Shutter(DIA LED): Open\r\n  Nikon Ti2, Illuminator(DIA): On\r\n  Nikon Ti2, Illuminator(DIA) Intensity: 26.0\r\n  LightPath: L100\r\n  Condenser: 5 ()\r\n  PFS, offset: 18299\r\n  PFS, mirror: Inserted\r\n  PFS, Dish Type: Glass\r\n  Zoom: 1.00x\r\nTime Loop: 13\r\n\u2010 Equidistant (Period 10000 ms)",
+    "capturing": "AX\r\nConfiguration:\r\n\tDetector mode: Multi-Channel\r\n\tScanner: Resonant Unidirectional\r\n\tScan Mode: Band\r\n\tLine Averaging: 4x\r\n\tResolution: 512 x 512\r\n\t\tGFP, TD\r\nComponents:\r\nComponent GFP:\r\n\tDetector: 2\r\n\tEmission Range: 499 nm - 551 nm\r\n\tGain: 31.7\r\n\tOffset: 0\r\n\tAveraging: 4x\r\n\tPinhole Size: 25.6 \u00b5m\r\n\tFirst DM: 405/488/561/640 (Position 1)\r\n\tLaser 488 nm:\r\n\t\tEnabled\r\n\t\tPower: 1.1\r\n\t\tLaser Port: Standard\r\n\r\nTD:\r\n\tGain: 40.5\r\n\tOffset: 0\r\n\tPinhole Size: 25.6 \u00b5m\r\n\tFirst DM: 405/488/561/640 (Position 1)\r\n\tLaser 488 nm\r\n\tLaser Port: None\r\n\t\tEnabled\r\n\t\tPower: 1.1\r\n\r\nScan Area:\r\n\tZoom: 1.00\r\n\tOffset Y: 0.00\r\n\r\nMisc:\r\n\tDetector Port: Standard\r\n\tImage Mode: Normal\r\n\tIR Filter Position: Out\r\n\tDenoise.ai: ON\r\n",
+    "date": "30/09/2026  15:20:30",
+    "optics": "S Plan Fluor ELWD 40x Ph2 ADM"
+  },
+  "metadata": {
+    "contents": {
+      "channelCount": 2,
+      "frameCount": 13
+    },
+    "channels": [
+      {
+        "channel": {
+          "name": "GFP",
+          "index": 0,
+          "color": [
+            54,
+            255,
+            0,
+            1.0
+          ],
+          "emissionLambdaNm": 499.0,
+          "excitationLambdaNm": 488.0
+        },
+        "loops": {
+          "NETimeLoop": null,
+          "TimeLoop": 0,
+          "XYPosLoop": null,
+          "ZStackLoop": null,
+          "CustomLoop": null
+        },
+        "microscope": {
+          "objectiveMagnification": 40.0,
+          "objectiveName": "S Plan Fluor ELWD 40x Ph2 ADM",
+          "objectiveNumericalAperture": 0.6,
+          "zoomMagnification": 1.0,
+          "immersionRefractiveIndex": 1.0,
+          "projectiveMagnification": null,
+          "pinholeDiameterUm": 25.571199999999997,
+          "modalityFlags": [
+            "fluorescence",
+            "laserScanConfocal",
+            "gaasp"
+          ]
+        },
+        "volume": {
+          "axesCalibrated": [
+            true,
+            true,
+            false
+          ],
+          "axesCalibration": [
+            0.86316745750311,
+            0.86316745750311,
+            1.0
+          ],
+          "axesInterpretation": [
+            "distance",
+            "distance",
+            "distance"
+          ],
+          "bitsPerComponentInMemory": 16,
+          "bitsPerComponentSignificant": 12,
+          "cameraTransformationMatrix": [
+            -0.9999889795353456,
+            0.004694763876715718,
+            -0.004694763876715718,
+            -0.9999889795353456
+          ],
+          "componentCount": 1,
+          "componentDataType": "unsigned",
+          "voxelCount": [
+            512,
+            512,
+            1
+          ],
+          "componentMaxima": [
+            0.0
+          ],
+          "componentMinima": [
+            0.0
+          ],
+          "pixelToStageTransformationMatrix": null
+        }
+      },
+      {
+        "channel": {
+          "name": "TD",
+          "index": 1,
+          "color": [
+            255,
+            255,
+            255,
+            1.0
+          ],
+          "emissionLambdaNm": null,
+          "excitationLambdaNm": null
+        },
+        "loops": {
+          "NETimeLoop": null,
+          "TimeLoop": 0,
+          "XYPosLoop": null,
+          "ZStackLoop": null,
+          "CustomLoop": null
+        },
+        "microscope": {
+          "objectiveMagnification": 40.0,
+          "objectiveName": "S Plan Fluor ELWD 40x Ph2 ADM",
+          "objectiveNumericalAperture": 0.6,
+          "zoomMagnification": 1.0,
+          "immersionRefractiveIndex": 1.0,
+          "projectiveMagnification": null,
+          "pinholeDiameterUm": 25.571199999999997,
+          "modalityFlags": [
+            "brightfield",
+            "laserScanConfocal",
+            "transmitDetector"
+          ]
+        },
+        "volume": {
+          "axesCalibrated": [
+            true,
+            true,
+            false
+          ],
+          "axesCalibration": [
+            0.86316745750311,
+            0.86316745750311,
+            1.0
+          ],
+          "axesInterpretation": [
+            "distance",
+            "distance",
+            "distance"
+          ],
+          "bitsPerComponentInMemory": 16,
+          "bitsPerComponentSignificant": 12,
+          "cameraTransformationMatrix": [
+            -0.9999889795353456,
+            0.004694763876715718,
+            -0.004694763876715718,
+            -0.9999889795353456
+          ],
+          "componentCount": 1,
+          "componentDataType": "unsigned",
+          "voxelCount": [
+            512,
+            512,
+            1
+          ],
+          "componentMaxima": [
+            0.0
+          ],
+          "componentMinima": [
+            0.0
+          ],
+          "pixelToStageTransformationMatrix": null
+        }
+      }
+    ]
+  },
+  "experiment": [
+    {
+      "count": 13,
+      "nestingLevel": 0,
+      "parameters": {
+        "startMs": 0.0,
+        "periodMs": 10000.0,
+        "durationMs": 120000.0,
+        "periodDiff": {
+          "avg": 9999.434833327929,
+          "max": 10001.595999956131,
+          "min": 9993.055999994278
+        }
+      },
+      "type": "TimeLoop"
+    }
+  ],
+  "coordinate_selection": {
+    "z_native_event_key": "Z Coord [\u00b5m]",
+    "reason": "Prefer acquired stage coordinates; per-frame metadata can be constant across a Z stack."
+  }
+}

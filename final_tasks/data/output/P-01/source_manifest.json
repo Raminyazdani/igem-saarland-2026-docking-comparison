@@ -1,0 +1,43 @@
+{
+  "sha256": {
+    "P01_vina_PahP.json": "babb50c81792606fb45f1393780804936b300db676a3f6a902025520a78bd9f1",
+    "P01_vina_PahS.json": "194aa53af7761c1409a08f92a85326cf825b8ababb4ffa1a7ec004fcad692bac",
+    "P01_cb_dock.json": "988d85b69858566617826fd50de0b2243b3c2cca589c780170891303ddd6da72",
+    "P01_glide.json": "a74c9e28c1c2865bf8944ca8b6a238ca20ba66c03946c3039ec052f55c3e3360",
+    "P01_pyrene_rep1_mindist.xvg": "71cb6b08dd23189fda88879b52a2ee3d41d7326755b6e1627f2b207ee9ac20e5",
+    "P01_pyrene_rep2_mindist.xvg": "039d3cd4c554f17291abc92493e3130c56eda4e110d6d658d100e3ff15a9d39e",
+    "P01_pyrene_rep3_mindist.xvg": "10b1e9e322b97fbf9c82c6c50cdf5bde189ca8072786aec0bf60a2d311de1bbe",
+    "P01_phenanthrene_rep1_mindist.xvg": "faa82a904267ceba66b704c44ab9547db856a4adddc73fb123991c7ed2c10c39",
+    "P01_phenanthrene_rep2_mindist.xvg": "44972ef37940848b0955837969c7eec5b463268db0bfb603124e4b9bf43a0b37",
+    "P01_phenanthrene_rep3_mindist.xvg": "7f4ff06d7a366f85f81d3785201850ac7ff162d0bfa291e70d6cee189684973b",
+    "P01_pyrene_FINAL_RESULTS.dat": "469deeaa930dc4a1f1834d34b777be6bba787363a15349cfce4ebcb723c10070",
+    "P01_phenanthrene_FINAL_RESULTS.dat": "7e6154a5ac6778872e4427b35cb7f7b34102067783eedac6d99f4e6d4c22ea0e",
+    "P01_md_notes.md": "96e18a3b9e5cf9c60adf434017bab4682a461f0d2a0c963c7a6d1b0a8e1e7674",
+    "P01_mmgbsa_notes.md": "2426cc251eb1a060b726691df9f1e2687c2219af166a611510e65914a091a311",
+    "P01_md_analysis.sh": "5bdc1a162672d8c52ad476601391da6396110ae55fa4498e2a813986eb772503"
+  },
+  "snapshot_commits": {
+    "P01_vina_PahP.json": "3539358236841e3f95f3e9efdc6d954fe1a1eca2",
+    "P01_vina_PahS.json": "3539358236841e3f95f3e9efdc6d954fe1a1eca2",
+    "P01_cb_dock.json": "04fd02b7d71f14314549e2e0887300ea54fd5035",
+    "P01_glide.json": "04fd02b7d71f14314549e2e0887300ea54fd5035",
+    "P01_pyrene_rep1_mindist.xvg": "3539358236841e3f95f3e9efdc6d954fe1a1eca2",
+    "P01_pyrene_rep2_mindist.xvg": "3539358236841e3f95f3e9efdc6d954fe1a1eca2",
+    "P01_pyrene_rep3_mindist.xvg": "3539358236841e3f95f3e9efdc6d954fe1a1eca2",
+    "P01_phenanthrene_rep1_mindist.xvg": "3539358236841e3f95f3e9efdc6d954fe1a1eca2",
+    "P01_phenanthrene_rep2_mindist.xvg": "3539358236841e3f95f3e9efdc6d954fe1a1eca2",
+    "P01_phenanthrene_rep3_mindist.xvg": "3539358236841e3f95f3e9efdc6d954fe1a1eca2",
+    "P01_pyrene_FINAL_RESULTS.dat": "3539358236841e3f95f3e9efdc6d954fe1a1eca2",
+    "P01_phenanthrene_FINAL_RESULTS.dat": "3539358236841e3f95f3e9efdc6d954fe1a1eca2",
+    "P01_md_notes.md": "3539358236841e3f95f3e9efdc6d954fe1a1eca2",
+    "P01_mmgbsa_notes.md": "3539358236841e3f95f3e9efdc6d954fe1a1eca2",
+    "P01_md_analysis.sh": "3539358236841e3f95f3e9efdc6d954fe1a1eca2"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.10.8"
+  }
+}

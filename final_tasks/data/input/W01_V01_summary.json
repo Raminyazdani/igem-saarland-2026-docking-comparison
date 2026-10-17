@@ -1,0 +1,50 @@
+{
+  "title": "V-01: Calcium-associated reporter schematic",
+  "question": "How can the reporter principle be explained without claiming a molecular trajectory?",
+  "materials": [
+    "Existing three-panel storyboard; Chen et al. (2013) primary GCaMP6 study."
+  ],
+  "methods": [
+    "Draw cpGFP, CaM and M13 as labelled conceptual domains. Show calcium-associated CaM-M13 interaction and emission under excitation.",
+    "Export original SVG/PNG artwork and a looping GIF using the storyboard's presentation durations."
+  ],
+  "results": [
+    "Created 3 panels and an animation lasting 12 presentation seconds per loop."
+  ],
+  "conclusion": "The completed visual presents calcium-associated CaM-M13 interaction and reporter emission in three panels. Editable SVG and PNG files accompany a GIF with a 12-second presentation loop.",
+  "figures": [
+    {
+      "file": "reporter_storyboard.png",
+      "caption": "Original conceptual GCaMP-family storyboard. Domain geometry, calcium-symbol count, brightness and animation timing are illustrative, not structural or kinetic results."
+    }
+  ],
+  "references": [
+    "Chen et al. (2013), Ultrasensitive fluorescent proteins for imaging neuronal activity. https://doi.org/10.1038/nature12354"
+  ],
+  "table": {
+    "columns": [
+      "Output",
+      "Format",
+      "Scope",
+      "Input data",
+      "Finished without more wet-lab data?"
+    ],
+    "rows": [
+      [
+        "Storyboard",
+        "PNG + SVG",
+        "Editable original schematic",
+        "Storyboard",
+        "Yes: conceptual"
+      ],
+      [
+        "Animation",
+        "GIF",
+        "Three presentation states",
+        "Storyboard",
+        "Yes: conceptual"
+      ]
+    ]
+  },
+  "scope_and_assumptions": "The artwork is a conceptual GCaMP-family explanation based on the supplied storyboard and primary reference. Domain geometry, calcium-symbol count, brightness and timing are presentation choices. The visual illustrates calcium-associated reporting, rather than a molecular trajectory or a measured response of the tested clone."
+}

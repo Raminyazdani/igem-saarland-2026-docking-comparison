@@ -1,0 +1,154 @@
+{
+  "sizes": {
+    "Y": 2048,
+    "X": 2044
+  },
+  "channels": [
+    "DIA"
+  ],
+  "events": {
+    "Time [s]": [
+      4608.168129117012
+    ],
+    "Index": [
+      0
+    ],
+    "Camera 2 Temperature [\u00b0C]": [
+      33.2
+    ],
+    "GFP - Gain [%]": [
+      44.7
+    ],
+    "GFP - Laser Power [%]": [
+      1.1
+    ],
+    "TD - Gain [%]": [
+      40.5
+    ],
+    "Camera 2 Exposure Time [ms]": [
+      5.0215330179457744
+    ],
+    "PFS Offset": [
+      16454
+    ],
+    "PFS Status": [
+      1
+    ],
+    "X Coord [\u00b5m]": [
+      15094.300000000001
+    ],
+    "Y Coord [\u00b5m]": [
+      -14404.7
+    ],
+    "Z Coord [\u00b5m]": [
+      4909.82
+    ],
+    "Ti2 ZDrive [\u00b5m]": [
+      5159.82
+    ],
+    "Nikon AX Piezo Z Drive [\u00b5m]": [
+      250.0
+    ]
+  },
+  "attributes": [
+    16,
+    16,
+    1,
+    2048,
+    "unsigned",
+    1,
+    4088,
+    2044,
+    null,
+    null,
+    null,
+    null,
+    1
+  ],
+  "text_info": {
+    "description": "Camera Name: pco.panda, SN:14404472\r\nNumerical Aperture: 0,6\r\nRefractive Index: 1\r\n Name: DIA\r\n Component Count: 1\r\n Relay Lens Magnification: 1x\r\n Modality: Brightfield\r\n Camera Settings:   \r\n  Camera Type: pco.panda\r\n  Exposure: 5 ms\r\n  Readout Mode: Rolling shutter at 16-bit\r\n  Readout Rate: 46 MHz\r\n  Noise Filter: On\r\n  Temperature: 33.2\u00b0C\r\n  Denoise.ai OFF\r\n  Clarify.ai OFF\r\n Microscope Settings:   Microscope: Ti2 Microscope\r\n  Nikon Ti2, FilterChanger(Turret-Lo): 5 (BF)\r\n  Nikon Ti2, Shutter(DIA LED): Open\r\n  Nikon Ti2, Illuminator(DIA): On\r\n  Nikon Ti2, Illuminator(DIA) Intensity: 25.0\r\n  LightPath: R100\r\n  Condenser: 2 ()\r\n  PFS, offset: 16454\r\n  PFS, mirror: Inserted\r\n  PFS, Dish Type: Glass\r\n  Zoom: 1.00x\r\n  TD Switcher:\r\n     Port 1: Out\r\n\r\n",
+    "capturing": "pco.panda, SN:14404472\r\n\r\nCamera Type: pco.panda\r\nExposure: 5 ms\r\nReadout Mode: Rolling shutter at 16-bit\r\nReadout Rate: 46 MHz\r\nNoise Filter: On\r\nTemperature: 33.2\u00b0C\r\nDenoise.ai OFF\r\nClarify.ai OFF",
+    "date": "30/09/2026  15:42:18",
+    "optics": "S Plan Fluor ELWD 40x Ph2 ADM"
+  },
+  "metadata": {
+    "contents": {
+      "channelCount": 1,
+      "frameCount": 1
+    },
+    "channels": [
+      {
+        "channel": {
+          "name": "DIA",
+          "index": 0,
+          "color": [
+            255,
+            255,
+            255,
+            1.0
+          ],
+          "emissionLambdaNm": null,
+          "excitationLambdaNm": null
+        },
+        "loops": null,
+        "microscope": {
+          "objectiveMagnification": 40.0,
+          "objectiveName": "S Plan Fluor ELWD 40x Ph2 ADM",
+          "objectiveNumericalAperture": 0.6,
+          "zoomMagnification": 1.0,
+          "immersionRefractiveIndex": 1.0,
+          "projectiveMagnification": null,
+          "pinholeDiameterUm": null,
+          "modalityFlags": [
+            "brightfield",
+            "camera"
+          ]
+        },
+        "volume": {
+          "axesCalibrated": [
+            true,
+            true,
+            false
+          ],
+          "axesCalibration": [
+            0.1625,
+            0.1625,
+            1.0
+          ],
+          "axesInterpretation": [
+            "distance",
+            "distance",
+            "distance"
+          ],
+          "bitsPerComponentInMemory": 16,
+          "bitsPerComponentSignificant": 16,
+          "cameraTransformationMatrix": [
+            -0.9994828895718938,
+            0.032155146602334234,
+            -0.032155146602334234,
+            -0.9994828895718938
+          ],
+          "componentCount": 1,
+          "componentDataType": "unsigned",
+          "voxelCount": [
+            2044,
+            2048,
+            1
+          ],
+          "componentMaxima": [
+            0.0
+          ],
+          "componentMinima": [
+            0.0
+          ],
+          "pixelToStageTransformationMatrix": null
+        }
+      }
+    ]
+  },
+  "experiment": [],
+  "coordinate_selection": {
+    "z_native_event_key": "Z Coord [\u00b5m]",
+    "reason": "Prefer acquired stage coordinates; per-frame metadata can be constant across a Z stack."
+  }
+}

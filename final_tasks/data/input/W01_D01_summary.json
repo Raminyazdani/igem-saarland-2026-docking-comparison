@@ -1,0 +1,62 @@
+{
+  "title": "D-01: Stored plate-reader fluorescence signals",
+  "question": "What numerical and spatial patterns are present in the supplied native results?",
+  "materials": [
+    "Three original VMR result files, one VWP protocol and source-specific cadmium experiment notes."
+  ],
+  "methods": [
+    "Decompress JSON and map values with the stored physical row/column indices. Summarize each GUID/gain separately.",
+    "Plot independent native-value colour scales. No gain conversion, condition assignment, blank or OD correction."
+  ],
+  "results": [
+    "Recovered 150 readings across 3 distinct stored results, with 50 physical wells A1:E10 each.",
+    "gain 2939: range 23036-260000, 29/50 entries equal 260000; gain 2976: range 27641-260000, 13/50 entries equal 260000; gain 933: range 22-3328, 0/50 entries equal 260000."
+  ],
+  "conclusion": "The three stored result sets contain 150 readings across wells A1-E10. Native signals vary across wells and gain settings. The exported readings and coordinates provide a reproducible numerical record of the plate measurements.",
+  "figures": [
+    {
+      "file": "plate_signals.png",
+      "caption": "Stored fluorescence by physical well. Each result uses its own colour scale; gains differ. No condition labels or uncertainty estimates are assigned."
+    }
+  ],
+  "references": [
+    "Original VMR ProtocolResult fields and cadmium_experiment_notes.md: R-WET-12AUG-VOYAGER / R-WET-12AUG-LAYOUT."
+  ],
+  "table": {
+    "columns": [
+      "Gain",
+      "Wells",
+      "Median",
+      "260000 count",
+      "Input data",
+      "Finished without more wet-lab data?"
+    ],
+    "rows": [
+      [
+        "2976",
+        "50",
+        "195949",
+        "13",
+        "Original VMR files",
+        "Yes: raw description"
+      ],
+      [
+        "2939",
+        "50",
+        "260000",
+        "29",
+        "Original VMR files",
+        "Yes: raw description"
+      ],
+      [
+        "933",
+        "50",
+        "110",
+        "0",
+        "Original VMR files",
+        "Yes: raw description"
+      ]
+    ]
+  },
+  "scope_and_assumptions": "Each VMR GUID and gain defines a separate stored result set. Explicit file coordinates define the wells, and values retain their native scale. The archive has no accepted well-to-clone/dose/control map or gain/flag calibration; source records also differ in instrument naming. This analysis reports native signals without blank, biomass or dose-response correction."
+}
