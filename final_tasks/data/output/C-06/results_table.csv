@@ -1,0 +1,12 @@
+Metric,Value,Input data,Finished without more wet-lab data?
+Labelled CDS,1350 nt; 450 aa,G1,Yes: reference scope
+Reference coordinates,748-2097,G1,Yes: reference scope
+Adjacent stop,TAA; 2098-2100,G1,Yes: reference scope
+"CAI, whole CDS",0.1708,G1 + R1,Yes: reference scope
+"CAI, first 50 codons",0.1495,G1 + R1,Yes: reference scope
+"CAI, zero-count replacement 1",0.1764,G1 + R1,Yes: reference scope
+GC / GC3,40.37% / 35.78%,G1,Yes: reference scope
+Codons with weight < 0.2,185/450,G1 + R1,Yes: reference scope
+Consecutive low-weight stretches,40,G1 + R1,Yes: reference scope
+Longest A / T homopolymer,5 / 8 nt,G1,Yes: reference scope
+N-terminal His stretch,HHHHHH,G1,Yes: reference scope

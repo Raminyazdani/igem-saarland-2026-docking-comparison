@@ -1,0 +1,84 @@
+{
+  "title": "C-EX: evidence for a weak cadmium-associated reporter response",
+  "question": "Which explanations are assessed by the supplied data, and which need a different measurement?",
+  "materials": [
+    "F01_expanded_summary.json: frozen task summary or dated source-context review.",
+    "CEX_C06_summary.json: frozen task summary or dated source-context review.",
+    "F01_context_review.json: frozen task summary or dated source-context review."
+  ],
+  "methods": [
+    "Preserve source result sentences verbatim; classify evidence type without scores or statistical tests.",
+    "Compare the measured scope with the measurement each causal explanation requires."
+  ],
+  "scope_and_assumptions": "F-01 acquisition and nominal-condition assumptions are inherited; C-06 is reference-only. This is a completed evidence review, not a causal expression, toxicity or direct-binding diagnosis.",
+  "results": [
+    "The review retains 7 F-01 findings and 4 C-06 findings verbatim in source_findings.csv.",
+    "Recorded imaging findings from F-01: 13 October, nominal 10 mM Ca / 5 mM Cd: C8: +2.66 ADU over 298.2s; Empty: +0.12 ADU over 299.5s; C6: +15.01 ADU over 298.4s; C1: +0.57 ADU over 299.6s; C2: +0.77 ADU over 299.6s. The C6 recording has the largest within-recording increase in this group. Candidate field-matched pre/post contrasts are C1 -10.22 ADU; C2 +1.92 ADU; Empty +0.68 ADU. Within-recording change and the field-matched treatment contrast answer different questions: the C1 field decreases across its paired acquisitions despite rising slightly within the challenged recording.",
+    "Selected reference-only finding from C-06:",
+    "The labelled CDS spans reference bases 748-2097: 1350 nt and 450 aa; its translation matches its annotation.",
+    "Seven questions are classified by evidence type; direct expression, biological power and direct binding remain unresolved."
+  ],
+  "conclusion": "The available imaging and reference analyses support a structured assessment of reporter behavior, technical conditions and reference codon composition. Low protein expression has not been identified as the cause of a weak response. Matched protein abundance, independent-culture identities and same-sample growth/viability measurements distinguish the remaining explanations.",
+  "table": {
+    "columns": [
+      "Question",
+      "Evidence type",
+      "Input data",
+      "Finished without more wet-lab data?"
+    ],
+    "rows": [
+      [
+        "Recorded reporter behavior",
+        "Measured imaging",
+        "F01_expanded_summary.json",
+        "Yes: evidence review; no: causal diagnosis"
+      ],
+      [
+        "Optical artifacts / background",
+        "Measured imaging",
+        "F01_expanded_summary.json",
+        "Yes: evidence review; no: causal diagnosis"
+      ],
+      [
+        "Reference codon composition",
+        "Reference sequence",
+        "CEX_C06_summary.json",
+        "Yes: evidence review; no: causal diagnosis"
+      ],
+      [
+        "Low protein expression is the cause",
+        "Unresolved",
+        "No direct expression data",
+        "Yes: evidence review; no: causal diagnosis"
+      ],
+      [
+        "Growth / viability / toxicity",
+        "Preparation context",
+        "F01_context_review.json",
+        "Yes: evidence review; no: causal diagnosis"
+      ],
+      [
+        "Insufficient biological power",
+        "Unresolved",
+        "F01_expanded_summary.json",
+        "Yes: evidence review; no: causal diagnosis"
+      ],
+      [
+        "Direct Cd binding or another site",
+        "Unresolved",
+        "No binding data",
+        "Yes: evidence review; no: causal diagnosis"
+      ]
+    ]
+  },
+  "figures": [
+    {
+      "file": "evidence_matrix.png",
+      "caption": "Categorical evidence coverage for seven questions. Colors encode source type only; no probability or statistical effect is implied."
+    }
+  ],
+  "references": [
+    "F-01 and C-06 frozen summaries: primary methods and references are preserved in those input JSON files.",
+    "13 October notebook context: CTX02-CTX06; original source hashes and locators in F01_context_review.json."
+  ]
+}

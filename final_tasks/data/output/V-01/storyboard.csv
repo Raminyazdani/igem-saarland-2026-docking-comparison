@@ -1,0 +1,4 @@
+heading,message,calcium_symbol,brighter,duration_ms
+Reporter architecture,"One fused reporter contains cpGFP, CaM and M13.",False,False,4000
+Calcium-associated interaction,Calcium association with CaM is coupled to CaM-M13 interaction.,True,False,4000
+Brighter fluorescence under excitation,Calcium-associated conformational changes can increase fluorescence.,True,True,4000

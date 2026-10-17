@@ -1,0 +1,83 @@
+{
+  "title": "P-02: PAH binding and reporter model results",
+  "question": "What follows from the project's existing assumed model inputs?",
+  "materials": [
+    "Stored source_assumptions.json; original model scripts preserved as inert equation/provenance records.",
+    "No fitted parameters or new experimental data."
+  ],
+  "methods": [
+    "Analytical single-site occupancy and fixed-ligand approach to equilibrium.",
+    "Source reporter ODE integrated by DOP853 (rtol 1e-8; atol 1e-10) on a one-minute output grid.",
+    "Deterministic competitive occupancy at assigned free concentrations; no score-to-Kd conversion."
+  ],
+  "results": [
+    "Model 1, Kd=L=100 nM: t95=24.9644 min.",
+    "Reporter sampled maximum: 9.9333 simulated h; ideal pyrene ratio at 100 nM=1.1500.",
+    "Model 3 mixture: pyrene fraction=0.045218, unbound=0.678273; competitor half-site=422.3 nM."
+  ],
+  "conclusion": "At Kd = free ligand = 100 nM, the binding model gives t95 = 24.964 min. The reporter reaches its sampled maximum at 9.933 simulated hours. Fixed competitors shift pyrene half occupancy from 300.0 to 422.3 nM; mixture pyrene occupancy is 0.04522 and the unbound fraction is 0.67827.",
+  "figures": [
+    {
+      "file": "conditional_models.png",
+      "caption": "Conditional binding curves, reporter accumulation and pyrene competition under stored assumptions. All times are simulated; lines are not measured data."
+    }
+  ],
+  "references": [
+    "https://github.com/Raminyazdani/igem-saarland-2026-docking-comparison/tree/3539358236841e3f95f3e9efdc6d954fe1a1eca2/tools/autodock-vina/md/models",
+    "Stored source_assumptions.json: explicit source-derived parameter transcription; source hashes and complete parameters are in source_manifest.json."
+  ],
+  "table": {
+    "columns": [
+      "Scenario",
+      "Quantity",
+      "Value",
+      "Input data",
+      "Finished without more wet-lab data?"
+    ],
+    "rows": [
+      [
+        "Binding: Kd=L=100 nM",
+        "t95 (min)",
+        24.9644,
+        "Stored assumed parameters",
+        "Yes: conditional model"
+      ],
+      [
+        "Reporter",
+        "Sampled peak (simulated h)",
+        9.9333,
+        "Stored assumed parameters",
+        "Yes: conditional model"
+      ],
+      [
+        "Pyrene at 100 nM",
+        "Ideal ratio",
+        1.15,
+        "Stored assumed parameters",
+        "Yes: conditional model"
+      ],
+      [
+        "Assumed mixture",
+        "Pyrene site fraction",
+        0.045218,
+        "Stored assumed parameters",
+        "Yes: conditional model"
+      ],
+      [
+        "Assumed mixture",
+        "Unbound fraction",
+        0.678273,
+        "Stored assumed parameters",
+        "Yes: conditional model"
+      ],
+      [
+        "Fixed competitors",
+        "Pyrene half-site (nM)",
+        422.3,
+        "Stored assumed parameters",
+        "Yes: conditional model"
+      ]
+    ]
+  },
+  "scope_and_assumptions": "Affinities, concentrations and rates are fixed source-assigned parameters. The calculations assume one site, fixed free ligand, mutually exclusive competition and no depletion. The reporter represents an E. coli CFP/YFP model. Results are numerical consequences of these equations and parameters, rather than fitted measurements of yeast or cadmium performance."
+}

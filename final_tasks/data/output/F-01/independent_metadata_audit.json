@@ -1,0 +1,22 @@
+{
+  "files_requested": 62,
+  "files_scanned": 62,
+  "status_counts": {
+    "PASS": 62
+  },
+  "reader_versions": {
+    "nd2": "0.12.0",
+    "tifffile": "2026.10.15"
+  },
+  "sample_only": "First/middle/last native sequence frames; full AVI decode for frame-hash identity",
+  "no_input_files_modified": true,
+  "new_inputs_match_archived_sha": true,
+  "axes_and_sizes_structured": true,
+  "preview_files": 111,
+  "contact_sheets": 11,
+  "nd2_time_series": 14,
+  "native_frame_count_total": 1500,
+  "nd2_single_images": 34,
+  "nd2_z_stacks_without_time_axis": 2,
+  "preview_contact_sheets_visually_inspected": 11
+}

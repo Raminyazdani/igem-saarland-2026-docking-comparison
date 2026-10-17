@@ -1,0 +1,8 @@
+# Preserve the reviewed final package bytes on every platform.
+final_tasks/** -text
+# Native microscopy and image/video exports use Git LFS on both hosts.
+final_tasks/data/input/*.nd2 filter=lfs diff=lfs merge=lfs -text
+final_tasks/data/input/*.tif filter=lfs diff=lfs merge=lfs -text
+final_tasks/data/input/*.tiff filter=lfs diff=lfs merge=lfs -text
+final_tasks/data/input/*.avi filter=lfs diff=lfs merge=lfs -text
+final_tasks/data/input/*.opju filter=lfs diff=lfs merge=lfs -text

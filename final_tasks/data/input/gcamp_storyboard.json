@@ -1,0 +1,38 @@
+{
+  "source_doi": "10.1038/nature12354",
+  "canvas": [
+    1280,
+    800
+  ],
+  "duration_ms": [
+    4000,
+    4000,
+    4000
+  ],
+  "panels": [
+    {
+      "heading": "Reporter architecture",
+      "message": "One fused reporter contains cpGFP, CaM and M13.",
+      "calcium_symbol": false,
+      "brighter": false
+    },
+    {
+      "heading": "Calcium-associated interaction",
+      "message": "Calcium association with CaM is coupled to CaM-M13 interaction.",
+      "calcium_symbol": true,
+      "brighter": false
+    },
+    {
+      "heading": "Brighter fluorescence under excitation",
+      "message": "Calcium-associated conformational changes can increase fluorescence.",
+      "calcium_symbol": true,
+      "brighter": true
+    }
+  ],
+  "limits": [
+    "Original schematic; not to scale.",
+    "Calcium-symbol count is not stoichiometry.",
+    "Timing and green intensity are illustrative.",
+    "No entry path, direct Cd binding or tested-clone result."
+  ]
+}

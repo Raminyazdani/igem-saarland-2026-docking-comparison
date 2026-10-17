@@ -1,0 +1,79 @@
+{
+  "input_hashes_pass": true,
+  "input_hashes_after_pass": true,
+  "failures": [],
+  "all_frame_rows": 2067,
+  "native_clock_crosscheck_pass": true,
+  "time_series": 20,
+  "fits": [
+    {
+      "group": "R020_P0_Z0",
+      "plateau_supported": false,
+      "status": "no_resolved_plateau"
+    },
+    {
+      "group": "R021_P0_Z0",
+      "plateau_supported": false,
+      "status": "no_resolved_plateau"
+    },
+    {
+      "group": "R022_P0_Z0",
+      "plateau_supported": false,
+      "status": "no_resolved_plateau"
+    },
+    {
+      "group": "R023_P0_Z0",
+      "plateau_supported": false,
+      "status": "no_resolved_plateau"
+    },
+    {
+      "group": "R024_P0_Z0",
+      "plateau_supported": false,
+      "status": "no_resolved_plateau"
+    },
+    {
+      "group": "R025_P0_Z0",
+      "plateau_supported": false,
+      "status": "no_resolved_plateau"
+    },
+    {
+      "group": "R026_P0_Z0",
+      "plateau_supported": false,
+      "status": "no_resolved_plateau"
+    },
+    {
+      "group": "R027_P0_Z0",
+      "plateau_supported": false,
+      "status": "no_resolved_plateau"
+    },
+    {
+      "group": "R028_P0_Z0",
+      "plateau_supported": false,
+      "status": "no_resolved_plateau"
+    },
+    {
+      "group": "R043_P0_Z0",
+      "plateau_supported": false,
+      "status": "no_resolved_plateau"
+    },
+    {
+      "group": "R044_P0_Z0",
+      "plateau_supported": false,
+      "status": "no_resolved_plateau"
+    },
+    {
+      "group": "R045_P0_Z0",
+      "plateau_supported": false,
+      "status": "no_resolved_plateau"
+    }
+  ],
+  "source_count": 120,
+  "image_containers": 107,
+  "every_frame_retained": true,
+  "static_Z_frames": 146,
+  "static_Z_fluorescence_frames": 141,
+  "static_Z_BF_region_metric_available": 94,
+  "Z_coordinates": "Native event Z Coord preferred; planned Z-Series/index cross-checked for optical stacks",
+  "masks_fluorescence_independent": true,
+  "condition_identity": "documented labels; no sequencing confirmation"
+}

@@ -1,0 +1,809 @@
+{
+  "status": "PASS",
+  "frame_measurements_sha256": "500f47c3555e0a2615af5683c9e6c60de884e09a86510d618b812ba975e18619",
+  "notebook_sha256": "e99d77067ae6751bbd098d0284252b0db1ec2f462b6ff04d12fb10596ce285b3",
+  "frames_compared": 30,
+  "maximum_absolute_numeric_difference": 2.842170943040401e-14,
+  "comparisons": [
+    {
+      "source_file": "C6_10mM-calcium_5mM-cadmium_D6_t5min_1001.nd2",
+      "frame_index": 0,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C6_10mM-calcium_5mM-cadmium_D6_t5min_1001.nd2",
+      "frame_index": 1,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C6_10mM-calcium_5mM-cadmium_D6_t5min_1001.nd2",
+      "frame_index": 2,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C6_10mM-calcium_5mM-cadmium_D6_t5min_1001.nd2",
+      "frame_index": 118,
+      "differences": {
+        "whole_field_raw_mean_DN": 2.842170943040401e-14,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 2.842170943040401e-14,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C6_10mM-calcium_5mM-cadmium_D6_t5min_1001.nd2",
+      "frame_index": 119,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C6_10mM-calcium_5mM-cadmium_D6_t5min_1001.nd2",
+      "frame_index": 120,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C6_10mM-calcium_500uM-cadmium_D7_t5min_1001.nd2",
+      "frame_index": 0,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C6_10mM-calcium_500uM-cadmium_D7_t5min_1001.nd2",
+      "frame_index": 1,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C6_10mM-calcium_500uM-cadmium_D7_t5min_1001.nd2",
+      "frame_index": 2,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C6_10mM-calcium_500uM-cadmium_D7_t5min_1001.nd2",
+      "frame_index": 94,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C6_10mM-calcium_500uM-cadmium_D7_t5min_1001.nd2",
+      "frame_index": 95,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C6_10mM-calcium_500uM-cadmium_D7_t5min_1001.nd2",
+      "frame_index": 96,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C1_10mM-calcium_5mM-cadmium_B6_t5min_1001.nd2",
+      "frame_index": 0,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C1_10mM-calcium_5mM-cadmium_B6_t5min_1001.nd2",
+      "frame_index": 1,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C1_10mM-calcium_5mM-cadmium_B6_t5min_1001.nd2",
+      "frame_index": 2,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C1_10mM-calcium_5mM-cadmium_B6_t5min_1001.nd2",
+      "frame_index": 132,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C1_10mM-calcium_5mM-cadmium_B6_t5min_1001.nd2",
+      "frame_index": 133,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C1_10mM-calcium_5mM-cadmium_B6_t5min_1001.nd2",
+      "frame_index": 134,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C8_10mM-calcium_5mM-cadmium_E6_t5min_1001.nd2",
+      "frame_index": 0,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C8_10mM-calcium_5mM-cadmium_E6_t5min_1001.nd2",
+      "frame_index": 1,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C8_10mM-calcium_5mM-cadmium_E6_t5min_1001.nd2",
+      "frame_index": 2,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C8_10mM-calcium_5mM-cadmium_E6_t5min_1001.nd2",
+      "frame_index": 104,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C8_10mM-calcium_5mM-cadmium_E6_t5min_1001.nd2",
+      "frame_index": 105,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "C8_10mM-calcium_5mM-cadmium_E6_t5min_1001.nd2",
+      "frame_index": 106,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "Empty_10mM-calcium_5mM-cadmium_A6_t5min_1001.nd2",
+      "frame_index": 0,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "Empty_10mM-calcium_5mM-cadmium_A6_t5min_1001.nd2",
+      "frame_index": 1,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "Empty_10mM-calcium_5mM-cadmium_A6_t5min_1001.nd2",
+      "frame_index": 2,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "Empty_10mM-calcium_5mM-cadmium_A6_t5min_1001.nd2",
+      "frame_index": 110,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "Empty_10mM-calcium_5mM-cadmium_A6_t5min_1001.nd2",
+      "frame_index": 111,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    },
+    {
+      "source_file": "Empty_10mM-calcium_5mM-cadmium_A6_t5min_1001.nd2",
+      "frame_index": 112,
+      "differences": {
+        "whole_field_raw_mean_DN": 0.0,
+        "whole_field_raw_median_DN": 0.0,
+        "whole_field_raw_p95_DN": 0.0,
+        "fraction_at_or_above_4095": 0.0,
+        "acquisition_time_s": 0.0
+      },
+      "maximum_absolute_difference": 0.0,
+      "status": "PASS"
+    }
+  ],
+  "full_native_metadata_checks": [
+    {
+      "record": "R007",
+      "file": "F01_13Oct_C1_0mM-calcium_0mM_cadmium_B5_1.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R008",
+      "file": "F01_13Oct_C1_0mM-calcium_0mM-cadmium_B6_t0min_1001.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R009",
+      "file": "F01_13Oct_C1_1mM-calcium_0mM_cadmium_B5_t0_1.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R010",
+      "file": "F01_13Oct_C1_1mM-calcium_0mM_cadmium_B5_t5min_1.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 9.094947017729282e-13,
+      "status": "PASS"
+    },
+    {
+      "record": "R011",
+      "file": "F01_13Oct_C2_0mM-calcium_0mM_cadmium_C5_1.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R012",
+      "file": "F01_13Oct_C2_0mM-calcium_5mM-cadmium_B6_t5min_2.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R013",
+      "file": "F01_13Oct_C2_1mM-calcium_0mM_cadmium_C5_t0_1.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R014",
+      "file": "F01_13Oct_C2_1mM-calcium_0uM-cadmium_B6_t0min_1.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R015",
+      "file": "F01_13Oct_C6_0mM-calcium_0mM_cadmium_D5_1.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R016",
+      "file": "F01_13Oct_C8_0mM-calcium_0mM_cadmium_E5_1.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R017",
+      "file": "F01_13Oct_Empty_0mM-calcium_0mM_cadmium_A5_1.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R018",
+      "file": "F01_13Oct_Empty_0mM-calcium_0mM-cadmium_A6_t0min_1001.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 9.094947017729282e-13,
+      "status": "PASS"
+    },
+    {
+      "record": "R020",
+      "file": "F01_13Oct_C6_10mM-calcium_500uM-cadmium_D7_t5min_1001.nd2",
+      "native_frames": 97,
+      "maximum_event_Z_coordinate_difference_um": 9.094947017729282e-13,
+      "status": "PASS",
+      "maximum_clock_difference_s": 5.684341886080802e-14,
+      "PFS_status_counts": {
+        "1": 97
+      }
+    },
+    {
+      "record": "R021",
+      "file": "F01_13Oct_C8_10mM-calcium_5mM-cadmium_E6_t5min_1001.nd2",
+      "native_frames": 107,
+      "maximum_event_Z_coordinate_difference_um": 9.094947017729282e-13,
+      "status": "PASS",
+      "maximum_clock_difference_s": 5.684341886080802e-14,
+      "PFS_status_counts": {
+        "1": 107
+      }
+    },
+    {
+      "record": "R022",
+      "file": "F01_13Oct_Empty_10mM-calcium_5mM-cadmium_A6_t5min_1001.nd2",
+      "native_frames": 113,
+      "maximum_event_Z_coordinate_difference_um": 9.094947017729282e-13,
+      "status": "PASS",
+      "maximum_clock_difference_s": 8.526512829121202e-14,
+      "PFS_status_counts": {
+        "1": 113
+      }
+    },
+    {
+      "record": "R023",
+      "file": "F01_13Oct_C6_10mM-calcium_5mM-cadmium_D6_t5min_1001.nd2",
+      "native_frames": 121,
+      "maximum_event_Z_coordinate_difference_um": 9.094947017729282e-13,
+      "status": "PASS",
+      "maximum_clock_difference_s": 8.526512829121202e-14,
+      "PFS_status_counts": {
+        "1": 121
+      }
+    },
+    {
+      "record": "R024",
+      "file": "F01_13Oct_C1_10mM-calcium_5mM-cadmium_B6_t5min_1001.nd2",
+      "native_frames": 135,
+      "maximum_event_Z_coordinate_difference_um": 9.094947017729282e-13,
+      "status": "PASS",
+      "maximum_clock_difference_s": 5.684341886080802e-14,
+      "PFS_status_counts": {
+        "1": 135
+      }
+    },
+    {
+      "record": "R025",
+      "file": "F01_13Oct_C2_10mM-calcium_5mM-cadmium_B7_t5min_1001.nd2",
+      "native_frames": 145,
+      "maximum_event_Z_coordinate_difference_um": 9.094947017729282e-13,
+      "status": "PASS",
+      "maximum_clock_difference_s": 1.1368683772161603e-13,
+      "PFS_status_counts": {
+        "1": 143,
+        "5": 2
+      }
+    },
+    {
+      "record": "R026",
+      "file": "F01_13Oct_C2_1mM-calcium_5mM-cadmium_B6_t5min_1.nd2",
+      "native_frames": 158,
+      "maximum_event_Z_coordinate_difference_um": 9.094947017729282e-13,
+      "status": "PASS",
+      "maximum_clock_difference_s": 5.684341886080802e-14,
+      "PFS_status_counts": {
+        "1": 157,
+        "5": 1
+      }
+    },
+    {
+      "record": "R027",
+      "file": "F01_13Oct_C2_10mM-calcium_500uM-cadmium_B5_t5min_1.nd2",
+      "native_frames": 166,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS",
+      "maximum_clock_difference_s": 5.684341886080802e-14,
+      "PFS_status_counts": {
+        "1": 166
+      }
+    },
+    {
+      "record": "R028",
+      "file": "F01_13Oct_C1_1mM-calcium_0mM_cadmium_B5_t0_1001.nd2",
+      "native_frames": 178,
+      "maximum_event_Z_coordinate_difference_um": 9.094947017729282e-13,
+      "status": "PASS",
+      "maximum_clock_difference_s": 1.1368683772161603e-13,
+      "PFS_status_counts": {
+        "1": 178
+      }
+    },
+    {
+      "record": "R031",
+      "file": "F01_30Sep_B2_WT_2.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R032",
+      "file": "F01_30Sep_B4_Colony1_FLUO.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R033",
+      "file": "F01_30Sep_C5_Colony6__no-calcium_FLUO.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R034",
+      "file": "F01_30Sep_E4_Colony1__calcium-1mM_FLUO.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R035",
+      "file": "F01_30Sep_E5_Colony6_calcium-1mM_FLUO_cadmium_after10min.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R036",
+      "file": "F01_30Sep_B2_WT_1.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R037",
+      "file": "F01_30Sep_B4_Colony1_BF.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R038",
+      "file": "F01_30Sep_C5_Colony6__no-calcium_BF.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R039",
+      "file": "F01_30Sep_E4_Colony1__calcium-1mM_BF.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R040",
+      "file": "F01_30Sep_E6_Colony8_calcium-1mM_BF.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R041",
+      "file": "F01_30Sep_E5_Colony6_calcium-1mM_FLUO_cadmium_timelapse10s-240s.nd2",
+      "native_frames": 13,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS",
+      "maximum_clock_difference_s": 1.4210854715202004e-14,
+      "PFS_status_counts": {
+        "1": 13
+      }
+    },
+    {
+      "record": "R042",
+      "file": "F01_30Sep_E5_Colony6_calcium-1mM_FLUO_cadmium_timelapse10s-240s002.nd2",
+      "native_frames": 13,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS",
+      "maximum_clock_difference_s": 4.163336342344337e-17,
+      "PFS_status_counts": {
+        "1": 13
+      }
+    },
+    {
+      "record": "R043",
+      "file": "F01_30Sep_E5_Colony6_calcium-1mM_FLUO_cadmium_timelapse10s-240s003.nd2",
+      "native_frames": 37,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS",
+      "maximum_clock_difference_s": 5.684341886080802e-14,
+      "PFS_status_counts": {
+        "1": 37
+      }
+    },
+    {
+      "record": "R044",
+      "file": "F01_30Sep_C5_Colony6_no-calcium_FLUO_cadmium_timelapse5s-300s-001.nd2",
+      "native_frames": 61,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS",
+      "maximum_clock_difference_s": 8.526512829121202e-14,
+      "PFS_status_counts": {
+        "1": 61
+      }
+    },
+    {
+      "record": "R045",
+      "file": "F01_30Sep_E6_Colony8_calcium-1mM_FLUO_cadmium_timelapse5s-300s-001.nd2",
+      "native_frames": 61,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS",
+      "maximum_clock_difference_s": 8.526512829121202e-14,
+      "PFS_status_counts": {
+        "1": 61
+      }
+    },
+    {
+      "record": "R046",
+      "file": "F01_09Oct_static_Control_C.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R047",
+      "file": "F01_09Oct_static_Control_C2.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R048",
+      "file": "F01_09Oct_static_Control_C3.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R049",
+      "file": "F01_09Oct_static_S1_S1.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R050",
+      "file": "F01_09Oct_static_S1_S12.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R051",
+      "file": "F01_09Oct_static_S1_S13.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R052",
+      "file": "F01_09Oct_static_S2_S2.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R053",
+      "file": "F01_09Oct_static_S2_S21.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R054",
+      "file": "F01_09Oct_static_S2_S23.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R055",
+      "file": "F01_09Oct_static_S6_S6.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R056",
+      "file": "F01_09Oct_static_S6_S62.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R057",
+      "file": "F01_09Oct_static_S6_S63.nd2",
+      "native_frames": 1,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R089",
+      "file": "F01_12Aug_Calcium_B10.nd2",
+      "native_frames": 38,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    },
+    {
+      "record": "R095",
+      "file": "F01_12Aug_Calcium_B2.nd2",
+      "native_frames": 23,
+      "maximum_event_Z_coordinate_difference_um": 0.0,
+      "status": "PASS"
+    }
+  ]
+}

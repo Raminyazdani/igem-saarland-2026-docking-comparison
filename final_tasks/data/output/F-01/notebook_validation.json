@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "notebook_cells": 15,
+  "code_cells": 10,
+  "all_code_executed_without_errors": true,
+  "all_imports_in_second_cell": true,
+  "input_files": 120,
+  "image_containers": 107,
+  "sequence_frames_or_channel_pairs": 2067,
+  "time_series_frames": 1921,
+  "time_series_records": 20,
+  "static_Z_frames": 146,
+  "static_Z_fluorescence": 141,
+  "static_Z_BF_region_metric": 94,
+  "packed_masks": 2062,
+  "main_figures": 11,
+  "Z_stack_coordinates": "Native event positions; 61 planes re-read and pixel means verified",
+  "native_stage_Z_record_count": 14,
+  "notebook_sha256": "e99d77067ae6751bbd098d0284252b0db1ec2f462b6ff04d12fb10596ce285b3",
+  "frame_table_sha256": "500f47c3555e0a2615af5683c9e6c60de884e09a86510d618b812ba975e18619",
+  "scope": "Recorded image changes; no biological replicate p-values or causal binding/latency estimates"
+}

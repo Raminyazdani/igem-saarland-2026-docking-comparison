@@ -1,0 +1,9 @@
+{
+  "inputs": {
+    "gcamp_storyboard.json": "6d0a6dadc55fe50f56a970e6ab3254d62143f35e5b99422b06b49236c96bcffc",
+    "gcamp_primary_references.md": "5b221c6c3d34afc0df1016f969fb6c79755b4fb94508305131f504fddf6bdb14"
+  },
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "pandas": "3.0.1"
+}

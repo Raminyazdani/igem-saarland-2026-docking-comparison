@@ -1,0 +1,7 @@
+Scenario,Quantity,Value,Input data,Finished without more wet-lab data?
+Binding: Kd=L=100 nM,t95 (min),24.9644,Stored assumed parameters,Yes: conditional model
+Reporter,Sampled peak (simulated h),9.9333,Stored assumed parameters,Yes: conditional model
+Pyrene at 100 nM,Ideal ratio,1.15,Stored assumed parameters,Yes: conditional model
+Assumed mixture,Pyrene site fraction,0.045218,Stored assumed parameters,Yes: conditional model
+Assumed mixture,Unbound fraction,0.678273,Stored assumed parameters,Yes: conditional model
+Fixed competitors,Pyrene half-site (nM),422.3,Stored assumed parameters,Yes: conditional model

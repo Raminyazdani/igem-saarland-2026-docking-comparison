@@ -1,0 +1,92 @@
+{
+  "python": "3.12.14",
+  "pandas": "3.0.1",
+  "sources": [
+    {
+      "task": "C-06",
+      "input_file": "W01_C06_summary.json",
+      "sha256": "2a6f4a146a4cf019a12ef0cad8962976d2cb3f459d948787942aaf0005dc06c8"
+    },
+    {
+      "task": "D-01",
+      "input_file": "W01_D01_summary.json",
+      "sha256": "23e59867edd522d2f31e027d7f3fb7b97f3acd5c05c92d19ae94ce7dcd4ffe3f"
+    },
+    {
+      "task": "F-01",
+      "input_file": "W01_F01_summary.json",
+      "sha256": "33476bc3fac53c41922be05ea45def58d9a6a1b4d7a809604f328cb40fb03e2f"
+    },
+    {
+      "task": "C-EX",
+      "input_file": "W01_CEX_summary.json",
+      "sha256": "73b7adcdb1a4262ef8f4464d7b6a214fb5ca428824f70004818390bc29d6b83d"
+    },
+    {
+      "task": "P-01",
+      "input_file": "W01_P01_summary.json",
+      "sha256": "06732920f1b3659f6c0bf79fedc88cc13161bd56d053ae943e261569bed9f3e7"
+    },
+    {
+      "task": "P-02",
+      "input_file": "W01_P02_summary.json",
+      "sha256": "e24f8067eade0a219ab0806f0cf7793acaf1cbd47c616de370860693478ceafe"
+    },
+    {
+      "task": "V-01",
+      "input_file": "W01_V01_summary.json",
+      "sha256": "19bb578879615b8e460ef32c999c4b793d6e073246e9d4187c369eaeca05eacf"
+    }
+  ],
+  "figures": [
+    {
+      "task": "F-01",
+      "input_file": "W01_F01_expanded_1.png",
+      "output_file": "F01_expanded_1.png",
+      "sha256": "aca8d6888a8d584d372906d5fede9b6ec2b530ac4720a1ce3bda7e00a1718b4d",
+      "underlying_data": "../F-01/ (native trace and QC CSV tables)",
+      "caption": "All native time-series traces; references and positions belong to individual recordings. No Cd-addition frame is assumed."
+    },
+    {
+      "task": "F-01",
+      "input_file": "W01_F01_expanded_1.svg",
+      "output_file": "F01_expanded_1.svg",
+      "sha256": "0a787c306ce2437ecd07f1c3b33d43d9fa56f3f56e3ca0252ac29856d689636f",
+      "underlying_data": "../F-01/ (native trace and QC CSV tables)",
+      "caption": "All native time-series traces; references and positions belong to individual recordings. No Cd-addition frame is assumed."
+    },
+    {
+      "task": "F-01",
+      "input_file": "W01_F01_expanded_2.png",
+      "output_file": "F01_expanded_2.png",
+      "sha256": "5a46b72a243d468b189d45c56bf21f19d57e3bd1f736dacf4bb5f0b41aa6e6ac",
+      "underlying_data": "../F-01/ (native trace and QC CSV tables)",
+      "caption": "Candidate same-field comparisons pass stage-distance and registered BF-correlation checks. Post values use initial/final 10% medians; the C2 calcium-conflict static file has a single post frame. C1/Empty comparisons change both calcium and cadmium labels; C2 R026 keeps nominal calcium at 1 mM. Field matching does not establish same-cell identity, equal exposure or addition time."
+    },
+    {
+      "task": "F-01",
+      "input_file": "W01_F01_expanded_2.svg",
+      "output_file": "F01_expanded_2.svg",
+      "sha256": "0b63bbef9ad4c8aeb64418b5e13583e5955442932c091b71a46ce639d65db6d3",
+      "underlying_data": "../F-01/ (native trace and QC CSV tables)",
+      "caption": "Candidate same-field comparisons pass stage-distance and registered BF-correlation checks. Post values use initial/final 10% medians; the C2 calcium-conflict static file has a single post frame. C1/Empty comparisons change both calcium and cadmium labels; C2 R026 keeps nominal calcium at 1 mM. Field matching does not establish same-cell identity, equal exposure or addition time."
+    },
+    {
+      "task": "P-01",
+      "input_file": "W01_P01_contact.png",
+      "output_file": "P01_contact.png",
+      "sha256": "ffa63ee089ea941c71b60013a8a8a4c7af1f1fd9bf19da8056282cd23278405d",
+      "underlying_data": "../P-01/distance_trace_plot_data.csv",
+      "caption": "All six stored finite traces; dashed line is the strict 0.5 nm criterion. Run 1 initialization differs from runs 2\u20133."
+    },
+    {
+      "task": "P-01",
+      "input_file": "W01_P01_contact.svg",
+      "output_file": "P01_contact.svg",
+      "sha256": "d875ef13487a63230223c767b8e7f939b10d0cc0a2b747e15818fe7c629ef9f6",
+      "underlying_data": "../P-01/distance_trace_plot_data.csv",
+      "caption": "All six stored finite traces; dashed line is the strict 0.5 nm criterion. Run 1 initialization differs from runs 2\u20133."
+    }
+  ],
+  "figure_manifest_sha256": "b33f0d57efec896041ba3a002e46db8546423425fac107c48af8fd3fe25cdd2c"
+}

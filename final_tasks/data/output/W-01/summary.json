@@ -1,0 +1,106 @@
+{
+  "title": "W-01: expanded current-data methods and results",
+  "question": "What do the current analyses support in a concise local Wiki draft?",
+  "materials": [
+    "Seven frozen source summaries and three attributed PNG/SVG figure pairs."
+  ],
+  "methods": [
+    "Retain source statements and task identifiers; generate the local draft and indexes inline.",
+    "Copy attributed figures unchanged and verify input/output hashes."
+  ],
+  "scope_and_assumptions": "The upstream Methods scopes and nominal-condition assumptions are retained. This is an offline synthesis, without new experiments, upstream recalculation or publication approval.",
+  "results": [
+    "Integrated 7 source summaries and 3 attributed figures.",
+    "Expanded microscopy: 13 October, nominal 10 mM Ca / 5 mM Cd: C8: +2.66 ADU over 298.2s; Empty: +0.12 ADU over 299.5s; C6: +15.01 ADU over 298.4s; C1: +0.57 ADU over 299.6s; C2: +0.77 ADU over 299.6s. The C6 recording has the largest within-recording increase in this group. Candidate field-matched pre/post contrasts are C1 -10.22 ADU; C2 +1.92 ADU; Empty +0.68 ADU. Within-recording change and the field-matched treatment contrast answer different questions: the C1 field decreases across its paired acquisitions despite rising slightly within the challenged recording.",
+    "Expression evidence: The available imaging and reference analyses support a structured assessment of reporter behavior, technical conditions and reference codon composition. Low protein expression has not been identified as the cause of a weak response. Matched protein abundance, independent-culture identities and same-sample growth/viability measurements distinguish the remaining explanations.",
+    "Reference sequence: The labelled CDS spans reference bases 748-2097: 1350 nt and 450 aa; its translation matches its annotation."
+  ],
+  "conclusion": "The draft integrates 7 source analyses and 3 unchanged figures with numerical statements, methods and source indexes. Native imaging findings and the reference-sequence analysis now appear alongside the evidence review and the separate PAH computations.",
+  "table": {
+    "columns": [
+      "Task",
+      "Evidence",
+      "Input data",
+      "Finished without more wet-lab data?"
+    ],
+    "rows": [
+      [
+        "C-06",
+        "Reference coding sequence",
+        "W01_C06_summary.json",
+        "Yes: offline synthesis"
+      ],
+      [
+        "D-01",
+        "Native plate-reader signals",
+        "W01_D01_summary.json",
+        "Yes: offline synthesis"
+      ],
+      [
+        "F-01",
+        "Native microscopy and recording behavior",
+        "W01_F01_summary.json",
+        "Yes: offline synthesis"
+      ],
+      [
+        "C-EX",
+        "Evidence review",
+        "W01_CEX_summary.json",
+        "Yes: offline synthesis"
+      ],
+      [
+        "P-01",
+        "Stored PAH calculations",
+        "W01_P01_summary.json",
+        "Yes: offline synthesis"
+      ],
+      [
+        "P-02",
+        "Conditional PAH models",
+        "W01_P02_summary.json",
+        "Yes: offline synthesis"
+      ],
+      [
+        "V-01",
+        "Conceptual calcium reporter",
+        "W01_V01_summary.json",
+        "Yes: offline synthesis"
+      ]
+    ]
+  },
+  "figures": [
+    {
+      "file": "F01_expanded_1.png",
+      "caption": "From F-01: All native time-series traces; references and positions belong to individual recordings. No Cd-addition frame is assumed."
+    },
+    {
+      "file": "F01_expanded_2.png",
+      "caption": "From F-01: Candidate same-field comparisons pass stage-distance and registered BF-correlation checks. Post values use initial/final 10% medians; the C2 calcium-conflict static file has a single post frame. C1/Empty comparisons change both calcium and cadmium labels; C2 R026 keeps nominal calcium at 1 mM. Field matching does not establish same-cell identity, equal exposure or addition time."
+    },
+    {
+      "file": "P01_contact.png",
+      "caption": "From P-01: All six stored finite traces; dashed line is the strict 0.5 nm criterion. Run 1 initialization differs from runs 2\u20133."
+    }
+  ],
+  "references": [
+    "Sharp & Li (1987), doi:10.1093/nar/15.3.1281.",
+    "Xia (2007), doi:10.1177/117693430700300028.",
+    "EMBOSS CAI manual: https://emboss.sourceforge.net/apps/cvs/emboss/apps/cai.html",
+    "Count source: https://sources.debian.org/data/main/e/emboss/6.6.0%2Bdfsg-15/emboss/data/CODONS/Eyeast_cai.cut",
+    "Original VMR ProtocolResult fields and cadmium_experiment_notes.md: R-WET-12AUG-VOYAGER / R-WET-12AUG-LAYOUT.",
+    "Chen et al. (2013), Ultrasensitive fluorescent proteins for imaging neuronal activity. https://doi.org/10.1038/nature12354",
+    "Montero Llopis et al. (2021), Best practices and tools for reporting reproducible fluorescence microscopy methods. https://doi.org/10.1038/s41592-021-01156-w",
+    "nd2 official documentation: https://talleylambert.com/nd2/",
+    "scikit-image registration documentation: https://scikit-image.org/docs/stable/api/skimage.registration.html",
+    "Nikon Perfect Focus System: near-infrared focus compensation maintains objective-to-coverslip position. https://www.microscope.healthcare.nikon.com/en_EU/resources/glossary/perfect-focus-system",
+    "Supplied 13 October lab notebook, body.b0029 (condition table), b0037\u2013b0069 (prior qualitative observations).",
+    "Biomni methods review supplied in F01_biomni_methods_review.json; no arbitrary drift cutoff adopted.",
+    "F-01 and C-06 frozen summaries: primary methods and references are preserved in those input JSON files.",
+    "13 October notebook context: CTX02-CTX06; original source hashes and locators in F01_context_review.json.",
+    "https://github.com/Raminyazdani/igem-saarland-2026-docking-comparison/tree/3539358236841e3f95f3e9efdc6d954fe1a1eca2/tools/autodock-vina/md",
+    "https://github.com/Raminyazdani/igem-saarland-2026-docking-comparison/tree/3539358236841e3f95f3e9efdc6d954fe1a1eca2/tools/autodock-vina/results",
+    "https://github.com/Raminyazdani/igem-saarland-2026-docking-comparison/tree/04fd02b7d71f14314549e2e0887300ea54fd5035/tools",
+    "https://github.com/Raminyazdani/igem-saarland-2026-docking-comparison/tree/3539358236841e3f95f3e9efdc6d954fe1a1eca2/tools/autodock-vina/md/models",
+    "Stored source_assumptions.json: explicit source-derived parameter transcription; source hashes and complete parameters are in source_manifest.json."
+  ]
+}

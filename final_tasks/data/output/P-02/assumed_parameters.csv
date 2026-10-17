@@ -1,0 +1,29 @@
+Parameter,Assumed value,Input data,Finished without more wet-lab data?
+model1.Kd_grid_nM,"[1.0, 10.0, 100.0, 1000.0, 10000.0]",P02_source_assumptions.json,Yes: conditional model
+model1.kon_nM_inv_s_inv,1e-05,P02_source_assumptions.json,Yes: conditional model
+model2.Kd_nM.fluoranthene,100.0,P02_source_assumptions.json,Yes: conditional model
+model2.Kd_nM.pyrene,300.0,P02_source_assumptions.json,Yes: conditional model
+model2.Kd_nM.phenanthrene,500.0,P02_source_assumptions.json,Yes: conditional model
+model2.Kd_nM.naphthalene,5000.0,P02_source_assumptions.json,Yes: conditional model
+model2.R_free,1.0,P02_source_assumptions.json,Yes: conditional model
+model2.R_bound,1.6,P02_source_assumptions.json,Yes: conditional model
+model2.parameters.alpha_arbitrary_per_min,1.0,P02_source_assumptions.json,Yes: conditional model
+model2.parameters.mRNA_half_life_min,5,P02_source_assumptions.json,Yes: conditional model
+model2.parameters.translation_per_mRNA_per_min,2.0,P02_source_assumptions.json,Yes: conditional model
+model2.parameters.maturation_half_life_min,30,P02_source_assumptions.json,Yes: conditional model
+model2.parameters.doubling_time_min,40,P02_source_assumptions.json,Yes: conditional model
+model2.parameters.turnover_half_life_min,1440,P02_source_assumptions.json,Yes: conditional model
+model2.parameters.stationary_promoter_floor,0.02,P02_source_assumptions.json,Yes: conditional model
+model2.parameters.kon_nM_inv_min_inv,0.0006,P02_source_assumptions.json,Yes: conditional model
+model3.assumed_Kd_nM.fluoranthene,100.0,P02_source_assumptions.json,Yes: conditional model
+model3.assumed_Kd_nM.pyrene,300.0,P02_source_assumptions.json,Yes: conditional model
+model3.assumed_Kd_nM.phenanthrene,500.0,P02_source_assumptions.json,Yes: conditional model
+model3.assumed_Kd_nM.anthracene,1500.0,P02_source_assumptions.json,Yes: conditional model
+model3.assumed_Kd_nM.naphthalene,5000.0,P02_source_assumptions.json,Yes: conditional model
+model3.assumed_Kd_nM.glucose,1000000.0,P02_source_assumptions.json,Yes: conditional model
+model3.assumed_free_concentration_nM.pyrene,20.0,P02_source_assumptions.json,Yes: conditional model
+model3.assumed_free_concentration_nM.phenanthrene,50.0,P02_source_assumptions.json,Yes: conditional model
+model3.assumed_free_concentration_nM.fluoranthene,20.0,P02_source_assumptions.json,Yes: conditional model
+model3.assumed_free_concentration_nM.anthracene,10.0,P02_source_assumptions.json,Yes: conditional model
+model3.assumed_free_concentration_nM.naphthalene,500.0,P02_source_assumptions.json,Yes: conditional model
+model3.assumed_free_concentration_nM.glucose,1000.0,P02_source_assumptions.json,Yes: conditional model

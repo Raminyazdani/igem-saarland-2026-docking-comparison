@@ -1,0 +1,42 @@
+{
+  "review_provider": "Biomni",
+  "review_url": "https://biomni.phylo.bio/projects/prj_015QI5JRRGzy8dvTzYTsYK6L/tasks/tsk_014M9je1Nao7tv8Vvd5sgbzz",
+  "review_status": "completed",
+  "data_disclosure": "No original project files uploaded to Biomni; targeted methods discussion only.",
+  "accepted": [
+    "Quantify native-depth images; treat AVI renderings as linked derivatives, not independent observations.",
+    "Use native axes and acquisition timestamps. Separate time series, static images and z-stacks.",
+    "Keep culture, acquisition, field/region and frame units distinct; no frame/cell p-values.",
+    "Use transmitted-light information for region selection, avoiding fluorescence-selected masks.",
+    "Retain native-intensity, estimated-background, clipping, focus and motion diagnostics with source provenance.",
+    "Interpret recording-relative intensity changes without claiming a documented cadmium-addition event or calibrated binding."
+  ],
+  "adapted_or_rejected": [
+    {
+      "recommendation": "Read every ND2 using two independent readers.",
+      "decision": "One pinned ND2 reader is used. Its event clocks are checked against native per-frame metadata; dimensions, channels and export correspondences are checked separately. This is not claimed to be an independent two-reader validation."
+    },
+    {
+      "recommendation": "Flag/exclude saturated cell ROIs; register rigid drift below approximately 0.5 pixels and otherwise exclude.",
+      "decision": "Report measured clipping and motion and their impact per recording. Arbitrary universal exclusion thresholds are not adopted; no automatic reconstruction of clipped intensities is performed."
+    },
+    {
+      "recommendation": "Fit and correct an exponential bleaching trend.",
+      "decision": "Do not subtract an assumed bleaching process from a possible biological fluorescence trend without a validated reference. Retain and describe the recorded trend."
+    },
+    {
+      "recommendation": "Calculate cell-level metrics after transmitted-light segmentation and overlay quality control.",
+      "decision": "The reviewed brightfield masks contain partial cell rims and miss clumps. Treat them as brightfield-derived regions and sensitivity diagnostics; dense-field segmentation is not certified as a cell count or single-cell assay."
+    },
+    {
+      "recommendation": "Local extension to the generic review: resolve conflicting TIFF embedded timestamp blocks and ImageJ interval metadata.",
+      "decision": "Six ImageJ intervals match stride-three reconstruction to float32 precision, supporting three-position interleaving. Pixel-to-clock mapping is not independently retained in the exports. Report the mapping as an explicit reconstruction assumption and preserve frame-index results."
+    }
+  ],
+  "primary_documentation": [
+    "https://talleylambert.com/nd2/reference/nd2/",
+    "https://scikit-image.org/docs/stable/api/skimage.registration.html",
+    "https://scikit-image.org/docs/stable/auto_examples/segmentation/plot_watershed.html",
+    "https://www.nature.com/articles/s41592-021-01156-w"
+  ]
+}

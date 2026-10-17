@@ -1,0 +1,13 @@
+group,assumption,duration_s,slope_adu_per_s,auc_adu_s,status
+R058_P0_Z0,assumed_tiff_uniform_s,298.2471008300781,0.0016339093666169898,12.726173896630122,conditional on three-position export correspondence
+R058_P0_Z0,assumed_tiff_stride3_s,298.2470939999968,0.001635509146526616,13.689311553460888,conditional on three-position export correspondence
+R059_P0_Z0,assumed_tiff_uniform_s,298.30694580078125,-0.0022701001704056654,-38.713071376757966,conditional on three-position export correspondence
+R059_P0_Z0,assumed_tiff_stride3_s,298.3069549999982,-0.0022874375955381295,-40.419179446556456,conditional on three-position export correspondence
+R060_P0_Z0,assumed_tiff_uniform_s,298.5775756835937,0.003951163865688299,256.54959011965724,conditional on three-position export correspondence
+R060_P0_Z0,assumed_tiff_stride3_s,298.5775839999914,0.003962890091822443,259.3905515315105,conditional on three-position export correspondence
+R061_P0_Z0,assumed_tiff_uniform_s,298.4589490890503,0.01723017354531718,514.4337680670103,conditional on three-position export correspondence
+R061_P0_Z0,assumed_tiff_stride3_s,298.45894099999964,0.017320825469071377,526.9129548063464,conditional on three-position export correspondence
+R062_P0_Z0,assumed_tiff_uniform_s,298.5669631958008,0.03146585785791667,677.2275610154848,conditional on three-position export correspondence
+R062_P0_Z0,assumed_tiff_stride3_s,298.56696099999544,0.03168201852888597,702.5520913595125,conditional on three-position export correspondence
+R063_P0_Z0,assumed_tiff_uniform_s,298.49271297454834,0.03401346846763106,667.4944722517876,conditional on three-position export correspondence
+R063_P0_Z0,assumed_tiff_stride3_s,298.49272499999404,0.03435087587115572,694.3561063806538,conditional on three-position export correspondence
