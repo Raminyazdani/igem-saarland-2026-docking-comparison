@@ -1,100 +1,47 @@
-# iGEM Saarland 2026 — PAH Docking Comparison
+# MM-GBSA results — PahP + PAHs
 
-A **fair, reproducible comparison of docking tools** for the team's PAH biosensor. Every tool docks the
-**same PAH ligands** into the **same receptor** from the **same frozen input**, in **two explicit steps**
-(preprocessing, then docking), and returns **one standardized result file**. Python packages then merge the
-results — and the preprocessing recipes — into tables and plots.
+100 ns GROMACS MD (GPU, 310 K, TIP3P, neutralised with 8 Cl⁻ counterions and no added salt), MM-GBSA via gmx_MMPBSA 1.6.5 (igb=5, 150 mM *implicit* salt). PB was attempted but did not complete; GB only. Note the ionic-strength mismatch between the explicit MD (~29 mM from counterions alone) and the implicit rescoring (150 mM); unlikely to matter for neutral hydrophobic ligands, but it is a real inconsistency between the two stages.
 
-> **New here?**
-> - **Team member** assigned a tool → read **[`START_HERE.md`](START_HERE.md)**. Questions → **Elnaz** (coordinator).
-> - **Setting up the GitHub repo** (Ramin & Elnaz, technical) → read **[`SETUP_GITHUB.md`](SETUP_GITHUB.md)**.
-> - Branch & PR rules → **[`CONTRIBUTING.md`](CONTRIBUTING.md)**.
+Three independent replicates per ligand. **Which replicate a number comes from determines what it means** — see `../analysis/` for the stability evidence.
 
-## The science in one paragraph
-The biosensor targets **PahP**, a **periplasmic PAH-binding protein** (~317 aa) that directly binds the
-polycyclic aromatic hydrocarbon — so PahP is the **primary docking target**. **PahS** (~686 aa,
-outer-membrane sensor) is a **secondary** target (blind docking only). We dock a panel of PAHs — **pyrene**
-(primary) plus phenanthrene, benzo[a]pyrene, naphthalene, anthracene, and fluoranthene — with **glucose** as
-a negative control. Other constructs (CFP/YFP, GCaMP6f, MBP-mScarlet-G3BP1, pRS416/pET backbones) are
-**reference only**, not docking receptors.
+## The values to use
 
-## How it works (branch → two steps → result → compare)
-- `main` = stable/citable; `develop` = integration. **Nobody pushes to either directly.**
-- **One branch + one workspace folder per tool:** `tool/<tool>` ↔ `tools/<tool>/`. Teams deliver by
-  **Pull Request into `develop`**; only **Ramin/Elnaz** merge `develop → main`
-  (see [`CONTRIBUTING.md`](CONTRIBUTING.md)).
-- Each team works in its own `tools/<tool>/` folder in **two steps**:
-  1. **`preprocessing/`** — state exactly what prep the tool needs, and do it (recorded in a structured,
-     comparable manifest).
-  2. **`docking/`** — the actual docking run.
-- Each team commits exactly one `tools/<tool>/results/DOCKING_RESULT.json` — the single file the comparison
-  is built from — plus final poses.
-- Two analysis packages: `scripts/compare_results/` (the docking results) and
-  `scripts/compare_preprocessing/` (the preprocessing recipes + a team status dashboard).
+Replicate 2, the one run in which both ligands stayed in pocket 4 for the full 100 ns, giving the only well-sampled same-site comparison. 500 frames each, 0–100 ns.
 
-```
-  tool/<tool>  ──PR──►  develop  ──PR (Ramin/Elnaz only)──►  main
-```
+| | pyrene | phenanthrene |
+|---|---|---|
+| ΔVDWAALS | -32.94 | -24.06 |
+| ΔEEL | -5.82 | -3.47 |
+| ΔGGAS | -38.75 | -27.52 |
+| ΔGSOLV | +10.32 | +8.82 |
+| **ΔTOTAL** | **-28.43 ± 3.73** | **-18.71 ± 3.06** |
+| SEM | 0.17 | 0.14 |
 
-## Two comparisons, one goal
-Because preprocessing is separated from docking and recorded in the same structured form for every tool, we
-can compare not just the **results** but the **preprocessing** itself — and, as a stretch goal, **design one
-shared preprocessing that works for all tools** and re-dock from that single common starting point. See
-[`tools/README.md`](tools/README.md) and [`scripts/compare_preprocessing/README.md`](scripts/compare_preprocessing/README.md).
+Raw output: `rep2/pyrene_FINAL_RESULTS.dat` and `rep2/phenanthrene_FINAL_RESULTS.dat`, committed here.
 
-## ⚠️ Scores are NOT comparable across tools
-Vina kcal/mol, GOLD ChemPLP, GlideScore, Uni-Mol confidence — different quantities on different scales. We
-never compare raw scores across tools; we compare **rank within each tool**, then a **cross-tool consensus
-rank**. The schema and scripts enforce this.
+Pyrene is 9.7 kcal/mol more favourable, and the separation survives even a pessimistic correction for frame correlation (~9σ at an assumed effective sample of 20). Binding is van der Waals dominated in both cases, with the ratio tracking ring count — 4 rings bury more than 3.
 
-## Repository layout
-```
-input/
-  raw/                # reference only — never docked (constructs/, final_plasmids/, literature/, slides/, notes/)
-  canonical/          # SHARED, FROZEN starting point — identical for all tools
-    targets/  PahP/ + PahS/  (sequence.fasta, structure.pdb*, binding_site.yaml*)  + target_metadata.csv
-    ligands/  ligands.smi, ligands.sdf, ligand_metadata.csv
-    docking_config.yaml   # single source of truth
-tools/                # ONE self-contained workspace per tool
-  _TEMPLATE/          # copy this to add a new tool
-  <tool>/
-    inputs/           # canonical inputs converted to the tool's formats (committed for review)
-    preprocessing/    # PREPROCESSING.yaml (comparable manifest) + steps.md + preprocess.sh
-    docking/          # DOCKING.md + run_docking.sh
-    configurations/   # config.yaml (box, seed, exhaustiveness, ...)
-    outputs/          # raw/native output & logs (committed for review)
-    results/          # DOCKING_RESULT.json  <-- the single standardized file  + poses/
-    status/           # status.yaml (progress + blockers)
-results/
-  DOCKING_RESULT.template.json   DOCKING_RESULT.example.json   # shared references to copy
-scripts/
-  compare_results/        # validate / combine / tables / plots + JSON schema
-  compare_preprocessing/  # compare recipes + status dashboard
-reports/tables/  reports/figures/   # generated outputs
-TEAM_INSTRUCTIONS.md
-```
-`*` = **placeholder** — `structure.pdb` and `binding_site.yaml` are TODO until an AlphaFold model exists.
+This **agrees with the Vina ranking** (-8.02 vs -7.45) and with the residence-time ordering across replicates (73% vs 43% of simulated time in contact). The earlier report that the methods disagreed was an artefact of comparing different sites on under-sampled frames.
 
-## Status (2026-07-08)
-- Canonical **ligands** ready (7 molecules, real 3D SDF). Canonical **sequences** ready (PahP 317 aa, PahS 686 aa).
-- Six tool workspaces scaffolded under `tools/` (preprocessing + docking templates ready to fill).
-- **BLOCKED:** no experimental structure → an **AlphaFold model + binding box** must be added per target
-  before docking. Until then `input_version` stays `v0-draft` and **`input-v1` is not frozen**.
-- Commercial-tool licences (Glide / GOLD / Discovery Studio): **to confirm** (see `docking_config.yaml`).
+## Superseded values
 
-## Quick start (analysis)
-```bash
-pip install -r requirements.txt     # root analysis deps (same as scripts/compare_results/requirements.txt)
+| run / window | pyrene | phenanthrene | why it does not describe pocket 4 |
+|---|---|---|---|
+| rep 1, 29.8–99.8 ns (original) | -13.88 ± 4.21 | -18.12 ± 4.41 | both ligands had already left; the two describe *different* post-migration sites |
+| rep 1, pocket 4 while occupied | -16.64 ± 5.46 (2–13 ns) | -17.38 ± 4.09 (1–7 ns) | only 56 and 31 frames, of a dissociating state |
+| rep 1, final site, 50–100 ns | -14.95 ± 1.89 | -19.82 ± 3.03 | a different site for each ligand |
 
-# docking results -> tables + figures
-bash scripts/compare_results/collect_from_branches.sh          # gather each tool/* branch's result
-python scripts/compare_results/compare.py reports/collected    # validate -> combine -> tables -> plots
+These are kept in `../analysis/windows/` for the record. The Kd derived from the original pair — pyrene ~0.16 nM, phenanthrene ~0.17 pM — are **withdrawn**.
 
-# preprocessing recipes + team status
-python scripts/compare_preprocessing/compare_preprocessing.py  # -> preprocessing_comparison / _consensus
-python scripts/compare_preprocessing/status_overview.py        # -> status_overview (team dashboard)
-```
-See [`TEAM_INSTRUCTIONS.md`](TEAM_INSTRUCTIONS.md) for the per-team workflow.
+Note what the rep-1 windows did to the comparison: at 56 and 31 frames the two ligands came out 0.74 kcal/mol apart against a combined SEM of ~1.03, i.e. indistinguishable, and the conclusion drawn was that MM-GBSA could not resolve them. With 500 frames of a bound complex they are 9.7 kcal/mol apart. The method was never the problem; the sampling was.
 
-## License
-See [`LICENSE`](LICENSE) — **TODO: Ramin/Elnaz to choose** (MIT or CC-BY suggested).
+## Do not derive a Kd
+
+RT·ln on -28.43 kcal/mol gives roughly 10⁻²¹ M. MM-GBSA omits configurational entropy and treats desolvation crudely, and the overestimate grows with burial — so the deeper the ligand sits, the worse the absolute number. These ΔG are comparative only.
+
+## Caveats
+
+- MM-GBSA was run on replicate 2 only. The bound portions of replicates 1 and 3 are too short to rescore meaningfully.
+- Phenanthrene's replicate 2 shifts into the adjacent THR254/PHE256/LEU258/LYS262 subsite while keeping contact with the pocket-4 lining throughout. Its value is for a slightly displaced pose within the same pocket.
+- The per-residue decomposition (`idecomp = 2`) returned zero for every protein residue with the whole interaction energy on the ligand; its SDs are propagation artifacts. Discarded.
+- A single wet-lab affinity measurement would resolve more than further computation.

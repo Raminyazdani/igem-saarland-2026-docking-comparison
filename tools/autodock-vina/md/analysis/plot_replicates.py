@@ -23,7 +23,7 @@ for r, lig in enumerate(("pyrene", "phenanthrene")):
         a.fill_between(t, TOP * 0.955, TOP, where=~bound, color="0.86", lw=0)
         a.plot(t, y, color=COL[lig], lw=0.7)
         a.axhline(CUT, ls="--", lw=0.9, color="0.35")
-        if frac < 99.9:
+        if last < t[-1] - 1:
             a.axvline(last, ls=":", lw=1.1, color="#b00020")
             a.annotate(f"leaves {last:.1f} ns", (last, 2.95), xytext=(5, 0),
                        textcoords="offset points", fontsize=8.5, color="#b00020")
