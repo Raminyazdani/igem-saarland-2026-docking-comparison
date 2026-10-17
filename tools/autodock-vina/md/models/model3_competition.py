@@ -6,10 +6,12 @@ Our MM-GBSA Kd values (sub-nM to sub-pM) are too tight to use directly here:
 they saturate the receptor in every scenario and the model becomes degenerate.
 Absolute Kd are therefore sampled from a plausible range that respects a ranking.
 
-The ranking used is Vina's. Recomputed over windows where each ligand is actually
-in pocket 4, MM-GBSA cannot separate pyrene from phenanthrene (-16.64 +/- 5.46 vs
--17.38 +/- 4.09, about 0.7 sigma), so the MM-GBSA order below is kept only as a
-sensitivity check, not as a competing ranking. See md/analysis/README.md.
+The ranking used is Vina's. MM-GBSA over replicate 2, where both ligands stayed
+in pocket 4 for the whole run, gives pyrene -28.43 and phenanthrene -18.71, which
+reproduces the Vina order, so the two methods now agree. The alternative ranking
+kept below is the withdrawn replicate-1 one, computed on frames from after each
+ligand had left the pocket. It is retained only to show what that error would have
+changed. See md/analysis/README.md.
 
 Output: model3_competition.png
 """
@@ -19,10 +21,10 @@ import os; os.chdir(os.path.dirname(os.path.abspath(__file__)))  # write figures
 
 rng = np.random.default_rng(42)
 
-# two orders are tested. the MM-GBSA one compares two different sites
-# (each ligand left pocket 4 before its MM-GBSA window), so it is not
-# like-for-like and is kept only as a sensitivity check.
-RANKING_MMGBSA = ["phenanthrene", "pyrene", "fluoranthene", "anthracene", "naphthalene"]
+# two orders are tested. the first is the withdrawn replicate-1 order,
+# computed on post-dissociation frames; it is kept only to show what
+# trusting it would have changed.
+RANKING_REP1_WITHDRAWN = ["phenanthrene", "pyrene", "fluoranthene", "anthracene", "naphthalene"]
 # fluoranthene -8.095 and pyrene -8.021 differ by less than Vina resolves; order as scored
 RANKING_VINA = ["fluoranthene", "pyrene", "phenanthrene", "anthracene", "naphthalene"]
 
@@ -43,14 +45,14 @@ def occupancy(kd, conc):
     denom = 1.0 + sum(terms.values())
     return {l: t / denom for l, t in terms.items()}
 
-ligands = RANKING_MMGBSA + ["glucose"]
+ligands = RANKING_REP1_WITHDRAWN + ["glucose"]
 
 print("Scenario: polluted site. Concentrations (nM):")
 for l, c in CONC.items():
     print(f"  {l:<15}{c:>8g}")
 
 print("\nOccupancy under each ranking:\n")
-for name, ranking in [("MM-GBSA order", RANKING_MMGBSA), ("Vina order", RANKING_VINA)]:
+for name, ranking in [("replicate-1 order (withdrawn)", RANKING_REP1_WITHDRAWN), ("Vina order", RANKING_VINA)]:
     kd = build_kd(ranking, KD_LADDER)
     th = occupancy(kd, CONC)
     total = sum(th.values())
@@ -62,15 +64,15 @@ for name, ranking in [("MM-GBSA order", RANKING_MMGBSA), ("Vina order", RANKING_
 
 fig, ax = plt.subplots(1, 3, figsize=(15, 4.5))
 
-labels = ["MM-GBSA\norder", "Vina\norder"]
+labels = ["replicate-1 order\n(withdrawn)", "Vina order\n(= replicate-2 MM-GBSA)"]
 bottom = np.zeros(2)
 for lig in ligands:
     vals = [occupancy(build_kd(r, KD_LADDER), CONC).get(lig, 0)
-            for r in (RANKING_MMGBSA, RANKING_VINA)]
+            for r in (RANKING_REP1_WITHDRAWN, RANKING_VINA)]
     ax[0].bar(labels, vals, bottom=bottom, label=lig)
     bottom += np.array(vals)
 ax[0].set(ylabel="receptor occupancy",
-          title="(a) Does the ranking change who dominates?")
+          title="(a) What the withdrawn ranking would have changed")
 ax[0].legend(fontsize=7)
 
 kd = build_kd(RANKING_VINA, KD_LADDER)

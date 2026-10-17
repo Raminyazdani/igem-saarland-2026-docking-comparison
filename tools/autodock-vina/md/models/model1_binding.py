@@ -2,11 +2,12 @@
 Model 1: ligand-receptor binding for PahP + PAHs
 iGEM Saarland 2026
 
-Input:  MM-GBSA binding free energies from 100 ns MD (this work).
-        Both ligands dissociate from pocket 4 during the run, so these are
-        post-migration values for two different sites. Illustrative only -
-        not pocket-4 affinities and not comparable between ligands.
-        See md/analysis/README.md.
+Input:  MM-GBSA binding free energies from replicate 2 of the 100 ns MD
+        (this work), the one run in which both ligands stayed in pocket 4
+        for the whole trajectory. Comparative only: MM-GBSA omits
+        configurational entropy, so the absolute values are far too
+        favourable and must not be converted into a Kd. Panel (c) shows
+        exactly how far off they are. See md/analysis/README.md.
 Output: model1_binding.png
 """
 import numpy as np
@@ -15,8 +16,8 @@ import os; os.chdir(os.path.dirname(os.path.abspath(__file__)))  # write figures
 
 RT = 0.001987 * 310.0
 
-# illustrative only - see header
-MMGBSA = {"pyrene": (-13.88, 4.21), "phenanthrene": (-18.12, 4.41)}
+# replicate 2, both ligands bound throughout - see header
+MMGBSA = {"pyrene": (-28.43, 3.73), "phenanthrene": (-18.71, 3.06)}
 VINA = {"benzo_a_pyrene": -9.520, "fluoranthene": -8.095, "pyrene": -8.021,
         "phenanthrene": -7.448, "anthracene": -7.363, "naphthalene": -6.053,
         "glucose_NEGCTRL": -5.383}
@@ -59,7 +60,7 @@ ax[1].set(xlabel="Kd (nM)", ylabel="[PAH] giving 10% occupancy (nM)",
           title="(b) What Kd does the sensor need?")
 ax[1].grid(alpha=0.3, which="both")
 
-dg_axis = np.linspace(-20, -5, 200)
+dg_axis = np.linspace(-33, -5, 200)
 ax[2].semilogy(dg_axis, kd_nM(dg_axis), "k-", lw=1)
 for lig, colour in [("pyrene", "tab:blue"), ("phenanthrene", "tab:orange")]:
     d, s = MMGBSA[lig]
@@ -70,8 +71,10 @@ for lig, colour in [("pyrene", "tab:blue"), ("phenanthrene", "tab:orange"),
                     ("naphthalene", "tab:green")]:
     ax[2].plot(VINA[lig], kd_nM(VINA[lig]), "s", mfc="none", color=colour,
                label=f"{lig} Vina")
+ax[2].axhspan(1e-3, 4, color="tab:green", alpha=0.15)
+ax[2].text(-32, 8, "typical surface-water PAH levels", fontsize=7, color="0.3")
 ax[2].set(xlabel="binding free energy (kcal/mol)", ylabel="Kd (nM)",
-          title="(c) Both methods on one axis")
+          title="(c) Why we do not convert MM-GBSA to Kd")
 ax[2].legend(fontsize=7)
 ax[2].grid(alpha=0.3)
 
